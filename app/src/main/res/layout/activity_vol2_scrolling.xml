@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Vol2ScrollingActivity">
+    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:theme="@style/Theme.TheChoiceIsYours.AppBarOverlay"
+            android:fitsSystemWindows="true"
+            android:layout_height="@dimen/app_bar_height"
+            android:layout_width="match_parent">
+        <ImageView
+                android:id="@+id/v2p1"
+                app:srcCompat="@drawable/vol2_picture1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+                app:toolbarId="@+id/toolbar"
+                android:id="@+id/toolbar_layout"
+                style="@style/Widget.MaterialComponents.Toolbar.Primary"
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:contentScrim="?attr/colorPrimary">
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_width="match_parent"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/Theme.TheChoiceIsYours.PopupOverlay"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+            android:id="@+id/storyLayout"
+            layout="@layout/content_scrolling"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabOption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@id/storyLayout"
+            app:layout_anchorGravity="bottom|start"
+            app:srcCompat="@drawable/ic_twotone_looks_one_24"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabOption2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@id/storyLayout"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@drawable/ic_twotone_looks_two_24"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
