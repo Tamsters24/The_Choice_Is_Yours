@@ -14,10 +14,9 @@
             android:layout_height="@dimen/app_bar_height"
             android:layout_width="match_parent">
         <ImageView
-                android:id="@+id/v2p1"
-                app:srcCompat="@drawable/vol2_picture1"
+                android:id="@+id/pageImage"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="match_parent"/>
         <com.google.android.material.appbar.CollapsingToolbarLayout
                 app:toolbarId="@+id/toolbar"
                 android:id="@+id/toolbar_layout"
@@ -40,21 +39,23 @@
             android:id="@+id/storyLayout"
             layout="@layout/content_scrolling"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabOption1"
+    <ImageButton
+            android:id="@+id/option1"
+            app:srcCompat="@drawable/ic_twotone_looks_one_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
             app:layout_anchor="@id/storyLayout"
             app:layout_anchorGravity="bottom|start"
-            app:srcCompat="@drawable/ic_twotone_looks_one_24"/>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fabOption2"
+            android:padding="5dp"/>
+    <ImageButton
+            android:id="@+id/option2"
+            app:srcCompat="@drawable/ic_twotone_looks_two_24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/fab_margin"
             app:layout_anchor="@id/storyLayout"
             app:layout_anchorGravity="bottom|end"
-            app:srcCompat="@drawable/ic_twotone_looks_two_24"/>
+            android:padding="5dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

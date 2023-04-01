@@ -1,9 +1,13 @@
 package com.example.thechoiceisyours
 
 import android.content.Intent
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import java.io.InputStream
 
 class BookCover : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +20,12 @@ class BookCover : AppCompatActivity() {
             val bookCoverToVol2Intent = Intent(this, Vol2ScrollingActivity::class.java)
             startActivity(bookCoverToVol2Intent)
         }
+
+        val coverInputStream: InputStream = assets.open("vol2_images/vol2_cover.jpg")
+        val volumeCover = Drawable.createFromStream(coverInputStream, null)
+
+        val volumeImage = findViewById<ImageView>(R.id.coverPage)
+        volumeImage.setImageDrawable(volumeCover)
+        volumeImage.layout(600,0,600,600)
     }
 }
