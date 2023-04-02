@@ -11,12 +11,8 @@
             android:id="@+id/app_bar"
             android:theme="@style/Theme.TheChoiceIsYours.AppBarOverlay"
             android:fitsSystemWindows="true"
-            android:layout_height="@dimen/app_bar_height"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent">
-        <ImageView
-                android:id="@+id/pageImage"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
         <com.google.android.material.appbar.CollapsingToolbarLayout
                 app:toolbarId="@+id/toolbar"
                 android:id="@+id/toolbar_layout"
@@ -26,12 +22,10 @@
                 android:layout_height="match_parent"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:contentScrim="?attr/colorPrimary">
-            <androidx.appcompat.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_height="?attr/actionBarSize"
+            <ImageView
+                    android:id="@+id/pageImage"
                     android:layout_width="match_parent"
-                    app:layout_collapseMode="pin"
-                    app:popupTheme="@style/Theme.TheChoiceIsYours.PopupOverlay"/>
+                    android:layout_height="match_parent"/>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -47,6 +41,15 @@
             android:layout_margin="@dimen/fab_margin"
             app:layout_anchor="@id/storyLayout"
             app:layout_anchorGravity="bottom|start"
+            android:padding="5dp"/>
+    <ImageButton
+            android:id="@+id/option3"
+            app:srcCompat="@drawable/ic_twotone_play_arrow_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@id/storyLayout"
+            app:layout_anchorGravity="bottom|center"
             android:padding="5dp"/>
     <ImageButton
             android:id="@+id/option2"

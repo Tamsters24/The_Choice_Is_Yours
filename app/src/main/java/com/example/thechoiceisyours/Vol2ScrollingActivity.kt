@@ -2,6 +2,8 @@ package com.example.thechoiceisyours
 
 import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -14,10 +16,10 @@ import java.io.InputStreamReader
 
 class Vol2ScrollingActivity : AppCompatActivity() {
     private var currentPart = 1
-    private var nextPart = 2
     private val storyLines = mutableListOf<String>()
     private var currentChoice = "a"
     private var chapterImageString = ""
+    private var theEnd = false
 
     private lateinit var binding: ActivityVol2ScrollingBinding
 
@@ -29,27 +31,72 @@ class Vol2ScrollingActivity : AppCompatActivity() {
 
         setSupportActionBar(findViewById(R.id.toolbar))
         binding.toolbarLayout.title = title
-        findViewById<ImageButton>(R.id.option1).setOnClickListener {
-            currentPart += 1
-            nextPart = currentPart + 1
-            currentChoice = "a"
-            currentChapter("Part.$currentPart$currentChoice")
-            Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
-            Toast.makeText(baseContext, "Choice.$currentPart$currentChoice.$nextPart", Toast.LENGTH_SHORT).show()
-        }
-
-        findViewById<ImageButton>(R.id.option2).setOnClickListener {
-            currentPart += 1
-            nextPart = currentPart + 1
-            currentChoice = "b"
-            //currentChapter("Part.$currentPart$currentChoice")
-            Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
-            Toast.makeText(baseContext, "Choice.$currentPart$currentChoice.$nextPart", Toast.LENGTH_SHORT).show()
-        }
 
         getStory()
-        currentChapter("Part.$currentPart$currentChoice")
-        Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
+        displayChapter("Part.$currentPart$currentChoice")
+
+        var option1Btn: ImageButton
+        var option2Btn: ImageButton
+        var option3Btn: ImageButton
+        var choices = getNextChoices("$currentPart$currentChoice")
+
+        when (choices.size) {
+            1 -> {  // Occurs when there's no choice, which is either THE END
+                    // of the current story or to continue to a pre-designated chapter
+
+                //Toast.makeText(baseContext, "No Choices", Toast.LENGTH_SHORT).show()
+
+                if (choices[0] == "THE END")
+                    println("dummy1")
+                else {
+                    // Hide left and right option buttons
+                    option1Btn = findViewById(R.id.option1)
+                    option1Btn.visibility = View.GONE
+                    option2Btn = findViewById(R.id.option2)
+                    option2Btn.visibility = View.GONE
+
+                    // Click on option button 3 to continue to next chapter
+                    val gotoChoice = choices[0]
+                    option3Btn = findViewById(R.id.option3)
+                    option3Btn.setOnClickListener {
+                        displayChapter("Part.$gotoChoice")
+                    }
+                }
+            }
+            2 -> {  // The default occurrence. There are 2 choices for the reader
+
+                //Toast.makeText(baseContext, "Two Choices", Toast.LENGTH_SHORT).show()
+
+                // Hide center option button
+                option3Btn = findViewById(R.id.option3)
+                option3Btn.visibility = View.GONE
+
+                currentPart += 1    // Increment to next Chapter tier
+
+                // Left button
+                option1Btn = findViewById(R.id.option1)
+                option1Btn.setOnClickListener {
+                    currentChoice = choices[0]
+                    //Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
+                    displayChapter("Part.$currentPart$currentChoice")
+
+                    //Toast.makeText(baseContext, "Choice.$currentPart$currentChoice.$nextPart", Toast.LENGTH_SHORT).show()
+                }
+
+                // Right button
+                option2Btn = findViewById(R.id.option2)
+                option2Btn.setOnClickListener {
+                    currentChoice = choices[1]
+                    displayChapter("Part.$currentPart$currentChoice")
+                    //Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(baseContext, "Choice.$currentPart$currentChoice.$nextPart", Toast.LENGTH_SHORT).show()
+                }
+            }
+            3 -> {
+                println("dummy2")
+            }
+        }
+        //nextPart = currentPart + 1
     }
 
     // Retrieve the Story from assets
@@ -67,16 +114,19 @@ class Vol2ScrollingActivity : AppCompatActivity() {
     }
 
     // Determine the current Chapter and Display Chapter contents and image
-    private fun currentChapter(chapter: String) {
+    private fun displayChapter(chapter: String) {
         // Current chapter
         val filteredChapter = storyLines.filter { it.contains(chapter) }
         var storyChapter = filteredChapter[0]
         storyChapter = storyChapter.substring(9)
         storyChapter = storyChapter.replace("\\n", "\n\n")
 
+        val nextPart = currentPart + 1
+        val nextChoices = getNextChoices("$currentPart$currentChoice")
+
         // Choice A text
         var choice1Filter = "Choice.$currentPart$currentChoice.$nextPart"
-        choice1Filter += "a"
+        choice1Filter += nextChoices[0]
         val filteredOption1 = storyLines.filter { it.contains(choice1Filter) }
         var option1 = filteredOption1[0]
         option1 = option1.substring(13)
@@ -84,7 +134,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
 
         // Choice B text
         var choice2Filter = "Choice.$currentPart$currentChoice.$nextPart"
-        choice2Filter += "b"
+        choice2Filter += nextChoices[1]
         val filteredOption2 = storyLines.filter { it.contains(choice2Filter) }
         var option2 = filteredOption2[0]
         option2 = option2.substring(13)
@@ -97,7 +147,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
 
         // Display text
         val chapterDisplay = findViewById<TextView>(R.id.chapterContents)
-        val storyPage = "$storyChapter\n\n$option1\n\n$option2\n\n\n"
+        val storyPage = "$storyChapter\n\n$option1\n\n$option2\n\n\n\n"
         chapterDisplay.text = storyPage
 
         // Display image
@@ -105,17 +155,23 @@ class Vol2ScrollingActivity : AppCompatActivity() {
         val image = Drawable.createFromStream(imageInputStream, null)
         val partImage = findViewById<ImageView>(R.id.pageImage)
         partImage.setImageDrawable(image)
+        //partImage.layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT
+        //partImage.layoutParams.height = ViewGroup.LayoutParams.MATCH_PARENT
+        //partImage.scaleType = ImageView.ScaleType.CENTER_CROP
     }
 
-    fun getNextChoices(currentChoice: String): List<String> {
+    private fun getNextChoices(currentChoice: String): List<String> {
         return when (currentChoice) {
-            "1a" -> listOf("2a", "2b")
-            "2a" -> listOf("3a", "3b")
-            "2b" -> listOf("3c", "3d")
-            "3a" -> listOf("4a", "4b")
-            "3b" -> listOf("4c", "4d")
-            "3c" -> listOf("4e", "4f")
-            "3d" -> listOf("4g", "4h")
+            "1a" -> listOf("a", "b")
+
+            "2a" -> listOf("a", "b")
+            "2b" -> listOf("c", "d")
+
+            "3a" -> listOf("a", "b")
+            "3b" -> listOf("c", "d")
+            "3c" -> listOf("e", "f")
+            "3d" -> listOf("g", "h")
+
             "4a" -> listOf("5a", "5b")
             "4b" -> listOf("5c", "5d")
             "4c" -> listOf("THE END")
@@ -124,6 +180,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
             "4f" -> listOf("5g", "5h")
             "4g" -> listOf("5i", "5j")
             "4h" -> listOf("5k", "5l")
+
             "5a" -> listOf("THE END")
             "5b" -> listOf("6a", "6b")
             "5c" -> listOf("6c", "6d")
@@ -136,6 +193,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
             "5j" -> listOf("THE END")
             "5k" -> listOf("THE END")
             "5l" -> listOf("6k", "6l")
+
             "6a" -> listOf("7a", "7b")
             "6b" -> listOf("6c")
             "6c" -> listOf("3d")
@@ -148,6 +206,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
             "6j" -> listOf("7k", "7l")
             "6k" -> listOf("7m", "7n")
             "6l" -> listOf("2a")
+
             "7a" -> listOf("8a", "8b")
             "7b" -> listOf("5a")
             "7c" -> listOf("8c", "8d")
@@ -162,6 +221,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
             "7l" -> listOf("THE END")
             "7m" -> listOf("THE END")
             "7n" -> listOf("THE END")
+
             "8a" -> listOf("9a", "9b")
             "8b" -> listOf("THE END")
             "8c" -> listOf("9c", "9d")
@@ -182,6 +242,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
             "8r" -> listOf("THE END")
             "8s" -> listOf("THE END")
             "8t" -> listOf("THE END")
+
             "9a" -> listOf("THE END")
             "9b" -> listOf("10a", "THE END")
             "9c" -> listOf("10b", "10c")
