@@ -1,12 +1,10 @@
 package com.example.thechoiceisyours
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.thechoiceisyours.databinding.ActivityVol2ScrollingBinding
 import java.io.BufferedReader
@@ -56,19 +54,27 @@ class Vol2ScrollingActivity : AppCompatActivity() {
         val option3Btn: ImageButton = findViewById(R.id.option3)
 
         displayChapter("Part.$currentPart$currentChoice")
-        val choices = getNextChoices("$currentPart$currentChoice")
+        var choices = getNextChoices("$currentPart$currentChoice")
 
         when (choices.size) {
             1 -> {  // Occurs when there's no choice, which is either THE END
                     // of the current story or to continue to a pre-designated chapter
                 Toast.makeText(baseContext, "No Choices", Toast.LENGTH_SHORT).show()
+                // Hide left and right option buttons
+                option1Btn.visibility = View.GONE
+                option2Btn.visibility = View.GONE
 
-                if (choices[0] == "THE END")
+                if (choices[0] == "THE END") {  // Display last chapter, prompt to try different path,
+                    currentPart += 1            // and return to cover page
+                    displayChapter("Part.$currentPart$currentChoice")
                     theEnd = true
+                    Toast.makeText(baseContext, "Click to try a different path", Toast.LENGTH_LONG).show()
+                    option3Btn.setOnClickListener {
+                        val theEndToBookCoverIntent = Intent(this, BookCover::class.java)
+                        startActivity(theEndToBookCoverIntent)
+                    }
+                }
                 else {
-                    // Hide left and right option buttons
-                    option1Btn.visibility = View.GONE
-                    option2Btn.visibility = View.GONE
 
                     // Click on option button 3 to continue to next chapter
                     val gotoChoice = choices[0]
@@ -78,26 +84,28 @@ class Vol2ScrollingActivity : AppCompatActivity() {
                 }
             }
             2 -> {  // The default occurrence. There are 2 choices for the reader
+                    // Click choice and increment to next Chapter tier
                 Toast.makeText(baseContext, "Two Choices", Toast.LENGTH_SHORT).show()
 
                 // Hide center option button
                 option3Btn.visibility = View.GONE
 
-                // Increment to next Chapter tier
-                currentPart += 1
-
                 // Left button
                 option1Btn.setOnClickListener {
+                    currentPart += 1
                     currentChoice = choices[0]
-                    //Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
                     displayChapter("Part.$currentPart$currentChoice")
+                    choices = getNextChoices("$currentPart$currentChoice")
+                    //Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
                     //Toast.makeText(baseContext, "Choice.$currentPart$currentChoice.$nextPart", Toast.LENGTH_SHORT).show()
                 }
 
                 // Right button
                 option2Btn.setOnClickListener {
+                    currentPart += 1
                     currentChoice = choices[1]
                     displayChapter("Part.$currentPart$currentChoice")
+                    choices = getNextChoices("$currentPart$currentChoice")
                     //Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
                     //Toast.makeText(baseContext, "Choice.$currentPart$currentChoice.$nextPart", Toast.LENGTH_SHORT).show()
                 }
@@ -112,30 +120,39 @@ class Vol2ScrollingActivity : AppCompatActivity() {
     // Determine the current Chapter and Display Chapter contents and image
     private fun displayChapter(chapter: String) {
         Toast.makeText(baseContext, "Inside displayChapter()", Toast.LENGTH_SHORT).show()
+        var option1: String
+        var option2: String
+
         // Current chapter
         val filteredChapter = storyLines.filter { it.contains(chapter) }
         var storyChapter = filteredChapter[0]
         storyChapter = storyChapter.substring(9)
-        storyChapter = storyChapter.replace("\\n", "\n\n")
+        storyChapter = storyChapter.replace("\\n", "\n\t\t")
 
         val nextPart = currentPart + 1
         val nextChoices = getNextChoices("$currentPart$currentChoice")
 
-        // Choice A text
-        var choice1Filter = "Choice.$currentPart$currentChoice.$nextPart"
-        choice1Filter += nextChoices[0]
-        val filteredOption1 = storyLines.filter { it.contains(choice1Filter) }
-        var option1 = filteredOption1[0]
-        option1 = option1.substring(13)
-        option1 = "Choice 1: $option1"
+        // If the chapter is not THE END, display choices.
+        if (nextChoices[0] != "THE END") {
+            // Choice A text
+            var choice1Filter = "Choice.$currentPart$currentChoice.$nextPart"
+            choice1Filter += nextChoices[0]
+            val filteredOption1 = storyLines.filter { it.contains(choice1Filter) }
+            option1 = filteredOption1[0]
+            option1 = option1.substring(13)
+            option1 = "Choice 1: $option1"
 
-        // Choice B text
-        var choice2Filter = "Choice.$currentPart$currentChoice.$nextPart"
-        choice2Filter += nextChoices[1]
-        val filteredOption2 = storyLines.filter { it.contains(choice2Filter) }
-        var option2 = filteredOption2[0]
-        option2 = option2.substring(13)
-        option2 = "Choice 2: $option2"
+            // Choice B text
+            var choice2Filter = "Choice.$currentPart$currentChoice.$nextPart"
+            choice2Filter += nextChoices[1]
+            val filteredOption2 = storyLines.filter { it.contains(choice2Filter) }
+            option2 = filteredOption2[0]
+            option2 = option2.substring(13)
+            option2 = "Choice 2: $option2"
+        } else {
+            option1 = ""
+            option2 = "THE END"
+        }
 
         // Current Chapter image
         val filteredImage = storyLines.filter { it.contains("p$currentPart$currentChoice") }
