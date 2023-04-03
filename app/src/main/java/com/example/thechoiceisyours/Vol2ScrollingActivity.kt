@@ -3,7 +3,6 @@ package com.example.thechoiceisyours
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
@@ -51,22 +50,21 @@ class Vol2ScrollingActivity : AppCompatActivity() {
     }
 
     private fun readStory() {
+        Toast.makeText(baseContext, "Inside readStory()", Toast.LENGTH_SHORT).show()
         val option1Btn: ImageButton = findViewById(R.id.option1)
         val option2Btn: ImageButton = findViewById(R.id.option2)
         val option3Btn: ImageButton = findViewById(R.id.option3)
 
         displayChapter("Part.$currentPart$currentChoice")
-
-        var choices = getNextChoices("$currentPart$currentChoice")
+        val choices = getNextChoices("$currentPart$currentChoice")
 
         when (choices.size) {
             1 -> {  // Occurs when there's no choice, which is either THE END
-                // of the current story or to continue to a pre-designated chapter
-
-                //Toast.makeText(baseContext, "No Choices", Toast.LENGTH_SHORT).show()
+                    // of the current story or to continue to a pre-designated chapter
+                Toast.makeText(baseContext, "No Choices", Toast.LENGTH_SHORT).show()
 
                 if (choices[0] == "THE END")
-                    println("dummy1")
+                    theEnd = true
                 else {
                     // Hide left and right option buttons
                     option1Btn.visibility = View.GONE
@@ -80,20 +78,19 @@ class Vol2ScrollingActivity : AppCompatActivity() {
                 }
             }
             2 -> {  // The default occurrence. There are 2 choices for the reader
-
-                //Toast.makeText(baseContext, "Two Choices", Toast.LENGTH_SHORT).show()
+                Toast.makeText(baseContext, "Two Choices", Toast.LENGTH_SHORT).show()
 
                 // Hide center option button
                 option3Btn.visibility = View.GONE
 
-                currentPart += 1    // Increment to next Chapter tier
+                // Increment to next Chapter tier
+                currentPart += 1
 
                 // Left button
                 option1Btn.setOnClickListener {
                     currentChoice = choices[0]
                     //Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
                     displayChapter("Part.$currentPart$currentChoice")
-
                     //Toast.makeText(baseContext, "Choice.$currentPart$currentChoice.$nextPart", Toast.LENGTH_SHORT).show()
                 }
 
@@ -109,12 +106,12 @@ class Vol2ScrollingActivity : AppCompatActivity() {
                 println("dummy2")
             }
         }
-        //nextPart = currentPart + 1
-
+        Toast.makeText(baseContext, "End of readStory()", Toast.LENGTH_SHORT).show()
     }
 
     // Determine the current Chapter and Display Chapter contents and image
     private fun displayChapter(chapter: String) {
+        Toast.makeText(baseContext, "Inside displayChapter()", Toast.LENGTH_SHORT).show()
         // Current chapter
         val filteredChapter = storyLines.filter { it.contains(chapter) }
         var storyChapter = filteredChapter[0]
@@ -147,7 +144,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
 
         // Display text
         val chapterDisplay = findViewById<TextView>(R.id.chapterContents)
-        val storyPage = "$storyChapter\n\n$option1\n\n$option2\n\n\n\n"
+        val storyPage = "$storyChapter\n\n$option1\n\n$option2\n\n\n\n\n"
         chapterDisplay.text = storyPage
 
         // Display image
@@ -155,9 +152,7 @@ class Vol2ScrollingActivity : AppCompatActivity() {
         val image = Drawable.createFromStream(imageInputStream, null)
         val partImage = findViewById<ImageView>(R.id.pageImage)
         partImage.setImageDrawable(image)
-        //partImage.layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT
-        //partImage.layoutParams.height = ViewGroup.LayoutParams.MATCH_PARENT
-        //partImage.scaleType = ImageView.ScaleType.CENTER_CROP
+        Toast.makeText(baseContext, "End of displayChapter()", Toast.LENGTH_SHORT).show()
     }
 
     private fun getNextChoices(currentChoice: String): List<String> {
