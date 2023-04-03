@@ -15,8 +15,8 @@ import java.io.InputStream
 import java.io.InputStreamReader
 
 class Vol2ScrollingActivity : AppCompatActivity() {
-    private var currentPart = 1
     private val storyLines = mutableListOf<String>()
+    private var currentPart = 1
     private var currentChoice = "a"
     private var chapterImageString = ""
     private var theEnd = false
@@ -32,17 +32,18 @@ class Vol2ScrollingActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         binding.toolbarLayout.title = title
 
+        val option1Btn: ImageButton = findViewById(R.id.option1)
+        val option2Btn: ImageButton = findViewById(R.id.option2)
+        val option3Btn: ImageButton = findViewById(R.id.option3)
+
         getStory()
         displayChapter("Part.$currentPart$currentChoice")
 
-        var option1Btn: ImageButton
-        var option2Btn: ImageButton
-        var option3Btn: ImageButton
         var choices = getNextChoices("$currentPart$currentChoice")
 
         when (choices.size) {
             1 -> {  // Occurs when there's no choice, which is either THE END
-                    // of the current story or to continue to a pre-designated chapter
+                // of the current story or to continue to a pre-designated chapter
 
                 //Toast.makeText(baseContext, "No Choices", Toast.LENGTH_SHORT).show()
 
@@ -50,14 +51,11 @@ class Vol2ScrollingActivity : AppCompatActivity() {
                     println("dummy1")
                 else {
                     // Hide left and right option buttons
-                    option1Btn = findViewById(R.id.option1)
                     option1Btn.visibility = View.GONE
-                    option2Btn = findViewById(R.id.option2)
                     option2Btn.visibility = View.GONE
 
                     // Click on option button 3 to continue to next chapter
                     val gotoChoice = choices[0]
-                    option3Btn = findViewById(R.id.option3)
                     option3Btn.setOnClickListener {
                         displayChapter("Part.$gotoChoice")
                     }
@@ -68,13 +66,11 @@ class Vol2ScrollingActivity : AppCompatActivity() {
                 //Toast.makeText(baseContext, "Two Choices", Toast.LENGTH_SHORT).show()
 
                 // Hide center option button
-                option3Btn = findViewById(R.id.option3)
                 option3Btn.visibility = View.GONE
 
                 currentPart += 1    // Increment to next Chapter tier
 
                 // Left button
-                option1Btn = findViewById(R.id.option1)
                 option1Btn.setOnClickListener {
                     currentChoice = choices[0]
                     //Toast.makeText(baseContext, "Part.$currentPart$currentChoice", Toast.LENGTH_SHORT).show()
@@ -84,7 +80,6 @@ class Vol2ScrollingActivity : AppCompatActivity() {
                 }
 
                 // Right button
-                option2Btn = findViewById(R.id.option2)
                 option2Btn.setOnClickListener {
                     currentChoice = choices[1]
                     displayChapter("Part.$currentPart$currentChoice")
@@ -111,6 +106,10 @@ class Vol2ScrollingActivity : AppCompatActivity() {
             line = bufferedReader.readLine()
         }
         bufferedReader.close()
+    }
+
+    private fun readStory() {
+
     }
 
     // Determine the current Chapter and Display Chapter contents and image

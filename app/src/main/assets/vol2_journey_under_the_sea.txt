@@ -14,38 +14,42 @@ Choice.2b.3d Investigate the grotto with the round entrance.
 p2b  image vol2_images/vol2_picture2b.jpg
 
 Part.3a  The giant squid tosses and turns the Seeker, but finally the creature grows tired of its new game and jets off with an enormous squirt of water. You now are free to leave your hiding place and examine the Seeker for damage.\nTo your dismay, the airlock entrance has been jammed shut. You are locked out of the Seeker. The crew of the Maray, however, suspected trouble when you did not respond to a routine radio check and they are now lowering an escape platform to you. Once on the platform, you radio them to start the slow pull to the surface. To avoid the bends-rappid expansion of nitrogen bubbles in your blood-they will have to bring you up very slowly.\nJust as the platform begins to move, the giant squid suddenly returns as if from nowhere. It is headed directly at you.
-Choice.3a.4a Fight the squid with your spear gun, hoping to scare it off. /*pg 17*/
-Choice.3a.4b Signal Maray to pull you up at top speed, knowing you will get the bends. /*pg 18*/
+Choice.3a.4a Fight the squid with your spear gun, hoping to scare it off.
+Choice.3a.4b Signal Maray to pull you up at top speed, knowing you will get the bends.
 p3a  image vol2_images/vol2_picture2a.jpg
 
 Part.3b  Moving cautiously, you climb up the sides of the canyon hoping to reach the ocean floor. You leave the Seeker in the grips of the giant squid. Your plan is to signal for help with a dye marker that will float to the surface and make a bright yellow patch in the water. The crewmen above have been instructed to watch for such emergency signals. They will send help.\nOnce you reach the ledge above the canyon and feel slightly safer, you see the most feared of all sea creatures-a huge shark. It begins to circle towards you and you know that you are its target. You wonder whether you should fire your emergency propulsion charge that will send you rapidly to the surface. The shark is fast; he might catch you anyway. You also know that you will get the bends from the rapid rise to the surface.
-Choice.3b.4c Fire the special propulsion charge to get to the surface. /*pg 21*/
+Choice.3b.4c Fire the special propulsion charge to get to the surface.
 Choice.3b.4d Wait quietly hoping that the shark will go away. /*pg 19*/
 p3b  image vol2_images/vol2_picture3b.jpg
 
 Part.3c  Carefully, you maneuver the Seeker between the walls of the canyon.\nOn the floor of the canyon, you discover a large round hole out of which flow the large bubbles. The Seeker is equipped with scientific equipment to analyze the bubbles. It also has sonar equipment that can measure the depth of any hole.
-Choice.3c.4e Analyze the bubbles. /*pg 11*/
-Choice.3c.4f Take sonar readings. /*pg 15*/
+Choice.3c.4e Analyze the bubbles.
+Choice.3c.4f Take sonar readings.
 p3c  image vol2_images/vol2_picture2b.jpg
 
 Part.3d  You pilot the Seeker through the rounded entrance to the grotto. Once inside, your searchlight picks up what appear to be docks and piers along the grotto walls. The Seeker's searchlight is not very powerful. However, you do have a special laser light which would light up the grotto like daylight. Unfortunately, the laser light can only be used twice for very short periods before it must be recharged aboard the Maray, now more than 2,000 feet above you on the surface.
-Choice.3d.4g Use the laser light. /*pg 16*/
-Choice.3d.4h Cruise further into the grotto. /*pg 14*/
+Choice.3d.4g Use the laser light.
+Choice.3d.4h Cruise further into the grotto.
 p3d  image vol2_images/vol2_picture2b.jpg
 
-Part.4a /*pg 17*/ With a rush of water, the giant squid attacks you. Two 20 foot tentacles with their pulsing suction cups reach out trying to ensnare you. You dive off the platform and rapidly fire two of your spears. They strike the squid close to its two monstrous eyes. But the squid keeps on coming.\nOne of the tentacles wraps around your diving helmet and ruptures the seal to your suit. You fire your last spear hoping to hit the monster in a vulnerable spot. Water is beginning to trickle into your suit. You signal the Maray to haul you up fast-"Emergency Hoist." You must have hit the squid. It floats away writhing and thrashing. You think you're about to black out.\nYou wake up on the deck of the Maray and are quickly rushed to the decompression chambers to ward off the effect of the bends. In a few days you are better and start to worry about diving into the abyss again.
-Choice.4a.5a Quit the expedition now. /*pg 32*/
-Choice.4a.5b Go back down to the deep. /*pg 33*/
+Part.4a  With a rush of water, the giant squid attacks you. Two 20 foot tentacles with their pulsing suction cups reach out trying to ensnare you. You dive off the platform and rapidly fire two of your spears. They strike the squid close to its two monstrous eyes. But the squid keeps on coming.\nOne of the tentacles wraps around your diving helmet and ruptures the seal to your suit. You fire your last spear hoping to hit the monster in a vulnerable spot. Water is beginning to trickle into your suit. You signal the Maray to haul you up fast-"Emergency Hoist." You must have hit the squid. It floats away writhing and thrashing. You think you're about to black out.\nYou wake up on the deck of the Maray and are quickly rushed to the decompression chambers to ward off the effect of the bends. In a few days you are better and start to worry about diving into the abyss again.
+Choice.4a.5a Quit the expedition now.
+Choice.4a.5b Go back down to the deep.
+p4a  image vol2_images/vol2_picture1.jpg
 
 Part.4b /*pg 18*/ As they begin the rapid hauling, you lose your ability to function in the deep. You start to get dizzy and your arms and legs feel weak. You lose your hold on the platform and drift in the water exhausted. Then you see a dolphin heading toward you. You know that these marvelous mammals sometimes hep people in trouble. Will it help you?
 Choice.4b.5c Try to get help from the dolphin. /*pg 34*/
 Choice.4b.5d Carry on alone swimming to the surface. /*pg 37*/
+p4b  image vol2_images/vol2_picture1.jpg
 
 Part.4c /*pg 21*/ You fire the special propulsion charge and zoom upward through the water, frightening schools of fish as you go. You become dizzy and lose track of where you are. The world seems upside down. The shark is nowhere around, you hope. Then you break through to the surface floating about a half mile from the Maray.\nThe lookouts spot you in the water and quickly rescue you. Unfortunately, the rapid ascent has given you a bad case of the bends. It takes a long time to decompress. And when you are finally all right, the ship's doctor informs you that your underwater days are over. Someone else will have to find Atlantis.
 THE END
+p4c  image vol2_images/vol2_picture1.jpg
 
 Part.4d /*pg 19*/ You wait for the shark to go away. But then you notice other sharks coming to join in the hunt. They circle you, coming closer and faster each time. It is too late. There is no escape!
 THE END
+p4d  image vol2_images/vol2_picture1.jpg
 
 Part.4e /*pg 11*/ You squeeze into your sea suit and, outside the Seeker, you use special equipment to analyzer the bubbles. As you work, you clumsily knock against the valve that dumps the compressed air necessary to make the Seeker rise to the surface. There is nothing to be done about it; so you continue to analyzer the bubbles. They contain a high percentage of oxygen and no poisonous gases. Perhaps they are coming from some area below the sea where human-type beings can live and breathe. Perhaps they are coming from Atlantis./nYou wonder whether you should try the Seeker's drilling arm to enlarge the source of the bubbles so you can explore it with the Seeker. But you are also very worried about the Seeker's loss of rising capability. You might also be able to trap the bubbles and use them to raise the Seeker.
 Choice.4e.5e Try to collect the bubbles coming from the hole to fill the tanks of the Seeker /*pg 24*/
@@ -55,14 +59,17 @@ p4e  image vol2_images/vol2_picture2b.jpg
 Part.4f /*pg 15*/ You maneuver the Seeker next to the hole and begin to take sonar readings to determine the depth of the hole. To your amazement, the sonar readings indicate that the hole is extraordinarily deep-it might reach the center of the earth!\nWhat lies down there? Where are the bubbles coming from? Is Atlantis beneath you?\nThen you notice a disturbing reading on your instruments; a mild earthquake has occurred. The Seeker is not damaged, but the earthquake could set up a tsunami wave on the surface causing the Maray to leave for sager areas. It might be dangerous not to get back to the surface and leave with the Maray. On the other hand, you are perhaps on the verge of one of the world's greatest discoveries.
 Choice.4f.5g Descend into the hole. /*pg 23*/
 Choice.4f.5h Return to the surface. /*pg 27*/
+p4f  image vol2_images/vol2_picture1.jpg
 
 Part.4g /*pg 16*/ The beam from the laser light illuminates the entire grotto. Far back on the floor of the grotto is a submarine! Cautiously, you maneuver the Seeker closer. You identify it as the submarine that mysteriously disappeared in the Bermuda Triangle almost a year before. The Bermuda Triangle is more than 2000 miles away.\nThe submarine is apparently not damaged, but it is covered with a slimy algae. Beautiful fish swim around it as though it is their own special prize. Then you notice that the main hatch is free of algae!
 Choice.4g.5i Try to enter the submarine. /*pg 29*/
 Choice.4g.5j Cruise on through the grotto. /*pg 31*/
+p4g  image vol2_images/vol2_picture1.jpg
 
 Part.4h /*pg 14*/ You cruise silently into the grotto. Its roof seems to slope upward and you follow the slope. The depth finder shows that you are rising quite rapidly. Perhaps you will reach the surface and open air. Then the roof of the grotto stops sloping upward. Before you is a perfectly round metallic hatch made of a metal that you have never seen before. With the mechanical arm of the Seeker you try to open the hatch. It will not open. You begin to send radio signals at the door hoping to make contact on the other side.
 Choice.4h.5k Blow the hatch open with an explosive charge. /*pg 26*/
 Choice.4h.5l Continue transmitting radio communications through the hatch. /*pg 28*/
+p4h  image vol2_images/vol2_picture1.jpg
 
 Part.5a /*pg 32*/ With great sorrow, you decide that it is wisest to leave the expedition now. You can't risk returning to the great depths below. So, you reluctantly return to the United States.\nYou are invited to tell of your adventures on several major television shows. While on one such show, a special news flash announces to the world the discovery of Atlantis. You regret your decision, but you didn't really have a choice. Did you?
 THE END
