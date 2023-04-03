@@ -32,11 +32,29 @@ class Vol2ScrollingActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
         binding.toolbarLayout.title = title
 
+        getStory()
+        readStory()
+    }
+
+    // Retrieve the Story from assets
+    private fun getStory() {
+        val inStream = assets.open("vol2_journey_under_the_sea.txt")
+
+        // Read each line of the story
+        val bufferedReader = BufferedReader(InputStreamReader(inStream))
+        var line = bufferedReader.readLine()
+        while (line != null) {
+            storyLines.add(line)
+            line = bufferedReader.readLine()
+        }
+        bufferedReader.close()
+    }
+
+    private fun readStory() {
         val option1Btn: ImageButton = findViewById(R.id.option1)
         val option2Btn: ImageButton = findViewById(R.id.option2)
         val option3Btn: ImageButton = findViewById(R.id.option3)
 
-        getStory()
         displayChapter("Part.$currentPart$currentChoice")
 
         var choices = getNextChoices("$currentPart$currentChoice")
@@ -92,23 +110,6 @@ class Vol2ScrollingActivity : AppCompatActivity() {
             }
         }
         //nextPart = currentPart + 1
-    }
-
-    // Retrieve the Story from assets
-    private fun getStory() {
-        val inStream = assets.open("vol2_journey_under_the_sea.txt")
-
-        // Read each line of the story
-        val bufferedReader = BufferedReader(InputStreamReader(inStream))
-        var line = bufferedReader.readLine()
-        while (line != null) {
-            storyLines.add(line)
-            line = bufferedReader.readLine()
-        }
-        bufferedReader.close()
-    }
-
-    private fun readStory() {
 
     }
 
