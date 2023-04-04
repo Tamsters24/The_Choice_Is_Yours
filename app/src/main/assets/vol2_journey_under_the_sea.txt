@@ -38,28 +38,28 @@ Choice.4a.5a Quit the expedition now.
 Choice.4a.5b Go back down to the deep.
 p4a  image vol2_images/vol2_picture2a.jpg
 
-Part.4b /*pg 18*/ As they begin the rapid hauling, you lose your ability to function in the deep. You start to get dizzy and your arms and legs feel weak. You lose your hold on the platform and drift in the water exhausted. Then you see a dolphin heading toward you. You know that these marvelous mammals sometimes hep people in trouble. Will it help you?
-Choice.4b.5c Try to get help from the dolphin. /*pg 34*/
-Choice.4b.5d Carry on alone swimming to the surface. /*pg 37*/
-p4b  image vol2_images/vol2_picture1.jpg
+Part.4b  As they begin the rapid hauling, you lose your ability to function in the deep. You start to get dizzy and your arms and legs feel weak. You lose your hold on the platform and drift in the water exhausted. Then you see a dolphin heading toward you. You know that these marvelous mammals sometimes hep people in trouble. Will it help you?
+Choice.4b.5c Try to get help from the dolphin.
+Choice.4b.5d Carry on alone swimming to the surface.
+p4b  image vol2_images/vol2_picture2a.jpg
 
-Part.4c /*pg 21*/ You fire the special propulsion charge and zoom upward through the water, frightening schools of fish as you go. You become dizzy and lose track of where you are. The world seems upside down. The shark is nowhere around, you hope. Then you break through to the surface floating about a half mile from the Maray.\nThe lookouts spot you in the water and quickly rescue you. Unfortunately, the rapid ascent has given you a bad case of the bends. It takes a long time to decompress. And when you are finally all right, the ship's doctor informs you that your underwater days are over. Someone else will have to find Atlantis.
+Part.4c  You fire the special propulsion charge and zoom upward through the water, frightening schools of fish as you go. You become dizzy and lose track of where you are. The world seems upside down. The shark is nowhere around, you hope. Then you break through to the surface floating about a half mile from the Maray.\nThe lookouts spot you in the water and quickly rescue you. Unfortunately, the rapid ascent has given you a bad case of the bends. It takes a long time to decompress. And when you are finally all right, the ship's doctor informs you that your underwater days are over. Someone else will have to find Atlantis.
 THE END
-p4c  image vol2_images/vol2_picture1.jpg
+p4c  image vol2_images/vol2_picture4c.jpg
 
-Part.4d /*pg 19*/ You wait for the shark to go away. But then you notice other sharks coming to join in the hunt. They circle you, coming closer and faster each time. It is too late. There is no escape!
+Part.4d  You wait for the shark to go away. But then you notice other sharks coming to join in the hunt. They circle you, coming closer and faster each time. It is too late. There is no escape!
 THE END
-p4d  image vol2_images/vol2_picture1.jpg
+p4d  image vol2_images/vol2_picture4d.jpg
 
-Part.4e /*pg 11*/ You squeeze into your sea suit and, outside the Seeker, you use special equipment to analyzer the bubbles. As you work, you clumsily knock against the valve that dumps the compressed air necessary to make the Seeker rise to the surface. There is nothing to be done about it; so you continue to analyzer the bubbles. They contain a high percentage of oxygen and no poisonous gases. Perhaps they are coming from some area below the sea where human-type beings can live and breathe. Perhaps they are coming from Atlantis./nYou wonder whether you should try the Seeker's drilling arm to enlarge the source of the bubbles so you can explore it with the Seeker. But you are also very worried about the Seeker's loss of rising capability. You might also be able to trap the bubbles and use them to raise the Seeker.
-Choice.4e.5e Try to collect the bubbles coming from the hole to fill the tanks of the Seeker /*pg 24*/
-Choice.4e.5f Decide to drill. /*pg 22*/
+Part.4e  You squeeze into your sea suit and, outside the Seeker, you use special equipment to analyzer the bubbles. As you work, you clumsily knock against the valve that dumps the compressed air necessary to make the Seeker rise to the surface. There is nothing to be done about it; so you continue to analyzer the bubbles. They contain a high percentage of oxygen and no poisonous gases. Perhaps they are coming from some area below the sea where human-type beings can live and breathe. Perhaps they are coming from Atlantis.\nYou wonder whether you should try the Seeker's drilling arm to enlarge the source of the bubbles so you can explore it with the Seeker. But you are also very worried about the Seeker's loss of rising capability. You might also be able to trap the bubbles and use them to raise the Seeker.
+Choice.4e.5e Try to collect the bubbles coming from the hole to fill the tanks of the Seeker
+Choice.4e.5f Decide to drill.
 p4e  image vol2_images/vol2_picture2b.jpg
 
-Part.4f /*pg 15*/ You maneuver the Seeker next to the hole and begin to take sonar readings to determine the depth of the hole. To your amazement, the sonar readings indicate that the hole is extraordinarily deep-it might reach the center of the earth!\nWhat lies down there? Where are the bubbles coming from? Is Atlantis beneath you?\nThen you notice a disturbing reading on your instruments; a mild earthquake has occurred. The Seeker is not damaged, but the earthquake could set up a tsunami wave on the surface causing the Maray to leave for sager areas. It might be dangerous not to get back to the surface and leave with the Maray. On the other hand, you are perhaps on the verge of one of the world's greatest discoveries.
-Choice.4f.5g Descend into the hole. /*pg 23*/
-Choice.4f.5h Return to the surface. /*pg 27*/
-p4f  image vol2_images/vol2_picture1.jpg
+Part.4f  You maneuver the Seeker next to the hole and begin to take sonar readings to determine the depth of the hole. To your amazement, the sonar readings indicate that the hole is extraordinarily deep-it might reach the center of the earth!\nWhat lies down there? Where are the bubbles coming from? Is Atlantis beneath you?\nThen you notice a disturbing reading on your instruments; a mild earthquake has occurred. The Seeker is not damaged, but the earthquake could set up a tsunami wave on the surface causing the Maray to leave for sager areas. It might be dangerous not to get back to the surface and leave with the Maray. On the other hand, you are perhaps on the verge of one of the world's greatest discoveries.
+Choice.4f.5g Descend into the hole.
+Choice.4f.5h Return to the surface.
+p4f  image vol2_images/vol2_picture2b.jpg
 
 Part.4g  The beam from the laser light illuminates the entire grotto. Far back on the floor of the grotto is a submarine! Cautiously, you maneuver the Seeker closer. You identify it as the submarine that mysteriously disappeared in the Bermuda Triangle almost a year before. The Bermuda Triangle is more than 2000 miles away.\nThe submarine is apparently not damaged, but it is covered with a slimy algae. Beautiful fish swim around it as though it is their own special prize. Then you notice that the main hatch is free of algae!
 Choice.4g.5i Try to enter the submarine.
