@@ -28,32 +28,5 @@
     <include
             android:id="@+id/storyLayout"
             layout="@layout/content_scrolling"/>
-    <ImageButton
-            android:id="@+id/option1"
-            app:srcCompat="@drawable/ic_twotone_looks_one_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            app:layout_anchor="@id/storyLayout"
-            app:layout_anchorGravity="bottom|start"
-            android:padding="5dp"/>
-    <ImageButton
-            android:id="@+id/option3"
-            app:srcCompat="@drawable/ic_twotone_play_arrow_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            app:layout_anchor="@id/storyLayout"
-            app:layout_anchorGravity="bottom|center"
-            android:padding="5dp"/>
-    <ImageButton
-            android:id="@+id/option2"
-            app:srcCompat="@drawable/ic_twotone_looks_two_24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/fab_margin"
-            app:layout_anchor="@id/storyLayout"
-            app:layout_anchorGravity="bottom|end"
-            android:padding="5dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -69,7 +69,7 @@ class BookScrollingActivity : AppCompatActivity() {
 
         currentPart += 1
 
-        Toast.makeText(baseContext, "End of readStory()", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(baseContext, "End of readStory()", Toast.LENGTH_SHORT).show()
     }
 
     // Display image for current chapter
@@ -78,6 +78,11 @@ class BookScrollingActivity : AppCompatActivity() {
         val image = Drawable.createFromStream(imageInputStream, null)
         val partImage = findViewById<ImageView>(R.id.pageImage)
         partImage.setImageDrawable(image)
+
+        // Size image according to its dimensions
+        //val bitmap = BitmapFactory.decodeResource(resources, R.drawable.my_image)
+
+
         //partImage.layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT
         //partImage.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
     }
@@ -120,7 +125,7 @@ class BookScrollingActivity : AppCompatActivity() {
 
         // Display text
         val chapterDisplay = findViewById<TextView>(R.id.chapterContents)
-        val storyPage = "$storyChapter\n\n$option1\n\n$option2\n\n\n\n\n"
+        val storyPage = "$storyChapter\n\n$option1\n\n$option2"
         chapterDisplay.text = storyPage
     }
 
@@ -146,7 +151,7 @@ class BookScrollingActivity : AppCompatActivity() {
         when (choiceList.size) {
             1 -> {  // Occurs when there's no choice, which is either THE END
                 // of the current story or to continue to a pre-designated chapter
-                Toast.makeText(baseContext, "No Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(baseContext, "No Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
                 // Hide left and right option buttons
                 option1Btn.visibility = View.GONE
                 option2Btn.visibility = View.GONE
@@ -170,7 +175,7 @@ class BookScrollingActivity : AppCompatActivity() {
             }
             2 -> {  // The default occurrence. There are 2 choices for the reader
                 // Click choice and increment to next Chapter tier
-                Toast.makeText(baseContext, "Two Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(baseContext, "Two Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
 
                 // Hide center option button
                 option3Btn.visibility = View.GONE
@@ -182,20 +187,9 @@ class BookScrollingActivity : AppCompatActivity() {
                 }
 
                 // Right button
-                if (choiceList[1] == "THE END") {
-                    displayTheEnd()
-                    theEnd = true
-                    Toast.makeText(baseContext, "Click to try a different path", Toast.LENGTH_LONG).show()
-                    option2Btn.setOnClickListener {
-                        val theEndToBookCoverIntent = Intent(this, BookCover::class.java)
-                        startActivity(theEndToBookCoverIntent)
-                    }
-                }
-                else {
-                    option2Btn.setOnClickListener {
+                option2Btn.setOnClickListener {
                         currentChoice = choiceList[1]
                         readStory()
-                    }
                 }
             }
             3 -> {
@@ -288,11 +282,11 @@ class BookScrollingActivity : AppCompatActivity() {
             "8t" -> listOf("THE END")
 
             "9a" -> listOf("THE END")
-            "9b" -> listOf("a", "THE END")
-            "9c" -> listOf("b", "c")
-            "9d" -> listOf("d", "e")
+            "9b" -> listOf("a", "b")
+            "9c" -> listOf("c", "d")
+            "9d" -> listOf("e", "f")
             "9e" -> listOf("THE END")
-            "9f" -> listOf("f", "g")
+            "9f" -> listOf("g", "h")
             "9g" -> listOf("THE END")
             "9h" -> listOf("THE END")
             "9i" -> listOf("THE END")
@@ -309,6 +303,7 @@ class BookScrollingActivity : AppCompatActivity() {
             "10e" -> listOf("THE END")
             "10f" -> listOf("THE END")
             "10g" -> listOf("THE END")
+            "10h" -> listOf("THE END")
 
             else -> emptyList()
         }
