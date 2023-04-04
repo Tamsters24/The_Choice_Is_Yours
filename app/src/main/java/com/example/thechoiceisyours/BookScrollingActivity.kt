@@ -98,7 +98,13 @@ class BookScrollingActivity : AppCompatActivity() {
         val nextChoices = getNextChoices("$currentPart$currentChoice")
 
         // If the chapter is not THE END, display choices.
-        if (nextChoices[0] != "THE END") {
+        if (nextChoices[0] == "THE END") {
+            option1 = ""
+            option2 = "THE END"
+        } else if (nextChoices[0].length == 2) {
+            option1 = ""
+            option2 = "Click to proceed"
+        } else {
             // Choice A text
             var choice1Filter = "Choice.$currentPart$currentChoice.$nextPart"
             choice1Filter += nextChoices[0]
@@ -114,9 +120,6 @@ class BookScrollingActivity : AppCompatActivity() {
             option2 = filteredOption2[0]
             option2 = option2.substring(13)
             option2 = "Choice 2: $option2"
-        } else {    //
-            option1 = ""
-            option2 = "THE END"
         }
 
         // Display text
@@ -133,25 +136,26 @@ class BookScrollingActivity : AppCompatActivity() {
         when (choiceList.size) {
             1 -> {  // Occurs when there's no choice, which is either THE END
                 // of the current story or to continue to a pre-designated chapter
-                //Toast.makeText(baseContext, "No Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
-                // Hide left and right option buttons
+                Toast.makeText(baseContext, "No Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
+                // Hide left and right option buttons, display center option button
                 option1Btn.visibility = View.GONE
                 option2Btn.visibility = View.GONE
                 option3Btn.visibility = View.VISIBLE
 
+                displayChapter("Part.$currentPart$currentChoice")
+
                 if (choiceList[0] == "THE END") {   // Display last chapter, prompt to try different path,
-                                                    // and return to cover page
-                    displayChapter("Part.$currentPart$currentChoice")
                     theEnd = true
                     Toast.makeText(baseContext, "Click to try a different path", Toast.LENGTH_LONG).show()
                     option3Btn.setOnClickListener {
                         val theEndToBookCoverIntent = Intent(this, BookCover::class.java)
                         startActivity(theEndToBookCoverIntent)
                     }
-                } else {  // Click on option button 3 to continue to next chapter
-                    val gotoChoice = choiceList[0]
+                } else {  // Click on option button 3 to continue to assigned chapter
+                    currentPart = choiceList[0][0].toInt()          // reassign currentPart
+                    currentChoice = choiceList[0][1].toString()     // reassign currentChoice
                     option3Btn.setOnClickListener {
-                        displayChapter("Part.$gotoChoice")
+                        readStory()
                     }
                 }
             }
@@ -170,8 +174,8 @@ class BookScrollingActivity : AppCompatActivity() {
 
                 // Right button
                 option2Btn.setOnClickListener {
-                        currentChoice = choiceList[1]
-                        readStory()
+                    currentChoice = choiceList[1]
+                    readStory()
                 }
             }
             3 -> {

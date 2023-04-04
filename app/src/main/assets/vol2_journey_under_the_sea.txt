@@ -186,7 +186,7 @@ Choice.7a.8b Try to turn back.
 p7a  image vol2_images/vol2_picture2a.jpg
 
 Part.7b  You face the fact that it is too dangerous to dive into a deep hole that might lead to the center of the earth. It is better judgment to return to the surface and work out a plan of action.\nYou give one last look at the opening, check the Seeker's instruments and head up to the surface. Finally the Seeker breaks through into fresh air and sunlight and you wait to be picked up by the Maray.
-/* to Part.5a */
+TO PART 5a
 p7b  image vol2_images/vol2_picture7b.jpg
 
 Part.7c /*pg 55*/ The three people lead you into an enormous cavern. In the center of the cavern is a huge, silver-colored machine. It is shaped like a long tube with several round panels attached to one end.\nThey lead you inside. It is the most advanced control room that you have ever seen. Computers, sensing device, recording devices, monitors, and a host of dials and panels fills the room. A strangely shaped figure with a very large head and totally blank eyes faces you.\n"So, now you are in the control room of Atlantis. You see our secret. We landed on this planet 3000 years ago We used our anti-matter device to sink this continent beneath the sea so we could escape from your people. You can have a most pleasant and useful life here with us if you wish. All you need to do is allow us to inject you with a special serum to enable you to live down here. It is up to you. On the other hand, if you do not wish to be one of us, you will be held prisoner."
