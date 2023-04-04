@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context=".Vol2ScrollingActivity">
+        tools:context=".BookScrollingActivity">
     <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/app_bar"
             android:theme="@style/Theme.TheChoiceIsYours.AppBarOverlay"
@@ -22,17 +22,12 @@
                 android:layout_height="match_parent"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed"
                 app:contentScrim="?attr/colorPrimary">
-            <ImageView
-                    android:id="@+id/pageImage"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
             android:id="@+id/storyLayout"
             layout="@layout/content_scrolling"/>
-
     <ImageButton
             android:id="@+id/option1"
             app:srcCompat="@drawable/ic_twotone_looks_one_24"

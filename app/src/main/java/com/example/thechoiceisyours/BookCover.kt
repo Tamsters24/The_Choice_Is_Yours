@@ -4,7 +4,6 @@ import android.content.Intent
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import java.io.InputStream
@@ -17,7 +16,7 @@ class BookCover : AppCompatActivity() {
         // Button
         // Navigate to Vol 2 Activity: activity_vol2_scrolling.xml & Vol2ScrollingActivity.kt
         findViewById<Button>(R.id.startBookBtn).setOnClickListener {
-            val bookCoverToVol2Intent = Intent(this, Vol2ScrollingActivity::class.java)
+            val bookCoverToVol2Intent = Intent(this, BookScrollingActivity::class.java)
             startActivity(bookCoverToVol2Intent)
         }
 

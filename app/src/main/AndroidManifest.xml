@@ -13,7 +13,7 @@
                 android:name=".BookCover"
                 android:exported="true"/>
         <activity
-                android:name=".Vol2ScrollingActivity"
+                android:name=".BookScrollingActivity"
                 android:exported="true"
                 android:label="@string/title_activity_vol2_scrolling"
                 android:theme="@style/Theme.TheChoiceIsYours.NoActionBar"/>

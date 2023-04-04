@@ -4,16 +4,28 @@
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_vol2_scrolling"
+        tools:showIn="@layout/activity_book_scrolling"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Vol2ScrollingActivity">
-    <TextView
-            android:id="@+id/chapterContents"
-            android:layout_width="wrap_content"
+        tools:context=".BookScrollingActivity">
+
+    <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="410dp"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            android:text=""
-            android:textSize="20sp"/>
+            android:orientation="vertical">
+        <ImageView
+                android:id="@+id/pageImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/text_margin"/>
+        <TextView
+                android:id="@+id/chapterContents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text=""
+                android:textSize="20sp"/>
+    </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
