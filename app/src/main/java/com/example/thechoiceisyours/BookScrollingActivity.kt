@@ -79,10 +79,6 @@ class BookScrollingActivity : AppCompatActivity() {
         val partImage = findViewById<ImageView>(R.id.pageImage)
         partImage.setImageDrawable(image)
 
-        // Size image according to its dimensions
-        //val bitmap = BitmapFactory.decodeResource(resources, R.drawable.my_image)
-
-
         //partImage.layoutParams.width = ViewGroup.LayoutParams.MATCH_PARENT
         //partImage.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
     }
@@ -93,7 +89,7 @@ class BookScrollingActivity : AppCompatActivity() {
         val filteredChapter = storyLines.filter { it.contains(chapter) }
         var storyChapter = filteredChapter[0]
         storyChapter = storyChapter.substring(9)
-        storyChapter = storyChapter.replace("\\n", "\n\t\t")
+        storyChapter = storyChapter.replace("\\n", "\n\t\t\t")
 
         // Choice dialog
         var option1: String
@@ -127,20 +123,6 @@ class BookScrollingActivity : AppCompatActivity() {
         val chapterDisplay = findViewById<TextView>(R.id.chapterContents)
         val storyPage = "$storyChapter\n\n$option1\n\n$option2"
         chapterDisplay.text = storyPage
-    }
-
-    private fun displayTheEnd() {
-        val theEndDisplay = findViewById<TextView>(R.id.chapterContents)
-        val theEndPage = "THE END"
-        theEndDisplay.text = theEndPage
-
-        theEnd = true
-        Toast.makeText(baseContext, "Click to try a different path", Toast.LENGTH_LONG).show()
-        val option3Btn: ImageButton = findViewById(R.id.option3)
-        option3Btn.setOnClickListener {
-            val theEndToBookCoverIntent = Intent(this, BookCover::class.java)
-            startActivity(theEndToBookCoverIntent)
-        }
     }
 
     private fun displayButtons(choiceList: List<String>) {
