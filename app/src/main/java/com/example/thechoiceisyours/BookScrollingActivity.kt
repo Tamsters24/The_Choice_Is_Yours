@@ -136,7 +136,7 @@ class BookScrollingActivity : AppCompatActivity() {
         when (choiceList.size) {
             1 -> {  // Occurs when there's no choice, which is either THE END
                 // of the current story or to continue to a pre-designated chapter
-                Toast.makeText(baseContext, "No Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(baseContext, "No Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
                 // Hide left and right option buttons, display center option button
                 option1Btn.visibility = View.GONE
                 option2Btn.visibility = View.GONE
@@ -152,18 +152,27 @@ class BookScrollingActivity : AppCompatActivity() {
                         startActivity(theEndToBookCoverIntent)
                     }
                 } else {  // Click on option button 3 to continue to assigned chapter
-                    currentPart = choiceList[0][0].toInt()          // reassign currentPart
-                    currentChoice = choiceList[0][1].toString()     // reassign currentChoice
+                    val listValue = choiceList[0]   // For part 7b, Kotlin is returning an Int value of `53` instead of `5`
+                    Toast.makeText(baseContext, "choiceList[0] $listValue", Toast.LENGTH_LONG).show()
+
+                    currentPart = listValue.takeWhile { it.isDigit() }.toIntOrNull()!!
+                    currentChoice = listValue[1].toString()     // reassign currentChoice
+
+                    Toast.makeText(baseContext, "Checking Integer $currentPart", Toast.LENGTH_LONG).show()
+                    //currentPart = listValue[0].toInt()         // reassign currentPart
+                    //currentPart = currentPart.div(10)
+                    currentPart -= 1                            // Decrement chapter for the next display read
+                    //currentChoice = listValue[1].toString()     // reassign currentChoice
+                    Toast.makeText(baseContext, "Next display: Current part $currentPart, Current choice $currentChoice", Toast.LENGTH_LONG).show()
                     option3Btn.setOnClickListener {
                         readStory()
                     }
                 }
             }
             2 -> {  // The default occurrence. There are 2 choices for the reader
-                // Click choice and increment to next Chapter tier
-                //Toast.makeText(baseContext, "Two Choices for $currentPart$currentChoice", Toast.LENGTH_SHORT).show()
-
-                // Hide center option button
+                // Hide center option button, display left and right option buttons
+                option1Btn.visibility = View.VISIBLE
+                option2Btn.visibility = View.VISIBLE
                 option3Btn.visibility = View.GONE
 
                 // Left button
