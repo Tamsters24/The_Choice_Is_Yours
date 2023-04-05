@@ -10,6 +10,9 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.TheChoiceIsYours">
         <activity
+                android:name=".StoryProgression"
+                android:exported="true"/>
+        <activity
                 android:name=".BookCover"
                 android:exported="true"/>
         <activity
