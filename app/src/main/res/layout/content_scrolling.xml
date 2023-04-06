@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.core.widget.NestedScrollView
-        android:id="@+id/scrollContent"
+        android:id="@+id/nestedScrollContent"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -24,7 +24,8 @@
                 android:layout_below="@+id/pageImage"
                 android:layout_margin="@dimen/text_margin"
                 android:text=""
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:typeface="serif"/>
         <ImageButton
                 android:id="@+id/option1"
                 app:srcCompat="@drawable/ic_twotone_looks_one_24"

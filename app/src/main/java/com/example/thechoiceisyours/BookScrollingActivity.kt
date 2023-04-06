@@ -1,18 +1,26 @@
 package com.example.thechoiceisyours
 
 import android.content.Intent
+import android.graphics.Typeface
 import android.graphics.drawable.Drawable
+import android.os.Build
 import android.os.Bundle
+import android.text.Layout
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.style.StyleSpan
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.NestedScrollView
 import com.example.thechoiceisyours.databinding.ActivityBookScrollingBinding
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
+import java.util.regex.Pattern
 
 class BookScrollingActivity : AppCompatActivity() {
     private val storyLines = mutableListOf<String>()
@@ -122,8 +130,84 @@ class BookScrollingActivity : AppCompatActivity() {
 
         // Display text
         val chapterDisplay = findViewById<TextView>(R.id.chapterContents)
-        val storyPage = "$storyChapter\n\n$option1\n\n$option2"
+        val storyPage = SpannableString("$storyChapter\n\n$option1\n\n$option2")
+
+        // Italicize all strings "Seeker"
+        /*val seekerPattern = Pattern.compile("Seeker")
+        val seekerMatcher = seekerPattern.matcher(storyChapter)
+        while (seekerMatcher.find()) {
+            val seekerStringStart = seekerMatcher.start()
+            val seekerStringEnd = seekerMatcher.end()
+            storyPage.setSpan(
+                StyleSpan(Typeface.ITALIC), seekerStringStart, seekerStringEnd,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+        }*/
+
+        // Italicize all strings "Maray"
+        /*val marayPattern = Pattern.compile("Maray")
+        val marayMatcher = marayPattern.matcher(storyChapter)
+        while (marayMatcher.find()) {
+            val marayStringStart = marayMatcher.start()
+            val marayStringEnd = marayMatcher.end()
+            storyPage.setSpan(
+                StyleSpan(Typeface.ITALIC), marayStringStart, marayStringEnd,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+        }*/
+
+        // Italicize option1 line if there are 2 choices
+        if (option1 != "") {
+            val option1StartIndex = storyPage.indexOf(option1)
+            val option1EndIndex = option1StartIndex + option1.length
+            val option1Choice1EndIndex = option1StartIndex + "Choice 1:".length
+            val option1LineStartIndex = option1Choice1EndIndex + 1
+            storyPage.setSpan(
+                StyleSpan(Typeface.BOLD_ITALIC), option1StartIndex, option1Choice1EndIndex,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+            storyPage.setSpan(
+                StyleSpan(Typeface.ITALIC), option1LineStartIndex, option1EndIndex,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+        }
+
+
+        // Italicize option2 line if there are 2 choices
+        if (option2 != "THE END" && option2 != "Click to proceed") {
+            val option2StartIndex = storyPage.indexOf(option2)
+            val option2EndIndex = option2StartIndex + option2.length
+            val option2Choice2EndIndex = option2StartIndex + "Choice 2:".length
+            val option2LineStartIndex = option2Choice2EndIndex + 1
+            storyPage.setSpan(
+                StyleSpan(Typeface.BOLD_ITALIC), option2StartIndex, option2Choice2EndIndex,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+            storyPage.setSpan(
+                StyleSpan(Typeface.ITALIC), option2LineStartIndex, option2EndIndex,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+        }
+        // Boldface option2 line if it is "THE END" or "Click to proceed"
+        else {
+            val option2StartIndex = storyPage.indexOf(option2)
+            val option2EndIndex = option2StartIndex + option2.length
+            storyPage.setSpan(
+                StyleSpan(Typeface.BOLD), option2StartIndex, option2EndIndex,
+                Spannable.SPAN_EXCLUSIVE_EXCLUSIVE
+            )
+        }
+
         chapterDisplay.text = storyPage
+
+        // Justify the TextView
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            chapterDisplay.justificationMode = Layout.JUSTIFICATION_MODE_INTER_WORD
+        }
+
+        // Scroll back to the top of the screen
+        val storyView = findViewById<NestedScrollView>(R.id.storyLayout)
+        storyView.smoothScrollTo(0,5,1500)
     }
 
     private fun displayButtons(choiceList: List<String>) {
