@@ -5,7 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".StoryProgression" android:orientation="vertical">
+        tools:context=".StoryProgression">
 
     <TableLayout
             android:layout_width="match_parent"
@@ -13,32 +13,100 @@
 
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
-                    android:text="Part 1"
+                    android:id="@+id/p1"
+                    android:text="@string/part1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView"
                     android:textSize="20sp"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
-                    android:text="Part 2"
+                    android:id="@+id/p2a"
+                    android:text="@string/part2a"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/textView2"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p2b"
+                    android:text="@string/part2b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:textSize="20sp"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
-                    android:text="TextView"
+                    android:id="@+id/p3a"
+                    android:text="@string/part3a"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/textView3"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p3b"
+                    android:text="@string/part3b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p3c"
+                    android:text="@string/part3c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p3d"
+                    android:text="@string/part3d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:textSize="20sp"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
             <TextView
-                    android:text="TextView"
+                    android:id="@+id/p4a"
+                    android:text="@string/part4a"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" android:id="@+id/textView4"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p4b"
+                    android:text="@string/part4b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p4c"
+                    android:text="@string/part4c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p4d"
+                    android:text="@string/part4d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p4e"
+                    android:text="@string/part4e"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p4f"
+                    android:text="@string/part4f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p4g"
+                    android:text="@string/part4g"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"/>
+            <TextView
+                    android:id="@+id/p4h"
+                    android:text="@string/part4h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:textSize="20sp"/>
         </TableRow>
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
