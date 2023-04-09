@@ -1,24 +1,32 @@
 package com.example.thechoiceisyours;
 
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import org.graphstream.algorithm.generator.DorogovtsevMendesGenerator;
 import org.graphstream.graph.Graph;
-import org.graphstream.graph.implementations.MultiGraph;
+import org.graphstream.graph.Node;
+import org.graphstream.graph.implementations.SingleGraph;
 import org.graphstream.ui.android_viewer.util.DefaultFragment;
 import org.graphstream.ui.view.ViewerListener;
 import org.graphstream.ui.view.ViewerPipe;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
 public class StoryProgression extends FragmentActivity implements ViewerListener {
     private static final int CONTENT_VIEW_ID = 10101010;
-    private DefaultFragment fragment ;
-    private Graph graph ;
+    private DefaultFragment fragment;
+    private Graph graph;
+    public static int nodeCount = 0;
     protected boolean loop = true;
 
-    DorogovtsevMendesGenerator generator ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,10 +35,36 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         setContentView(frame, new FrameLayout.LayoutParams(
                 FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
 
-        graph = new MultiGraph("Layout Test");
+        graph = new SingleGraph("TestGraph");
         graph.setAttribute("ui.antialias");
 
-        generator = new DorogovtsevMendesGenerator();
+        try {
+            // Load the text file from the assets directory
+            AssetManager assetManager = getAssets();
+            InputStream inputStream = assetManager.open("vol2Tree.txt");
+
+            // Parse the text file to create the graph
+            Scanner fileScanner = new Scanner(inputStream);
+            int numNodes = Integer.parseInt(fileScanner.nextLine());
+            int numEdges = Integer.parseInt(fileScanner.nextLine());
+
+            addVertices(numNodes);
+
+            while (fileScanner.hasNextLine()) {
+                String vertices = fileScanner.nextLine();
+                if (vertices.equals(""))
+                    continue;   // 5compsG.txt does not have any edges
+                String[] connection = vertices.split(" ");
+                String vertex1 = connection[0];
+                String vertex2 = connection[1];
+                connectVertices(vertex1, vertex2);
+                numEdges++;
+            }
+            fileScanner.close();
+            inputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         display(savedInstanceState, graph, true);
     }
@@ -54,16 +88,17 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "shape: circle;" +
                 "size: 48,48;" +
                 "fill-mode: gradient-vertical;" +
-                "fill-color: white, rgb(200,200,200);" +
+                "fill-color: red;" +
                 "stroke-mode: plain;" +
-                "stroke-color: rgba(255,255,0,255);" +
+                "stroke-color: gray;" +
                 "stroke-width: 9px;" +
                 "shadow-mode: plain;" +
                 "shadow-width: 0px;" +
                 "shadow-offset: 15px, -15px;" +
                 "shadow-color: rgba(0,0,0,100);" +
-                "text-visibility-mode: zoom-range;" +
-                "text-visibility: 0, 0.9;" +
+                //"text-visibility-mode: zoom-range;" +
+                "text-size: 20px;" +
+                //"text-visibility: 0, 0.9;" +
                 "}" +
                 "node:clicked {" +
                 "stroke-mode: plain;" +
@@ -91,18 +126,6 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "}";
         graph.setAttribute("ui.stylesheet", styleSheet);
 
-        generator.addSink( graph );
-        generator.setDirectedEdges( true, true );
-        generator.begin();
-        int i = 0;
-        while ( i < 100 ) {
-            generator.nextEvents();
-            i += 1;
-        }
-        generator.end();
-
-        graph.forEach( n -> n.setAttribute( "ui.label", "truc" ));
-
         new Thread( () ->  {
             while (loop) {
                 try {
@@ -115,6 +138,32 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
             System.exit(0);
         }).start();
+    }
+
+    public void addVertices(int numberNodes) throws IOException {
+        AssetManager assetManager = getAssets();
+        InputStream inputStream = assetManager.open("vol2NodeNames.txt");
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+        String[] nodeNames = new String[numberNodes];
+        // Parse the text file to create the graph
+        String line;
+        for (int i = 0; i < numberNodes; i++) {
+            graph.addNode(String.valueOf(i));
+            line = bufferedReader.readLine();
+            nodeNames[i] = line;
+        }
+        int name = 0;
+        for (Node n : graph) {
+            n.setAttribute("ui.label", String.valueOf(nodeNames[name]));
+            name++;
+            nodeCount++;
+        }
+    }
+
+    public void connectVertices(String vertex1, String vertex2) {
+        String edgeID = vertex1 + vertex2;
+        graph.addEdge(edgeID, vertex1, vertex2);
     }
 
     public void display(Bundle savedInstanceState, Graph graph, boolean autoLayout) {
