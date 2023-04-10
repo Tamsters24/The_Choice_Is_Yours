@@ -20,7 +20,6 @@ import com.example.thechoiceisyours.databinding.ActivityBookScrollingBinding
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
-import java.util.regex.Pattern
 
 class BookScrollingActivity : AppCompatActivity() {
     private val storyLines = mutableListOf<String>()
@@ -45,7 +44,7 @@ class BookScrollingActivity : AppCompatActivity() {
 
     // Retrieve the Story from assets
     private fun getStory() {
-        val inStream = assets.open("vol2_journey_under_the_sea.txt")
+        val inStream = assets.open("vol2_files/vol2_journey_under_the_sea.txt")
 
         // Read each line of the story
         val bufferedReader = BufferedReader(InputStreamReader(inStream))

@@ -3,7 +3,7 @@ package com.example.thechoiceisyours
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,17 +11,24 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Button
-        // Navigate to Vol 1 Cover Activity: activity_book_cover.xml & BookCover.kt
-        findViewById<ImageButton>(R.id.vol1).setOnClickListener {
-            val mainToBook1CoverIntent = Intent(this, StoryProgression::class.java)
-            startActivity(mainToBook1CoverIntent)
+        // Navigate to StoryVolChoice Activity: activity_story_vol_choice.xml & StoryVolChoice.kt
+        findViewById<Button>(R.id.mainToStoryChoice_btn).setOnClickListener {
+            val mainToStoryChoiceIntent = Intent(this, StoryVolChoice::class.java)
+            startActivity(mainToStoryChoiceIntent)
         }
 
         // Button
-        // Navigate to Vol 2 Cover Activity: activity_book_cover.xml & BookCover.kt
-        findViewById<ImageButton>(R.id.vol2).setOnClickListener {
-            val mainToBookCoverIntent = Intent(this, BookCover::class.java)
-            startActivity(mainToBookCoverIntent)
+        // Navigate to Login Activity: activity_user_login.xml & UserLogin.kt
+        findViewById<Button>(R.id.login_btn).setOnClickListener {
+            val mainToLoginIntent = Intent(this, UserLogin::class.java)
+            startActivity(mainToLoginIntent)
+        }
+
+        // Button
+        // Navigate to Registration Activity: activity_user_registration.xml & UserRegistration.kt
+        findViewById<Button>(R.id.registration_btn).setOnClickListener {
+            val mainToRegistrationIntent = Intent(this, UserLogin::class.java)
+            startActivity(mainToRegistrationIntent)
         }
     }
 }

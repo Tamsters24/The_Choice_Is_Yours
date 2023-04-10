@@ -1,7 +1,10 @@
 package com.example.thechoiceisyours;
 
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
@@ -30,35 +33,54 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Set up View for GraphStream
         FrameLayout frame = new FrameLayout(this);
         frame.setId(CONTENT_VIEW_ID);
-        setContentView(frame, new FrameLayout.LayoutParams(
+        setContentView(frame, new FrameLayout.LayoutParams( // For GraphStream View
                 FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
 
+        // Add a button to return to previous screen
+        Button button = new Button(this);
+        button.setBackgroundResource(R.drawable.rounded_button);
+        //button.setBackgroundColor(getResources().getColor(R.color.brown_tan));
+        button.setPadding(25, 25, 25, 25);
+        button.setText(getText(R.string.story_progress_btn));
+        button.setTextColor(getResources().getColor(R.color.white));
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams( // For Button
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+        params.setMargins(50, 50, 50, 50);
+
+        frame.addView(button, params);      // Add button to the view
+
+        button.setOnClickListener(v -> {    // Button Functionality
+            Intent storyProgressionToBookCoverIntent = new Intent(String.valueOf(BookCover.class));
+            startActivity(storyProgressionToBookCoverIntent);
+        });
+
+        // Generate Graph
         graph = new SingleGraph("TestGraph");
         graph.setAttribute("ui.antialias");
 
         try {
-            // Load the text file from the assets directory
+            // Load the story tree from the assets directory
             AssetManager assetManager = getAssets();
-            InputStream inputStream = assetManager.open("vol2Tree.txt");
+            InputStream inputStream = assetManager.open("vol2_files/vol2Tree.txt");
 
-            // Parse the text file to create the graph
+            // Read the text file to create the graph
             Scanner fileScanner = new Scanner(inputStream);
             int numNodes = Integer.parseInt(fileScanner.nextLine());
-            int numEdges = Integer.parseInt(fileScanner.nextLine());
 
-            addVertices(numNodes);
+            addVertices(numNodes);  // See method below
 
             while (fileScanner.hasNextLine()) {
                 String vertices = fileScanner.nextLine();
                 if (vertices.equals(""))
-                    continue;   // 5compsG.txt does not have any edges
+                    continue;   // In case the vertex does not have any edges
                 String[] connection = vertices.split(" ");
                 String vertex1 = connection[0];
                 String vertex2 = connection[1];
-                connectVertices(vertex1, vertex2);
-                numEdges++;
+                connectVertices(vertex1, vertex2);  // See method below
             }
             fileScanner.close();
             inputStream.close();
@@ -69,9 +91,9 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         display(savedInstanceState, graph, true);
     }
 
-    /**
-     * In onStart, the AndroidViewer is already created
-     */
+    // Refer to: https://github.com/caturananta/AndroidGraphView
+    // From post: https://stackoverflow.com/questions/66806508/graphstream-android-not-able-to-display-graph-in-fragment
+    /** In onStart, the AndroidViewer is already created */
     @Override
     protected void onStart() {
         super.onStart();
@@ -88,7 +110,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "shape: circle;" +
                 "size: 48,48;" +
                 "fill-mode: gradient-vertical;" +
-                "fill-color: red;" +
+                "fill-color: gray;" +
                 "stroke-mode: plain;" +
                 "stroke-color: gray;" +
                 "stroke-width: 9px;" +
@@ -139,20 +161,26 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
             System.exit(0);
         }).start();
     }
+    /** End of https://github.com/caturananta/AndroidGraphView */
 
     public void addVertices(int numberNodes) throws IOException {
+        // For Vertex/Node label, determine the Node ID from a NodeNames.txt asset
+        // Open asset file
         AssetManager assetManager = getAssets();
-        InputStream inputStream = assetManager.open("vol2NodeNames.txt");
+        InputStream inputStream = assetManager.open("vol2_files/vol2NodeNames.txt");
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        // Retain the node IDs in an array
         String[] nodeNames = new String[numberNodes];
-        // Parse the text file to create the graph
         String line;
         for (int i = 0; i < numberNodes; i++) {
             graph.addNode(String.valueOf(i));
             line = bufferedReader.readLine();
             nodeNames[i] = line;
         }
+
+        // Set the ID label attribute for the nodes from the ID array
         int name = 0;
         for (Node n : graph) {
             n.setAttribute("ui.label", String.valueOf(nodeNames[name]));
@@ -166,6 +194,8 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         graph.addEdge(edgeID, vertex1, vertex2);
     }
 
+    // Refer to GraphStream's GitHub ReadMe:
+    /** https://github.com/graphstream/gs-ui-android */
     public void display(Bundle savedInstanceState, Graph graph, boolean autoLayout) {
         if (savedInstanceState == null) {
             FragmentManager fm = getSupportFragmentManager();
@@ -182,6 +212,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
             ft.add(CONTENT_VIEW_ID, fragment).commit();
         }
     }
+    /* End of https://github.com/graphstream/gs-ui-android */
 
     public void buttonPushed(String id) {
     }

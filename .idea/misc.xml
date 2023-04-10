@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/drawable-v24/edittext_box.xml" value="0.2703125" />
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/drawable/edittext_box.xml" value="0.2703125" />
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/drawable/ic_twotone_arrow_circle_left_24.xml" value="0.2703125" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/drawable/ic_twotone_looks_one_24.xml" value="0.2703125" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/drawable/ic_twotone_looks_two_24.xml" value="0.2703125" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/drawable/ic_twotone_play_arrow_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/drawable/rounded_button.xml" value="0.2703125" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout-w1240dp/content_scrolling.xml" value="0.16331994645247658" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout-w936dp/content_scrolling.xml" value="0.17144808743169399" />
-        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_book_cover.xml" value="0.22735507246376813" />
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_book_cover.xml" value="0.1" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_book_scrolling.xml" value="0.1" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_story_progression.xml" value="0.1" />
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_story_progression.xml" value="0.2" />
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_story_vol_choice.xml" value="0.2418478260869565" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_tree_node.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_user_login.xml" value="0.14945652173913043" />
+        <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_user_registration.xml" value="0.14945652173913043" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/activity_vol2_scrolling.xml" value="0.17959183673469387" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/content_scrolling.xml" value="0.1" />
         <entry key="..\:/Users/coppe/Desktop/EOU Computer Science/2023/CS 401 Capstone/The Choice Is Yours/app/src/main/res/layout/layout_fragment.xml" value="0.11775362318840579" />

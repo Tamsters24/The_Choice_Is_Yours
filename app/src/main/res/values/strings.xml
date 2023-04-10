@@ -1,306 +1,269 @@
 <resources>
     <string name="app_name">The Choice Is Yours</string>
     <string name="title_screen">The Choice Is Yours</string>
-    <string name="cover_screen_btn">Click Here To Proceed</string>
+    <string name="cover_to_library_btn">Click here to access your library</string>
+    <string name="cover_login_btn">Need to Login?</string>
+    <string name="cover_register_btn">Need to Register?</string>
+    <string name="story_progress_btn">Click Here To Return</string>
 
     <string name="title_activity_vol2_scrolling"> </string>
 
-    <string name="part1">Part 1</string>
-    <string name="part2a">Part 2a</string>
-    <string name="part2b">Part 2b</string>
-    <string name="part3a">Part 3a</string>
-    <string name="part3b">Part 3b</string>
-    <string name="part3c">Part 3c</string>
-    <string name="part3d">Part 3d</string>
-    <string name="part4a">Part 4a</string>
-    <string name="part4b">Part 4b</string>
-    <string name="part4c">Part 4c</string>
-    <string name="part4d">Part 4d</string>
-    <string name="part4e">Part 4e</string>
-    <string name="part4f">Part 4f</string>
-    <string name="part4g">Part 4g</string>
-    <string name="part4h">Part 4h</string>
-    <string name="part5a">Part 5a</string>
-    <string name="part5b">Part 5b</string>
-    <string name="part5c">Part 5c</string>
-    <string name="part5d">Part 5d</string>
-    <string name="part5e">Part 5e</string>
-    <string name="part5f">Part 5f</string>
-    <string name="part5g">Part 5g</string>
-    <string name="part5h">Part 5h</string>
-    <string name="part5i">Part 5i</string>
-    <string name="part5j">Part 5j</string>
-    <string name="part5k">Part 5k</string>
-    <string name="part5l">Part 5l</string>
-    <string name="part6a">Part 6a</string>
-    <string name="part6b">Part 6b</string>
-    <string name="part6c">Part 6c</string>
-    <string name="part6d">Part 6d</string>
-    <string name="part6e">Part 6e</string>
-    <string name="part6f">Part 6f</string>
-    <string name="part6g">Part 6g</string>
-    <string name="part6h">Part 6h</string>
-    <string name="part6i">Part 6i</string>
-    <string name="part6j">Part 6j</string>
-    <string name="part6k">Part 6k</string>
-    <string name="part6l">Part 6l</string>
-    <string name="part7a">Part 7a</string>
-    <string name="part7b">Part 7b</string>
-    <string name="part7c">Part 7c</string>
-    <string name="part7d">Part 7d</string>
-    <string name="part7e">Part 7e</string>
-    <string name="part7f">Part 7f</string>
-    <string name="part7g">Part 7g</string>
-    <string name="part7h">Part 7h</string>
-    <string name="part7i">Part 7i</string>
-    <string name="part7j">Part 7j</string>
-    <string name="part7k">Part 7k</string>
-    <string name="part7l">Part 7l</string>
-    <string name="part7m">Part 7m</string>
-    <string name="part7n">Part 7n</string>
-    <string name="part8a">Part 8a</string>
-    <string name="part8b">Part 8b</string>
-    <string name="part8c">Part 8c</string>
-    <string name="part8d">Part 8d</string>
-    <string name="part8e">Part 8e</string>
-    <string name="part8f">Part 8f</string>
-    <string name="part8g">Part 8g</string>
-    <string name="part8h">Part 8h</string>
-    <string name="part8i">Part 8i</string>
-    <string name="part8j">Part 8j</string>
-    <string name="part8k">Part 8k</string>
-    <string name="part8l">Part 8l</string>
-    <string name="part8m">Part 8m</string>
-    <string name="part8n">Part 8n</string>
-    <string name="part8o">Part 8o</string>
-    <string name="part8p">Part 8p</string>
-    <string name="part8q">Part 8q</string>
-    <string name="part8r">Part 8r</string>
-    <string name="part8s">Part 8s</string>
-    <string name="part8t">Part 8t</string>
-    <string name="part9a">Part 9a</string>
-    <string name="part9b">Part 9b</string>
-    <string name="part9c">Part 9c</string>
-    <string name="part9d">Part 9d</string>
-    <string name="part9e">Part 9e</string>
-    <string name="part9f">Part 9f</string>
-    <string name="part9g">Part 9g</string>
-    <string name="part9h">Part 9h</string>
-    <string name="part9i">Part 9i</string>
-    <string name="part9j">Part 9j</string>
-    <string name="part9k">Part 9k</string>
-    <string name="part9l">Part 9l</string>
-    <string name="part9m">Part 9m</string>
-    <string name="part9n">Part 9n</string>
-    <string name="part10a">Part 10a</string>
-    <string name="part10b">Part 10b</string>
-    <string name="part10c">Part 10c</string>
-    <string name="part10d">Part 10d</string>
-    <string name="part10e">Part 10e</string>
-    <string name="part10f">Part 10f</string>
-    <string name="part10g">Part 10g</string>
-    <string name="part10h">Part 10h</string>
+    <string name="vol1_title">Vol 1: The Cave of Time</string>
+    <string name="vol2_title">Vol 2: Journey Under the Sea</string>
+    <string name="vol3_title">Vol 3: By Balloon to the Sahara</string>
+    <string name="vol4_title">Vol 4: Space and Beyond</string>
+
+    <string name="cover_screen_btn">Click Here To Proceed</string>
+    <string name="check_progress_btn">Check Your Story Progress</string>
+
+    <string name="prompt_email">email address</string>
+    <string name="prompt_password">password</string>
+    <string name="action_sign_in">register here</string>
+    <string name="action_forgot_pwd">forgot password</string>
+    <string name="submit_btn">LOGIN</string>
 
     <string name="story_path1">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5a</string>
+        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5a
+    </string>
     <string name="story_path2">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9a</string>
+        -> Part 6a -> Part 7a -> Part 8a -> Part 9a
+    </string>
     <string name="story_path3">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10a</string>
+        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10a
+    </string>
     <string name="story_path4">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10b</string>
+        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10b
+    </string>
     <string name="story_path5">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8b</string>
+        -> Part 6a -> Part 7a -> Part 8b
+    </string>
     <string name="story_path6">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7b -> Part 5a</string>
+        -> Part 6a -> Part 7b -> Part 5a
+    </string>
     <string name="story_path7">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8o </string>
+        -> Part 6i -> Part 7i -> Part8o
+    </string>
     <string name="story_path8">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8p -> Part 9k </string>
+        -> Part 6i -> Part 7i -> Part8p -> Part 9k
+    </string>
     <string name="story_path9">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8p -> Part 9l </string>
+        -> Part 6i -> Part 7i -> Part8p -> Part 9l
+    </string>
     <string name="story_path10">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8q -> Part 9m</string>
+        -> Part 6i -> Part 7j -> Part8q -> Part 9m
+    </string>
     <string name="story_path11">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8q -> Part 9n</string>
+        -> Part 6i -> Part 7j -> Part8q -> Part 9n
+    </string>
     <string name="story_path12">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8r</string>
+        -> Part 6i -> Part 7j -> Part8r
+    </string>
 
 
     <string name="story_path13">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part7l</string>
+        -> Part 6j -> Part 7k -> Part7l
+    </string>
     <string name="story_path14">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part8s</string>
+        -> Part 6j -> Part 7k -> Part8s
+    </string>
     <string name="story_path15">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part8t</string>
+        -> Part 6j -> Part 7k -> Part8t
+    </string>
     <string name="story_path16">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5j</string>
+        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5j
+    </string>
     <string name="story_path17">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5k</string>
+        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5k
+    </string>
     <string name="story_path18">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7m</string>
+        -> Part 6k -> Part 7m
+    </string>
     <string name="story_path19">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7n</string>
-
+        -> Part 6k -> Part 7n
+    </string>
 
 
     <string name="story_path20_loop">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5a</string>
+        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5a
+    </string>
     <string name="story_path21">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9a</string>
+        -> Part 6a -> Part 7a -> Part 8a -> Part 9a
+    </string>
     <string name="story_path22">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10a</string>
+        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10a
+    </string>
     <string name="story_path23">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10b</string>
+        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10b
+    </string>
     <string name="story_path24">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8b</string>
+        -> Part 6a -> Part 7a -> Part 8b
+    </string>
     <string name="story_path25">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7b -> Part 5a</string>
+        -> Part 6a -> Part 7b -> Part 5a
+    </string>
     <string name="story_path26">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8o </string>
+        -> Part 6i -> Part 7i -> Part8o
+    </string>
     <string name="story_path27">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8p -> Part 9k </string>
+        -> Part 6i -> Part 7i -> Part8p -> Part 9k
+    </string>
     <string name="story_path28">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8p -> Part 9l </string>
+        -> Part 6i -> Part 7i -> Part8p -> Part 9l
+    </string>
     <string name="story_path29">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8q -> Part 9m</string>
+        -> Part 6i -> Part 7j -> Part8q -> Part 9m
+    </string>
     <string name="story_path30">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8q -> Part 9n</string>
+        -> Part 6i -> Part 7j -> Part8q -> Part 9n
+    </string>
     <string name="story_path31">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8r</string>
+        -> Part 6i -> Part 7j -> Part8r
+    </string>
     <string name="story_path32">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part7l</string>
+        -> Part 6j -> Part 7k -> Part7l
+    </string>
     <string name="story_path33">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part8s</string>
+        -> Part 6j -> Part 7k -> Part8s
+    </string>
     <string name="story_path34">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part8t</string>
+        -> Part 6j -> Part 7k -> Part8t
+    </string>
     <string name="story_path35">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5j</string>
+        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5j
+    </string>
     <string name="story_path36">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5k</string>
+        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5k
+    </string>
     <string name="story_path37">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7m</string>
+        -> Part 6k -> Part 7m
+    </string>
     <string name="story_path38">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7n</string>
+        -> Part 6k -> Part 7n
+    </string>
     <string name="story_path39">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7n</string>
+        -> Part 6k -> Part 7n
+    </string>
     <string name="story_path40_the_infinite_loop">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
         -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
         -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l</string>
+        -> Part 6l
+    </string>
 
 
     <string name="story_path41">
-        Part 1 -> Part 2a -> Part 3b -> Part 4c</string>
+        Part 1 -> Part 2a -> Part 3b -> Part 4c
+    </string>
     <string name="story_path42">
-        Part 1 -> Part 2a -> Part 3a -> Part 4d</string>
+        Part 1 -> Part 2a -> Part 3a -> Part 4d
+    </string>
 
 
     <string name="story_path43">
         Part 1 -> Part 2b -> Part 3c -> Part 4e -> Part 5e
-        Part 2a -> Part 3a -> Part 4a -> Part 5a</string>
+        Part 2a -> Part 3a -> Part 4a -> Part 5a
+    </string>
 
 
     <string name="action_settings">Settings</string>
