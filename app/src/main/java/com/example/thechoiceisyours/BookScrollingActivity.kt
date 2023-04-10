@@ -27,7 +27,7 @@ class BookScrollingActivity : AppCompatActivity() {
     private var currentChoice = "a"
     private var theEnd = false
     private var assetsDirectory = ""
-    //private var choiceMap = mutableMapOf<String, List<String>>()
+    private var choiceMap = mutableMapOf<String, List<String>>()
 
     private lateinit var binding: ActivityBookScrollingBinding
 
@@ -42,7 +42,7 @@ class BookScrollingActivity : AppCompatActivity() {
 
         // Retrieve Book Contents using the Extra put in BookCover.kt
         val bookAssets = intent.getStringExtra("assetsFolder").toString()
-        // Concatenate name for directory and book content .txt file
+        // Concatenate name for direct43ory and book content .txt file
         assetsDirectory = bookAssets + "_files/"
         val bookFile = bookAssets + "_contents.txt"
         val nextChoicesFile = bookAssets + "_nextChoices.txt"
@@ -50,7 +50,7 @@ class BookScrollingActivity : AppCompatActivity() {
         val nextChoicesContents = assetsDirectory + nextChoicesFile
 
         getStory(bookContents)
-        //choiceMap = setChoiceMap(nextChoicesContents)
+        choiceMap = setChoiceMap(nextChoicesContents)
         storyDisplay()
     }
 
@@ -288,131 +288,22 @@ class BookScrollingActivity : AppCompatActivity() {
 
     private fun setChoiceMap(nextChoicesFile: String): MutableMap<String, List<String>> {
         val choiceMapSet = mutableMapOf<String, List<String>>()
-        //Toast.makeText(baseContext, "Inside setChoiceMap", Toast.LENGTH_SHORT).show()
-        //Toast.makeText(baseContext, "Choice File $nextChoicesFile", Toast.LENGTH_LONG).show()
         val inputStream: InputStream = assets.open(nextChoicesFile)
         val nextChoiceReader = BufferedReader(InputStreamReader(inputStream))
-        val choiceLines = nextChoiceReader.readLine()
+        var choiceLines = nextChoiceReader.readLine()
 
         while (choiceLines != null) {
             val chapterParts = choiceLines.split(" ")
             val key = chapterParts[0]
-            val values = chapterParts.subList(1,chapterParts.size - 1)
-            choiceMapSet.put(key, values)
+            val values = chapterParts.subList(1,chapterParts.size)
+            choiceMapSet[key] = values
+            choiceLines = nextChoiceReader.readLine()
         }
         nextChoiceReader.close()
         return choiceMapSet
     }
 
     private fun getNextChoices(currentChoice: String): List<String> {
-        //return choiceMap[currentChoice] ?: emptyList()
-        return when (currentChoice) {
-            "1a" -> listOf("a", "b")
-
-            "2a" -> listOf("a", "b")
-            "2b" -> listOf("c", "d")
-
-            "3a" -> listOf("a", "b")
-            "3b" -> listOf("c", "d")
-            "3c" -> listOf("e", "f")
-            "3d" -> listOf("g", "h")
-
-            "4a" -> listOf("a", "b")
-            "4b" -> listOf("c", "d")
-            "4c" -> listOf("END")
-            "4d" -> listOf("END")
-            "4e" -> listOf("e", "f")
-            "4f" -> listOf("g", "h")
-            "4g" -> listOf("i", "j")
-            "4h" -> listOf("k", "l")
-
-            "5a" -> listOf("END")
-            "5b" -> listOf("a", "b")
-            "5c" -> listOf("c", "d")
-            "5d" -> listOf("END")
-            "5e" -> listOf("2a")
-            "5f" -> listOf("e", "f")
-            "5g" -> listOf("END")
-            "5h" -> listOf("g", "h")
-            "5i" -> listOf("i", "j")
-            "5j" -> listOf("END")
-            "5k" -> listOf("END")
-            "5l" -> listOf("k", "l")
-
-            "6a" -> listOf("a", "b")
-            "6b" -> listOf("6c")
-            "6c" -> listOf("3d")
-            "6d" -> listOf("END")
-            "6e" -> listOf("c", "d")
-            "6f" -> listOf("e", "f")
-            "6g" -> listOf("g", "h")
-            "6h" -> listOf("END")
-            "6i" -> listOf("i", "j")
-            "6j" -> listOf("k", "l")
-            "6k" -> listOf("m", "n")
-            "6l" -> listOf("2a")
-
-            "7a" -> listOf("a", "b")
-            "7b" -> listOf("5a")
-            "7c" -> listOf("c", "d")
-            "7d" -> listOf("e", "f")
-            "7e" -> listOf("g", "h")
-            "7f" -> listOf("i", "j")
-            "7g" -> listOf("k", "l")
-            "7h" -> listOf("m", "n")
-            "7i" -> listOf("o", "p")
-            "7j" -> listOf("q", "r")
-            "7k" -> listOf("7l", "8t", "8u")
-            "7l" -> listOf("END")
-            "7m" -> listOf("END")
-            "7n" -> listOf("END")
-
-            "8a" -> listOf("a", "b")
-            "8b" -> listOf("END")
-            "8c" -> listOf("c", "d")
-            "8d" -> listOf("END")
-            "8e" -> listOf("e", "f")
-            "8f" -> listOf("END")
-            "8g" -> listOf("2a")
-            "8h" -> listOf("END")
-            "8i" -> listOf("g", "h")
-            "8j" -> listOf("i", "j")
-            "8k" -> listOf("END")
-            "8l" -> listOf("END")
-            "8m" -> listOf("END")
-            "8n" -> listOf("7e")
-            "8o" -> listOf("END")
-            "8p" -> listOf("k", "l")
-            "8q" -> listOf("m", "n")
-            "8r" -> listOf("END")
-            "8s" -> listOf("END")
-            "8t" -> listOf("END")
-
-            "9a" -> listOf("END")
-            "9b" -> listOf("a", "b")
-            "9c" -> listOf("c", "d")
-            "9d" -> listOf("e", "f")
-            "9e" -> listOf("END")
-            "9f" -> listOf("g", "h")
-            "9g" -> listOf("END")
-            "9h" -> listOf("END")
-            "9i" -> listOf("END")
-            "9j" -> listOf("7c")
-            "9k" -> listOf("END")
-            "9l" -> listOf("END")
-            "9m" -> listOf("END")
-            "9n" -> listOf("END")
-
-            "10a" -> listOf("END")
-            "10b" -> listOf("END")
-            "10c" -> listOf("END")
-            "10d" -> listOf("END")
-            "10e" -> listOf("END")
-            "10f" -> listOf("END")
-            "10g" -> listOf("END")
-            "10h" -> listOf("END")
-
-            else -> emptyList()
-        }
+        return choiceMap[currentChoice] ?: emptyList()
     }
 }
