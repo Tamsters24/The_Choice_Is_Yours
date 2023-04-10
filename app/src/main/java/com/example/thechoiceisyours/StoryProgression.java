@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import androidx.fragment.app.FragmentActivity;
@@ -33,6 +34,14 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Retrieve Story Tree using the Extra put in BookCover.kt
+        String bookAssets = getIntent().getStringExtra("assetsFolder");
+        // Concatenate name for directory and book cover .jpg file
+        String assetsDirectory = bookAssets + "_files/";
+        String storyTree = bookAssets + "Tree.txt";
+        String storyNodes = bookAssets + "NodeNames.txt";
+
         // Set up View for GraphStream
         FrameLayout frame = new FrameLayout(this);
         frame.setId(CONTENT_VIEW_ID);
@@ -53,25 +62,29 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
         frame.addView(button, params);      // Add button to the view
 
-        button.setOnClickListener(v -> {    // Button Functionality
-            Intent storyProgressionToBookCoverIntent = new Intent(String.valueOf(BookCover.class));
-            startActivity(storyProgressionToBookCoverIntent);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent storyProgressionToBookCoverIntent = new Intent(getApplicationContext(), BookCover.class);
+                storyProgressionToBookCoverIntent.putExtra("assetsFolder", bookAssets);
+                startActivity(storyProgressionToBookCoverIntent);
+            }
         });
 
         // Generate Graph
-        graph = new SingleGraph("TestGraph");
+        graph = new SingleGraph("StoryGraph");
         graph.setAttribute("ui.antialias");
 
         try {
             // Load the story tree from the assets directory
             AssetManager assetManager = getAssets();
-            InputStream inputStream = assetManager.open("vol2_files/vol2Tree.txt");
+            InputStream inputStream = assetManager.open(assetsDirectory + storyTree);
 
             // Read the text file to create the graph
             Scanner fileScanner = new Scanner(inputStream);
             int numNodes = Integer.parseInt(fileScanner.nextLine());
 
-            addVertices(numNodes);  // See method below
+            addVertices(numNodes, assetsDirectory + storyNodes);  // See method below
 
             while (fileScanner.hasNextLine()) {
                 String vertices = fileScanner.nextLine();
@@ -163,11 +176,11 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     }
     /** End of https://github.com/caturananta/AndroidGraphView */
 
-    public void addVertices(int numberNodes) throws IOException {
+    public void addVertices(int numberNodes, String nodeFile) throws IOException {
         // For Vertex/Node label, determine the Node ID from a NodeNames.txt asset
         // Open asset file
         AssetManager assetManager = getAssets();
-        InputStream inputStream = assetManager.open("vol2_files/vol2NodeNames.txt");
+        InputStream inputStream = assetManager.open(nodeFile);
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 

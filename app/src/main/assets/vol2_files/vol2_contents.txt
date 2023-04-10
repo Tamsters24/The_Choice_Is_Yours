@@ -1,17 +1,17 @@
 Part.1a  You are an underwater explorer. You are leaving to explore the deepest oceans. You must find the lost city of Atlantis. This is your most challenging assignment.\nIt is morning and the sun pushes up on the horizon. The sea is calm. You climb into the narrow pilot's compartment of the underwater vessel Seeker with your special gear. The crew of the research vessel Maray screws down the hatch clamps. Now begins the plunge into the depths of the ocean. The Seeker crew begins lowering by a strong, but thin cable. Within minutes, you are so deep in the ocean that little light filters down to you. The silence is eerie as the Seeker slips deeper and deeper. You peer out the thick glass porthole and see fish drifting past, sometimes stopping to look at you--an intruder from another world.\nNow the cable attaching you to Maray is extended almost to its limit. You have come to rest on a ledge near the canyon in the ocean floor that supposedly leads to the lost city of Atlantis.\nYou have a special sea suit that will protect you from the intense pressure of the deep if you choose to walk about on the sea bottom. You can cut loose from the cable if you wish because the Seeker is self-propelled. You are now in another world.
 Choice.1a.2a Explore the ledge where the Seeker has come to rest.
 Choice.1a.2b Cut loose from the Maray and dive with the Seeker into the canyon in the ocean floor.
-p1a  image vol2_images/vol2_picture1.jpg
+p1a  image vol2_files/vol2_picture1.jpg
 
 Part.2a  Your sea suit will protect you from the intense pressures of the deep. It is a tight fit and takes you some time to put it on. Finally, you slip from the airlock of the Seeker and stand on the ocean floor. It is a strange and marvelous world where your every move is slowed down. You begin to explore with your special hand-held searchlight. You examine the ledge by the canyon.\nSuddenly, a school of bright yellow angel fish dart by, almost brushing you. What made them move so fast? Are they being chased?\nThen you see it. The Seeker is in the grips of a huge sea monster. It is similar to a squid, but it is enormous. The Seeker is just a toy in its long powerful tentacles. You seek shelter behind a rock formation. You know the spear gun you carry will be useless against this monster. It looks as though it will destroy the Seeker. Fish of all sizes huddle with you in an attempt to escape the monster.
 Choice.2a.3a Stay hidden close to the Seeker.
 Choice.2a.3b Try to escape in the hope that rescuers will see you.
-p2a  image vol2_images/vol2_picture2a.jpg
+p2a  image vol2_files/vol2_picture2a.jpg
 
 Part.2b  You radio a status report to the Maray and tell them that you are going to cast off from the line and descend under your own power. Your plan is approved and you cast off your line. Now you are on your own. The Seeker slips noiselessly into the undersea canyon.\nAs you drop into the canyon, you turn on the Seeker's powerful searchlight. Straight ahead is a dark wall covered with a strange type of barnacle growth. To the left (port) side you see what appears to be a grotto. The entrance is perfectly round, as if it had been cut by human hands.\nLantern fish give off a pale, greenish light. To the right (starboard) side of the Seeker you see bubbles rising steadily from the floor of the canyon.
 Choice.2b.3c Investigate the bubbles.
 Choice.2b.3d Investigate the grotto with the round entrance.
-p2b  image vol2_images/vol2_picture2b.jpg
+p2b  image vol2_files/vol2_picture2b.jpg
 
 Part.3a  The giant squid tosses and turns the Seeker, but finally the creature grows tired of its new game and jets off with an enormous squirt of water. You now are free to leave your hiding place and examine the Seeker for damage.\nTo your dismay, the airlock entrance has been jammed shut. You are locked out of the Seeker. The crew of the Maray, however, suspected trouble when you did not respond to a routine radio check and they are now lowering an escape platform to you. Once on the platform, you radio them to start the slow pull to the surface. To avoid the bends--rapid expansion of nitrogen bubbles in your blood--they will have to bring you up very slowly.\nJust as the platform begins to move, the giant squid suddenly returns as if from nowhere. It is headed directly at you.
 Choice.3a.4a Fight the squid with your spear gun, hoping to scare it off.
@@ -20,7 +20,7 @@ Choice.3a.4b Signal Maray to pull you up at top speed, knowing you will get the 
 Part.3b  Moving cautiously, you climb up the sides of the canyon hoping to reach the ocean floor. You leave the Seeker in the grips of the giant squid. Your plan is to signal for help with a dye marker that will float to the surface and make a bright yellow patch in the water. The crewmen above have been instructed to watch for such emergency signals. They will send help.\nOnce you reach the ledge above the canyon and feel slightly safer, you see the most feared of all sea creatures-a huge shark. It begins to circle towards you and you know that you are its target. You wonder whether you should fire your emergency propulsion charge that will send you rapidly to the surface. The shark is fast; he might catch you anyway. You also know that you will get the bends from the rapid rise to the surface.
 Choice.3b.4c Fire the special propulsion charge to get to the surface.
 Choice.3b.4d Wait quietly hoping that the shark will go away.
-p3b  image vol2_images/vol2_picture3b.jpg
+p3b  image vol2_files/vol2_picture3b.jpg
 
 Part.3c  Carefully, you maneuver the Seeker between the walls of the canyon.\nOn the floor of the canyon, you discover a large round hole out of which flow the large bubbles. The Seeker is equipped with scientific equipment to analyze the bubbles. It also has sonar equipment that can measure the depth of any hole.
 Choice.3c.4e Analyze the bubbles.
@@ -40,11 +40,11 @@ Choice.4b.5d Carry on alone swimming to the surface.
 
 Part.4c  You fire the special propulsion charge and zoom upward through the water, frightening schools of fish as you go. You become dizzy and lose track of where you are. The world seems upside down. The shark is nowhere around, you hope. Then you break through to the surface floating about a half mile from the Maray.\nThe lookouts spot you in the water and quickly rescue you. Unfortunately, the rapid ascent has given you a bad case of the bends. It takes a long time to decompress. And when you are finally all right, the ship's doctor informs you that your underwater days are over. Someone else will have to find Atlantis.
 THE END
-p4c  image vol2_images/vol2_picture4c.jpg
+p4c  image vol2_files/vol2_picture4c.jpg
 
 Part.4d  You wait for the shark to go away. But then you notice other sharks coming to join in the hunt. They circle you, coming closer and faster each time. It is too late. There is no escape!
 THE END
-p4d  image vol2_images/vol2_picture4d.jpg
+p4d  image vol2_files/vol2_picture4d.jpg
 
 Part.4e  You squeeze into your sea suit and, outside the Seeker, you use special equipment to analyzer the bubbles. As you work, you clumsily knock against the valve that dumps the compressed air necessary to make the Seeker rise to the surface. There is nothing to be done about it; so you continue to analyzer the bubbles. They contain a high percentage of oxygen and no poisonous gases. Perhaps they are coming from some area below the sea where human-type beings can live and breathe. Perhaps they are coming from Atlantis.\nYou wonder whether you should try the Seeker's drilling arm to enlarge the source of the bubbles so you can explore it with the Seeker. But you are also very worried about the Seeker's loss of rising capability. You might also be able to trap the bubbles and use them to raise the Seeker.
 Choice.4e.5e Try to collect the bubbles coming from the hole to fill the tanks of the Seeker
@@ -61,7 +61,7 @@ Choice.4g.5j Decide to cruise on through the grotto.
 Part.4h  You cruise silently into the grotto. Its roof seems to slope upward and you follow the slope. The depth finder shows that you are rising quite rapidly. Perhaps you will reach the surface and open air. Then the roof of the grotto stops sloping upward. Before you is a perfectly round metallic hatch made of a metal that you have never seen before. With the mechanical arm of the Seeker you try to open the hatch. It will not open. You begin to send radio signals at the door hoping to make contact on the other side.
 Choice.4h.5k Blow the hatch open with an explosive charge.
 Choice.4h.5l Continue transmitting radio communications through the hatch.
-p4h  image vol2_images/vol2_picture4h.jpg
+p4h  image vol2_files/vol2_picture4h.jpg
 
 Part.5a  With great sorrow, you decide that it is wisest to leave the expedition now. You can't risk returning to the great depths below. So, you reluctantly return to the United States.\nYou are invited to tell of your adventures on several major television shows. While on one such show, a special news flash announces to the world the discovery of Atlantis. You regret your decision, but you didn't really have a choice. Did you?
 THE END
@@ -76,11 +76,11 @@ Choice.5c.6d Give up the expedition.
 
 Part.5d  The dolphin might help you and might not. You decide to chance it alone. So, up you head, swimming towards the surface. The dolphin follows for some time, and then swims off. You rest for awhile about 300 feet below the surface before your final ascent.\nThen a large fish-ugly, lumpy, puffed up, and covered with black and white markings swims towards you. Its bulging eyes fasten on you. It is a big-mouthed grouper, a fish which does not bother to bite its victims, but simply swallows them whole.\nIt looks as though you are its next meal.
 THE END
-p5d  image vol2_images/vol2_picture5d.jpg
+p5d  image vol2_files/vol2_picture5d.jpg
 
 Part.5e  You are able to capture the bubbling gases and fill the tanks of the Seeker, enough to allow it to rise. Slowly, the Seeker rises out of the canyon, scattering schools of brightly colored fish, and brushing past underwater plants that wave like palm trees in a wind. Just as you reach the ledge at the top of the canyon, you see what appears to be an old road! Rocks along its side seem to be guard rails. Could this be a path that leads to the lost city of Atlantis? You anchor the Seeker and prepare to investigate more closely.
 TO PART 2a
-p5e  image vol2_images/vol2_picture5e.jpg
+p5e  image vol2_files/vol2_picture5e.jpg
 
 Part.5f  As you begin to drill, the stream of bubbles increases.\nThe stream of bubbles is strong enough now to ruffle the surface of the sea. You could try to surface now and locate the exact position of the bubble area. Then you could make plans with the scientists aboard the Maray about what to do next. But also, you could simply explore the bubbles now! There is great risk in entering the hole, but it could lead to the source of the bubbles and maybe to Atlantis.
 Choice.5d.6e Explore.
@@ -116,7 +116,7 @@ TO PART 6c
 
 Part.6c  Again the Seeker is lowered over the side of the Maray and slips into the ocean. Fish swim by peering cautiously at you in your metal shell. The sunlight fades as you descend into the abyss.\nYou are headed for the giant canyon below that might lead to Atlantis. When you reach the canyon you switch on the Seeker's searchlight. Immediately you spot the round hole that appears to be made by intelligent beings. Perhaps it leads to Atlantis.
 TO PART 3d
-p6c  image vol2_images/vol2_picture6c.jpg
+p6c  image vol2_files/vol2_picture6c.jpg
 
 Part.6d  A helicopter is sent to pick you up and return you to an air base for a flight back to the United States. Newspaper reports indicate that the search for Atlantis has been given up. Several months later, however, a group of scientists get in touch with you because they believe that Atlantis can be found. They have put together another expedition and want you to join it. You are tempted. Adventure into the unknown is what you like.
 THE END
@@ -157,7 +157,7 @@ Choice.7a.8b Try to turn back.
 
 Part.7b  You face the fact that it is too dangerous to dive into a deep hole that might lead to the center of the earth. It is better judgment to return to the surface and work out a plan of action.\nYou give one last look at the opening, check the Seeker's instruments and head up to the surface. Finally the Seeker breaks through into fresh air and sunlight and you wait to be picked up by the Maray.
 TO PART 5a
-p7b  image vol2_images/vol2_picture7b.jpg
+p7b  image vol2_files/vol2_picture7b.jpg
 
 Part.7c  The three people lead you into an enormous cavern. In the center of the cavern is a huge, silver-colored machine. It is shaped like a long tube with several round panels attached to one end.\nThey lead you inside. It is the most advanced control room that you have ever seen. Computers, sensing device, recording devices, monitors, and a host of dials and panels fills the room. A strangely shaped figure with a very large head and totally blank eyes faces you.\n"So, now you are in the control room of Atlantis. You see our secret. We landed on this planet 3000 years ago We used our anti-matter device to sink this continent beneath the sea so we could escape from your people. You can have a most pleasant and useful life here with us if you wish. All you need to do is allow us to inject you with a special serum to enable you to live down here. It is up to you. On the other hand, if you do not wish to be one of us, you will be held prisoner."
 Choice.7c.8c Submit to the injection.
@@ -258,7 +258,7 @@ THE END
 Part.8p  Advisor to a mean king? Not a chance! You tell him that you want nothing to do with a tyrant who doesn't believe in people. You tell him to his face that the people are unhappy and angry. He laughs and tells you to go back to them if you wish. He warns you that the people are complainers, not workers.\nOnce back with your new friends, you discuss how to overthrow the king and his henchmen. You hold secret meetings and work out a plan. But on the day of the overthrow, someone discovers a leak in the volcano wall of the underwater world. The entire civilization is in danger. All thoughts of revolt are forgotten. The Atlanteans must stop the sea from crashing in on them. Everyone works for a common purpose. Survival is the goal.
 Choice.8p.9k Work with them in this time of disaster.
 Choice.8p.9l Take advantage of this emergency to escape.
-p8p  image vol2_images/vol2_picture8p.jpg
+p8p  image vol2_files/vol2_picture8p.jpg
 
 Part.8q  You do not wish to lead a revolt but the people need you. You organize the play, and the king is pleased to have his people involved in a project that keeps them busy and happy. The people can't wait for the day when they can put the king in prison and make their own decisions.\nThe night of the play, the theater is filled, and everyone waits for the king to appear. But there is a delay. The crowd grows nervous. Then a messenger from the king runs into the theater and announces that the king has had a serious attack of brain fever. He may not live.\nYou wonder whether the king is really ill or whether he has found out about the plot against him. The people are confused and do not know what to do. They turn to you and you tell them to go on with the play. Just then, a squad of the king's soldiers enter the theater. They are headed for you.
 Choice.8q.9m Allow them to capture you.
@@ -309,22 +309,22 @@ TO PART 7c
 
 Part.9k  Years ago the Atlanteans had worked out emergency procedures, but most people had forgotten them. One old person remembers where the emergency instructions and equipment were kept.\nYou and the Atlanteans work without stop for 72 hours pumping out the flooding waters and building a special retaining wall around the volcanic crack. Finally the last pump is shut off. You are all exhausted, but you've won in your battle against the sea.
 THE END
-p9k  image vol2_images/vol2_picture9k.jpg
+p9k  image vol2_files/vol2_picture9k.jpg
 
 Part.9l  With everyone worried about the sea crashing in, no one will notice you if you try to escape. You run down a long, little-used corridor that leads to the sea. The exit door is heavy and rusty from not being used. You push with all your might, and finally it swings open into an airlock to the open water. You push the emergency release button and shoot out into the water. The Seeker is where you left it, and once inside, you head for the surface where the Maray waits for you.
 THE END
-p9l  image vol2_images/vol2_picture9l.jpg
+p9l  image vol2_files/vol2_picture9l.jpg
 
 Part.9m  It is useless to try to escape the soldiers. You are surrounded. They take you to the king, and he sadly tells you that you are just like all the rest. He can't trust anyone. He will have to decide what to do with you and in the meantime he throws you into the dungeon.
 THE END
-p9m  image vol2_images/vol2_picture9m.jpg
+p9m  image vol2_files/vol2_picture9m.jpg
 
 Part.9n  How can you escape? The soldiers are coming after you. You yell as loud as you can and everyone in the theater surrounds you, forming a barrier to the soldiers. The soldiers stare at the people all around them, hesitate, and then quickly leave. They know that the odds are too great to win such a fight.\nThe people cry for the revolt to go on. The crowd leaves the theater and heads to the king's quarters. All along the route people join you and even the king's soldiers begin to join the crowd. You and the people are free; the king is put in prison. The revolt is a success.
 THE END
 
 Part.10a Over 1000 years of thought travel later, you are called into the main thinking room. You are told that you may now return to earth life. You have doubts about going back, but you are curious to see what changes have occurred while you were living in Atlantis.\nWhat a sight greets you as you circle earth at an altitude of 1000 feet! The great cities of the world, New York, London, Paris, and Hong Kong are overgrown with vegetation. The roads leading into the cities are barely visible. But you see signs of new settlements. There are clusters of buildings spread out in the countryside. You don't see any smokestacks. There are few roads and no cars. The people live a simple life providing themselves with food, shelter, and clothing. You wish to join them.
 THE END
-p10a image vol2_images/vol2_picture10a.jpg
+p10a image vol2_files/vol2_picture10a.jpg
 
 Part.10b                Start a new adventure?
 THE END

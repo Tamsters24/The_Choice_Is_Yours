@@ -31,6 +31,7 @@ class BookCover : AppCompatActivity() {
         // Navigate to Book Scrolling Activity: activity_book_scrolling.xml & BookScrollingActivity.kt
         findViewById<Button>(R.id.startBookBtn).setOnClickListener {
             val bookCoverToBookScrollingIntent = Intent(this, BookScrollingActivity::class.java)
+            bookCoverToBookScrollingIntent.putExtra("assetsFolder", bookAssets)
             startActivity(bookCoverToBookScrollingIntent)
         }
 
@@ -38,6 +39,7 @@ class BookCover : AppCompatActivity() {
         // Navigate to Story Progression Activity: activity_story_progression.xml & StoryProgression.kt
         findViewById<Button>(R.id.checkProgressBtn).setOnClickListener {
             val bookCoverToCheckProgressIntent = Intent(this, StoryProgression::class.java)
+            bookCoverToCheckProgressIntent.putExtra("assetsFolder", bookAssets)
             startActivity(bookCoverToCheckProgressIntent)
         }
     }
