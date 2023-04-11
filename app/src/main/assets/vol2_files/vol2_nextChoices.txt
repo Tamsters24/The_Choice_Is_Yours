@@ -62,12 +62,12 @@
 8i g h
 8j i j
 8k END
-8l END
+8l 10b 9k
 8m END
 8n 7e
 8o END
-8p k l
-8q m n
+8p l m
+8q n o
 8r END
 8s END
 8t END
@@ -85,6 +85,7 @@
 9l END
 9m END
 9n END
+9o END
 10a END
 10b END
 10c END

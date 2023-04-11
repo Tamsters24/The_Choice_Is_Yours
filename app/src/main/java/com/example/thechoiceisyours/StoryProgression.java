@@ -10,10 +10,12 @@ import android.widget.FrameLayout;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
 import org.graphstream.ui.android_viewer.util.DefaultFragment;
+import org.graphstream.ui.graphicGraph.stylesheet.Color;
 import org.graphstream.ui.view.ViewerListener;
 import org.graphstream.ui.view.ViewerPipe;
 
@@ -30,17 +32,19 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     private Graph graph;
     public static int nodeCount = 0;
     protected boolean loop = true;
+    private String assetsDirectory, visitedNodes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Retrieve Story Tree using the Extra put in BookCover.kt
+        // Retrieve Story Asset directory using the Extra put in BookCover.kt
         String bookAssets = getIntent().getStringExtra("assetsFolder");
-        // Concatenate name for directory and book cover .jpg file
-        String assetsDirectory = bookAssets + "_files/";
+        assetsDirectory = bookAssets + "_files/";
+        // Concatenate name for directory and file names to be used
         String storyTree = bookAssets + "Tree.txt";
         String storyNodes = bookAssets + "NodeNames.txt";
+        visitedNodes = bookAssets + "VisitedNodes.txt";
 
         // Set up View for GraphStream
         FrameLayout frame = new FrameLayout(this);
@@ -50,8 +54,8 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
         // Add a button to return to previous screen
         Button button = new Button(this);
+        // Set button styling
         button.setBackgroundResource(R.drawable.rounded_button);
-        //button.setBackgroundColor(getResources().getColor(R.color.brown_tan));
         button.setPadding(25, 25, 25, 25);
         button.setText(getText(R.string.story_progress_btn));
         button.setTextColor(getResources().getColor(R.color.white));
@@ -59,17 +63,17 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
         params.setMargins(50, 50, 50, 50);
-
-        frame.addView(button, params);      // Add button to the view
-
+        // Add button to the view
+        frame.addView(button, params);
+        // Button functionality
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent storyProgressionToBookCoverIntent = new Intent(getApplicationContext(), BookCover.class);
-                storyProgressionToBookCoverIntent.putExtra("assetsFolder", bookAssets);
                 startActivity(storyProgressionToBookCoverIntent);
             }
         });
+
 
         // Generate Graph
         graph = new SingleGraph("StoryGraph");
@@ -100,7 +104,8 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        Node testNode = graph.getNode("1");
+        testNode.setAttribute("ui.color", new Color(0,176,80));
         display(savedInstanceState, graph, true);
     }
 
@@ -116,9 +121,10 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
         String styleSheet = "graph {" +
                 "fill-mode: gradient-radial;" +
-                "fill-color: white, gray;" +
+                "fill-color: white, rgba(68,114,196,100);" +
                 "padding: 60px;" +
                 "}" +
+
                 "node {" +
                 "shape: circle;" +
                 "size: 48,48;" +
@@ -131,19 +137,24 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "shadow-width: 0px;" +
                 "shadow-offset: 15px, -15px;" +
                 "shadow-color: rgba(0,0,0,100);" +
-                //"text-visibility-mode: zoom-range;" +
                 "text-size: 20px;" +
-                //"text-visibility: 0, 0.9;" +
                 "}" +
+
+                "node.green {" +
+                "fill-color: green;" +
+                " }" +
+
                 "node:clicked {" +
                 "stroke-mode: plain;" +
                 "stroke-color: red;" +
                 "}" +
+
                 "node:selected {" +
                 "stroke-mode: plain;" +
                 "stroke-width: 4px;" +
                 "stroke-color: blue;" +
                 "}" +
+
                 "edge {" +
                 "size: 5px;" +
                 "arrow-size: 20px, 15px;" +
@@ -158,7 +169,12 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "shadow-offset: 15px, -15px;" +
                 "shadow-width: 0px;" +
                 "arrow-shape: diamond;" +
-                "}";
+                "}" +
+
+                "edge.green {" +
+                "fill-color: green;" +
+                " }";
+
         graph.setAttribute("ui.stylesheet", styleSheet);
 
         new Thread( () ->  {
@@ -174,11 +190,10 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
             System.exit(0);
         }).start();
     }
-    /** End of https://github.com/caturananta/AndroidGraphView */
+    /* End of https://github.com/caturananta/AndroidGraphView */
 
     public void addVertices(int numberNodes, String nodeFile) throws IOException {
         // For Vertex/Node label, determine the Node ID from a NodeNames.txt asset
-        // Open asset file
         AssetManager assetManager = getAssets();
         InputStream inputStream = assetManager.open(nodeFile);
         InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
@@ -210,6 +225,12 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     // Refer to GraphStream's GitHub ReadMe:
     /** https://github.com/graphstream/gs-ui-android */
     public void display(Bundle savedInstanceState, Graph graph, boolean autoLayout) {
+        try {   // Toggle visited node colors, see below
+            nodeProgressColor(assetsDirectory + visitedNodes);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         if (savedInstanceState == null) {
             FragmentManager fm = getSupportFragmentManager();
 
@@ -227,17 +248,35 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     }
     /* End of https://github.com/graphstream/gs-ui-android */
 
-    public void buttonPushed(String id) {
+    public void nodeProgressColor(String visitedNodeFile) throws IOException {
+        // Open Visited Nodes asset file
+        AssetManager assetManager = getAssets();
+        InputStream inputStream = assetManager.open(visitedNodeFile);
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
+        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
+        // Read in the file string
+        String visited = bufferedReader.readLine();
+        // Split the string, and create an array for those values
+        String[] visitedNodes = visited.split(" ");
+
+        // If the node (story part) has been visited (read), toggle the Node color to green
+        for (String visitedNode : visitedNodes) {
+            for (Node node : graph) {
+                if (node.getAttribute("ui.label").equals(visitedNode)) {
+                    node.setAttribute("ui.class", "green");
+                }
+            }
+        }
     }
 
-    public void buttonReleased(String id) {
-    }
+    public void buttonPushed(String id) { }
 
-    public void mouseOver(String id) {
-    }
+    public void buttonReleased(String id) { }
 
-    public void mouseLeft(String id) {
-    }
+    public void mouseOver(String id) { }
+
+    public void mouseLeft(String id) { }
 
     public void viewClosed(String viewName) {
         loop = false;

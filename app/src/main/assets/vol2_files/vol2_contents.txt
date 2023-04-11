@@ -99,9 +99,11 @@ Choice.5i.6j Rush back to the Seeker trying to escape danger.
 
 Part.5j  You cruise through the grotto past the wreck of the submarine and then you spot another ship wreck. And then another. They, too, are covered with algae, but they appear undamaged. Maybe people from Atlantis capture ships in the Bermuda Triangle and bring the here. Then you see another ship, but this one is a three-masted schooner of the type used in the early 1800s. Its rigging is festooned with algae, and fish swim lazily around its mast.\nYour curiosity captures you and you put on your sea suit. Leaving the Seeker, you move towards the old sailing ship. Suddenly a thirteen-foot long deadly poisonous sea snake strikes from behind the forward cabin and bites you in the soft flesh between the fingers of your right hand. There is no antidote to the deadly poison.
 THE END
+p5j  image vol2_files/vol2_picture5j.jpg
 
 Part.5k  The only way to get beyond the door is to blast it away, or so you believe. The Seeker's laser cannon is powerful and you position the Seeker to fire. Pushing the fire button, you send a powerful beam at the hatch. Nothing happens. Then you advance the cannon control to full emergency force. Again you push the button and the beam dissolves the hatch instantly. A flood of sea water rushes into the giant hole, carrying you with it into an air-filled cavern beyond. The water fills the cavern with speed and explosive force. You see several people scurrying towards escape hatches. IT IS TOO LATE! You did the wrong thing.
 THE END
+p5k  image vol2_files/vol2_picture5k.jpg
 
 Part.5l  The radio transmissions seem to be failing, and you grow tired of sending signals through the closed door. You are just about to give up when the door suddenly swings open revealing behind it a cavern with another door. You enter the cavern cautiously and receive a radio signal in English. It tells you that you are welcome here, but that once you enter this place, you may never return to the world above. It is up to you to decide.
 Choice.5l.6k Go on and investigate what might be Atlantis.
@@ -135,6 +137,7 @@ Choice.6g.7h Remain with the Atlanteans and perhaps get a chance to escape.
 
 Part.6h  The Atlanteans have lived in peace for thousands of years. They have no love of warfare. Their civilization is technologically very advanced and a sensing mechanism tells them that you are about to use your laser cannon. They quickly fire a special beam at the Seeker to tell you to come with them to Atlantis.\n"You are now part of Atlantis. We understand your fear, but do not be frightened. No harm will come to you and your life will be full. Follow us."\nAs you walk with them, into a new world, you wonder if you will ever see the sky again.
 THE END
+p6h  image vol2_files/vol2_picture6h.jpg
 
 Part.6i  You escape being seen by the submarine craft. Following the instructions you enter a passageway. At the end of the passageway is an airlock door and beyond it an incredibly large air-filled cavern. Perhaps it is the inside of an extinct volcano.\nThe land is pleasant, although strange to your experience. A soft substance covers the ground. It seems to be alive. You can't tell. A gentle light comes from the sides of this huge cavern. It reminds you of early morning light just before the sun rises.\nA group of people approach you with friendly gestures. They are wearing simple clothes much like the clothes people wore in ancient Greece. They are kind and generous. You remove your diving suit to find that the air is good to breathe.\nThese people speak a language that is unknown to you, but one of them acts as an interpreter. You find out that this is Atlantis. They tell you it is governed by a man who is greedy, selfish, and dangerous. The people are like slaves. Everyone is unhappy except a few who serve the ruler as his lieutenants. These new friends ask for your help. Perhaps you can help them escape.
 Choice.6i.7i Leave your new friends and search for the ruler.
@@ -143,6 +146,7 @@ Choice.6i.7j Decide to help your new friends escape.
 Part.6j  Quickly you get into the Seeker in an attempt to escape the strange submarine. You notice that the sub is chasing you so you put on full emergency ascent power. You could use your laser cannon to blast the sub, but you do not wish to hurt anyone.\nThe ascent towards the surface is swift, but a few fathoms from the surface all systems on the Seeker fail. You are suspended in the water in a helpless position. It seems that a mysterious force has disabled you.
 Choice.6j.7k Wait on board the Seeker for help from the Maray.
 Choice.6j.7l Try to escape from the Seeker and try for the surface on your own.
+p6j  image vol2_files/vol2_picture6j.jpg
 
 Part.6k  You are greeted by a group of people who look like ordinary human beings except that there are gill-like slits on their necks. Their bare feet have skin between the toes forming a web. They order you to put on your sea suit, pull you quickly from the Seeker, and lead you towards their city. On the way they show you the zoo where there are animals from the world above the sea. There is a glass-like cage surrounding them filled with air, allowing them to live below the sea.\nThe leader of the group explains that if you wish you may either submit to an operation to have gills inserted so that you may breathe underwater, or you may join the other animals in the zoo.
 Choice.6k.7m Agree to the operation.
@@ -162,6 +166,7 @@ p7b  image vol2_files/vol2_picture7b.jpg
 Part.7c  The three people lead you into an enormous cavern. In the center of the cavern is a huge, silver-colored machine. It is shaped like a long tube with several round panels attached to one end.\nThey lead you inside. It is the most advanced control room that you have ever seen. Computers, sensing device, recording devices, monitors, and a host of dials and panels fills the room. A strangely shaped figure with a very large head and totally blank eyes faces you.\n"So, now you are in the control room of Atlantis. You see our secret. We landed on this planet 3000 years ago We used our anti-matter device to sink this continent beneath the sea so we could escape from your people. You can have a most pleasant and useful life here with us if you wish. All you need to do is allow us to inject you with a special serum to enable you to live down here. It is up to you. On the other hand, if you do not wish to be one of us, you will be held prisoner."
 Choice.7c.8c Submit to the injection.
 Choice.7c.8d Decline.
+p7c  image vol2_files/vol2_picture7c.jpg
 
 Part.7d  Three people of Atlantis sense your wish to return to the surface. Instantly, they produce a bubble-shaped capsule and put you inside.\n"Farewell, earth person. May you live a long and prosperous life."\nYou shoot up swiftly through the sea and break out onto the surface near the Maray. The capsule that protected you disintegrates upon reaching the surface. Once aboard the Maray, you tell the crew and the scientists about your adventure. They are kind to you, but no one believes you. They think you have imagined the world of Atlantis as a result of being so deep for so long.\nBack in the United States, you begin a television tour telling about Atlantis. You write articles and a book. You are paid a great deal of money for this work. You are tempted to use this money for another expedition.
 Choice.7d.8e Use your money for another expedition.
@@ -174,6 +179,7 @@ Choice.7e.8h Rest a few days and make emergency plans.
 Part.7f  The worst thing you could do would be to panic. You relax and drift with the current which suddenly takes you upward. With your knife, you cut through the kelp and are free. What a relief.\nBut no sooner do you get out of the kelp, than you are caught in the vortex of a giant whirlpool!
 Choice.7f.8i Try to swim out of the whirlpool.
 Choice.7f.8j Dive into the vortex of the whirlpool hoping to reach the bottom and get out.
+p7f  image vol2_files/vol2_picture7f.jpg
 
 Part.7g  "I wish to join the Nodoors," you tell your guide. He leads you to the outskirts of the city.\n"I must leave you now. Good luck." The Nodoors send a greeting party that is heavily armed. They are suspicious of you and believe that you are a spy sent by the Atlanteans. They look exactly like the Atlanteans, but they rarely smile.\n"Come with us. You must be questioned. Perhaps you will work for us."\nFor 3 days you are questioned and kept in a small room without windows. These people are not kind and you believe that you have made a mistake. They ask you to help them spy on the Atlanteans. They suggest that, as a spy, you could pass freely between both groups.
 Choice.7g.8k Decide to escape.
@@ -198,12 +204,14 @@ Choice 7k.8t You don't know what to do.
 
 Part.7l  There is one way out, you decide. Leave the Seeker and try to reach the surface on your own. You enter the airlock chamber which gives you access to the ocean. With a quick push off, you leave the Seeker and swim towards the surface. A small, yellow life raft is part of your escape equipment. The surface of the sea is calm, but the Maray is nowhere in sight. For 2 days and nights you drift in the life raft under hot sun and sharp starlight. At last a search helicopter spots you. Finally you are safe. The exploration of Atlantis will have to depend on a new diver. Your eyesight has been damaged by the strange force that immobilized the Seeker. You career as an underwater adventurer is over.
 THE END
+p7l  image vol2_files/vol2_picture7l.jpg
 
 Part.7m  A large white light shines down on you as you lie on the operating table. Then you become unconscious. Pleasant thoughts, sounds, and pictures occupy your mind. When you awake, you feel no pain nor any real change. But, now you can breathe underwater and join the Atlanteans in their world. For several weeks you explore the world under the sea as you never have seen it before. Without the heavy oxygen equipment on your back, you feel a marvelous sense of energy and you glide through a world of beauty. Your two guides have become very good friends and they take you on adventures in the deep, exploring the ocean bottom and getting to know the fish and other sea creatures. It is a very exciting life indeed. You like it, but you regret that you will never again know the world above the sea.
 THE END
 
 Part.7n  "No, I refuse to have this insane operation. I don't want to become a fish!" The Atlanteans try to convince you that life with them will be happy, useful, and long. Yet, you still refuse. Sadly they give up their arguments and spray you with a special mist that immediately knocks you out. Several hours later you gain your senses only to find that you are in an underwater air tank where you breathe naturally. Your closest neighbor is a horse who looks at you with sorrow and understanding. The Atlanteans have built a small apartment very much like the ones in the world above the sea. People come by and look at you and talk with you. Maybe you have made a real mistake. They no longer want you to join them in their world and way of life. You refused their offer and now you are a prisoner in a zoo.
 THE END
+p7n  image vol2_files/vol2_picture7n.jpg
 
 Part.8a  The electrons whirl about at dizzy speeds and you continue until you get to a spot where your instruments indicate that there is not time. The clocks stop, the speed indicator stops, you heart stops, and yet you are alive. Every sense in your body seems more alive than ever before. You hear beautiful music and see lights that you feel and taste as well. Peace and well-being fill you.\nYou become aware of other beings close to you. No one has entered through the only hatch and yet there are other presences in the Seeker. Turning around, you see three Atlanteans. Then you feel that the Seeker has become just a thought and that the people from Atlantis have entered your mind and you are aboard the Seeker. You try to enter their thoughts, but they tell you that you have not journeyed far enough yet to be able to become a though-traveler.
 Choice.8a.9a Try to turn back from this strange world.
@@ -218,6 +226,7 @@ Choice.8c.9d Decide to stay in Atlantis as a worker.
 
 Part.8d  The idea of being injected with a serum and joining them for the rest of your life is awful. You must plan an escape. When your captors are not looking, you slip away and dash for the door of the space craft. You fail to notice a laser beam guarding the exit hatch. Stepping into the laser beam, you freeze in midstep. The Atlanteans gather round you sadly and tell you that you will have to remain this way for the earth equivalent of 23 years and 61 days until the effects wear off. Then you will be given a second chance.
 THE END
+p8d  image vol2_files/vol2_picture8d.jpg
 
 Part.8e  The only way to prove that you are not crazy is to lead another expedition back to Atlantis. You take all the money from the TV appearances and articles and outfit a boat, hire a crew, rent the Seeker, and set sail. Most people think that you are out of your mind. You will show them. Poised over the spot you so carefully marked on the charts, you dive down in the Seeker. Again you find the hidden grotto and the round metal panel. The panel seems to seal off a passageway. It is locked. You try to open it with the Seeker's drilling arm, but it will not budge. It is frustrating to be so close to the secret and yet so far from it.
 Choice.8e.9e Blast the panel with the laser beam?
@@ -244,34 +253,38 @@ Part.8k  Escape will be difficult, but you decide that you must get away from th
 THE END
 
 Part.8l  "Ok, I'll do it," you say. "I'll join you and spy on the Atlanteans for you. Who knows, maybe they aren't as bad as you think." The Nodoors are delighted that you will help them. They give you a room in a large building where most of them live. It is grey and forbidding, more like a prison than anything else. That night when all are asleep, you sit sleepless and realize that you are caught in a trap of your own making. It comes to you that the Nodoors are from a different planet and are unhappy outcasts. The Atlanteans want nothing to do with them. You chose the wrong side.
-THE END
+Choice.8l.10b THE END
+Choice.8l.9k If you don't like this ending proceed.
 
 Part.8m  Maybe you can learn from the Atlanteans how they achieve such happiness in their lives. You will seek out their history. When you announce your decision to stay, you are treated with kindness and friendship. You explain that you would like to help in their underwater food production. Atlantis was an advanced civilization thousands of years ago. The citizens nourished their peaceful thoughts and plucked out their hateful thoughts as one would tend a garden. Their minds became a rich and dazzling universe, clear and unbounded. You have so much to do, helping with sea plants and studying their history that you soon forget the Seeker.
 THE END
 
 Part.8n  When you get a chance and everyone is doing other things, you dash for the tunnel exit and make it out into the water. No alarms sound. No one chases you. It is strange; they said they wouldn't allow you to return to the world above the sea. Why are they letting you escape? You swim toward the surface; then you black out. It is too deep. No one could survive the pressure and lack of oxygen. But a miracle has happened because you suddenly find yourself hacking away at brown seaweed that surrounds you and you are just a short way from the surface.
-TO PART Part.7e
+TO PART 7e
+p8n  image vol2_files/vol2_picture8n.jpg
 
 Part.8o  An advisor to a king! What a chance. Maybe the king has ruled so long that he is out of touch with the people. Perhaps as his advisor you can help the people get what they want. You don't believe that people are lazy and selfish. The king just needs a new point of view.\nYou are appointed the king's special advisor on problems of research on food and shelter. You immediately call general meetings of all the people to discuss the food program and the work schedules. The king is so glad to have someone else take over the problems that he leaves it in your hands entirely. He gives you land and a large salary. You set up new programs and schedules. The people are involved in the planning and the work. You listen to their complaints and their ideas. Life under the sea is rich and full. The people are hard working and good. It was a wise decision to remain.
 THE END
 
 Part.8p  Advisor to a mean king? Not a chance! You tell him that you want nothing to do with a tyrant who doesn't believe in people. You tell him to his face that the people are unhappy and angry. He laughs and tells you to go back to them if you wish. He warns you that the people are complainers, not workers.\nOnce back with your new friends, you discuss how to overthrow the king and his henchmen. You hold secret meetings and work out a plan. But on the day of the overthrow, someone discovers a leak in the volcano wall of the underwater world. The entire civilization is in danger. All thoughts of revolt are forgotten. The Atlanteans must stop the sea from crashing in on them. Everyone works for a common purpose. Survival is the goal.
-Choice.8p.9k Work with them in this time of disaster.
-Choice.8p.9l Take advantage of this emergency to escape.
+Choice.8p.9l Work with them in this time of disaster.
+Choice.8p.9m Take advantage of this emergency to escape.
 p8p  image vol2_files/vol2_picture8p.jpg
 
 Part.8q  You do not wish to lead a revolt but the people need you. You organize the play, and the king is pleased to have his people involved in a project that keeps them busy and happy. The people can't wait for the day when they can put the king in prison and make their own decisions.\nThe night of the play, the theater is filled, and everyone waits for the king to appear. But there is a delay. The crowd grows nervous. Then a messenger from the king runs into the theater and announces that the king has had a serious attack of brain fever. He may not live.\nYou wonder whether the king is really ill or whether he has found out about the plot against him. The people are confused and do not know what to do. They turn to you and you tell them to go on with the play. Just then, a squad of the king's soldiers enter the theater. They are headed for you.
-Choice.8q.9m Allow them to capture you.
-Choice.8q.9n Try to escape.
+Choice.8q.9n Allow them to capture you.
+Choice.8q.9o Try to escape.
 
 Part.8r  It is their world, but you are willing to help them with the planning for the overthrow of the king. You want no real part in the revolt.\nThe planning requires choosing new leaders and setting goals for the people. You almost decide to join them in the actual revolt, but you really want to get back to your own world. Once the revolt is underway, you hope to slip away and return to the Seeker for a quick escape to the surface of the ocean.\nThe day of the revolt, you can't resist the excitement of the Atlanteans' bold enterprise, and you decide to stay with them and help in any way that you can. The endless planning and training pays off. The carefully selected band of men and women easily capture the king and his guards. The revolt has succeeded without shedding a drop of blood and the people celebrate for days.\nThe Atlanteans treat you as if you are one of them, and, for the first time, you feel that you are.
 THE END
 
 Part.8s  People ride dolphins, and you have met scuba divers who reported they held onto the flukes of whales for short rides. It sounds crazy, but this may be your only way of escape. You leave the Seeker, swim to the whale, and grab its fluke. With a smooth powerful movement, the giant mammal begins to swim to the surface. You have trouble holding on. Then the whale breaks the surface and lies there filling its lungs with air. You quietly swim away. You drift for 2 or 3 days, dozing and waking comfortably. You stay warm in your insulated sea suit and its special air packs keep you afloat. You are hungry and thirsty, but unharmed by the time the search helicopter spots you bobbing in the waves.
 THE END
+p8s  image vol2_files/vol2_picture8s.jpg
 
 Part.8t  You admit that you just don't know what to do. The whale is frightening looking and you don't have any escape plans. So you wait and watch and listen. After what seems a long time, but is probably just a few minutes, the mysterious submarine returns, attaches a cable to the Seeker, and pulls you up to the surface. Then the submarine vanishes under the waves leaving you to wait for the Maray.
 THE END
+p8t  image vol2_files/vol2_picture8t.jpg
 
 Part.9a  This is too much for you. It is like a nightmare and you decide to turn back. But going back is much harder than you expected. The electrons whirl closer and closer to you as though they were guards keeping you from leaving. It is difficult to guide the Seeker in this maze of atoms. The instruments are useless now. The figures of the Atlanteans disappears. Suddenly, you are caught in the elastic membrane that almost stopped you before. It sticks to the Seeker, holding you back. You want to be free and return to the world you have known all your life.\nYou lose consciousness and wake up several hours later in your sea suit floating above the hold in the ocean floor. The Seeker is gone. You're dazed: did you dream the whole thing? Slowly you return to the surface, but the Maray has disappeared. You can't decide how much time has elapsed. You realize that your crew must think you are lost forever and you know they are right. The waves rock your unresisting body back and forth as you float alone in the vast sea. You feel your strength slowly draining away.
 THE END
@@ -290,6 +303,7 @@ Choice.9d.10f Become a musician.
 
 Part.9e  You'll try to blast the hatch right off its hinges. You have the power. Your finger presses the red button that fires the laser cannon. A blinding flash erupts immediately. But the hatch remains firm. You fire again and again and again. Each time the Seeker is rocked by the force of the laser cannon. The reflected energy is damaging to your craft. You continue to fire the cannon, holding your finger on the button. Then there is a blinding flash inside the Seeker itself. The laser cannon has exploded. You and the Seeker are destroyed instantly. The hatch remains closed.
 THE END
+p9e  image vol2_files/vol2_picture9e.jpg
 
 Part.9f  It is never good to use force unless you are attacked and must defend yourself. You refuse even to consider using the laser cannon; it might kill people and would certainly destroy any chance for friendship. You decide to wait patiently and hope that you will be noticed and invited in. For six hours you sit quietly and wait for some sign. A green glow comes from the area ahead of you. It bathes the Seeker in a gentle light. The hatch door opens. Three figures emerge and beckon to you to follow them.
 Choice.9f.10g Follow them.
@@ -297,6 +311,7 @@ Choice.9f.10h Refuse to follow them.
 
 Part.9g  You have a laser pistol that you carry for emergencies. You blast a hole in the whirlpool wall and dive through it. Facing you is a school of fish who are puzzled by this strange intruder. Behind them lurks the form of a shark. You swim toward the surface slowly and the shark vanishes into the deep. The Maray is nowhere in sight. You are wondering how long you'll be waiting when a loud splashing sighing sound startles you. A huge whale has surfaced and lies nearby spouting and sucking in great noisy draughts of air. It takes you a good half hour to swim to the enormous creature. It pays no attention to you. You climb onto its tail and crawl on hands and knees toward the highest point of its back. It's like creeping up a gigantic grey rock. From your vantage point on top, sure enough, you can see the Moray and the tiny glint of binocular lenses reflecting in the sun. The Maray crew is watching the whale. You wave, feeling certain they have seen you. It won't be long before they come to collect you.
 THE END
+p9g  image vol2_files/vol2_picture9g.jpg
 
 Part.9h  You faint, and when you come to, you are floating on the surface of the ocean. There is a heavy ocean swell and the sun beats down on you. The whirlpool must have stopped as quickly and mysteriously as it began. You feel dizzy and exhausted and you move gently to make sure you haven't broken any bones. As you move your head slowly inside your helmet, you feel an intense pain shooting across your right temple. You have to lie very still then and gradually your ears pick up the thrum of the search helicopter. You don't dare move to look, but as the minutes go by, the thrum gets louder and slowly disappears. The helicopter has passed over you. It won't return this way. The pain in your temple increases. You begin to lose consciousness.
 THE END
@@ -307,19 +322,23 @@ THE END
 Part.9j  The ocean floor has a small metal hatch on it. You pull with all your strength but it will not open. You rest for a moment and look through the wall of water surrounding you. Two fish stare back at you! It's as though you are in an aquarium for the fish to look at. You don't hear the hatch open. A voice commands you to enter. With fear and caution you walk down a corridor that leads to a small room. Three people meet you.
 TO PART 7c
 
-Part.9k  Years ago the Atlanteans had worked out emergency procedures, but most people had forgotten them. One old person remembers where the emergency instructions and equipment were kept.\nYou and the Atlanteans work without stop for 72 hours pumping out the flooding waters and building a special retaining wall around the volcanic crack. Finally the last pump is shut off. You are all exhausted, but you've won in your battle against the sea.
+Part.9k  During the night, you are awakened by the sound of voices talking quietly. Listening, you realize that a group of Nodoors is planning an escape. They want to join the Atlanteans. They believe that life in Atlantis can be better for them. You join them and listen to the stories of fear and darkness. They seek light and friendship. It sounds simple, but nothing is easy.\nSuddenly the door bursts open. Three guards armed with special weapons rush in. They fire the weapons and in a flash of brilliant light you and your companions are vaporized.
 THE END
 p9k  image vol2_files/vol2_picture9k.jpg
 
-Part.9l  With everyone worried about the sea crashing in, no one will notice you if you try to escape. You run down a long, little-used corridor that leads to the sea. The exit door is heavy and rusty from not being used. You push with all your might, and finally it swings open into an airlock to the open water. You push the emergency release button and shoot out into the water. The Seeker is where you left it, and once inside, you head for the surface where the Maray waits for you.
+Part.9l  Years ago the Atlanteans had worked out emergency procedures, but most people had forgotten them. One old person remembers where the emergency instructions and equipment were kept.\nYou and the Atlanteans work without stop for 72 hours pumping out the flooding waters and building a special retaining wall around the volcanic crack. Finally the last pump is shut off. You are all exhausted, but you've won in your battle against the sea.
 THE END
 p9l  image vol2_files/vol2_picture9l.jpg
 
-Part.9m  It is useless to try to escape the soldiers. You are surrounded. They take you to the king, and he sadly tells you that you are just like all the rest. He can't trust anyone. He will have to decide what to do with you and in the meantime he throws you into the dungeon.
+Part.9m  With everyone worried about the sea crashing in, no one will notice you if you try to escape. You run down a long, little-used corridor that leads to the sea. The exit door is heavy and rusty from not being used. You push with all your might, and finally it swings open into an airlock to the open water. You push the emergency release button and shoot out into the water. The Seeker is where you left it, and once inside, you head for the surface where the Maray waits for you.
 THE END
 p9m  image vol2_files/vol2_picture9m.jpg
 
-Part.9n  How can you escape? The soldiers are coming after you. You yell as loud as you can and everyone in the theater surrounds you, forming a barrier to the soldiers. The soldiers stare at the people all around them, hesitate, and then quickly leave. They know that the odds are too great to win such a fight.\nThe people cry for the revolt to go on. The crowd leaves the theater and heads to the king's quarters. All along the route people join you and even the king's soldiers begin to join the crowd. You and the people are free; the king is put in prison. The revolt is a success.
+Part.9n  It is useless to try to escape the soldiers. You are surrounded. They take you to the king, and he sadly tells you that you are just like all the rest. He can't trust anyone. He will have to decide what to do with you and in the meantime he throws you into the dungeon.
+THE END
+p9n  image vol2_files/vol2_picture9n.jpg
+
+Part.9o  How can you escape? The soldiers are coming after you. You yell as loud as you can and everyone in the theater surrounds you, forming a barrier to the soldiers. The soldiers stare at the people all around them, hesitate, and then quickly leave. They know that the odds are too great to win such a fight.\nThe people cry for the revolt to go on. The crowd leaves the theater and heads to the king's quarters. All along the route people join you and even the king's soldiers begin to join the crowd. You and the people are free; the king is put in prison. The revolt is a success.
 THE END
 
 Part.10a Over 1000 years of thought travel later, you are called into the main thinking room. You are told that you may now return to earth life. You have doubts about going back, but you are curious to see what changes have occurred while you were living in Atlantis.\nWhat a sight greets you as you circle earth at an altitude of 1000 feet! The great cities of the world, New York, London, Paris, and Hong Kong are overgrown with vegetation. The roads leading into the cities are barely visible. But you see signs of new settlements. There are clusters of buildings spread out in the countryside. You don't see any smokestacks. There are few roads and no cars. The people live a simple life providing themselves with food, shelter, and clothing. You wish to join them.
@@ -334,6 +353,7 @@ THE END
 
 Part.10d You are in the Atlantean world; why not become like an Atlantean? Looking down at your hands, you see them gradually begin to glow with a warm, yellow light. Little by little, the glow travels up your arms and legs until suddenly you have no body left. You are a glowing energy form. You feel a sense of freedom and happiness that you have never known before. You can float, or fly, or zoom anywhere you want to. No walls stop you; you just melt through them. You don't need food or rest. You can travel through time, and you can travel instantly back to earth in your energy form.\nYou feel that this is the way you want to be.
 THE END
+p10d image vol2_files/vol2_picture10d.jpg
 
 Part.10e Farming under the sea is a job that you enjoy. Outside Atlantis, there are fields of sea plants that are worked on just like gardens above the sea. Atlanteans go out each day and harvest the plants, take care of the fields, and chase away the fish that love to nibble on the growing plants. Then there are fish pens to work on. There you feed and tend the fish until they are needed for food. Farming under the sea is beautiful and it is much easier than you had imagined. Danger lurks, though, in the form of sting rays, slender sea snakes, and occasional sharks. You have to be on your guard at all times.
 THE END
@@ -343,8 +363,10 @@ THE END
 
 Part.10g These people lead you to a control room. There you meet the commander of an underwater scientific center that is conducting secret research into life underneath the sea. They inform you that it was a good thing that you did not use your laser cannon, because they have anti-laser devices that would have blown you and the Seeker to pieces. After a pleasant meal and a tour of the deepwater lab, you are sent back to the Seeker for a return journey to the surface. You are told never to return again; if you do, you will be kept a prisoner for the rest of your life.
 THE END
+p10g image vol2_files/vol2_picture7c.jpg
 
 Part.10h When you refuse to follow them, they take out small hand-held hypnotizers that put you into a deep trance. You are led through a long tunnel into a large underwater lab. Three military technicians come up to you and break the trance. "You have stumbled into a secret military base. We're developing too many secret plans to risk being discovered. You will remain our prisoner." There is no escape.
 THE END
+p10h image vol2_files/vol2_picture10h.jpg
 
 Italicize Seeker Maray

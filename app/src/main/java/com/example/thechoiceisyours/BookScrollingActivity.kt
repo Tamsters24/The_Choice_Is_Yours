@@ -68,6 +68,7 @@ class BookScrollingActivity : AppCompatActivity() {
         bufferedStoryReader.close()
     }
 
+    // Set the views for the display, including images, narrative, and choice buttons
     private fun storyDisplay() {
         Toast.makeText(baseContext, "Part $currentPart", Toast.LENGTH_SHORT).show()
 
@@ -89,7 +90,7 @@ class BookScrollingActivity : AppCompatActivity() {
         currentPart += 1
     }
 
-    // Display image for current chapter
+    // Set image for current chapter
     private fun displayImage(imageName: String) {
         val imageInputStream: InputStream = assets.open(imageName)
         val image = Drawable.createFromStream(imageInputStream, null)
@@ -100,7 +101,7 @@ class BookScrollingActivity : AppCompatActivity() {
         //partImage.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
     }
 
-    // Determine the current Chapter and Display Chapter contents and image
+    // Set the current Chapter and Display Chapter contents
     private fun displayChapter(chapter: String) {
         // Current chapter narrative
         val filteredChapter = storyLines.filter { it.contains(chapter) }
@@ -220,6 +221,7 @@ class BookScrollingActivity : AppCompatActivity() {
         storyView.smoothScrollTo(0,5,1500)
     }
 
+    // Switch visibility of choice Buttons according to choices available
     private fun displayButtons(choiceList: List<String>) {
         val option1Btn: ImageButton = findViewById(R.id.option1)
         val option2Btn: ImageButton = findViewById(R.id.option2)
