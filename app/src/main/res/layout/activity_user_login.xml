@@ -52,7 +52,7 @@
             android:padding="5dp"
             android:ems="10"/>
     <Button
-            android:id="@+id/loginToCreateAcctBtn"
+            android:id="@+id/loginToRegistrationBtn"
             android:text="@string/action_sign_in"
             android:layout_width="155sp"
             android:layout_height="35sp"

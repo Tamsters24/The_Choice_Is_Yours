@@ -22,6 +22,17 @@
     <string name="action_forgot_pwd">forgot password</string>
     <string name="submit_btn">LOGIN</string>
 
+    <string name="new_acct">ACCOUNT REGISTRATION</string>
+    <string name="new_acct_email">enter your email</string>
+    <string name="new_acct_password1">enter your password</string>
+    <string name="new_acct_password2">reenter password</string>
+    <string name="new_acct_register">COMPLETE REGISTRATION</string>
+
+    <string name="forgot_pwd">RESET PASSWORD</string>
+    <string name="forgot_msg1">forgot your password? click the button below</string>
+    <string name="forgot_msg2">then check your email to reset password</string>
+    <string name="forgot_email">SEND EMAIL</string>
+
     <string name="story_path1">
         Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5a
     </string>

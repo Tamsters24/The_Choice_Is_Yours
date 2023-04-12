@@ -16,7 +16,7 @@
                 android:name=".UserRegistration"
                 android:exported="true"/>
         <activity
-                android:name=".com.example.thechoiceisyours.UserLogin"
+                android:name=".UserLogin"
                 android:exported="true"/>
         <activity
                 android:name=".StoryVolChoice"

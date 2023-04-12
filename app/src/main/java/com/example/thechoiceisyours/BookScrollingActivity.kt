@@ -1,5 +1,6 @@
 package com.example.thechoiceisyours
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.graphics.Typeface
 import android.graphics.drawable.Drawable
@@ -9,6 +10,7 @@ import android.text.Layout
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.StyleSpan
+import android.util.Log
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
@@ -17,6 +19,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
 import com.example.thechoiceisyours.databinding.ActivityBookScrollingBinding
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
+
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
@@ -28,6 +35,7 @@ class BookScrollingActivity : AppCompatActivity() {
     private var theEnd = false
     private var assetsDirectory = ""
     private var choiceMap = mutableMapOf<String, List<String>>()
+    private var nodesVisitedDB = ""
 
     private lateinit var binding: ActivityBookScrollingBinding
 
@@ -48,6 +56,7 @@ class BookScrollingActivity : AppCompatActivity() {
         val nextChoicesFile = bookAssets + "_nextChoices.txt"
         val bookContents = assetsDirectory + bookFile
         val nextChoicesContents = assetsDirectory + nextChoicesFile
+        nodesVisitedDB = bookAssets + "NodesVisited"
 
         getStory(bookContents)
         choiceMap = setChoiceMap(nextChoicesContents)
@@ -71,6 +80,23 @@ class BookScrollingActivity : AppCompatActivity() {
     // Set the views for the display, including images, narrative, and choice buttons
     private fun storyDisplay() {
         Toast.makeText(baseContext, "Part $currentPart", Toast.LENGTH_SHORT).show()
+
+        // Access the Firebase database and toggle the current Part.Choice "visited" to true
+        val visitedChapter = FirebaseDatabase.getInstance().getReference(nodesVisitedDB).
+                                child("$currentPart$currentChoice")
+        visitedChapter.child("visited").addListenerForSingleValueEvent(
+                                object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val visited = dataSnapshot.getValue(Boolean::class.java)
+                Log.d(TAG, "Part visited: $visited")
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                Log.w(TAG, "Failed to read value.", error.toException())
+            }
+        })
+        visitedChapter.child("visited").setValue(true)
+
 
         // Display the current chapter image if one exists
         val filteredImage = storyLines.filter { it.contains("p$currentPart$currentChoice") }

@@ -19,15 +19,15 @@ class MainActivity : AppCompatActivity() {
 
         // Button
         // Navigate to Login Activity: activity_user_login.xml & UserLogin.kt
-        findViewById<Button>(R.id.login_btn).setOnClickListener {
+        findViewById<Button>(R.id.mainToLogin_btn).setOnClickListener {
             val mainToLoginIntent = Intent(this, UserLogin::class.java)
             startActivity(mainToLoginIntent)
         }
 
         // Button
         // Navigate to Registration Activity: activity_user_registration.xml & UserRegistration.kt
-        findViewById<Button>(R.id.registration_btn).setOnClickListener {
-            val mainToRegistrationIntent = Intent(this, UserLogin::class.java)
+        findViewById<Button>(R.id.MainToRegistration_btn).setOnClickListener {
+            val mainToRegistrationIntent = Intent(this, UserRegistration::class.java)
             startActivity(mainToRegistrationIntent)
         }
     }
