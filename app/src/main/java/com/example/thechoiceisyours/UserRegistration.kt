@@ -78,16 +78,29 @@ class UserRegistration : AppCompatActivity() {
     private fun createStoryNodesVisited () {
         val firebaseAuth = FirebaseAuth.getInstance()
         val database = FirebaseDatabase.getInstance()
+
+        // Determine the user's UID
+        val user = firebaseAuth.currentUser
+        val userId = user?.uid.toString()
+
+        // Get a reference to the "users" node
         val usersRef = database.getReference("users")
 
-        // Generate a unique user ID
-        val userId = usersRef.push().key.toString()
-
-        // Create a new child node for the user
+        // Create a new user node with UID
         val userRef = usersRef.child(userId)
+        val vol1NodesVisited = userRef.child("vol1NodesVisited")
+        val vol2NodesVisited = userRef.child("vol2NodesVisited")
 
-        // Create a map of the boolean values
-        val booleanValues = mapOf(
+        // Create a maps of the boolean values for vol1 and vol2
+        val vol1BooleanValues = mapOf(
+            "1" to true,
+            "2a" to false, "2b" to false,
+            "3a" to false, "3b" to false, "3c" to false, "3d" to false,
+            "4a" to false, "4b" to false, "4c" to false, "4d" to false,
+            "4e" to false, "4f" to false, "4g" to false, "4h" to false
+        )
+
+        val vol2BooleanValues = mapOf(
             "1" to true,
             "2a" to false, "2b" to false,
             "3a" to false, "3b" to false, "3c" to false, "3d" to false,
@@ -108,20 +121,30 @@ class UserRegistration : AppCompatActivity() {
             "9f" to false, "9g" to false, "9h" to false, "9i" to false, "9j" to false,
             "9k" to false, "9l" to false, "9m" to false, "9n" to false, "9o" to false,
             "10a" to false, "10b" to false, "10c" to false, "10d" to false,
-            "10e" to false, "10f" to false, "10g" to false, "10h" to false,
+            "10e" to false, "10f" to false, "10g" to false, "10h" to false
         )
 
-// Write the boolean values to the database
-        userRef.setValue(booleanValues)
-            .addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    // Database write successful
-                    println("Database write successful")
-                } else {
-                    // Handle database write error
-                    println("Database write failed")
-                }
+        // Write the boolean values to the database
+        vol1NodesVisited.setValue(vol1BooleanValues).addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                // Database write successful
+                println("Database write successful")
+            } else {
+                // Handle database write error
+                println("Database write failed")
             }
+        }
+
+        // Write the boolean values to the database
+        vol2NodesVisited.setValue(vol2BooleanValues).addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                // Database write successful
+                println("Database write successful")
+            } else {
+                // Handle database write error
+                println("Database write failed")
+            }
+        }
     }
 
     private fun registerUpdateUI(user: FirebaseUser?) {
