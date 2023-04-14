@@ -19,6 +19,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
 import com.example.thechoiceisyours.databinding.ActivityBookScrollingBinding
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -82,15 +83,20 @@ class BookScrollingActivity : AppCompatActivity() {
         Toast.makeText(baseContext, "Part $currentPart", Toast.LENGTH_SHORT).show()
 
         // Access the Firebase database and toggle the current Part.Choice "visited" to true
-        val visitedChapter = FirebaseDatabase.getInstance().getReference(nodesVisitedDB).
-                                child("$currentPart$currentChoice")
-        visitedChapter.child("visited").addListenerForSingleValueEvent(
-                                object : ValueEventListener {
+        val firebaseAuth = FirebaseAuth.getInstance()
+        val user = firebaseAuth.currentUser
+        val userId = user?.uid.toString()
+        val database = FirebaseDatabase.getInstance()
+        val usersRef = database.getReference("users")
+        val userRef = usersRef.child(userId)
+        val visitedChapter = userRef.child(nodesVisitedDB).
+                             child("$currentPart$currentChoice")
+        visitedChapter.child("visited").
+                            addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 val visited = dataSnapshot.getValue(Boolean::class.java)
                 Log.d(TAG, "Part visited: $visited")
             }
-
             override fun onCancelled(error: DatabaseError) {
                 Log.w(TAG, "Failed to read value.", error.toException())
             }
