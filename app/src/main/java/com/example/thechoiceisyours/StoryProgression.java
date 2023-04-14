@@ -3,14 +3,18 @@ package com.example.thechoiceisyours;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.*;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
@@ -24,6 +28,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class StoryProgression extends FragmentActivity implements ViewerListener {
@@ -32,7 +38,6 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     private Graph graph;
     public static int nodeCount = 0;
     protected boolean loop = true;
-    private String assetsDirectory, visitedNodes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +45,12 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
         // Retrieve Story Asset directory using the Extra put in BookCover.kt
         String bookAssets = getIntent().getStringExtra("assetsFolder");
-        assetsDirectory = bookAssets + "_files/";
+        String assetsDirectory = bookAssets + "_files/";
+
         // Concatenate name for directory and file names to be used
         String storyTree = bookAssets + "Tree.txt";
         String storyNodes = bookAssets + "NodeNames.txt";
-        visitedNodes = bookAssets + "VisitedNodes.txt";
+        String nodesVisitedDB = bookAssets + "NodesVisited";
 
         // Set up View for GraphStream
         FrameLayout frame = new FrameLayout(this);
@@ -54,6 +60,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
         // Add a button to return to previous screen
         Button button = new Button(this);
+
         // Set button styling
         button.setBackgroundResource(R.drawable.rounded_button);
         button.setPadding(25, 25, 25, 25);
@@ -63,6 +70,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
         params.setMargins(50, 50, 50, 50);
+
         // Add button to the view
         frame.addView(button, params);
         // Button functionality
@@ -87,7 +95,6 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
             // Read the text file to create the graph
             Scanner fileScanner = new Scanner(inputStream);
             int numNodes = Integer.parseInt(fileScanner.nextLine());
-
             addVertices(numNodes, assetsDirectory + storyNodes);  // See method below
 
             while (fileScanner.hasNextLine()) {
@@ -104,9 +111,8 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         } catch (IOException e) {
             e.printStackTrace();
         }
-        Node testNode = graph.getNode("1");
-        testNode.setAttribute("ui.color", new Color(0,176,80));
-        display(savedInstanceState, graph, true);
+
+        display(savedInstanceState, graph, true, nodesVisitedDB);
     }
 
     // Refer to: https://github.com/caturananta/AndroidGraphView
@@ -224,13 +230,48 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
     // Refer to GraphStream's GitHub ReadMe:
     /** https://github.com/graphstream/gs-ui-android */
-    public void display(Bundle savedInstanceState, Graph graph, boolean autoLayout) {
-        try {   // Toggle visited node colors, see below
-            nodeProgressColor(assetsDirectory + visitedNodes);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public void display(Bundle savedInstanceState, Graph graph, boolean autoLayout, String nodesVisitedDB) {
 
+        // Retrieve Visited Nodes from the Firebase database
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+        assert user != null;
+        String userID = user.getUid();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference userRef = database.getReference("users/" + userID + "/" + nodesVisitedDB);
+
+        // Iterate through Visited Node values from database, and add "true" chapters to List
+        List<String> visitedTrue = new ArrayList<>();
+        userRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot itemSnapshot : snapshot.getChildren()) {
+                    // Get the value of the boolean for each chapter
+                    boolean value = Boolean.TRUE.equals(itemSnapshot.getValue(Boolean.class));
+                    if (value) {  // Add visited "true" to List
+                        String data = itemSnapshot.getKey();
+                        visitedTrue.add(data);
+                        Log.d("SUCCESS", "Value of " + itemSnapshot.getKey() + " is " + true);
+                    }
+                }
+                // Toggle the color of visited nodes to green
+                for (String visitedNode : visitedTrue) {
+                    for (Node node : graph) {
+                        if (node.getAttribute("ui.label").equals(visitedNode)) {
+                            node.setAttribute("ui.class", "green");
+                        }
+                    }
+                }
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                // Handle the error
+                Log.e("FAIL", "Error retrieving data", error.toException());
+            }
+
+        });
+
+        // Display Graph
         if (savedInstanceState == null) {
             FragmentManager fm = getSupportFragmentManager();
 
@@ -248,27 +289,57 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     }
     /* End of https://github.com/graphstream/gs-ui-android */
 
-    public void nodeProgressColor(String visitedNodeFile) throws IOException {
-        // Open Visited Nodes asset file
-        AssetManager assetManager = getAssets();
-        InputStream inputStream = assetManager.open(visitedNodeFile);
-        InputStreamReader inputStreamReader = new InputStreamReader(inputStream, StandardCharsets.UTF_8);
-        BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+    /*public List<String> checkNodeProgress(String nodesVisitedDB) {
+        // Retrieve Visited Nodes from the Firebase database
+        List<String> visitedTrue = new ArrayList<>();
+        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+        assert user != null;
+        String userID = user.getUid();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference userRef = database.getReference("users/" + userID + "/" + nodesVisitedDB);
 
-        // Read in the file string
-        String visited = bufferedReader.readLine();
-        // Split the string, and create an array for those values
-        String[] visitedNodes = visited.split(" ");
+        userRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                // Iterate through the children of the snapshot
+                for (DataSnapshot itemSnapshot : snapshot.getChildren()) {
+                    // Get the value of the boolean for each item
+                    boolean value = Boolean.TRUE.equals(itemSnapshot.getValue(Boolean.class));
 
+                    if (value) {
+                        String data = itemSnapshot.getKey();
+                        visitedTrue.add(data);
+                        Log.d("SUCCESS", "Value of " + itemSnapshot.getKey() + " is " + true);
+                    }
+
+                    //Log.d("SUCCESS", "Value of " + itemSnapshot.getKey() + " is " + value);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                // Handle the error
+                Log.e("FAIL", "Error retrieving data", error.toException());
+            }
+
+        });
+        for (String s : visitedTrue) { System.out.println("From DB, " + s);}
+        return visitedTrue;
+    }*/
+
+    /*public void nodeProgressColor(List<String> visitedList) {
+        // Iterate through the visitedTrue list to determine which chapters have been read
+        for (String s : visitedList) { System.out.println("Chapter " + s); }
         // If the node (story part) has been visited (read), toggle the Node color to green
-        for (String visitedNode : visitedNodes) {
+        for (String visitedNode : visitedList) {
             for (Node node : graph) {
                 if (node.getAttribute("ui.label").equals(visitedNode)) {
                     node.setAttribute("ui.class", "green");
                 }
             }
         }
-    }
+    }*/
 
     public void buttonPushed(String id) { }
 
@@ -281,4 +352,5 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     public void viewClosed(String viewName) {
         loop = false;
     }
+
 }

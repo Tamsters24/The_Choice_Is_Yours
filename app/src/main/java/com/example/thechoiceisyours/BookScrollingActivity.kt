@@ -91,17 +91,7 @@ class BookScrollingActivity : AppCompatActivity() {
         val userRef = usersRef.child(userId)
         val visitedChapter = userRef.child(nodesVisitedDB).
                              child("$currentPart$currentChoice")
-        visitedChapter.child("visited").
-                            addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val visited = dataSnapshot.getValue(Boolean::class.java)
-                Log.d(TAG, "Part visited: $visited")
-            }
-            override fun onCancelled(error: DatabaseError) {
-                Log.w(TAG, "Failed to read value.", error.toException())
-            }
-        })
-        visitedChapter.child("visited").setValue(true)
+        visitedChapter.setValue(true)
 
 
         // Display the current chapter image if one exists
