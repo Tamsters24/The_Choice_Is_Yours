@@ -37,6 +37,7 @@ class BookScrollingActivity : AppCompatActivity() {
     private var assetsDirectory = ""
     private var choiceMap = mutableMapOf<String, List<String>>()
     private var nodesVisitedDB = ""
+    private var bookAssets = ""
 
     private lateinit var binding: ActivityBookScrollingBinding
 
@@ -50,7 +51,7 @@ class BookScrollingActivity : AppCompatActivity() {
         binding.toolbarLayout.title = title
 
         // Retrieve Book Contents using the Extra put in BookCover.kt
-        val bookAssets = intent.getStringExtra("assetsFolder").toString()
+        bookAssets = intent.getStringExtra("assetsFolder").toString()
         // Concatenate name for direct43ory and book content .txt file
         assetsDirectory = bookAssets + "_files/"
         val bookFile = bookAssets + "_contents.txt"
@@ -91,7 +92,8 @@ class BookScrollingActivity : AppCompatActivity() {
         val userRef = usersRef.child(userId)
         val visitedChapter = userRef.child(nodesVisitedDB).
                              child("$currentPart$currentChoice")
-        visitedChapter.setValue(true)
+        if (currentPart > 1)  // First chapter is always considered visited
+            visitedChapter.setValue(true)
 
 
         // Display the current chapter image if one exists
@@ -265,7 +267,7 @@ class BookScrollingActivity : AppCompatActivity() {
                     Toast.makeText(baseContext, "Click to try a different path", Toast.LENGTH_LONG).show()
                     option3Btn.setOnClickListener {
                         val theEndToBookCoverIntent = Intent(this, BookCover::class.java)
-
+                        theEndToBookCoverIntent.putExtra("assetsFolder", bookAssets)
                         startActivity(theEndToBookCoverIntent)
                     }
                 } else {  // Click on option button 3 to continue to assigned chapter

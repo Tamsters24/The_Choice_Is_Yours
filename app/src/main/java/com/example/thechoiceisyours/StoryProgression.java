@@ -19,7 +19,6 @@ import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
 import org.graphstream.ui.android_viewer.util.DefaultFragment;
-import org.graphstream.ui.graphicGraph.stylesheet.Color;
 import org.graphstream.ui.view.ViewerListener;
 import org.graphstream.ui.view.ViewerPipe;
 
@@ -111,7 +110,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        System.out.println(graph.edges());
         display(savedInstanceState, graph, true, nodesVisitedDB);
     }
 
@@ -262,6 +261,10 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                         }
                     }
                 }
+                // Toggle the color of edges between visited nodes to green
+                for (int i = 1; i < visitedTrue.size(); i++) {
+                    System.out.println(visitedTrue.get(i - 1) + visitedTrue.get(i));
+                }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
@@ -288,58 +291,6 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         }
     }
     /* End of https://github.com/graphstream/gs-ui-android */
-
-    /*public List<String> checkNodeProgress(String nodesVisitedDB) {
-        // Retrieve Visited Nodes from the Firebase database
-        List<String> visitedTrue = new ArrayList<>();
-        FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
-        FirebaseUser user = firebaseAuth.getCurrentUser();
-        assert user != null;
-        String userID = user.getUid();
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference userRef = database.getReference("users/" + userID + "/" + nodesVisitedDB);
-
-        userRef.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                // Iterate through the children of the snapshot
-                for (DataSnapshot itemSnapshot : snapshot.getChildren()) {
-                    // Get the value of the boolean for each item
-                    boolean value = Boolean.TRUE.equals(itemSnapshot.getValue(Boolean.class));
-
-                    if (value) {
-                        String data = itemSnapshot.getKey();
-                        visitedTrue.add(data);
-                        Log.d("SUCCESS", "Value of " + itemSnapshot.getKey() + " is " + true);
-                    }
-
-                    //Log.d("SUCCESS", "Value of " + itemSnapshot.getKey() + " is " + value);
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-                // Handle the error
-                Log.e("FAIL", "Error retrieving data", error.toException());
-            }
-
-        });
-        for (String s : visitedTrue) { System.out.println("From DB, " + s);}
-        return visitedTrue;
-    }*/
-
-    /*public void nodeProgressColor(List<String> visitedList) {
-        // Iterate through the visitedTrue list to determine which chapters have been read
-        for (String s : visitedList) { System.out.println("Chapter " + s); }
-        // If the node (story part) has been visited (read), toggle the Node color to green
-        for (String visitedNode : visitedList) {
-            for (Node node : graph) {
-                if (node.getAttribute("ui.label").equals(visitedNode)) {
-                    node.setAttribute("ui.class", "green");
-                }
-            }
-        }
-    }*/
 
     public void buttonPushed(String id) { }
 
