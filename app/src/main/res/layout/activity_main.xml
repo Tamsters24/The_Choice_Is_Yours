@@ -27,7 +27,8 @@
             app:backgroundTint="@color/dark_red1"
             android:text="@string/cover_to_library_btn"
             android:textSize="18sp"
-            android:typeface="serif"/>
+            android:typeface="serif"
+            android:textColor="@color/white"/>
     <Button
             android:id="@+id/mainToLogin_btn"
             android:layout_width="262dp"
@@ -39,7 +40,8 @@
             app:backgroundTint="@color/brown_tan"
             android:text="@string/cover_login_btn"
             android:textSize="15sp"
-            android:typeface="serif"/>
+            android:typeface="serif"
+            android:textColor="@color/white"/>
     <Button
             android:id="@+id/MainToRegistration_btn"
             android:layout_width="262dp"
@@ -50,5 +52,6 @@
             android:layout_marginStart="66dp"
             android:text="@string/cover_register_btn"
             android:textSize="15sp"
-            android:typeface="serif"/>
+            android:typeface="serif"
+            android:textColor="@color/white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

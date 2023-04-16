@@ -3,7 +3,7 @@ Choice.1a.2a Decide to start back home.
 Choice.1a.2b Decide to wait.
 p1a  image vol1_files/vol1_picture1.jpg
 
-Part.2a  As you start walking back toward the ranch, you notice the trail seems very different than you remember it, though of course moonlight can play tricks on your eyes. But you suddenly realize you are not walking on the trail at all, but on what seems to be a dried-up river bed. You hurry back to the cave entrance. You look around you and realize the whole landscape has changed. While you were in the cave, torrents of water have washed out the trail; yet there is not so much as a puddle left. You shiver. It is cold, much colder than it should be at this time of year. You take a jacket out of your backpack and put it on, but you are still freezing.\nAt least the world about you seems brighter. It's getting light in tre east. The sun will soon be up. You look at your watch. It has run down, though you wound it only a fan hours ago. Nothing seems to make sense anymore.\nYou know ypu should get back to the ranch as quickly as possible, yet somehow you feel the only way to change things back to the way they were is to re-enter the cave.
+Part.2a  As you start walking back toward the ranch, you notice the trail seems very different than you remember it, though of course moonlight can play tricks on your eyes. But you suddenly realize you are not walking on the trail at all, but on what seems to be a dried-up river bed. You hurry back to the cave entrance. You look around you and realize the whole landscape has changed. While you were in the cave, torrents of water have washed out the trail; yet there is not so much as a puddle left. You shiver. It is cold, much colder than it should be at this time of year. You take a jacket out of your backpack and put it on, but you are still freezing.\nAt least the world about you seems brighter. It's getting light in the east. The sun will soon be up. You look at your watch. It has run down, though you wound it only a few hours ago. Nothing seems to make sense anymore.\nYou know you should get back to the ranch as quickly as possible, yet somehow you feel the only way to change things back to the way they were is to re-enter the cave.
 Choice.2a.3a Continue toward the ranch.
 Choice.2a.3b Go back into the cave.
 
@@ -201,8 +201,8 @@ Part.6q  "Since you can't find your way to your own time," you say, "perhaps we 
 THE END
 
 Part.6r  "Off to the tower," the King shouts. Two knights leap forward, drag you out of the chamber, and, with spears at your back, force you to climb forty-eight stone steps to the tower prison--a tiny cylindrical room with one small window looking out over the moat and pasture land beyond. The only furniture is a bed of straw.\nYou realize you are back in the early days of feudal Europe, where the only laws are the King's whims. You have no idea how long he intends to keep you in the tower. There is one possibility of escape. The water in the moat, about twenty-five feet almost directly below your window, is quite deep. If you jump out far enough, you should land in the deep water and not be hurt.
-Choice.6r.7i Jump.
-Choice.6r.7j Don't jump.
+Choice.6r.7k Jump.
+Choice.6r.7l Don't jump.
 p6r  image vol1_files/vol1_picture6p.jpg
 
 Part.6s  You go up to the base of the wall where the people are working. When they see you, they imagine you are a spy from some unknown tribe. Some guards capture you and force you to sit on a pile of rocks while they talk about you.\nAfter a while they point to one of the ladders. Two other people force you to start handing up rocks. You realize that you have been conscripted to work building a wall twenty feet high, twelve feet wide, and 1,400 miles long. You calculate it will take about ten billion rocks to build the wall. You wonder how many of them you will lift before you can escape--if you ever do.
@@ -216,8 +216,8 @@ Part.6u  You jump aboard and find yourself in a sealed chamber. The walls surrou
 THE END
 
 Part.6v  Much as you would like to see the inside of the alien ship, you have no desire to be whisked off into space. You step back to what you hope is a safe distance and watch what happens. In a moment the portal closes, and almost instantly the ship rises, silently, straight up. Within a few minutes it is lost from view. You walk over to look more closely at the primitive looking people sleeping on the pallet. They begin to stir and stretch and rub their eyes as if waking from a long sleep.
-Choice.6v.7k Stay and try to make friends with the primitive people.
-Choice.6v.7l Return to the hill and try to find your way back to the Cave of Time.
+Choice.6v.7m Stay and try to make friends with the primitive people.
+Choice.6v.7n Return to the hill and try to find your way back to the Cave of Time.
 
 Part.7a  Slowly you unsheath your knife and then run for the entrance. The wolf is after you like a shot. It leaps and tears your bearskin coat. While the wolf is regaining its balance, you run into the cave and toward the left tunnel. The wolf runs after you. You look over your shoulder and lose your footing. Instead of falling on the ground, you feel yourself sliding down a long, steep chute. Far above, the wolf howls with frustration. You land in a heap at the bottom of a pit--shaken but unharmed. There is a dark passageway to the left. You toss in a stone and, after what seems like a long time, you hear a splash far below. Fortunately, there is another passageway to the right, which is dimly lit by phosphorescent light.
 TO PAGE 25

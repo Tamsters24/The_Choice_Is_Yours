@@ -16,7 +16,8 @@
             app:backgroundTint="@color/dark_red1"
             android:text="@string/vol1_title"
             android:typeface="serif"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
     <Button
             android:id="@+id/vol2_btn"
             android:layout_width="match_parent"
@@ -25,7 +26,8 @@
             android:background="@drawable/rounded_button"
             android:text="@string/vol2_title"
             android:typeface="serif"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
     <Button
             android:id="@+id/vol3_btn"
             android:layout_width="match_parent"
@@ -35,7 +37,8 @@
             app:backgroundTint="@color/brown_tan"
             android:text="@string/vol3_title"
             android:typeface="serif"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
     <Button
             android:id="@+id/vol4_btn"
             android:layout_width="match_parent"
@@ -44,5 +47,6 @@
             android:background="@drawable/rounded_button"
             android:text="@string/vol4_title"
             android:typeface="serif"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
 </LinearLayout>
