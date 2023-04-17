@@ -19,6 +19,23 @@
             app:layout_constraintHorizontal_bias="0.131"
             app:layout_constraintVertical_bias="0.09"
             android:background="@null"/>
+    <TextView
+            android:id="@+id/loginTitle"
+            android:text="@string/acct_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
     <EditText
             android:id="@+id/loginEmail"
             android:drawableStart="@drawable/ic_twotone_account_box_24"
@@ -34,7 +51,8 @@
             android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
-            android:ems="10"/>
+            android:ems="10"
+            android:autofillHints=""/>
     <EditText
             android:id="@+id/loginPassword"
             android:drawableStart="@drawable/ic_twotone_lock_24"
@@ -50,7 +68,7 @@
             android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
-            android:ems="10"/>
+            android:ems="10" android:autofillHints=""/>
     <Button
             android:id="@+id/loginToRegistrationBtn"
             android:text="@string/action_sign_in"
@@ -90,5 +108,5 @@
             app:layout_constraintVertical_bias="0.8"
             android:textSize="11sp"
             android:textColor="@color/white"
-            app:backgroundTint="@color/dark_blue1"/>
+            app:backgroundTint="@color/dark_red1"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

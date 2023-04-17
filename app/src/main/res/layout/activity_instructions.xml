@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/instructionsScrolling"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".Instructions">
+
+    <include
+            android:id="@+id/instructionsLayout"
+            layout="@layout/instructions_scrolling"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

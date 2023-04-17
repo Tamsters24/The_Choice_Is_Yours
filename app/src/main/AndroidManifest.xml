@@ -13,6 +13,9 @@
             android:theme="@style/Theme.TheChoiceIsYours"
             tools:replace="android:theme">
         <activity
+                android:name=".Instructions"
+                android:exported="true"/>
+        <activity
                 android:name=".UserRegistration"
                 android:exported="true"/>
         <activity

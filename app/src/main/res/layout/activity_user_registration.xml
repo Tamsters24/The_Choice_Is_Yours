@@ -51,7 +51,8 @@
             android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
-            android:ems="10"/>
+            android:ems="10"
+            android:autofillHints=""/>
     <EditText
             android:id="@+id/newAcctPW1"
             android:drawableStart="@drawable/ic_twotone_lock_24"
@@ -67,7 +68,8 @@
             android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
-            android:ems="10"/>
+            android:ems="10"
+            android:autofillHints=""/>
     <EditText
             android:id="@+id/newAcctPW2"
             android:drawableStart="@drawable/ic_twotone_lock_24"
@@ -83,7 +85,8 @@
             android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
-            android:ems="10"/>
+            android:ems="10"
+            android:autofillHints=""/>
     <Button
             android:id="@+id/completeRegBtn"
             android:text="@string/new_acct_register"

@@ -1,281 +1,94 @@
 <resources>
+    <!-- Activity Title Strings -->
     <string name="app_name">The Choice Is Yours</string>
     <string name="title_screen">The Choice Is Yours</string>
+    <string name="title_activity_vol2_scrolling"> </string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Main Activity Strings -->
     <string name="cover_to_library_btn">Click here to access your library</string>
     <string name="cover_login_btn">Need to Login?</string>
     <string name="cover_register_btn">Need to Register?</string>
-    <string name="story_progress_btn">Click Here To Return</string>
+    <string name="cover_instructions_btn">Instructions</string>
 
-    <string name="title_activity_vol2_scrolling"> </string>
-
+    <!-- Story Volume Choice Strings -->
     <string name="vol1_title">Vol 1: The Cave of Time</string>
     <string name="vol2_title">Vol 2: Journey Under the Sea</string>
     <string name="vol3_title">Vol 3: By Balloon to the Sahara</string>
     <string name="vol4_title">Vol 4: Space and Beyond</string>
 
-    <string name="cover_screen_btn">Click Here To Proceed</string>
-    <string name="check_progress_btn">Check Your Story Progress</string>
-
+    <!-- Login Activity Strings -->
+    <string name="acct_login">ACCOUNT LOGIN</string>
     <string name="prompt_email">email address</string>
     <string name="prompt_password">password</string>
     <string name="action_sign_in">register here</string>
     <string name="action_forgot_pwd">forgot password</string>
     <string name="submit_btn">LOGIN</string>
 
+    <!-- Registration Activity Strings -->
     <string name="new_acct">ACCOUNT REGISTRATION</string>
     <string name="new_acct_email">enter your email</string>
     <string name="new_acct_password1">enter your password</string>
     <string name="new_acct_password2">reenter password</string>
     <string name="new_acct_register">COMPLETE REGISTRATION</string>
 
+    <!-- Forgot Password Strings -->
     <string name="forgot_pwd">RESET PASSWORD</string>
     <string name="forgot_msg1">forgot your password? click the button below</string>
     <string name="forgot_msg2">then check your email to reset password</string>
     <string name="forgot_email">SEND EMAIL</string>
 
-    <string name="story_path1">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5a
-    </string>
-    <string name="story_path2">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9a
-    </string>
-    <string name="story_path3">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10a
-    </string>
-    <string name="story_path4">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10b
-    </string>
-    <string name="story_path5">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8b
-    </string>
-    <string name="story_path6">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7b -> Part 5a
-    </string>
-    <string name="story_path7">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8o
-    </string>
-    <string name="story_path8">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8p -> Part 9k
-    </string>
-    <string name="story_path9">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8p -> Part 9l
-    </string>
-    <string name="story_path10">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8q -> Part 9m
-    </string>
-    <string name="story_path11">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8q -> Part 9n
-    </string>
-    <string name="story_path12">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8r
-    </string>
+    <!-- Other Button Strings -->
+    <string name="proceed_btn">Click Here To Proceed</string>
+    <string name="return_btn">Click Here To Return</string>
+    <string name="check_progress_btn">Check Your Story Progress</string>
 
-
-    <string name="story_path13">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part7l
+    <!-- Instructions Strings -->
+    <string name="instructions1">In "The Choice is Yours" book series, you are the character!
+        These stories contain many different adventures you can go on
+        as you journey through strange and mysterious places and meet
+        interesting characters.\n\nFrom
+        time to time as you read along, you will be asked to make a choice …
     </string>
-    <string name="story_path14">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part8s
+    <string name="instructions2">At the bottom of the chapter page,
+        there will be icons matching the choice that you will make.
+        Tap the icon to proceed to the next chapter.\n\nThe
+        next chapter will appear as you proceed through your story,
+        and your choice may lead to success or disaster!\n\nREMEMBER—\nYOU
+        CANNOT GO BACK!
     </string>
-    <string name="story_path15">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part8t
+    <string name="instructions3">
+        The adventures you take are a result of your choices.
+        You are responsible because you choose!
+        Think carefully before you make a move! One mistake can be your last … or it may lead you to wonders abound!
     </string>
-    <string name="story_path16">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5j
+    <string name="instructions4">
+        Because there are so many different paths that you might take depending on your choices as you
+        progress through your story, you can keep track of your progress and which chapters you\'ve read!
     </string>
-    <string name="story_path17">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5k
+    <string name="instructions5">
+        On the book cover page, select:\n\n\"CHECK YOUR STORY PROGRESS\"\n\nto
+        bring up a map of what paths you have taken.
     </string>
-    <string name="story_path18">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7m
+    <string name="instructions6">
+        Chapters that you have not read yet are indicated by gray circles.
+        Once you have read them, the circle will change to green.
     </string>
-    <string name="story_path19">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7n
+    <string name="instructions7">
+        To keep track of your progress, you will need to register for an account.
+        Just type in your email address and password, and you\'re all set!
+        You will have to be logged in to keep track of your progress.
     </string>
-
-
-    <string name="story_path20_loop">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5a
+    <string name="instructions8">
+        If you are logged out, and cannot remember your password,
+        you can request an email to create a new password.
     </string>
-    <string name="story_path21">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9a
+    <string name="instructions9">
+        Now that you\'re ready to take the first step of your new adventure,
+        what happens next in the story? It all depends on the choices you make.
+        How does the story end? Only you can find out!\n\nAnd
+        the best part is that you can keep reading and rereading until
+        you\'ve had not one, but many incredibly daring experiences!\n\nTHE
+        CHOICE IS YOURS!
     </string>
-    <string name="story_path22">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10a
-    </string>
-    <string name="story_path23">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8a -> Part 9b -> Part 10b
-    </string>
-    <string name="story_path24">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7a -> Part 8b
-    </string>
-    <string name="story_path25">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6a -> Part 7b -> Part 5a
-    </string>
-    <string name="story_path26">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8o
-    </string>
-    <string name="story_path27">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8p -> Part 9k
-    </string>
-    <string name="story_path28">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7i -> Part8p -> Part 9l
-    </string>
-    <string name="story_path29">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8q -> Part 9m
-    </string>
-    <string name="story_path30">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8q -> Part 9n
-    </string>
-    <string name="story_path31">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6i -> Part 7j -> Part8r
-    </string>
-    <string name="story_path32">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part7l
-    </string>
-    <string name="story_path33">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part8s
-    </string>
-    <string name="story_path34">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5i
-        -> Part 6j -> Part 7k -> Part8t
-    </string>
-    <string name="story_path35">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4g -> Part 5j
-    </string>
-    <string name="story_path36">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5k
-    </string>
-    <string name="story_path37">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7m
-    </string>
-    <string name="story_path38">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7n
-    </string>
-    <string name="story_path39">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6k -> Part 7n
-    </string>
-    <string name="story_path40_the_infinite_loop">
-        Part 1 -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l -> Part 2a -> Part 3a -> Part 4a -> Part 5b
-        -> Part 6b -> Part 6c -> Part 3d -> Part 4h -> Part 5l
-        -> Part 6l
-    </string>
-
-
-    <string name="story_path41">
-        Part 1 -> Part 2a -> Part 3b -> Part 4c
-    </string>
-    <string name="story_path42">
-        Part 1 -> Part 2a -> Part 3a -> Part 4d
-    </string>
-
-
-    <string name="story_path43">
-        Part 1 -> Part 2b -> Part 3c -> Part 4e -> Part 5e
-        Part 2a -> Part 3a -> Part 4a -> Part 5a
-    </string>
-
-
-    <string name="action_settings">Settings</string>
 </resources>

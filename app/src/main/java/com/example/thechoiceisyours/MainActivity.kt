@@ -30,5 +30,12 @@ class MainActivity : AppCompatActivity() {
             val mainToRegistrationIntent = Intent(this, UserRegistration::class.java)
             startActivity(mainToRegistrationIntent)
         }
+
+        // Button
+        // Navigate to Instructions Activity: activity_instructions.xml & Instructions.kt
+        findViewById<Button>(R.id.MainToInstructions_btn).setOnClickListener {
+            val mainToInstructionsIntent = Intent(this, Instructions::class.java)
+            startActivity(mainToInstructionsIntent)
+        }
     }
 }

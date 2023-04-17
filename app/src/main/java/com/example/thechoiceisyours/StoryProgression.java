@@ -65,7 +65,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         // Set button styling
         button.setBackgroundResource(R.drawable.rounded_button);
         button.setPadding(25, 25, 25, 25);
-        button.setText(getText(R.string.story_progress_btn));
+        button.setText(getText(R.string.return_btn));
         button.setTextColor(getResources().getColor(R.color.white));
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams( // For Button
                 FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);

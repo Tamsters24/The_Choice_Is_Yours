@@ -6,7 +6,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".BookCover">
-
     <ImageView
             android:id="@+id/coverPage"
             app:srcCompat="@drawable/blank_cover"
@@ -23,7 +22,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="75dp"
             android:background="@drawable/rounded_button"
-            android:text="@string/cover_screen_btn"
+            android:text="@string/proceed_btn"
             android:typeface="serif"
             android:textStyle="bold"/>
     <Button
