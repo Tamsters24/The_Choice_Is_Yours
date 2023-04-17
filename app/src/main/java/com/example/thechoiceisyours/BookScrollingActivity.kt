@@ -236,9 +236,9 @@ class BookScrollingActivity : AppCompatActivity() {
         chapterDisplay.text = storyPage
 
         // Justify the TextView
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            chapterDisplay.justificationMode = Layout.JUSTIFICATION_MODE_INTER_WORD
-        }
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        //    chapterDisplay.justificationMode = Layout.JUSTIFICATION_MODE_INTER_WORD
+        //}
 
         // Scroll back to the top of the screen
         val storyView = findViewById<NestedScrollView>(R.id.storyLayout)

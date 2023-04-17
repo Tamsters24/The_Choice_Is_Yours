@@ -26,16 +26,16 @@ class ForgotPassword : AppCompatActivity() {
         bookPwdEmail = Firebase.auth
         FirebaseApp.initializeApp(this)
 
-        // Button
+        // Image Button
         // Navigate to Login Screen: activity_user_login.xml & UserLogin.kt
-        findViewById<ImageButton>(R.id.forgotPwdToLoginBtn).setOnClickListener {
+        findViewById<ImageButton>(R.id.forgotPwdToLogin_btn).setOnClickListener {
             val forgotPwdToLoginIntent = Intent(this, UserLogin::class.java)
             startActivity(forgotPwdToLoginIntent)
         }
 
         // Button
         // Send email to reset password Action
-        findViewById<Button>(R.id.forgotPwdEmailBtn).setOnClickListener {
+        findViewById<Button>(R.id.forgotPwdEmail_btn).setOnClickListener {
             resetPwdEmail = findViewById<EditText>(R.id.forgotEmail).text.toString()
 
             if (resetPwdEmail == "") {
@@ -48,6 +48,7 @@ class ForgotPassword : AppCompatActivity() {
 
     }
 
+    // Access Firebase Controls to send email to user prompting to reset password
     private fun pwdEmailReset(resetEmail: String) {
         FirebaseAuth.getInstance().sendPasswordResetEmail(resetEmail)
             .addOnCompleteListener(this) { task ->
@@ -55,7 +56,7 @@ class ForgotPassword : AppCompatActivity() {
                     Log.d(ContentValues.TAG, "passwordResetWithEmail:success")
                     Toast.makeText(baseContext, "Email sent!",
                         Toast.LENGTH_SHORT).show()
-
+                    // If successful, return to Main Activity
                     val backToLoginIntent = Intent(this, UserLogin::class.java)
                     startActivity(backToLoginIntent)
                 } else {

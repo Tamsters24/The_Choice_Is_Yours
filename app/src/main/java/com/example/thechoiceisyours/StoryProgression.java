@@ -9,6 +9,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
@@ -18,6 +19,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.*;
 
+import org.graphstream.graph.Edge;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
@@ -54,39 +56,15 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         String storyNodes = bookAssets + "NodeNames.txt";
         String nodesVisitedDB = bookAssets + "NodesVisited";
 
+
+        /*****************************
+        * GraphStream Display Set up *
+        ******************************/
         // Set up View for GraphStream
         FrameLayout frame = new FrameLayout(this);
         frame.setId(CONTENT_VIEW_ID);
-        setContentView(frame, new FrameLayout.LayoutParams( // For GraphStream View
+        setContentView(frame, new FrameLayout.LayoutParams(  // For GraphStream View
                 FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
-
-        // Add a button to return to previous screen
-        Button button = new Button(this);
-
-        // Set button styling
-        button.setBackgroundResource(R.drawable.rounded_button);
-        button.setPadding(25, 25, 25, 25);
-        button.setText(getText(R.string.return_btn));
-        button.setTextColor(getResources().getColor(R.color.white));
-        Typeface typeface = Typeface.create("serif", Typeface.NORMAL);
-        button.setTypeface(typeface);
-        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams( // For Button
-                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
-        params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
-        params.setMargins(50, 50, 50, 50);
-
-        // Add button to the view
-        frame.addView(button, params);
-        // Button functionality
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent storyProgressionToBookCoverIntent = new Intent(getApplicationContext(), BookCover.class);
-                storyProgressionToBookCoverIntent.putExtra("assetsFolder", bookAssets);
-                startActivity(storyProgressionToBookCoverIntent);
-            }
-        });
-
 
         // Generate Graph
         graph = new SingleGraph("StoryGraph");
@@ -99,26 +77,64 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
             // Read the text file to create the graph
             Scanner fileScanner = new Scanner(inputStream);
-            int numNodes = Integer.parseInt(fileScanner.nextLine());
-            addVertices(numNodes, assetsDirectory + storyNodes);  // See method below
+            int numNodes = Integer.parseInt(fileScanner.nextLine());      // Line 1 of file
+            addVertices(numNodes, assetsDirectory + storyNodes);  // See addVertices method below
 
-            while (fileScanner.hasNextLine()) {
+            while (fileScanner.hasNextLine()) {                           // See addEdges method below
                 String vertices = fileScanner.nextLine();
                 if (vertices.equals(""))
                     continue;   // In case the vertex does not have any edges
                 String[] connection = vertices.split(" ");
                 String vertex1 = connection[0];
                 String vertex2 = connection[1];
-                connectVertices(vertex1, vertex2);  // See method below
+                connectVertices(vertex1, vertex2);
             }
             fileScanner.close();
             inputStream.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            // If unable to load graph, Toast failed message and return to Book Cover
+            Toast.makeText(getApplicationContext(),
+                    "Unable to open Progress Map. Returning to book cover",
+                    Toast.LENGTH_LONG).show();
+            Intent failedGraphToCoverIntent = new Intent(getApplicationContext(), BookCover.class);
+            failedGraphToCoverIntent.putExtra("assetsFolder", bookAssets);
+            startActivity(failedGraphToCoverIntent);
+            finish();
         }
-        System.out.println(graph.edges());
+        // After successful read, display Graph
         display(savedInstanceState, graph, true, nodesVisitedDB);
+
+        /*****************************
+         *    Return Button Set up   *
+         *****************************/
+        // Add a button to return to previous screen
+        Button button = new Button(this);
+
+        // Set button styling
+        FrameLayout.LayoutParams params = new FrameLayout.LayoutParams( // For Button
+                FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+        params.setMargins(50, 50, 50, 50);
+        button.setBackgroundResource(R.drawable.rounded_button);
+        button.setPadding(25, 25, 25, 25);
+        button.setText(getText(R.string.return_btn));
+        Typeface typeface = Typeface.create("serif", Typeface.NORMAL);
+        button.setTypeface(typeface);
+        button.setTextColor(getResources().getColor(R.color.white));
+
+        // Add button to the view
+        frame.addView(button, params);
+        // Button functionality
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent storyProgressionToBookCoverIntent = new Intent(getApplicationContext(), BookCover.class);
+                storyProgressionToBookCoverIntent.putExtra("assetsFolder", bookAssets);
+                startActivity(storyProgressionToBookCoverIntent);
+            }
+        });
     }
+
 
     // Refer to: https://github.com/caturananta/AndroidGraphView
     // From post: https://stackoverflow.com/questions/66806508/graphstream-android-not-able-to-display-graph-in-fragment
@@ -182,8 +198,8 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "arrow-shape: diamond;" +
                 "}" +
 
-                "edge.green {" +
-                "fill-color: green;" +
+                "edge.red {" +
+                "fill-color: red;" +
                 " }";
 
         graph.setAttribute("ui.stylesheet", styleSheet);
@@ -202,6 +218,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         }).start();
     }
     /* End of https://github.com/caturananta/AndroidGraphView */
+
 
     public void addVertices(int numberNodes, String nodeFile) throws IOException {
         // For Vertex/Node label, determine the Node ID from a NodeNames.txt asset
@@ -229,17 +246,38 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
     }
 
     public void connectVertices(String vertex1, String vertex2) {
-        String edgeID = vertex1 + vertex2;
+        Node v1 = graph.getNode(vertex1);
+        Node v2 = graph.getNode(vertex2);
+        String v1Label = String.valueOf(v1.getAttribute("ui.label"));
+        String v2Label = String.valueOf(v2.getAttribute("ui.label"));
+        String edgeID = v1Label + v2Label;
+        System.out.println(edgeID);
         graph.addEdge(edgeID, vertex1, vertex2);
     }
 
-    // Refer to GraphStream's GitHub ReadMe:
-    /** https://github.com/graphstream/gs-ui-android */
+    /** Revised using https://github.com/graphstream/gs-ui-android */
+    /** The user's login is used to access Firebase to determine chapters (nodes) visited */
+    /** Nodes and Edges are toggled to different colors if visited */
+    /** Color toggling MUST BE performed in the display function to function correctly */
     public void display(Bundle savedInstanceState, Graph graph, boolean autoLayout, String nodesVisitedDB) {
-
         // Retrieve Visited Nodes from the Firebase database
         FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
+
+        // Login is required to load graph. If null, Toast failed message and direct to Login Screen
+        if (user == null) {
+            Toast.makeText(getApplicationContext(),
+                    "Login required to access Progress Map",
+                    Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),
+                    "To enable Progress Map. Please login",
+                    Toast.LENGTH_LONG).show();
+            Intent loginRequiredIntent = new Intent(getApplicationContext(), UserLogin.class);
+            startActivity(loginRequiredIntent);
+            finish();
+        }
+
+        // If user != null, use their UID to access Firebase database for chapters visited
         assert user != null;
         String userID = user.getUid();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -256,6 +294,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                     if (value) {  // Add visited "true" to List
                         String data = itemSnapshot.getKey();
                         visitedTrue.add(data);
+                        // On success, note in Log
                         Log.d("SUCCESS", "Value of " + itemSnapshot.getKey() + " is " + true);
                     }
                 }
@@ -269,18 +308,20 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 }
                 // Toggle the color of edges between visited nodes to green
                 for (int i = 1; i < visitedTrue.size(); i++) {
+                    Edge toggleColor = graph.getEdge(visitedTrue.get(i - 1) + visitedTrue.get(i));
+                    toggleColor.setAttribute("ui.class", "red");
                     System.out.println(visitedTrue.get(i - 1) + visitedTrue.get(i));
                 }
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                // Handle the error
+                // On failure, note in Log
                 Log.e("FAIL", "Error retrieving data", error.toException());
             }
-
         });
 
-        // Display Graph
+        // Display Graph. Refer to GraphStream's GitHub ReadMe:
+        /** https://github.com/graphstream/gs-ui-android */
         if (savedInstanceState == null) {
             FragmentManager fm = getSupportFragmentManager();
 

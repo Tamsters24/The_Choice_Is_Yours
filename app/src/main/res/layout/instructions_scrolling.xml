@@ -56,7 +56,7 @@
                 android:typeface="serif"
                 android:justificationMode="inter_word"/>
         <Button
-                android:id="@+id/instr_to_next_btn"
+                android:id="@+id/instrToNext_btn"
                 android:layout_width="262dp"
                 android:layout_height="48dp"
                 android:layout_centerInParent="true"

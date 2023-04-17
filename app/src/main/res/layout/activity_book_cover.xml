@@ -15,7 +15,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp"/>
     <Button
-            android:id="@+id/startBookBtn"
+            android:id="@+id/startBook_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/coverPage"
@@ -29,10 +29,10 @@
             android:textStyle="bold"
             android:textColor="@color/white"/>
     <Button
-            android:id="@+id/checkProgressBtn"
+            android:id="@+id/checkProgress_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/startBookBtn"
+            app:layout_constraintTop_toBottomOf="@+id/startBook_btn"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="12dp"
             android:layout_marginStart="50dp"

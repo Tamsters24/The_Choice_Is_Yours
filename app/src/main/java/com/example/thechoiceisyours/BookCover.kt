@@ -16,11 +16,12 @@ class BookCover : AppCompatActivity() {
 
         // Display Book Cover using the Extra put in StoryVolChoice.kt
         val bookAssets = intent.getStringExtra("assetsFolder").toString()
+
         // Concatenate name for directory and book cover .jpg file
         val assetsDirectory = bookAssets + "_files"
         val bookCoverName = bookAssets + "_cover.jpg"
 
-        // Open file and set image
+        // Open file and set image/image layout
         val coverInputStream: InputStream = assets.open("$assetsDirectory/$bookCoverName")
         val volumeCover = Drawable.createFromStream(coverInputStream, null)
         val volumeImage = findViewById<ImageView>(R.id.coverPage)
@@ -30,7 +31,7 @@ class BookCover : AppCompatActivity() {
 
         // Button
         // Navigate to Book Scrolling Activity: activity_book_scrolling.xml & BookScrollingActivity.kt
-        findViewById<Button>(R.id.startBookBtn).setOnClickListener {
+        findViewById<Button>(R.id.startBook_btn).setOnClickListener {
             val bookCoverToBookScrollingIntent = Intent(this, BookScrollingActivity::class.java)
             bookCoverToBookScrollingIntent.putExtra("assetsFolder", bookAssets)
             startActivity(bookCoverToBookScrollingIntent)
@@ -38,7 +39,7 @@ class BookCover : AppCompatActivity() {
 
         // Button
         // Navigate to Story Progression Activity: activity_story_progression.xml & StoryProgression.kt
-        findViewById<Button>(R.id.checkProgressBtn).setOnClickListener {
+        findViewById<Button>(R.id.checkProgress_btn).setOnClickListener {
             val bookCoverToCheckProgressIntent = Intent(this, StoryProgression::class.java)
             bookCoverToCheckProgressIntent.putExtra("assetsFolder", bookAssets)
             startActivity(bookCoverToCheckProgressIntent)
