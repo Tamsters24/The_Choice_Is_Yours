@@ -14,12 +14,9 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.*;
-
-import org.graphstream.graph.Edge;
 import org.graphstream.graph.Graph;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
@@ -159,10 +156,10 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "fill-color: gray;" +
                 "stroke-mode: plain;" +
                 "stroke-color: gray;" +
-                "stroke-width: 9px;" +
+                "stroke-width: 5px;" +
                 "shadow-mode: plain;" +
                 "shadow-width: 0px;" +
-                "shadow-offset: 15px, -15px;" +
+                "shadow-offset: 10px, -10px;" +
                 "shadow-color: rgba(0,0,0,100);" +
                 "text-size: 20px;" +
                 "}" +
@@ -183,23 +180,24 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "}" +
 
                 "edge {" +
-                "size: 5px;" +
+                "size: 2px;" +
                 "arrow-size: 20px, 15px;" +
                 "shape: cubic-curve;" +
                 "fill-color: rgb(128,128,128);" +
                 "fill-mode: plain;" +
                 "stroke-mode: plain;" +
                 "stroke-color: rgb(80,80,80);" +
-                "stroke-width: 9px;" +
+                "stroke-width: 3px;" +
                 "shadow-mode: none;" +
                 "shadow-color: rgba(0,0,0,50);" +
                 "shadow-offset: 15px, -15px;" +
                 "shadow-width: 0px;" +
-                "arrow-shape: diamond;" +
+                "arrow-shape: arrow;" +
+                "arrow-size: 10px, 5px;" +
                 "}" +
 
-                "edge.red {" +
-                "fill-color: red;" +
+                "edge.visited {" +
+                "fill-color: rgb(66,123,75);" +
                 " }";
 
         graph.setAttribute("ui.stylesheet", styleSheet);
@@ -251,8 +249,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         String v1Label = String.valueOf(v1.getAttribute("ui.label"));
         String v2Label = String.valueOf(v2.getAttribute("ui.label"));
         String edgeID = v1Label + v2Label;
-        System.out.println(edgeID);
-        graph.addEdge(edgeID, vertex1, vertex2);
+        graph.addEdge(edgeID, vertex1, vertex2, true);
     }
 
     /** Revised using https://github.com/graphstream/gs-ui-android */
@@ -307,11 +304,11 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                     }
                 }
                 // Toggle the color of edges between visited nodes to green
-                for (int i = 1; i < visitedTrue.size(); i++) {
+                /*for (int i = 1; i < visitedTrue.size(); i++) {
                     Edge toggleColor = graph.getEdge(visitedTrue.get(i - 1) + visitedTrue.get(i));
-                    toggleColor.setAttribute("ui.class", "red");
+                    toggleColor.setAttribute("ui.color", 0);
                     System.out.println(visitedTrue.get(i - 1) + visitedTrue.get(i));
-                }
+                }*/
             }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
