@@ -3,12 +3,20 @@ package com.example.thechoiceisyours
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
 class StoryVolChoice  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_story_vol_choice)
+
+        // Image Button
+        // Navigate to Main Activity: activity_main.xml & MainActivity.kt
+        findViewById<ImageButton>(R.id.libraryToMain_btn).setOnClickListener {
+            val libraryToMainIntent = Intent(this, MainActivity::class.java)
+            startActivity(libraryToMainIntent)
+        }
 
         // Navigate to Book Cover Activity: activity_book_cover.xml & BookCover.kt
         val storyChoiceToCoverIntent = Intent(this, BookCover::class.java)

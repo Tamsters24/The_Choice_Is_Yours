@@ -60,8 +60,8 @@ class ForgotPassword : AppCompatActivity() {
                     startActivity(backToLoginIntent)
                 } else {
                     Log.w(ContentValues.TAG, "passwordResetWithEmail:failure", task.exception)
-                    Toast.makeText(baseContext, "Email not sent.",
-                        Toast.LENGTH_SHORT).show()
+                    Toast.makeText(baseContext, "EMAIL FAILURE: Try again",
+                        Toast.LENGTH_LONG).show()
                 }
             }
     }

@@ -28,7 +28,7 @@ class UserLogin : AppCompatActivity() {
         bookLogin = Firebase.auth
         FirebaseApp.initializeApp(this)
 
-        // Button
+        // Image Button
         // Navigate to Main Activity Screen: activity_main.xml & MainActivity.kt
         findViewById<ImageButton>(R.id.loginToMainBtn).setOnClickListener {
             val loginToMainIntent = Intent(this, MainActivity::class.java)
@@ -36,7 +36,7 @@ class UserLogin : AppCompatActivity() {
         }
 
         // Button
-        // Navigate to Create Account Screen: activity_user_registration.xml & UserRegistration.kt
+        // Navigate to Registration Activity: activity_user_registration.xml & UserRegistration.kt
         findViewById<Button>(R.id.loginToRegistrationBtn).setOnClickListener {
             val loginToCreateAcctIntent = Intent(this, UserRegistration::class.java)
             startActivity(loginToCreateAcctIntent)

@@ -2,6 +2,7 @@ package com.example.thechoiceisyours;
 
 import android.content.Intent;
 import android.content.res.AssetManager;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -67,6 +68,8 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         button.setPadding(25, 25, 25, 25);
         button.setText(getText(R.string.return_btn));
         button.setTextColor(getResources().getColor(R.color.white));
+        Typeface typeface = Typeface.create("serif", Typeface.NORMAL);
+        button.setTypeface(typeface);
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams( // For Button
                 FrameLayout.LayoutParams.WRAP_CONTENT, FrameLayout.LayoutParams.WRAP_CONTENT);
         params.gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
@@ -79,6 +82,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
             @Override
             public void onClick(View v) {
                 Intent storyProgressionToBookCoverIntent = new Intent(getApplicationContext(), BookCover.class);
+                storyProgressionToBookCoverIntent.putExtra("assetsFolder", bookAssets);
                 startActivity(storyProgressionToBookCoverIntent);
             }
         });

@@ -7,6 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".UserLogin"
         android:background="@color/login_background">
+    <!-- Back button to Previous (Main Activity) -->
     <ImageButton
             android:id="@+id/loginToMainBtn"
             app:srcCompat="@drawable/ic_twotone_arrow_circle_left_24"
@@ -21,7 +22,6 @@
             android:background="@null"/>
     <TextView
             android:id="@+id/loginTitle"
-            android:text="@string/acct_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
@@ -33,14 +33,15 @@
             app:layout_constraintVertical_bias="0.2"
             android:gravity="center"
             android:layout_gravity="center"
+            android:text="@string/acct_login"
             android:textSize="30sp"
+            android:typeface="serif"
             android:textStyle="bold"
             android:textColor="@color/white"/>
+    <!-- EditTexts: email & password -->
     <EditText
             android:id="@+id/loginEmail"
             android:drawableStart="@drawable/ic_twotone_account_box_24"
-            android:inputType="textEmailAddress"
-            android:hint="@string/prompt_email"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -48,16 +49,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.45"
-            android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
             android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/prompt_email"
+            android:typeface="serif"
+            android:textColorHint="@color/white"
             android:autofillHints=""/>
     <EditText
             android:id="@+id/loginPassword"
             android:drawableStart="@drawable/ic_twotone_lock_24"
-            android:inputType="textPassword"
-            android:hint="@string/prompt_password"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -65,13 +67,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.6"
-            android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
-            android:ems="10" android:autofillHints=""/>
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/prompt_password"
+            android:typeface="serif"
+            android:textColorHint="@color/white"
+            android:autofillHints=""/>
+    <!-- Buttons: registration & reset password -->
     <Button
             android:id="@+id/loginToRegistrationBtn"
-            android:text="@string/action_sign_in"
             android:layout_width="155sp"
             android:layout_height="35sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -79,12 +85,13 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.82"
+            app:backgroundTint="@color/dark_blue1"
+            android:text="@string/action_sign_in"
             android:textSize="11sp"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/dark_blue1"/>
+            android:typeface="serif"
+            android:textColor="@color/white"/>
     <Button
             android:id="@+id/forgotPwdBtn"
-            android:text="@string/action_forgot_pwd"
             android:layout_width="155sp"
             android:layout_height="35sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -93,12 +100,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.82"
             app:layout_constraintVertical_bias="0.65"
+            app:backgroundTint="@color/dark_blue1"
+            android:text="@string/action_forgot_pwd"
             android:textSize="11sp"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/dark_blue1"/>
+            android:typeface="serif"
+            android:textColor="@color/white"/>
+    <!-- Complete Login Button -->
     <Button
             android:id="@+id/acctLoginBtn"
-            android:text="@string/submit_btn"
             android:layout_width="155sp"
             android:layout_height="50sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -106,7 +115,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.8"
+            app:backgroundTint="@color/dark_red1"
+            android:text="@string/submit_btn"
             android:textSize="11sp"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/dark_red1"/>
+            android:typeface="serif"
+            android:textColor="@color/white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

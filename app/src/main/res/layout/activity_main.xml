@@ -7,12 +7,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-
+    <!-- Empty Book Cover as Background Image -->
     <ImageView
             android:id="@+id/mainCover"
+            app:srcCompat="@drawable/blank_cover"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/blank_cover"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
     <Button
@@ -37,6 +37,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="380dp"
             android:layout_marginStart="65dp"
+            android:background="@drawable/rounded_button"
             app:backgroundTint="@color/brown_tan"
             android:text="@string/cover_login_btn"
             android:textSize="15sp"
@@ -50,6 +51,8 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="460dp"
             android:layout_marginStart="65dp"
+            android:background="@drawable/rounded_button"
+            app:backgroundTint="@color/dark_blue1"
             android:text="@string/cover_register_btn"
             android:textSize="15sp"
             android:typeface="serif"
@@ -62,6 +65,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="540dp"
             android:layout_marginStart="65dp"
+            android:background="@drawable/rounded_button"
             app:backgroundTint="@color/light_blue1"
             android:text="@string/cover_instructions_btn"
             android:textSize="15sp"

@@ -7,6 +7,7 @@
         android:layout_height="match_parent"
         android:background="@color/registration_background"
         tools:context=".UserRegistration">
+    <!-- Back button to Previous (Main Activity) -->
     <ImageButton
             android:id="@+id/registrationToMainBtn"
             app:srcCompat="@drawable/ic_twotone_arrow_circle_left_24"
@@ -34,13 +35,13 @@
             android:gravity="center"
             android:layout_gravity="center"
             android:textSize="30sp"
+            android:typeface="serif"
             android:textStyle="bold"
             android:textColor="@color/white"/>
+    <!-- EditTexts: email, password, and confirm password -->
     <EditText
             android:id="@+id/newAcctEmail"
             android:drawableStart="@drawable/ic_twotone_account_box_24"
-            android:inputType="textEmailAddress"
-            android:hint="@string/new_acct_email"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -48,16 +49,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.35"
-            android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
             android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/new_acct_email"
+            android:typeface="serif"
+            android:textColorHint="@color/white"
             android:autofillHints=""/>
     <EditText
             android:id="@+id/newAcctPW1"
             android:drawableStart="@drawable/ic_twotone_lock_24"
-            android:inputType="textPassword"
-            android:hint="@string/new_acct_password1"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -65,16 +67,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.47"
-            android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
             android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/new_acct_password1"
+            android:typeface="serif"
+            android:textColorHint="@color/white"
             android:autofillHints=""/>
     <EditText
             android:id="@+id/newAcctPW2"
             android:drawableStart="@drawable/ic_twotone_lock_24"
-            android:inputType="textPassword"
-            android:hint="@string/new_acct_password2"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
@@ -82,14 +85,17 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.6"
-            android:textColorHint="@color/white"
             android:background="@drawable/edittext_box"
             android:padding="5dp"
             android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/new_acct_password2"
+            android:typeface="serif"
+            android:textColorHint="@color/white"
             android:autofillHints=""/>
+    <!-- Complete Registration Button -->
     <Button
             android:id="@+id/completeRegBtn"
-            android:text="@string/new_acct_register"
             android:layout_width="155sp"
             android:layout_height="50sp"
             app:layout_constraintTop_toTopOf="parent"
@@ -97,7 +103,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintVertical_bias="0.8"
+            app:backgroundTint="@color/dark_red1"
+            android:text="@string/new_acct_register"
             android:textSize="11sp"
-            android:textColor="@color/white"
-            app:backgroundTint="@color/dark_red1"/>
+            android:typeface="serif"
+            android:textColor="@color/white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

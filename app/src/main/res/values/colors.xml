@@ -17,5 +17,5 @@
 
     <color name="login_background">#122214</color>
     <color name="registration_background">#1A2F53</color>
-    <color name="forgot_pwd_background">#C69A63</color>
+    <color name="forgot_pwd_background">#40210D</color>
 </resources>

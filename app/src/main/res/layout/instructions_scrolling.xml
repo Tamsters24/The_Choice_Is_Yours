@@ -26,13 +26,14 @@
                 app:srcCompat="@drawable/choice_ex"
                 android:layout_width="412dp"
                 android:layout_height="275dp"
-                android:layout_below="@+id/instructionA"/>
+                android:layout_below="@+id/instructionA"
+                android:background="@drawable/outline"/>
         <TextView
                 android:id="@+id/instructionB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/instructionsImage1"
                 android:layout_margin="@dimen/text_margin"
+                android:layout_below="@+id/instructionsImage1"
                 android:text="@string/instructions2"
                 android:textSize="20sp"
                 android:typeface="serif"
@@ -42,13 +43,14 @@
                 app:srcCompat="@drawable/next_pg_ex"
                 android:layout_width="412dp"
                 android:layout_height="412dp"
-                android:layout_below="@+id/instructionB"/>
+                android:layout_below="@+id/instructionB"
+                android:background="@drawable/outline"/>
         <TextView
                 android:id="@+id/instructionC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/instructionsImage2"
                 android:layout_margin="@dimen/text_margin"
+                android:layout_below="@+id/instructionsImage2"
                 android:text="@string/instructions3"
                 android:textSize="20sp"
                 android:typeface="serif"
@@ -57,8 +59,8 @@
                 android:id="@+id/instr_to_next_btn"
                 android:layout_width="262dp"
                 android:layout_height="48dp"
-                android:layout_below="@+id/instructionC"
                 android:layout_centerInParent="true"
+                android:layout_below="@+id/instructionC"
                 app:backgroundTint="@color/dark_green"
                 android:text="@string/proceed_btn"
                 android:textSize="15sp"

@@ -22,6 +22,9 @@
                 android:name=".UserLogin"
                 android:exported="true"/>
         <activity
+                android:name=".ForgotPassword"
+                android:exported="true"/>
+        <activity
                 android:name=".StoryVolChoice"
                 android:exported="true"/>
         <activity
