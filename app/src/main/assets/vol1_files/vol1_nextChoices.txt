@@ -1,115 +1,87 @@
-1a a b
-2a a b
-2b c d
-3a a b
-3b 5c 5d 5e
-3c f g
-3d h i
-4a a b
-4b c d
+1a 2a 2b
+2a 3a 3b
+2b 3c 3d
+3a 4a 4b
+3b 4c 4d 4e
+3c 4f 4g
+3d 4h 4i
+4a 5a 5b
+4b 5c 5d
 4c 5e
-4d f g
-4e h i
-4f j k
+4d 5f 5g
+4e 5h 5i
+4f 5j 5k
 4g 4d
-4h l m
+4h 5l 5m
 4i 5n 5o 5p 5q
-5a a b
+5a 6a 6b
 5b 6c
-5c d e
-5d f g
-5e h i
-5f j k
-5g l m
-5h n o
-5i p q
+5c 6d 6e
+5d 6f 6g
+5e 6h
+5f 6j 6k
+5g 6l 6m
+5h 6n 6o
+5i 6p 6q
 5j 6r
 5k 6r
-5l s t
-5m u v
+5l 6s 6t
+5m 6u 6v
 5n END
 5o END
 5p END
 5q END
 6a END
-6b a b
+6b 7a 7b
 6c END
 6d END
 6e END
 6f 7c 7d 7e
 6g 7f
 6h END
-6i g h
+6i 7g 7h
 6j END
 6k END
 6l END
 6m END
 6n END
-6o i j
+6o 7i 7j
 6p END
 6q END
-6r k l
+6r 7k 7l
 6s END
 6t END
 6u END
-6v
-
-
-
-7a a b
-7b 5a
-7c c d
-7d e f
-7e g h
-7f i j
-7g k l
-7h m n
-7i o p
-7j q r
-7k 7l 8t 8u
-7l END
+6v 7m 7n
+7a 4i
+7b 8a
+7c 8b 8c
+7d END
+7e END
+7f 8d 8e
+7g 8f 8g
+7h 8h
+7i END
+7j 8i 8j
+7k 8k 8l
+7l 8m 8n
 7m END
 7n END
-8a a b
+8a END
 8b END
-8c c d
+8c END
 8d END
-8e e f
+8e END
 8f END
-8g 2a
+8g END
 8h END
-8i g h
-8j i j
-8k END
-8l 10b 9k
+8i END
+8j END
+8k 9a 9b
+8l END
 8m END
-8n 7e
-8o END
-8p l m
-8q n o
-8r END
-8s END
-8t END
-9a END
-9b a b
-9c c d
-9d e f
-9e END
-9f g h
-9g END
-9h END
-9i END
-9j 7c
-9k END
-9l END
-9m END
-9n END
-9o END
+8n END
+9a 10a 10b
+9b END
 10a END
 10b END
-10c END
-10d END
-10e END
-10f END
-10g END
-10h END

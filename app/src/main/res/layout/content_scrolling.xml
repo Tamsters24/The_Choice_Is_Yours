@@ -46,7 +46,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_margin="@dimen/fab_margin"
                 android:layout_below="@+id/chapterContents"
-                android:background="@color/white"/>
+                android:background="@color/dark_green"/>
         <ImageButton
                 android:id="@+id/option2"
                 app:srcCompat="@drawable/ic_twotone_looks_two_24"
