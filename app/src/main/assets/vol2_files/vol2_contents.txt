@@ -200,7 +200,7 @@ Choice.7j.8r Decide to help them in the planning, but also to escape from this s
 Part.7k  The best plan is to wait until the Maray locates you with sonar equipment. You can't signal the ship because none of the Seeker's electronic equipment is working. There is no sign of the mysterious submarine. Perhaps it has left, now that you have been chased away from the world of Atlantis. Looking out of the thick glass porthole, you see a giant blue whale heading for you. It looks as though the whale is going to ram you. Maybe the other submarine has angered the whale and it is seeking revenge on any craft near it. Suddenly the whale hits you full force. The Seeker is badly damaged. Water begins to trickle in through the hatch cover. You must abandon the Seeker. The whale now remains close to the Seeker watching and waiting.
 Choice.7k.7l Try and escape.
 Choice.7k.8s Try to hitch a ride on the whale.
-Choice 7k.8t You don't know what to do.
+Choice.7k.8t You don't know what to do.
 
 Part.7l  There is one way out, you decide. Leave the Seeker and try to reach the surface on your own. You enter the airlock chamber which gives you access to the ocean. With a quick push off, you leave the Seeker and swim towards the surface. A small, yellow life raft is part of your escape equipment. The surface of the sea is calm, but the Maray is nowhere in sight. For 2 days and nights you drift in the life raft under hot sun and sharp starlight. At last a search helicopter spots you. Finally you are safe. The exploration of Atlantis will have to depend on a new diver. Your eyesight has been damaged by the strange force that immobilized the Seeker. You career as an underwater adventurer is over.
 THE END

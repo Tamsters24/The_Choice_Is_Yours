@@ -23,8 +23,7 @@ import java.io.InputStreamReader
 
 class BookScrollingActivity : AppCompatActivity() {
     private val storyLines = mutableListOf<String>()
-    private var currentPart = 1
-    private var currentChoice = "a"
+    private var currentChapter = "1a"
     private var theEnd = false
     private var assetsDirectory = ""
     private var choiceMap = mutableMapOf<String, List<String>>()
@@ -56,7 +55,7 @@ class BookScrollingActivity : AppCompatActivity() {
         // Open the book, set the display, and update the visited chapters when accessed
         getStory(bookContents)
         choiceMap = setChoiceMap(nextChoicesContents)
-        storyDisplay()
+        storyDisplay(currentChapter)
     }
 
     // Retrieve the Story from assets
@@ -74,8 +73,8 @@ class BookScrollingActivity : AppCompatActivity() {
     }
 
     // Set the views for the display, including images, narrative, and choice buttons
-    private fun storyDisplay() {
-        Toast.makeText(baseContext, "Part $currentPart", Toast.LENGTH_SHORT).show()
+    private fun storyDisplay(currentChapter: String) {
+        Toast.makeText(baseContext, "Part $currentChapter", Toast.LENGTH_SHORT).show()
 
         // Access the Firebase database for Story Progress graph
         // Toggled the current Part.Choice "visited" to true when accessed
@@ -85,14 +84,14 @@ class BookScrollingActivity : AppCompatActivity() {
         val database = FirebaseDatabase.getInstance()
         val usersRef = database.getReference("users")
         val userRef = usersRef.child(userId)
-        if (currentPart > 1) { // First chapter is always considered visited
+        if (currentChapter != "1a") { // First chapter is always considered visited
             val visitedChapter = userRef.child(nodesVisitedDB).
-            child("$currentPart$currentChoice")
+            child(currentChapter)
             visitedChapter.setValue(true)
         }
 
         // Update the current chapter image if one exists
-        val filteredImage = storyLines.filter { it.contains("p$currentPart$currentChoice") }
+        val filteredImage = storyLines.filter { it.contains("p$currentChapter") }
         if (filteredImage.isNotEmpty()) {
             var chapterImageString = filteredImage[0]
             chapterImageString = chapterImageString.substring(11)
@@ -100,15 +99,13 @@ class BookScrollingActivity : AppCompatActivity() {
         }
 
         // Display the narrative of the current chapter
-        displayChapter("Part.$currentPart$currentChoice")
+        displayChapter("Part.$currentChapter")
 
         // Adjust the Choice Buttons display according to the number of choices available
-        val choices = getNextChoices("$currentPart$currentChoice")
+        val choices = getNextChoices(currentChapter)
         for (choice in choices)
             Toast.makeText(baseContext, choice, Toast.LENGTH_SHORT).show()
         displayButtons(choices)
-
-        currentPart += 1  // Increment to the next chapter
     }
 
     // Set image for current chapter
@@ -129,7 +126,7 @@ class BookScrollingActivity : AppCompatActivity() {
 
         // Choice dialog
         val options = mutableListOf<String>()
-        val nextChoices = getNextChoices("$currentPart$currentChoice")
+        val nextChoices = getNextChoices(currentChapter)
         var choiceNumber = 1
 
         // If the chapter is THE END, display chapter and "THE END".
@@ -146,7 +143,7 @@ class BookScrollingActivity : AppCompatActivity() {
         if (nextChoices.size > 1) {
             print("inside nextChoices > 1")
             for (choice in nextChoices) {
-                val choiceFilter = "Choice.$currentPart$currentChoice.$choice"
+                val choiceFilter = "Choice.$currentChapter.$choice"
                 val filteredOption = storyLines.filter { it.contains(choiceFilter) }
                 var optionString = filteredOption.toString()
                 optionString = optionString.substring(13)
@@ -225,7 +222,10 @@ class BookScrollingActivity : AppCompatActivity() {
                 option2Btn.visibility = View.GONE
                 option3Btn.visibility = View.VISIBLE
 
-                displayChapter("Part.$currentPart$currentChoice")
+                // Set center button image to play arrow
+                option3Btn.setImageResource(R.drawable.ic_twotone_play_arrow_24)
+
+                displayChapter("Part.$currentChapter")
 
                 if (choiceList[0] == "END") {   // Display last chapter, prompt to try different path,
                     theEnd = true
@@ -236,17 +236,11 @@ class BookScrollingActivity : AppCompatActivity() {
                         startActivity(theEndToBookCoverIntent)
                     }
                 } else {  // Click on option button 3 to continue to assigned chapter
-                    val listValue = choiceList[0]
-
-                    // Determine the Int value for the Part to forward to. Decrement by 1 (readStory increments by 1).
-                    currentPart = listValue.takeWhile { it.isDigit() }.toIntOrNull()!!
-                    currentPart -= 1
-                    // Determine the choice for the associated part
-                    currentChoice = listValue[1].toString()
+                    currentChapter = choiceList[0]
 
                     // Move forward to the next section after clicking option button
                     option3Btn.setOnClickListener {
-                        storyDisplay()
+                        storyDisplay(currentChapter)
                     }
                 }
             }
@@ -258,18 +252,19 @@ class BookScrollingActivity : AppCompatActivity() {
                 option2Btn.visibility = View.VISIBLE
                 option3Btn.visibility = View.GONE
 
-                // Left button proceeds to first choice. Choices are 2 characters. Retain the second char.
+                // Set right button image to "2"
+                option3Btn.setImageResource(R.drawable.ic_twotone_looks_two_24)
+
+                // Left button proceeds to first choice.
                 option1Btn.setOnClickListener {
-                    currentChoice = choiceList[0]
-                    currentChoice = currentChoice.substring(1)
-                    storyDisplay()
+                    currentChapter = choiceList[0]
+                    storyDisplay(currentChapter)
                 }
 
                 // Right button proceeds to next choice
                 option2Btn.setOnClickListener {
-                    currentChoice = choiceList[1]
-                    currentChoice = currentChoice.substring(1)
-                    storyDisplay()
+                    currentChapter = choiceList[1]
+                    storyDisplay(currentChapter)
                 }
             }
 
@@ -287,23 +282,20 @@ class BookScrollingActivity : AppCompatActivity() {
 
                 // Left button proceeds to choice 1. Choices are 2 characters. Retain the second char.
                 option1Btn.setOnClickListener {
-                    currentChoice = choiceList[0]
-                    currentChoice = currentChoice.substring(1)
-                    storyDisplay()
+                    currentChapter = choiceList[0]
+                    storyDisplay(currentChapter)
                 }
 
                 // Right button proceeds to choice 3
                 option2Btn.setOnClickListener {
-                    currentChoice = choiceList[2]
-                    currentChoice = currentChoice.substring(1)
-                    storyDisplay()
+                    currentChapter = choiceList[2]
+                    storyDisplay(currentChapter)
                 }
 
                 // Center button proceeds to next choice
                 option3Btn.setOnClickListener {
-                    currentChoice = choiceList[1]
-                    currentChoice = currentChoice.substring(1)
-                    storyDisplay()
+                    currentChapter = choiceList[1]
+                    storyDisplay(currentChapter)
                 }
             }
         }
