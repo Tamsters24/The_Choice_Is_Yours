@@ -10,6 +10,7 @@ import android.text.style.StyleSpan
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -280,7 +281,7 @@ class BookScrollingActivity : AppCompatActivity() {
                 // Center button
                 option3Btn.setImageResource(R.drawable.ic_twotone_looks_two_24)
 
-                // Left button proceeds to choice 1. Choices are 2 characters. Retain the second char.
+                // Left button proceeds to choice 1.
                 option1Btn.setOnClickListener {
                     currentChapter = choiceList[0]
                     storyDisplay(currentChapter)
@@ -292,9 +293,64 @@ class BookScrollingActivity : AppCompatActivity() {
                     storyDisplay(currentChapter)
                 }
 
-                // Center button proceeds to next choice
+                // Center button proceeds to choice 2
                 option3Btn.setOnClickListener {
                     currentChapter = choiceList[1]
+                    storyDisplay(currentChapter)
+                }
+            }
+
+            4 -> {
+                // Display 4 option buttons, and change the positions for the 2 center buttons
+                option1Btn.visibility = View.VISIBLE
+                option2Btn.visibility = View.VISIBLE
+                option3Btn.visibility = View.VISIBLE
+
+                // Add 4th button for use
+                val relativeLayout = findViewById<RelativeLayout>(R.id.storyRelativeLayout)
+                val option4Btn = ImageButton(this)
+
+                // Set images for buttons 2 thru 4
+                // Right button
+                option2Btn.setImageResource(R.drawable.ic_twotone_looks_3_24)
+                // Center left button
+                option3Btn.setImageResource(R.drawable.ic_twotone_looks_two_24)
+                // Center right button
+                option4Btn.setImageResource(R.drawable.ic_twotone_looks_4_24)
+                option4Btn.setPadding(0, 0, 0, 0)
+                option4Btn.setBackgroundColor(resources.getColor(R.color.brown_tan))
+
+                // Position the new button below the center button
+                val layoutParams = RelativeLayout.LayoutParams(
+                    RelativeLayout.LayoutParams.WRAP_CONTENT,
+                    RelativeLayout.LayoutParams.WRAP_CONTENT
+                )
+                layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM)
+                layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL)
+                layoutParams.addRule(RelativeLayout.BELOW, R.id.option3)
+                relativeLayout.addView(option4Btn, layoutParams)
+
+                // Left button proceeds to choice 1.
+                option1Btn.setOnClickListener {
+                    currentChapter = choiceList[0]
+                    storyDisplay(currentChapter)
+                }
+
+                // Right button proceeds to choice 3
+                option2Btn.setOnClickListener {
+                    currentChapter = choiceList[2]
+                    storyDisplay(currentChapter)
+                }
+
+                // Center left button proceeds to choice 2
+                option3Btn.setOnClickListener {
+                    currentChapter = choiceList[1]
+                    storyDisplay(currentChapter)
+                }
+
+                // Center right button proceeds to choice 4
+                option4Btn.setOnClickListener {
+                    currentChapter = choiceList[3]
                     storyDisplay(currentChapter)
                 }
             }
