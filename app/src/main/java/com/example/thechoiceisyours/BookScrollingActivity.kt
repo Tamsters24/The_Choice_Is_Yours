@@ -15,8 +15,10 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
 import com.example.thechoiceisyours.databinding.ActivityBookScrollingBinding
+
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
@@ -141,7 +143,6 @@ class BookScrollingActivity : AppCompatActivity() {
         }
         // Otherwise, there are 2 choices or more choices. Display choice text.
         if (nextChoices.size > 1) {
-            print("inside nextChoices > 1")
             for (choice in nextChoices) {
                 val choiceFilter = "Choice.$currentChapter.$choice"
                 val filteredOption = storyLines.filter { it.contains(choiceFilter) }
@@ -149,6 +150,7 @@ class BookScrollingActivity : AppCompatActivity() {
                 optionString = optionString.substring(13)
                 optionString = "Choice $choiceNumber: $optionString"
                 optionString = optionString.dropLast(1)
+                optionString = optionString.replace("\\n", "\n")
                 options.add(optionString)
                 choiceNumber++
             }

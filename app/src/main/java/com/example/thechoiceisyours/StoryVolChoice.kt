@@ -41,13 +41,13 @@ class StoryVolChoice  : AppCompatActivity() {
 
         // Button 4: Volume 4 cover
         findViewById<Button>(R.id.vol4_btn).setOnClickListener {
-            storyChoiceToCoverIntent.putExtra("assetsFolder", "vol1")
+            storyChoiceToCoverIntent.putExtra("assetsFolder", "vol4")
             startActivity(storyChoiceToCoverIntent)
         }
 
         // Button 5: Volume 5 cover
         findViewById<Button>(R.id.vol5_btn).setOnClickListener {
-            storyChoiceToCoverIntent.putExtra("assetsFolder", "vol1")
+            storyChoiceToCoverIntent.putExtra("assetsFolder", "vol5")
             startActivity(storyChoiceToCoverIntent)
         }
     }
