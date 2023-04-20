@@ -69,23 +69,7 @@ class BookScrollingActivity : AppCompatActivity() {
         val userId = user?.uid.toString()
         val database = FirebaseDatabase.getInstance()
         userRef = database.getReference("users").child(userId)
-
-        val bookmarkRef = userRef.child(bookmark)
-        bookmarkRef.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                var bookmarkedChapter = dataSnapshot.getValue(String::class.java) as String
-                if (bookmarkedChapter.length > 1) {
-                    println("The bookmark value is: $bookmarkedChapter")
-                } else
-                    bookmarkedChapter = "1a"
-                storyDisplay(userRef, bookmarkedChapter)
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {
-                currentChapter = "1a"
-                storyDisplay(userRef, currentChapter)
-            }
-        })
+        storyDisplay(userRef, currentChapter)
     }
 
     // Retrieve the Story from assets
@@ -112,9 +96,6 @@ class BookScrollingActivity : AppCompatActivity() {
             val visitedChapter = userRef.child(nodesVisitedDB).child(currentChapter)
             visitedChapter.setValue(true)
         }
-        // Retain bookmark for current chapter
-        val currentBookmark = userRef.child(bookmark)
-        currentBookmark.setValue(currentChapter)
 
         // Update the current chapter image if one exists
         val filteredImage = storyLines.filter { it.contains("p$currentChapter") }
