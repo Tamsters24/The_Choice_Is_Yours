@@ -59,16 +59,16 @@ class BookScrollingActivity : AppCompatActivity() {
         bookmark = bookAssets + "Bookmark"
         nodesVisitedDB = bookAssets + "NodesVisited"
 
-        // Open the book, set the display, and update the visited chapters when accessed
-        getStory(bookContents)
-        choiceMap = setChoiceMap(nextChoicesContents)
-
         // Access user Database to retrieve their bookmark. Begin story.
         val firebaseAuth = FirebaseAuth.getInstance()
         val user = firebaseAuth.currentUser
         val userId = user?.uid.toString()
         val database = FirebaseDatabase.getInstance()
         userRef = database.getReference("users").child(userId)
+
+        // Open the book, set the display, and update the visited chapters when accessed
+        getStory(bookContents)
+        choiceMap = setChoiceMap(nextChoicesContents)
         storyDisplay(userRef, currentChapter)
     }
 
@@ -110,9 +110,12 @@ class BookScrollingActivity : AppCompatActivity() {
 
         // Adjust the Choice Buttons display according to the number of choices available
         val choices = getNextChoices(currentChapter)
-        for (choice in choices)
-            Toast.makeText(baseContext, choice, Toast.LENGTH_SHORT).show()
         displayButtons(userRef, choices)
+
+        var choiceMsg = "Choices: "
+        for (choice in choices)
+            choiceMsg += "$choice, "
+        Toast.makeText(baseContext, choiceMsg, Toast.LENGTH_SHORT).show()
     }
 
     // Set image for current chapter
