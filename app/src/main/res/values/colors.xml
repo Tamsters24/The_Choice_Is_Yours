@@ -10,8 +10,10 @@
     <color name="dark_green">#427B4B</color>
     <color name="orange">#ED7D31</color>
     <color name="yellow_tan">#F5BE7B</color>
+    <color name="mustard_yellow">#C88E0D</color>
     <color name="dark_red1">#C23130</color>
     <color name="brown_tan">#AE7347</color>
+    <color name="dark_brown">#833820</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 

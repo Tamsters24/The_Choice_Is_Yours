@@ -90,9 +90,17 @@ class UserRegistration : AppCompatActivity() {
 
         // Get a reference to the "users" node
         val usersRef = database.getReference("users")
+        val userRef = usersRef.child(userId)
+
+        // Create bookmarks for current chapter (node)
+        val vol1CurrentChapter = userRef.child("vol1Bookmark")
+        val vol2CurrentChapter = userRef.child("vol2Bookmark")
+
+        // Set bookmarks for chapter 1 (designated 1a in content files)
+        val vol1BookMark = "1a"
+        val vol2Bookmark = "1a"
 
         // Create a new user node with UID
-        val userRef = usersRef.child(userId)
         val vol1NodesVisited = userRef.child("vol1NodesVisited")
         val vol2NodesVisited = userRef.child("vol2NodesVisited")
 
@@ -120,25 +128,43 @@ class UserRegistration : AppCompatActivity() {
         }
         vol2NodesReader.close()
 
-        // Write the vol1 boolean values to the database
-        vol1NodesVisited.setValue(vol1BooleanValues).addOnCompleteListener { task ->
+        // Write the current chapter bookmark values to the database
+        vol1CurrentChapter.setValue(vol1BookMark).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 // Database write successful
-                println("Database write successful")
+                println("Vol 1 Bookmark write successful")
             } else {
                 // Handle database write error
-                println("Database write failed")
+                println("Vol 1 Bookmark write failed")
+            }
+        }
+        vol2CurrentChapter.setValue(vol2Bookmark).addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                // Database write successful
+                println(" Vol 2 Bookmark write successful")
+            } else {
+                // Handle database write error
+                println("Vol 2 Bookmark write failed")
             }
         }
 
-        // Write the vol2 boolean values to the database
+        // Write the volume boolean values to the database
+        vol1NodesVisited.setValue(vol1BooleanValues).addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                // Database write successful
+                println("Vol 1 Node Database write successful")
+            } else {
+                // Handle database write error
+                println("Vol 1 Node Database write failed")
+            }
+        }
         vol2NodesVisited.setValue(vol2BooleanValues).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 // Database write successful
-                println("Database write successful")
+                println("Vol 2 Node Database write successful")
             } else {
                 // Handle database write error
-                println("Database write failed")
+                println("Vol 2 Node Database write failed")
             }
         }
     }

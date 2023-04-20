@@ -57,5 +57,14 @@
                 android:layout_margin="@dimen/fab_margin"
                 android:layout_below="@+id/chapterContents"
                 android:background="@color/dark_blue1"/>
+        <ImageButton
+                android:id="@+id/option4"
+                app:srcCompat="@drawable/ic_twotone_looks_4_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/fab_margin"
+                android:layout_below="@+id/option3"
+                android:background="@color/brown_tan"/>
     </RelativeLayout>
 </androidx.core.widget.NestedScrollView>

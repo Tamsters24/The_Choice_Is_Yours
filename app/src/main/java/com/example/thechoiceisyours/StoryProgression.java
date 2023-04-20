@@ -151,7 +151,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
 
                 "node {" +
                 "shape: circle;" +
-                "size: 48,48;" +
+                "size: 75,75;" +
                 "fill-mode: gradient-vertical;" +
                 "fill-color: gray;" +
                 "stroke-mode: plain;" +
@@ -161,7 +161,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "shadow-width: 0px;" +
                 "shadow-offset: 10px, -10px;" +
                 "shadow-color: rgba(0,0,0,100);" +
-                "text-size: 20px;" +
+                "text-size: 35px;" +
                 "}" +
 
                 "node.green {" +
@@ -180,7 +180,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "}" +
 
                 "edge {" +
-                "size: 2px;" +
+                "size: 5px;" +
                 "arrow-size: 20px, 15px;" +
                 "shape: cubic-curve;" +
                 "fill-color: rgb(128,128,128);" +
@@ -193,7 +193,7 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
                 "shadow-offset: 15px, -15px;" +
                 "shadow-width: 0px;" +
                 "arrow-shape: arrow;" +
-                "arrow-size: 10px, 5px;" +
+                "arrow-size: 25px, 20px;" +
                 "}" +
 
                 "edge.visited {" +

@@ -10,7 +10,6 @@ import android.text.style.StyleSpan
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
-import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -213,6 +212,7 @@ class BookScrollingActivity : AppCompatActivity() {
         val option1Btn: ImageButton = findViewById(R.id.option1)
         val option2Btn: ImageButton = findViewById(R.id.option2)
         val option3Btn: ImageButton = findViewById(R.id.option3)
+        val option4Btn: ImageButton = findViewById(R.id.option4)
 
         when (choiceList.size) {
             1 -> {  // Occurs when there's no choice, which is either THE END
@@ -222,6 +222,7 @@ class BookScrollingActivity : AppCompatActivity() {
                 option1Btn.visibility = View.GONE
                 option2Btn.visibility = View.GONE
                 option3Btn.visibility = View.VISIBLE
+                option4Btn.visibility = View.GONE
 
                 // Set center button image to play arrow
                 option3Btn.setImageResource(R.drawable.ic_twotone_play_arrow_24)
@@ -252,6 +253,7 @@ class BookScrollingActivity : AppCompatActivity() {
                 option1Btn.visibility = View.VISIBLE
                 option2Btn.visibility = View.VISIBLE
                 option3Btn.visibility = View.GONE
+                option4Btn.visibility = View.GONE
 
                 // Set right button image to "2"
                 option3Btn.setImageResource(R.drawable.ic_twotone_looks_two_24)
@@ -274,6 +276,7 @@ class BookScrollingActivity : AppCompatActivity() {
                 option1Btn.visibility = View.VISIBLE
                 option2Btn.visibility = View.VISIBLE
                 option3Btn.visibility = View.VISIBLE
+                option4Btn.visibility = View.GONE
 
                 // Rearrange image used for center button as "2" and right button as "3"
                 // Right button
@@ -305,30 +308,13 @@ class BookScrollingActivity : AppCompatActivity() {
                 option1Btn.visibility = View.VISIBLE
                 option2Btn.visibility = View.VISIBLE
                 option3Btn.visibility = View.VISIBLE
-
-                // Add 4th button for use
-                val relativeLayout = findViewById<RelativeLayout>(R.id.storyRelativeLayout)
-                val option4Btn = ImageButton(this)
+                option4Btn.visibility = View.VISIBLE
 
                 // Set images for buttons 2 thru 4
                 // Right button
                 option2Btn.setImageResource(R.drawable.ic_twotone_looks_3_24)
-                // Center left button
+                // Top Center button
                 option3Btn.setImageResource(R.drawable.ic_twotone_looks_two_24)
-                // Center right button
-                option4Btn.setImageResource(R.drawable.ic_twotone_looks_4_24)
-                option4Btn.setPadding(0, 0, 0, 0)
-                option4Btn.setBackgroundColor(resources.getColor(R.color.brown_tan))
-
-                // Position the new button below the center button
-                val layoutParams = RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WRAP_CONTENT,
-                    RelativeLayout.LayoutParams.WRAP_CONTENT
-                )
-                layoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM)
-                layoutParams.addRule(RelativeLayout.CENTER_HORIZONTAL)
-                layoutParams.addRule(RelativeLayout.BELOW, R.id.option3)
-                relativeLayout.addView(option4Btn, layoutParams)
 
                 // Left button proceeds to choice 1.
                 option1Btn.setOnClickListener {

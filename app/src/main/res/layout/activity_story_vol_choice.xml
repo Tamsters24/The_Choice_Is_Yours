@@ -14,7 +14,7 @@
             android:layout_width="54dp"
             android:layout_height="46dp"
             android:layout_margin="25dp"
-            android:tint="@color/yellow_tan"
+            android:tint="@color/mustard_yellow"
             android:background="@null"/>
     <!-- Buttons for Library -->
     <Button
@@ -58,6 +58,17 @@
             android:background="@drawable/rounded_button"
             app:backgroundTint="@color/dark_green"
             android:text="@string/vol4_title"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    <Button
+            android:id="@+id/vol5_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@drawable/rounded_button"
+            app:backgroundTint="@color/orange"
+            android:text="@string/vol5_title"
             android:typeface="serif"
             android:textStyle="bold"
             android:textColor="@color/white"/>
