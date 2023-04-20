@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_twotone_home_24"
+                android:title="@string/menu_home"/>
+        <item
+                android:id="@+id/nav_fast_forward"
+                android:icon="@drawable/ic_twotone_fast_forward_24"
+                android:title="@string/menu_fast_forward"/>
+        <item
+                android:id="@+id/nav_rewind"
+                android:icon="@drawable/ic_twotone_fast_rewind_24"
+                android:title="@string/menu_rewind"/>
+        <item
+                android:id="@+id/nav_bookmark"
+                android:icon="@drawable/ic_twotone_bookmark_24"
+                android:title="@string/menu_bookmark"/>
+        <item
+                android:id="@+id/nav_gallery"
+                android:icon="@drawable/ic_twotone_photo_library_24"
+                android:title="@string/menu_gallery"/>
+        <item
+                android:id="@+id/nav_story_map"
+                android:icon="@drawable/ic_twotone_hub_24"
+                android:title="@string/menu_story_map"/>
+        <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_twotone_exit_to_app_24"
+                android:title="@string/menu_exit"/>
+        <item android:title=""/>
+        <item android:title=""/>
+        <item android:title=""/>
+        <item
+                android:id="@+id/nav_delete"
+                android:icon="@drawable/ic_twotone_delete_24"
+                android:title="@string/menu_delete"/>
+    </group>
+</menu>

@@ -2,7 +2,7 @@
     <!-- Activity Title Strings -->
     <string name="app_name">The Choice Is Yours</string>
     <string name="title_screen">The Choice Is Yours</string>
-    <string name="title_activity_vol2_scrolling"> </string>
+    <string name="title_activity_vol2_scrolling"></string>
 
     <!-- Activity Title Strings -->
     <string name="action_settings">Settings</string>
@@ -47,6 +47,24 @@
     <string name="proceed_btn">Click Here To Proceed</string>
     <string name="return_btn">Click Here To Return</string>
     <string name="check_progress_btn">Check Your Story Progress</string>
+
+    <!-- Navigation Menu Strings -->
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">The Choice is Yours</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Main</string>
+    <string name="menu_fast_forward">Fast Forward</string>
+    <string name="menu_rewind">Start at Beginning</string>
+    <string name="menu_bookmark">Bookmark</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_story_map">Story Progress</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_delete">Delete Progress</string>
+
 
     <!-- Instructions Strings -->
     <string name="instructions1">In "The Choice is Yours" book series, you are the character!
