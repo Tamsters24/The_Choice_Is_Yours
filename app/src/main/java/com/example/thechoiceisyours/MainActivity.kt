@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +37,13 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.MainToInstructions_btn).setOnClickListener {
             val mainToInstructionsIntent = Intent(this, Instructions::class.java)
             startActivity(mainToInstructionsIntent)
+        }
+
+        // Image Button
+        // Navigate to StoryVolChoice Activity: activity_story_vol_choice.xml & StoryVolChoice.kt
+        findViewById<ImageButton>(R.id.main1ToMain2Btn).setOnClickListener {
+            val main1ToMain2Intent = Intent(this, Main2Activity::class.java)
+            startActivity(main1ToMain2Intent)
         }
     }
 }
