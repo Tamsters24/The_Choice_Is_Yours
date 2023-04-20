@@ -17,20 +17,22 @@ import androidx.core.widget.NestedScrollView
 import com.example.thechoiceisyours.databinding.ActivityBookScrollingBinding
 
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
 
 class BookScrollingActivity : AppCompatActivity() {
-    private val storyLines = mutableListOf<String>()
-    private var currentChapter = "1a"
-    private var theEnd = false
     private var assetsDirectory = ""
-    private var choiceMap = mutableMapOf<String, List<String>>()
-    private var nodesVisitedDB = ""
     private var bookAssets = ""
+    private val storyLines = mutableListOf<String>()
+    private var choiceMap = mutableMapOf<String, List<String>>()
+    private var currentChapter = "1a"
+
+    private lateinit var userRef: DatabaseReference
+    private var bookmark = ""
+    private var nodesVisitedDB = ""
 
     private lateinit var binding: ActivityBookScrollingBinding
 
@@ -49,15 +51,41 @@ class BookScrollingActivity : AppCompatActivity() {
         // Concatenate name for directory and book content .txt files
         assetsDirectory = bookAssets + "_files/"
         val bookFile = bookAssets + "_contents.txt"
-        val nextChoicesFile = bookAssets + "_nextChoices.txt"
         val bookContents = assetsDirectory + bookFile
+        val nextChoicesFile = bookAssets + "_nextChoices.txt"
         val nextChoicesContents = assetsDirectory + nextChoicesFile
+
+        // Concatenate name for Database References
+        bookmark = bookAssets + "Bookmark"
         nodesVisitedDB = bookAssets + "NodesVisited"
 
         // Open the book, set the display, and update the visited chapters when accessed
         getStory(bookContents)
         choiceMap = setChoiceMap(nextChoicesContents)
-        storyDisplay(currentChapter)
+
+        // Access user Database to retrieve their bookmark. Begin story.
+        val firebaseAuth = FirebaseAuth.getInstance()
+        val user = firebaseAuth.currentUser
+        val userId = user?.uid.toString()
+        val database = FirebaseDatabase.getInstance()
+        userRef = database.getReference("users").child(userId)
+
+        val bookmarkRef = userRef.child(bookmark)
+        bookmarkRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                var bookmarkedChapter = dataSnapshot.getValue(String::class.java) as String
+                if (bookmarkedChapter.length > 1) {
+                    println("The bookmark value is: $bookmarkedChapter")
+                } else
+                    bookmarkedChapter = "1a"
+                storyDisplay(userRef, bookmarkedChapter)
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                currentChapter = "1a"
+                storyDisplay(userRef, currentChapter)
+            }
+        })
     }
 
     // Retrieve the Story from assets
@@ -75,22 +103,18 @@ class BookScrollingActivity : AppCompatActivity() {
     }
 
     // Set the views for the display, including images, narrative, and choice buttons
-    private fun storyDisplay(currentChapter: String) {
+    private fun storyDisplay(userRef: DatabaseReference, currentChapter: String) {
         Toast.makeText(baseContext, "Part $currentChapter", Toast.LENGTH_SHORT).show()
 
         // Access the Firebase database for Story Progress graph
         // Toggled the current Part.Choice "visited" to true when accessed
-        val firebaseAuth = FirebaseAuth.getInstance()
-        val user = firebaseAuth.currentUser
-        val userId = user?.uid.toString()
-        val database = FirebaseDatabase.getInstance()
-        val usersRef = database.getReference("users")
-        val userRef = usersRef.child(userId)
         if (currentChapter != "1a") { // First chapter is always considered visited
-            val visitedChapter = userRef.child(nodesVisitedDB).
-            child(currentChapter)
+            val visitedChapter = userRef.child(nodesVisitedDB).child(currentChapter)
             visitedChapter.setValue(true)
         }
+        // Retain bookmark for current chapter
+        val currentBookmark = userRef.child(bookmark)
+        currentBookmark.setValue(currentChapter)
 
         // Update the current chapter image if one exists
         val filteredImage = storyLines.filter { it.contains("p$currentChapter") }
@@ -107,7 +131,7 @@ class BookScrollingActivity : AppCompatActivity() {
         val choices = getNextChoices(currentChapter)
         for (choice in choices)
             Toast.makeText(baseContext, choice, Toast.LENGTH_SHORT).show()
-        displayButtons(choices)
+        displayButtons(userRef, choices)
     }
 
     // Set image for current chapter
@@ -210,7 +234,7 @@ class BookScrollingActivity : AppCompatActivity() {
     }
 
     // Switch visibility of choice Buttons according to choices available
-    private fun displayButtons(choiceList: List<String>) {
+    private fun displayButtons(userRef: DatabaseReference, choiceList: List<String>) {
         val option1Btn: ImageButton = findViewById(R.id.option1)
         val option2Btn: ImageButton = findViewById(R.id.option2)
         val option3Btn: ImageButton = findViewById(R.id.option3)
@@ -232,7 +256,6 @@ class BookScrollingActivity : AppCompatActivity() {
                 displayChapter("Part.$currentChapter")
 
                 if (choiceList[0] == "END") {   // Display last chapter, prompt to try different path,
-                    theEnd = true
                     Toast.makeText(baseContext, "Click to try a different path", Toast.LENGTH_LONG).show()
                     option3Btn.setOnClickListener {
                         val theEndToBookCoverIntent = Intent(this, BookCover::class.java)
@@ -244,7 +267,7 @@ class BookScrollingActivity : AppCompatActivity() {
 
                     // Move forward to the next section after clicking option button
                     option3Btn.setOnClickListener {
-                        storyDisplay(currentChapter)
+                        storyDisplay(userRef, currentChapter)
                     }
                 }
             }
@@ -263,13 +286,13 @@ class BookScrollingActivity : AppCompatActivity() {
                 // Left button proceeds to first choice.
                 option1Btn.setOnClickListener {
                     currentChapter = choiceList[0]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
 
                 // Right button proceeds to next choice
                 option2Btn.setOnClickListener {
                     currentChapter = choiceList[1]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
             }
 
@@ -289,19 +312,19 @@ class BookScrollingActivity : AppCompatActivity() {
                 // Left button proceeds to choice 1.
                 option1Btn.setOnClickListener {
                     currentChapter = choiceList[0]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
 
                 // Right button proceeds to choice 3
                 option2Btn.setOnClickListener {
                     currentChapter = choiceList[2]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
 
                 // Center button proceeds to choice 2
                 option3Btn.setOnClickListener {
                     currentChapter = choiceList[1]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
             }
 
@@ -321,25 +344,25 @@ class BookScrollingActivity : AppCompatActivity() {
                 // Left button proceeds to choice 1.
                 option1Btn.setOnClickListener {
                     currentChapter = choiceList[0]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
 
                 // Right button proceeds to choice 3
                 option2Btn.setOnClickListener {
                     currentChapter = choiceList[2]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
 
                 // Center left button proceeds to choice 2
                 option3Btn.setOnClickListener {
                     currentChapter = choiceList[1]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
 
                 // Center right button proceeds to choice 4
                 option4Btn.setOnClickListener {
                     currentChapter = choiceList[3]
-                    storyDisplay(currentChapter)
+                    storyDisplay(userRef, currentChapter)
                 }
             }
         }
