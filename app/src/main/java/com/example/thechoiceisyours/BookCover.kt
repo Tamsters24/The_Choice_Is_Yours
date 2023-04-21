@@ -37,11 +37,10 @@ class BookCover : AppCompatActivity() {
         }
 
         // Button
-        // Navigate to Story Progression Activity: activity_story_progression.xml & StoryProgression.kt
+        // Navigate to Library Activity: story_vol_choice.xml & StoryVolChoice.kt
         findViewById<Button>(R.id.checkProgress_btn).setOnClickListener {
-            val bookCoverToCheckProgressIntent = Intent(this, StoryProgression::class.java)
-            bookCoverToCheckProgressIntent.putExtra("assetsFolder", bookAssets)
-            startActivity(bookCoverToCheckProgressIntent)
+            val bookCoverToLibraryIntent = Intent(this, StoryVolChoice::class.java)
+            startActivity(bookCoverToLibraryIntent)
         }
     }
 }

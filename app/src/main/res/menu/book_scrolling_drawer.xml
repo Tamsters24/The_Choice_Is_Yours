@@ -22,7 +22,7 @@
                 android:title="@string/menu_bookmark"/>
         <item
                 android:id="@+id/nav_story_map"
-                android:icon="@drawable/ic_twotone_hub_24"
+                android:icon="@drawable/ic_twotone_scatter_plot_24"
                 android:title="@string/menu_story_map"/>
         <item
                 android:id="@+id/nav_exit"

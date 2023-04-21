@@ -20,7 +20,7 @@
     <string name="vol2_title">Vol 2: Journey Under the Sea</string>
     <string name="vol3_title">Vol 3: By Balloon to the Sahara</string>
     <string name="vol4_title">Vol 4: Space and Beyond</string>
-    <string name="vol5_title">Vol 5: The Mystery of Chimney Rock</string>
+    <string name="vol5_title">Vol 5: The Mystery of\nChimney Rock</string>
 
     <!-- Login Activity Strings -->
     <string name="acct_login">ACCOUNT LOGIN</string>
@@ -57,9 +57,9 @@
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_home">Main</string>
-    <string name="menu_fast_forward">Fast Forward</string>
+    <string name="menu_fast_forward">Go to Bookmark</string>
     <string name="menu_rewind">Start at Beginning</string>
-    <string name="menu_bookmark">Bookmark</string>
+    <string name="menu_bookmark">Bookmark Page</string>
     <string name="menu_story_map">Story Progress</string>
     <string name="menu_exit">Return to Library</string>
     <string name="menu_close">Close App</string>

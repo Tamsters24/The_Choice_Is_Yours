@@ -16,7 +16,7 @@
             android:layout_marginTop="16dp"/>
     <Button
             android:id="@+id/startBook_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/coverPage"
             app:layout_constraintStart_toStartOf="parent"
@@ -30,15 +30,15 @@
             android:textColor="@color/white"/>
     <Button
             android:id="@+id/checkProgress_btn"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/startBook_btn"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="50dp"
+            android:layout_marginStart="75dp"
             android:background="@drawable/rounded_button"
             app:backgroundTint="@color/yellow_tan"
-            android:text="@string/check_progress_btn"
+            android:text="@string/return_btn"
             android:typeface="serif"
             android:textStyle="bold"
             android:textColor="@color/white"/>
