@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent">
         <com.google.android.material.appbar.CollapsingToolbarLayout
-                app:toolbarId="@+id/toolbar"
+                app:toolbarId="@+id/toolbar1"
                 android:id="@+id/toolbar_layout"
                 style="@style/Widget.MaterialComponents.Toolbar.Primary"
                 android:fitsSystemWindows="true"

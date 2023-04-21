@@ -2,7 +2,7 @@
     <!-- Activity Title Strings -->
     <string name="app_name">The Choice Is Yours</string>
     <string name="title_screen">The Choice Is Yours</string>
-    <string name="title_activity_vol2_scrolling"></string>
+    <string name="title_activity_vol2_scrolling"> </string>
 
     <!-- Activity Title Strings -->
     <string name="action_settings">Settings</string>
@@ -64,6 +64,8 @@
     <string name="menu_story_map">Story Progress</string>
     <string name="menu_exit">Exit</string>
     <string name="menu_delete">Delete Progress</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 
 
     <!-- Instructions Strings -->
