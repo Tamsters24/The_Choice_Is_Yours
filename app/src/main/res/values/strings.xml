@@ -66,6 +66,9 @@
     <string name="menu_delete">Delete Progress</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="popup">Are You Sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
 
     <!-- Instructions Strings -->

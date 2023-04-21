@@ -10,20 +10,15 @@ import android.text.style.StyleSpan
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.thechoiceisyours.databinding.ActivityBookScrollingBinding
 import com.google.android.material.navigation.NavigationView
-
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-
 import java.io.BufferedReader
 import java.io.InputStream
 import java.io.InputStreamReader
@@ -67,6 +62,7 @@ class BookScrollingActivity : AppCompatActivity() {
         // Navigation Drawer options
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
+        updateNavHeader(bookAssets)
         binding.apply {
             toggle = ActionBarDrawerToggle(this@BookScrollingActivity, drawerLayout, R.string.open, R.string.close)
             drawerLayout.addDrawerListener(toggle)
@@ -101,6 +97,9 @@ class BookScrollingActivity : AppCompatActivity() {
                     R.id.nav_close -> {
                         Toast.makeText(baseContext, "Goodbye", Toast.LENGTH_SHORT).show()
                         finishAffinity()
+                    }
+                    R.id.nav_delete -> {
+                        ResetChaptersVisited.resetNodesVisited(this@BookScrollingActivity, bookAssets)
                     }
                 }
                 true
@@ -422,7 +421,7 @@ class BookScrollingActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        menuInflater.inflate(R.menu.main2, menu)
+        menuInflater.inflate(R.menu.book_scrolling_toolbar, menu)
         val toolbarBookmark = menu.findItem(R.id.action_bookmark)
         toolbarBookmark?.setOnMenuItemClickListener {
             val bookMarkTool = userRef.child(bookmark)
@@ -437,6 +436,36 @@ class BookScrollingActivity : AppCompatActivity() {
             true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun updateNavHeader(vol: String) {
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+        val headerView = navigationView.getHeaderView(0)
+
+        val imageView = headerView.findViewById<ImageView>(R.id.headerImageView)
+        val headerImageName = assetsDirectory + vol + "_header.jpg"
+        val headerImageInputStream: InputStream = assets.open(headerImageName)
+        val headerImage = Drawable.createFromStream(headerImageInputStream, null)
+        imageView.setImageDrawable(headerImage)
+
+        val headerVolText = headerView.findViewById<TextView>(R.id.headerTextView)
+        when (vol) {
+            "vol1" -> {
+                headerVolText.text = "The Cave of Time"
+            }
+            "vol2" -> {
+                headerVolText.text = "Journey Under the Sea"
+            }
+            "vol3" -> {
+                headerVolText.text = "By Balloon to the Sahara"
+            }
+            "vol4" -> {
+                headerVolText.text = "Space and Beyond"
+            }
+            "vol5" -> {
+                headerVolText.text = "The Mystery of Chimney Rock"
+            }
+        }
     }
 
     private fun navigateToDrawerItem(itemId: Int) {

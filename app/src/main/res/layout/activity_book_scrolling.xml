@@ -45,6 +45,6 @@
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
             app:headerLayout="@layout/nav_header_main2"
-            app:menu="@menu/activity_main2_drawer"/>
+            app:menu="@menu/book_scrolling_drawer"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>
