@@ -60,9 +60,9 @@
     <string name="menu_fast_forward">Fast Forward</string>
     <string name="menu_rewind">Start at Beginning</string>
     <string name="menu_bookmark">Bookmark</string>
-    <string name="menu_gallery">Gallery</string>
     <string name="menu_story_map">Story Progress</string>
     <string name="menu_exit">Return to Library</string>
+    <string name="menu_close">Close App</string>
     <string name="menu_delete">Delete Progress</string>
     <string name="open">Open</string>
     <string name="close">Close</string>

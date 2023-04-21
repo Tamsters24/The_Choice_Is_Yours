@@ -13,11 +13,6 @@
             android:theme="@style/Theme.TheChoiceIsYours"
             tools:replace="android:theme">
         <activity
-                android:name=".Main2Activity"
-                android:exported="true"
-                android:label="@string/title_activity_main2"
-                android:theme="@style/Theme.TheChoiceIsYours.NoActionBar"/>
-        <activity
                 android:name=".Instructions"
                 android:exported="true"/>
         <activity

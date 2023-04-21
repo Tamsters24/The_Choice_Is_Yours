@@ -21,10 +21,6 @@
                 android:icon="@drawable/ic_twotone_bookmark_24"
                 android:title="@string/menu_bookmark"/>
         <item
-                android:id="@+id/nav_gallery"
-                android:icon="@drawable/ic_twotone_photo_library_24"
-                android:title="@string/menu_gallery"/>
-        <item
                 android:id="@+id/nav_story_map"
                 android:icon="@drawable/ic_twotone_hub_24"
                 android:title="@string/menu_story_map"/>
@@ -32,6 +28,10 @@
                 android:id="@+id/nav_exit"
                 android:icon="@drawable/ic_twotone_exit_to_app_24"
                 android:title="@string/menu_exit"/>
+        <item
+                android:id="@+id/nav_close"
+                android:icon="@drawable/ic_twotone_close_24"
+                android:title="@string/menu_close"/>
         <item android:title=""/>
         <item android:title=""/>
         <item android:title=""/>

@@ -90,10 +90,6 @@ class BookScrollingActivity : AppCompatActivity() {
                         val bookMarkChapter = userRef.child(bookmark)
                         bookMarkChapter.setValue(currentChapter)
                     }
-                    R.id.nav_gallery -> {
-                        val bookMarkChapter = userRef.child(bookmark)
-                        bookMarkChapter.setValue(currentChapter)
-                    }
                     R.id.nav_story_map -> {
                         navigateToDrawerItem(it.itemId)
                     }
@@ -101,6 +97,10 @@ class BookScrollingActivity : AppCompatActivity() {
                         val bookMarkChapter = userRef.child(bookmark)
                         bookMarkChapter.setValue(currentChapter)
                         navigateToDrawerItem(it.itemId)
+                    }
+                    R.id.nav_close -> {
+                        Toast.makeText(baseContext, "Goodbye", Toast.LENGTH_SHORT).show()
+                        finishAffinity()
                     }
                 }
                 true

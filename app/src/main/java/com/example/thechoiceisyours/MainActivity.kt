@@ -38,12 +38,5 @@ class MainActivity : AppCompatActivity() {
             val mainToInstructionsIntent = Intent(this, Instructions::class.java)
             startActivity(mainToInstructionsIntent)
         }
-
-        // Image Button
-        // Navigate to StoryVolChoice Activity: activity_story_vol_choice.xml & StoryVolChoice.kt
-        findViewById<ImageButton>(R.id.main1ToMain2Btn).setOnClickListener {
-            val main1ToMain2Intent = Intent(this, Main2Activity::class.java)
-            startActivity(main1ToMain2Intent)
-        }
     }
 }
