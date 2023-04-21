@@ -14,19 +14,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="16dp"/>
-    <ImageButton
-            android:id="@+id/bookCoverToMainBtn"
-            app:srcCompat="@drawable/ic_twotone_arrow_circle_left_24"
-            android:layout_width="54dp"
-            android:layout_height="46dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.02"
-            app:layout_constraintVertical_bias="0.875"
-            android:tint="@color/mustard_yellow"
-            android:background="@null"/>
     <Button
             android:id="@+id/startBook_btn"
             android:layout_width="wrap_content"

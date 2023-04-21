@@ -2,12 +2,10 @@ package com.example.thechoiceisyours
 
 import android.content.Intent
 import android.graphics.drawable.Drawable
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.ImageView
-
+import androidx.appcompat.app.AppCompatActivity
 import java.io.InputStream
 
 class BookCover : AppCompatActivity() {
@@ -29,13 +27,6 @@ class BookCover : AppCompatActivity() {
         volumeImage.setImageDrawable(volumeCover)
         volumeImage.layout(600,0,600,600)
 
-
-        // Image Button
-        // Navigate to back to Library: activity_story_vol_choice.xml & StoryVolChoice.kt
-        findViewById<ImageButton>(R.id.bookCoverToMainBtn).setOnClickListener {
-            val bookCoverToLibraryIntent = Intent(this, StoryVolChoice::class.java)
-            startActivity(bookCoverToLibraryIntent)
-        }
 
         // Button
         // Navigate to Book Scrolling Activity: activity_book_scrolling.xml & BookScrollingActivity.kt
