@@ -7,14 +7,19 @@ import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.StyleSpan
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
+import androidx.drawerlayout.widget.DrawerLayout
 import com.example.thechoiceisyours.databinding.ActivityBookScrollingBinding
+import com.google.android.material.navigation.NavigationView
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -35,15 +40,10 @@ class BookScrollingActivity : AppCompatActivity() {
     private var nodesVisitedDB = ""
 
     private lateinit var binding: ActivityBookScrollingBinding
+    private lateinit var toggle: ActionBarDrawerToggle
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Menu options
-        binding = ActivityBookScrollingBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        setSupportActionBar(findViewById(R.id.toolbar))
-        binding.toolbarLayout.title = title
 
         // Retrieve Book Contents using the Extra put in BookCover.kt
         bookAssets = intent.getStringExtra("assetsFolder").toString()
@@ -58,6 +58,54 @@ class BookScrollingActivity : AppCompatActivity() {
         // Concatenate name for Database References
         bookmark = bookAssets + "Bookmark"
         nodesVisitedDB = bookAssets + "NodesVisited"
+
+        // Menu options
+        binding = ActivityBookScrollingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setSupportActionBar(findViewById(R.id.toolbar))
+
+        // Navigation Drawer options
+        val drawerLayout: DrawerLayout = binding.drawerLayout
+        val navView: NavigationView = binding.navView
+        binding.apply {
+            toggle = ActionBarDrawerToggle(this@BookScrollingActivity, drawerLayout, R.string.open, R.string.close)
+            drawerLayout.addDrawerListener(toggle)
+            toggle.syncState()
+
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+            navView.setNavigationItemSelectedListener {
+                when (it.itemId) {
+                    R.id.nav_home -> {
+                        navigateToDrawerItem(it.itemId)
+                    }
+                    R.id.nav_fast_forward -> {
+                        navigateToDrawerItem(it.itemId)
+                    }
+                    R.id.nav_rewind -> {
+                        currentChapter = "1a"
+                        storyDisplay(userRef, currentChapter)
+                    }
+                    R.id.nav_bookmark -> {
+                        val bookMarkChapter = userRef.child(bookmark)
+                        bookMarkChapter.setValue(currentChapter)
+                    }
+                    R.id.nav_gallery -> {
+                        val bookMarkChapter = userRef.child(bookmark)
+                        bookMarkChapter.setValue(currentChapter)
+                    }
+                    R.id.nav_story_map -> {
+                        navigateToDrawerItem(it.itemId)
+                    }
+                    R.id.nav_exit -> {
+                        val bookMarkChapter = userRef.child(bookmark)
+                        bookMarkChapter.setValue(currentChapter)
+                        navigateToDrawerItem(it.itemId)
+                    }
+                }
+                true
+            }
+        }
 
         // Access user Database to retrieve their bookmark. Begin story.
         val firebaseAuth = FirebaseAuth.getInstance()
@@ -371,5 +419,58 @@ class BookScrollingActivity : AppCompatActivity() {
 
     private fun getNextChoices(currentChoice: String): List<String> {
         return choiceMap[currentChoice] ?: emptyList()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.main2, menu)
+        val toolbarBookmark = menu.findItem(R.id.action_bookmark)
+        toolbarBookmark?.setOnMenuItemClickListener {
+            val bookMarkTool = userRef.child(bookmark)
+            bookMarkTool.setValue(currentChapter)
+            true
+        }
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (toggle.onOptionsItemSelected(item)){
+            true
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
+    private fun navigateToDrawerItem(itemId: Int) {
+        when (itemId) {
+            R.id.nav_home -> {
+                val storyToMainIntent = Intent(this, MainActivity::class.java)
+                startActivity(storyToMainIntent)
+            }
+            R.id.nav_fast_forward -> {
+                val bookMarkChapter = userRef.child(bookmark)
+
+                bookMarkChapter.addValueEventListener(object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+                        val value = dataSnapshot.getValue(String::class.java)
+                        if (value != null) {
+                            currentChapter = value
+                            storyDisplay(userRef, currentChapter)
+                        }
+                    }
+
+                    override fun onCancelled(databaseError: DatabaseError) {
+                        // Handle errors here
+                    }
+                })
+            }
+            R.id.nav_story_map -> {
+                val storyToStoryProgressIntent = Intent(this, StoryProgression::class.java)
+                storyToStoryProgressIntent.putExtra("assetsFolder", bookAssets)
+                startActivity(storyToStoryProgressIntent)
+            }
+            R.id.nav_exit -> {
+                val storyToBookCoverIntent = Intent(this, StoryVolChoice::class.java)
+                startActivity(storyToBookCoverIntent)
+            }
+        }
     }
 }

@@ -31,7 +31,7 @@ class Main2Activity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.toolbar))
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
-        val navView: NavigationView = binding.navView
+        //val navView: NavigationView = binding.navView
 
         binding.apply {
             toggle = ActionBarDrawerToggle(this@Main2Activity, drawerLayout, R.string.open, R.string.close)
@@ -40,7 +40,7 @@ class Main2Activity : AppCompatActivity() {
 
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-            navView.setNavigationItemSelectedListener {
+            /*navView.setNavigationItemSelectedListener {
                 when (it.itemId) {
                     R.id.nav_home -> {
                         navigateToDrawerItem(it.itemId)
@@ -53,7 +53,7 @@ class Main2Activity : AppCompatActivity() {
                     }
                 }
                 true
-            }
+            }*/
         }
     }
 
