@@ -10,8 +10,12 @@ import android.text.style.StyleSpan
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.*
+import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.NestedScrollView
 import androidx.drawerlayout.widget.DrawerLayout
@@ -99,7 +103,18 @@ class BookScrollingActivity : AppCompatActivity() {
                         finishAffinity()
                     }
                     R.id.nav_delete -> {
-                        ResetChaptersVisited.resetNodesVisited(this@BookScrollingActivity, bookAssets)
+                        val builder: AlertDialog.Builder =
+                            AlertDialog.Builder(this@BookScrollingActivity)
+                        builder.setMessage("Are you sure?")
+                        builder.setPositiveButton("Yes") {dialog, which ->
+                            ResetChaptersVisited.resetNodesVisited(this@BookScrollingActivity, bookAssets)
+                            dialog.cancel()
+                        }
+                        builder.setNegativeButton("No") { dialog, which ->
+                            dialog.cancel()
+                        }
+                        val dialog = builder.create()
+                        dialog.show()
                     }
                 }
                 true
