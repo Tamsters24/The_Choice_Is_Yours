@@ -2,21 +2,16 @@ package com.example.thechoiceisyours
 
 import android.content.ContentValues
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
-
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.FirebaseApp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.database.FirebaseDatabase
-
-import java.io.BufferedReader
-import java.io.InputStreamReader
 
 class UserRegistration : AppCompatActivity() {
     private var newUserEmail: String = ""
@@ -66,7 +61,9 @@ class UserRegistration : AppCompatActivity() {
                     registerUpdateUI(newUser)
 
                     // For new user (UID) populate Chapter Nodes for Story Progression Map
-                    createStoryNodesVisited ()
+                    // See Class ResetChaptersVisited, function resetNodesVisited()
+                    ResetChaptersVisited.resetNodesVisited(this, "vol1")
+                    ResetChaptersVisited.resetNodesVisited(this, "vol2")
 
                     // Return to Main Activity
                     val backToMainIntent = Intent(this, MainActivity::class.java)
@@ -78,95 +75,6 @@ class UserRegistration : AppCompatActivity() {
                     registerUpdateUI(null)
                 }
             }
-    }
-
-    private fun createStoryNodesVisited () {
-        val firebaseAuth = FirebaseAuth.getInstance()
-        val database = FirebaseDatabase.getInstance()
-
-        // Determine the user's UID
-        val user = firebaseAuth.currentUser
-        val userId = user?.uid.toString()
-
-        // Get a reference to the "users" node
-        val usersRef = database.getReference("users")
-        val userRef = usersRef.child(userId)
-
-        // Create bookmarks for current chapter (node)
-        val vol1CurrentChapter = userRef.child("vol1Bookmark")
-        val vol2CurrentChapter = userRef.child("vol2Bookmark")
-
-        // Set bookmarks for chapter 1 (designated 1a in content files)
-        val vol1BookMark = "1a"
-        val vol2Bookmark = "1a"
-
-        // Create a new user node with UID
-        val vol1NodesVisited = userRef.child("vol1NodesVisited")
-        val vol2NodesVisited = userRef.child("vol2NodesVisited")
-
-        // Create a map of the boolean values for vol1
-        val vol1Nodes = assets.open("vol1_files/vol1NodeNames.txt")
-        val vol1NodesReader = BufferedReader(InputStreamReader(vol1Nodes))
-        var vol1Node = vol1NodesReader.readLine()
-        val vol1BooleanValues = mutableMapOf(vol1Node to true)
-        vol1Node = vol1NodesReader.readLine()
-        while (vol1Node != null) {
-            vol1BooleanValues[vol1Node] = false
-            vol1Node = vol1NodesReader.readLine()
-        }
-        vol1NodesReader.close()
-
-        // Create a map of the boolean values for vol2
-        val vol2Nodes = assets.open("vol2_files/vol2NodeNames.txt")
-        val vol2NodesReader = BufferedReader(InputStreamReader(vol2Nodes))
-        var vol2Node = vol2NodesReader.readLine()
-        val vol2BooleanValues = mutableMapOf(vol2Node to true)
-        vol2Node = vol2NodesReader.readLine()
-        while (vol2Node != null) {
-            vol2BooleanValues[vol2Node] = false
-            vol2Node = vol2NodesReader.readLine()
-        }
-        vol2NodesReader.close()
-
-        // Write the current chapter bookmark values to the database
-        vol1CurrentChapter.setValue(vol1BookMark).addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                // Database write successful
-                println("Vol 1 Bookmark write successful")
-            } else {
-                // Handle database write error
-                println("Vol 1 Bookmark write failed")
-            }
-        }
-        vol2CurrentChapter.setValue(vol2Bookmark).addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                // Database write successful
-                println(" Vol 2 Bookmark write successful")
-            } else {
-                // Handle database write error
-                println("Vol 2 Bookmark write failed")
-            }
-        }
-
-        // Write the volume boolean values to the database
-        vol1NodesVisited.setValue(vol1BooleanValues).addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                // Database write successful
-                println("Vol 1 Node Database write successful")
-            } else {
-                // Handle database write error
-                println("Vol 1 Node Database write failed")
-            }
-        }
-        vol2NodesVisited.setValue(vol2BooleanValues).addOnCompleteListener { task ->
-            if (task.isSuccessful) {
-                // Database write successful
-                println("Vol 2 Node Database write successful")
-            } else {
-                // Handle database write error
-                println("Vol 2 Node Database write failed")
-            }
-        }
     }
 
     private fun registerUpdateUI(user: FirebaseUser?) {
