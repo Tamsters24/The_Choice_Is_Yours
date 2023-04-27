@@ -2,322 +2,491 @@ Part.1a  You are visiting France with your two best friends, Peter and Sarah. Fo
 Choice.1a.2a You act now. Release gas from the balloon and land before the storm overtakes you.
 Choice.1a.2b Perhaps the storm will pass quickly. Maybe you can ride it out. Do no act.
 p1a  image vol3_files/vol3_picture1.jpg
+pg 1
 
 Part.2a  You pull on the cord releasing some of the gas. allowing you to descend. Nothing happens! The storm clouds are coming closer, and the gentle wind has now turned into a howling gale. The coast is near. You must release some of the gas and settle to earth or you will be swept out to sea. Sarah says, "Let's pull harder. The valve is stuck."\nBut Peter pulls out his jackknife. The situation is desperate. You must make a large slit in the fabric. Both Peter and Sarah look frightened, and they are relying on you to make the right decision.
 Choice.2a.3a Use Sarah's plan and pull together on the cord.
 Choice.2a.3b Perhaps Peter is right. A slit in the balloon's fabric will let the gas out quickly.
 p3a  image vol3_files/vol3_picture2a.jpg
+pg 2
 
 Part.2b  Lightning flashes and the four of you are treated to a frightening and spectacular display of nature's fury. As the night passes, the storm breaks and the moon appears from behind clouds. The night wind is warm, and far below, you see the silvered waters of the Mediterranean. Dawn comes with streaks of red and gold, and to the south, you see a hazy line of yellow, the coast of North Africa and the Sahara desert beyond!\nShould you try to land the balloon near the shore where fishermen could help you, or should you drift further south toward the desert? There will be cities of white with minarets, cool oases with date palms and Arabs in flowing white robes. You take a vote.
 Choice.2b.3c You all decide to land near the shore. Release the balloon's gas and descend.
 Choice.2b.3d The lure of the Sahara is too strong to stop your flight. Put on some suntan lotion and drift south.
+pg 3
 
 Part.3a  You all pull together. Even Harry is able to tug on the end of the cord. You hear the slow hiss of escaping gas. But without warning, the cord breaks. Cold wind and rain are soaking you and lightning flashes. You attempt to slit the fabric with Peter's knife. The knife slips from your chilled fingers. The balloon is lower now, sweeping over a village. A church spire looms closer and closer. You brush past it, startling pigeons perching on the gutters of the roof. Beyond the village you see a sandy beach, anchored fishing boats and the sea beyond. You must do something!\nSarah suggests that you toss out the anchor with its long rope. Perhaps you can snag something.\nThe danger is that a quick stop might rip the basket apart!
 Choice.3a.4a Decide to drop the anchor.
 Choice.3a.4b Decide to do nothing and hope that the local fishermen will come to your rescue when the balloon settles into the water.
+pg 4
 
 Part.3b  You take Peter's knife and climb up on his shoulders. The balloon is swinging wildly in the winds of the storm. Reaching as far as you can, you puncture the silk of the balloon. Gas starts to escape in a rush. You look down from Peter's shoulders just in time to see the waves reach up and grab the balloon's wicker basket. Harry howls in terror. As the wicker basket lands in a cloud of spray, you are thrown clear. You sink into the churning sea for what seems like minutes and then slowly rise to the surface. The balloon is nowhere in sight, hidden by the moving mountains of water. You strike out in what you hope is the right direction.
 TO PART 4c
 p3a  image vol3_files/vol3_picture3b.jpg
+pg 5
 
 Part.3c  Looking up and down the shoreline you realize that you have landed on a very remote section of the North African coast. Nothing except sand and low, scrubby hills can be seen in either direction. But it certainly feels good to be back on solid ground again. Eagerly, you all start to explore your surroundings. Hary finds an interesting bush, but it is Peter who spies the entrance to a cave which overlooks the beach. Just as you start to climb toward the cave, a dozen horsemen in white robes thunder over the top of a sand dune and ride toward you, shouting and waving swords.
 Choice.3c.4d Accept capture, raise your hands in surrender, put on a good smile and hope for the best.
 Choice.3c.4e You think the horsemen are dangerous, so hide in the cave that Peter has discovered. Watch your head as you crawl through the narrow entrance to the mysterious cave!
 p3c  image vol3_files/vol3_picture3c.jpg
+pg 6/7
 
 Part.3d  The endless, golden sands of the Sahara drift beneath you. After the cold night, the hot sun feels good. You see caravans with hundreds of camels, sheltered oases and mud-walled villages. Sarah gives a shout of surprise, for there to the south is a great mound of silver. As you drift closer, you see that it is a domed, metal machine with hundreds of portholes set along its rim.\nShould you descend and land? This must be a flying saucer, and perhaps you will be the first to meet space travelers. But Peter cautions you to drift on. Travelers from outer space may be dangerous.
 Choice.3d.4f Decide to land, pull the cord and descend.
 Choice.3d.4g Decide to play it safe, hope that the Space travelers won't see you, and drift on.
+pg 8
 
 Part.4a  You and Peter heave the anchor over the side. The rope snakes out rapidly. Far below you, the anchor bounces off a cobblestone street and through a flower bed, and drags across the sandy beach. It is too late for the anchor to catch on anything! Just as you lose hope, the anchor, which is now dragging through the water, catches on a small boat. There is a violent shock as the balloon whips the end of the anchor line taut. For a second the balloon strains on the end of the rope like a dog on a leash. But seconds later you see the boat has broken loose and is being towed behind the balloon. At least you will have something to shelter in when the balloon finally settles into the raging sea. But should you slide down the rope to the deck of the boat now, or wait for morning?
 Choice.4a.5a Slide down the rope now.
 Choice.4a.5b Wait for the storm to abate and for morning to come.
 p4a  image vol3_files/vol3_picture4a.jpg
+pg 10/11
 
 Part.4b  The storm has swallowed up the light and it is getting dark. The balloon is slowly descending toward the angry sea. You catch a last glimpse of the shoreline. It seems only a mile or so away. And then you crash down into the sea. There is a tumbling of bodies. The wicker basket of the balloon is partially filled with water but still floating. Peter and Sarah cling to each other with fright and cold. Should you swim for shore to direct the rescue effort by the fishermen, or should you stay with your friends? They look to you for a decision.
-Choice.4b.5c Perhaps you should swim for shore. You have always been a strong swimmer.
-Choice.4b.5d Maybe you should stay with your friends and await rescue.
+Choice.4b.4c Perhaps you should swim for shore. You have always been a strong swimmer.
+Choice.4b.5c Maybe you should stay with your friends and await rescue.
+pg 9
 
-Part.4c  At first your strokes are strong and sure. But you have never swum in mountainous seas like this. From the top of a wave, you catch sight of the shore, but then a wave, larger than rest, breaks over you, filling your mouth and nose with sea water. You panic. You'll never make it, swimming against the seas and wind!
-TO PART 5e
+Part.4c  At first your strokes are strong and sure. But you have never swum in mountainous seas like this. From the top of a wave, you catch sight of the shore, but then a wave, larger than rest, breaks over you, filling your mouth and nose with sea water. You panic. You'll never make it, swimming against the seas and wind!  But then you remember that if you lay on your back with your lungs full of air and arms and legs outstretched, you'll float like a cork. You try this and find it much easier. The sky whirls around as you are tossed from wave to wave. It seems like a very long time but finally, you hear your dog, Harry, barking excitedly. You lift your head and there, only a few waves away, is the balloon. With thanks in your heart, you swim the last few strokes and your friends pull you aboard. Harry, who saved you, licks your face. You rest, huddled together, waiting for the dawn.
+TO PART 5c
+p4c  image vol3_files/vol3_picture4c.jpg
+pg 14/15
 
 Part.4d  The dozen horsemen reign up next to you in a shower of sand. The men are dark and fierce- looking, with brilliant white teeth and deep-set eyes. In a strange language, they command you to get on a horse. With Harry trotting proudly beside you, the riders tum back into the desert. For hours, there is only the sound of leather creaking and the hollow echo of hooves on barren rock and sand. They follow a path through a narrow canyon, guarded by desert tribesmen who stand high above on rock ledges, holding rifles and watching the horizon. You have entered their desert stronghold!\n The valley opens out and soon you see parched fields of wheat and large, open ponds of water. Finally, you enter a white city, surrounded by high mud walls.\n You are taken to a large house. As you enter, you see that it is a palace with an open courtyard in the center, green plants growing everywhere and colorful birds singing from nearly every branch. Friendly servants come and bring you food and drink. But every door is guarded by one of the desert tribesmen.
-TO PART 5f
+TO PART 5d
+pg 12
 
 Part.4e  As you all lie panting in the cave from your hard run, you hear the horsemen thunder by. "They didn't see us after all!" Peter exclaims. Cautiously, you peer out the opening. The horsemen continue on for a moment and then circle back. It looks like they did see you at first, and then lost sight of you as you scrambled for the cave.\n"They'll start to search for us soon," Sarah says. "What will we do?"\nYou can see their bright swords in the sunlight. Their leader, dressed in purple robes, wheels his horse around and points directly at your cave. Other horsemen start to dismount and climb the hill toward you.\n"Look," Peter shouts. "There are old doors here in the cave." You examine the doors. There are three of them and each is painted a different color. Perhaps they are storage vaults for smugglers, or even the entrance to tunnels. You had better choose one of them and hide.
-Choice.4e.5g Open the Blue Door and enter it quickly.
-Choice.4e.5h Peter thinks the Red Door is best. Enter the Red Door and lock it behind you.
-Choice.4e.5i Sarah and Harry pick the White Door. What a difficult decision, but this is your choice. Be quick about it!
+Choice.4e.5e Open the Blue Door and enter it quickly.
+Choice.4e.5f Peter thinks the Red Door is best. Enter the Red Door and lock it behind you.
+Choice.4e.5g Sarah and Harry pick the White Door. What a difficult decision, but this is your choice. Be quick about it!
+pg 19
 
 Part.4f  Lower and lower you drift. Finally, you settle to earth and the spacemen surround you. You see that although their ears are nearly as large as their hands and flap excitedly, their faces are smiling. They all point to Harry and you realize that they think Harry is your leader, because of his big ears. One man with very large ears motions Harry to follow him. And all of you follow Harry, wishing that your ears were big and floppy.\nThe man leads you to a silver dome and, after bowing low to Harry who calmly wags his tail, directs you to enter. And as you stand there expectantly, a red mist hisses from hidden pipes, and you fall to the floor, asleep.
-TO PART 5j
+TO PART 5h
 p4f  image vol3_files/vol3_picture4f.jpg
+pg 16
 
 Part.4g  For a minute, you think you are safe. The balloon makes no sound and you are nearly past the flying saucer's landing place. But the shadow of the balloon drifts across the saucer and you see men looking up. A white light flares and before you can do anything, a hole burns in the balloon's fabric. Down you go to a hard landing. Soon, you are surrounded by men in blue spacesuits. They are smaller than you and very strong. Several of them shout, "Gleeb Fogo, Gleeb Fogo!" They shove you into a metal hut and the door slams behind you. Harry starts to burrow excitedly in the dirt floor, and you realize that he is trying to dig an escape tunnel. Perhaps it is better to wait to see what your captors want of you. Possibly, they come in peace.
-Choice.4g.5k Follow Harry down his tunnel, give him a hand and crawl.
-Choice.4g.5l Wait to see what happens when your captors come to question you, and be patient.
+Choice.4g.5i Follow Harry down his tunnel, give him a hand and crawl.
+Choice.4g.5j Wait to see what happens when your captors come to question you, and be patient.
+pg 17
 
-Part.5a
-Peter and Sarah first slide down the rope. Harry
-climbs on your shoulders and vou work your way
-down to the deck of the small sailing craft. Peter
-checks below deck and then reports (with a
-snappy salute) that there is no one aboard, and
-that there is plenty of food and water on board.\n
-The first order you give is to cut away the balloon.
-It is pulling the boat too fast and spray is
-sizzling over the desk.\n
-Sarah thinks that you should turn the boat
-around, raise the sails and beat back against the
-wind to the coast of France.\n
-But Peter is keen to go on. To the south, he
-says, is the golden coast of Africa, with desert
-sheiks, caravans and all sorts of adventure.
-Choice.5a.6a .
-Choice.5a.6b .
+Part.5a  Peter and Sarah first slide down the rope. Harry climbs on your shoulders and vou work your way down to the deck of the small sailing craft. Peter checks below deck and then reports (with a snappy salute) that there is no one aboard, and that there is plenty of food and water on board.\nThe first order you give is to cut away the balloon. It is pulling the boat too fast and spray is sizzling over the desk.\nSarah thinks that you should turn the boat around, raise the sails and beat back against the wind to the coast of France.\nBut Peter is keen to go on. To the south, he says, is the golden coast of Africa, with desert sheiks, caravans and all sorts of adventure.
+TO PART 5b
 p5a  image vol3_files/vol3_picture5a.jpg
+pg 20
 
-Part.5b  A long night passes. The storm slowly abates. The black clouds part to reveal a sky full of stars and a slipper moon. Trailing far behind and below you, is the small boat, its wake silver in the moonlight. Toward dawn, you and your friends fall asleep. You awake to shouting. As you peer over the rim of the basket, you see a ma with a full black beard on the deck of the boat shaking his fist at you. He takes the line which is caught in his boat's rigging and wraps it around a winch. Slowly, he reels you in, as if you were a giant puffer fish. Harry growls deep in his throat, as though he senses danger.
-Choice.5b.6-
-Accept capture. After all, it is your fault that the man's boat has been torn loose from its anchor. Perhaps he will accept your apology and offer you food and drink.
-Choice.5b.6- . Sarah is more cautious. She points out that the man is dangerous-looking and very angry. Wouldn't it be safer, she says, if we were to cut loose and let the balloon sail on? Land can't be far away, and all of you feel more confident, now that the storm is gone and the sun is rising.
+Part.5b  Both look to you for a decision, but you smile and pull a coin from your pocket. "Let the coin decide," you laugh, and flip it in the air.\n"Heads" and you shall try to return to the coast of France.\n"Tails" and you will cary on to the south and the coast of Africa.
+Choice.5b.6a The coin lands "Heads".
+Choice.5b.6b The coin lands "Tails".
+pg 21
 
-Part.5c
-Choice.5c.6d .
-Choice.5c.6e .
-p5c  image vol3_files/vol3_picture5c.jpg
+Part.5c  A long night passes. The storm slowly abates. The black clouds part to reveal a sky full of stars and a slipper moon. Trailing far behind and below you, is the small boat, its wake silver in the moonlight. Toward dawn, you and your friends fall asleep. You awake to shouting. As you peer over the rim of the basket, you see a ma with a full black beard on the deck of the boat shaking his fist at you. He takes the line which is caught in his boat's rigging and wraps it around a winch. Slowly, he reels you in, as if you were a giant puffer fish. Harry growls deep in his throat, as though he senses danger.
+Choice.5c.6c Accept capture. After all, it is your fault that the man's boat has been torn loose from its anchor. Perhaps he will accept your apology and offer you food and drink.
+Choice.5c.2b Sarah is more cautious. She points out that the man is dangerous-looking and very angry. Wouldn't it be safer, she says, if we were to cut loose and let the balloon sail on? Land can't be far away, and all of you feel more confident, now that the storm is gone and the sun is rising.
+pg 18
 
-Part.5d
-Choice.5d.6f .
-Choice.5d.6g .
+Part.5d Dawn comes slowly, turning the eastern sky pink. You are all miserable, and you share what little food remains, hoping that rescue will come soon. You each take turns clinging to the rim of the basket, looking for the fishermen. Sarah, who is on lookout, suddenly gives a cry of surprise and points to the south. There, you all see the menacing shape of a submarine running on the surface. Men move on deck, and a black flag flies from the conning tower. Could it be a pirate submarine?\nYou must decide whether to shout for help and hope that the submarine's crew are friendly, or whether you must crouch down and hope that they don't notice you. Surely fishermen will find you before nightfall.
+Choice.5d.6d Shout to the submarine's crew.
+Choice.5d.6e Hide and wait for the fishermen.
+p5d  image vol3_files/vol3_picture5d.jpg
+pg 22
 
-Part.5e  But then you remember that if you lay on your back with your lungs full of air and arms and legs outstretched, you'll float like a cork. You try this and find it much easier. The sky whirls around as you are tossed from wave to wave. It seems like a very long time but finally, you hear your dog, Harry, barking excitedly. You lift your head and there, only a few waves away, is the balloon. With thanks in your heart, you swim the last few strokes and your friends pull you aboard. Harry, who saved you, licks your face. You rest, huddled together, waiting for the dawn.
-TO PART 6-
-p3c  image vol3_files/vol3_picture5e.jpg
+Part.5e  At last, a man enters, dressed in red robes with a silver-headed dagger on one side and a sword slung from the other.\n"Greetings, honored guests," he says in a deep voice. "It is the fate of Allah that you have come to my kingdom. Perhaps it is also fate that you hold the key to my victory against hateful men who have invaded my desert kingdom.\n"Will you join me in my fight against these evil people, or must I return you to the shore of the Mediterranean? The choice is yours, and I will do you no harm if you do not accept."
+Choice.5e.6f Join the chieftain.
+Choice.5e.6g You feel that this sounds too risky, and tell the desert chieftain that you wish to return to the North African coast.
+pg 13
 
-Part.5f  At last, a man enters, dressed in red robes with a silver-headed dagger on one side and a sword slung from the other.\n"Greetings, honored guests," he says in a deep voice. "It is the fate of Allah that you have come to my kingdom. Perhaps it is also fate that you hold the key to my victory against hateful men who have invaded my desert kingdom.\n"Will you join me in my fight against these evil people, or must I return you to the shore of the Mediterranean? The choice is yours, and I will do you no harm if you do not accept."
-Choice.5f.6- Join the chieftain.
-Choice.5f.6- You feel that this sounds too risky, and tell the desert chieftain that you wish to return to the North African coast.
+Part.5f  You and your friends push and tug at the Blue Door. Slowly, it creaks open to reveal a staircase leading downward. Although there are no light bulbs, the staircase and the dirt walls around you glow with a soft light. On tiptoes, all of you descend. At the bottom, there is a wooden landing and an underground river flowing rapidly by. A small rowboat is tied up to the landing. Perhaps you should use the boat to explore the underground river? Then Peter shouts that he has found a path which leads upstream, right beside the rushing waters. Which way shall it be?
+Choice.5f.6h Going downstream in the boat sounds easier than walking. You get into the boat with your friends and the boat drift downstream.
+Choice.5f.6i Maybe going upstream would be exciting. The river has to come from somewhere. You tighten the laces on your shoes and start walking upstream.
+p5f  image vol3_files/vol3_picture5f.jpg
+pg 24/25
 
-Part.5g
-Choice.5g.6l .
-Choice.5g.6m .
+Part.5g  The Red Door swings open on well-oiled hinges. You step into ac lean, well-lighted corridor. The air is cool and air-conditioned, and the place smells like an office building!\nThe four of you tiptoe down the corridor and enter a large room. Along a wall, computers are whirring, and in the center of the room are several men and women in white coats, pouring chemicals into vats, looking through microscopes and making notes on large sheets of paper.\nA small man with very thick glasses rushes up to you. "Goodness me," he exclaims. "This is a secret government laboratory, You shouldn't be here!"\nYou explain that it was just by accident and then ask, "What do you do here? It looks very scientific."\nThe man, whose name is Professor Whachit, scratches his balding head. "I don't know," he says. "We've been working for so long that we have forgotten what we were doing. But we do have some inventions that we can try out on you."\nHe shows you a jar of liquid. "I'm afraid that you can't leave here alive. It's so secret that we just couldn't allow that. But if you help us in our experiments, then we might trust you."\nYou and your friends look at each other. You really don't want to try drinking the Professor's secret liquid. Sarah whispers, "Let's run for it. Maybe we can find a way out."
+Choice.5g.6j You decide to drink the Professor's liquid. You hold your nose, gulp down the foul-smelling stuff, and then relax until the chemical takes effect.
+Choice.5g.6k You think that you can escape from the Professor's laboratory. You push Professor Whachit aside and run for the door.
+pg 28/29
 
-Part.5h
-Choice.5h.6n .
-Choice.5h.6o .
-p5h  image vol3_files/vol3_picture5h.jpg
+Part.5h  You enter through the White Door and lock it behind you. It is very dark and in the far distance, you can hear strange music. Finally, your eyes adjust to the darkness and you can see pinpoints of stars! And planets with rings of color floating in the black, inky void of space.\nAs you walk along a pathway, you see strange, partially formed visions... of black rivers rushing through rocky tunnels, of jewels and chests of gold, of green, snow-capped mountains and stormy blue seas. A voice says in your mind that you have entered a time-shift... that you can move forward or backward in both time and space. Your friends hold tightly to your arm, wondering what to do. A comet burns across the sky and you feel the cold rain of meteor dust. It would be better to leave this strange place and frantically, your mind reaches out to grasp a vision.
+Choice.5h.5b Warp through space and time to a stormy night at sea.
+Choice.5h.6h Warp through space and time to an underground river.
+pg 27
 
-Part.5i
-Choice.5i.6p .
-Choice.5i.6q .
+Part.5i  It seems like hours later when you awake. You feel wonderful and completely rested. A gong bongs and a short man with ears that hang down to his knees enters. "I am the Maximum Leader," he says in a deep voice. "We are space-time travelers, but we have run out of fuel for our ship. It is a common material here on your planet, and we have dug for it by boring with our laser drills, but we find only water and sand. This is the material we need," he says and hands you white crystals. You smell it and then taste it carefully. It's ordinary salt!\n"There is a tribe of fierce desert men who live to the north," he continues. "In their storehouses, they have great quantities of this fuel. Will you help us in obtaining some? If you do not choose to, we will allow you to leave in peace.
+Choice.5i.6l This sounds exciting and you step forward to volunteer.
+Choice.5i.6m You don't want to get involved in what seems to be the beginning of a war, and you tell the Maximum Leader that you wish to go in peace.
+p5i image vol3_files/vol3_picture5i.jpg
+pg 34/35
 
-Part.5j
-TO PART 6r
-p5j  image vol3_files/vol3_picture5j.jpg
+Part.5j  Harry has almost disappeared down the tunnel he is digging. Sand and dirt fly from his hind paws. Peter, Sarah and you push the earth back into the hut and enlarge the hole so that you can follow. Suddenly from deep within the tunnel, Harry gives a howl of terror and then is silent. What has happened to your friend? Quickly, you follow and within seconds of entering the tunnel, you feel the floor of the tunnel give way. You fall to a soft dirt floor, followed by Peter and Sarah, who crash down on top of you.\nPeter turns on his small, battery-powered light and you realize that you have fallen into an ancient mine tunnel. But which way to turn in your escape? The spacemen will soon discover your absence and follow you. Should you go left or right along the tunnel?
+Choice.5j.6n You and your friends turn left and scramble along the tunnel.
+Choice.5j.6o You decide to turn right.
+pg 37
 
-Part.5k
-TO PART 6r
-
-Part.5l
-Choice.5l.6s .
-Choice.5l.6t .
-p5l  image vol3_files/vol3_picture5l.jpg
-
-Part.6a
+Part.5k  At last, the door opens. A man lets you out into the evening dusk. "Gleeb Fogo," he says, shaking your hands. He pokes you with his long fingers and is delighted when you squirm in laughter.\nFollowing him, you enter a vast inflated dome, where hundreds of the spacemen and women sit eating in what appears to be a cafeteria. You all get into line.\nHe points to a pink mush which he calls "Gleeb Mugga." Next, he drinks from a cup of green liquid and says, "Gleeb Orfit." And near the end of the line, where there are many-colored plates of food which must be dessert, he says, "Gleeb Fogo." Then he leads you to a kitchen where the men who are cooking push you toward a large door. You suddenly realize that it is the door to an oven and you are "Gleeb Fogo," a spaceman's dessert. What a terrible end, but you hope that at the very least, you will give them indigestion.
 THE END
+p5k image vol3_files/vol3_picture5k.jpg
+pg 38
 
-Part.6b
-Choice.6b.7a .
-Choice.6b.7b .
-p6b  image vol3_files/vol3_picture6b.jpg
+Part.6a  The coin jingles on the deck. "Heads" it is. All heaving together, you raise the sails. Sarah takes the helm and Peter works furiously with the navigational instruments through much of the next hour. Finally, next he comes on deck and announces that in four more hours, you shall sight the coast of France. And indeed you do. Police and fishermen meet you at the dock, soon followed by television crews. What a story you have to tell! And as you stand there on the jetty, you notice that Harry is looking to the south, over the blue Mediterranean, tail slowly wagging. You imagine that you can smell the cooking fires of Africa and feel the searing heat of the desert. And, secretly, you wish that the coin had been "Tails."
+Choice.6a.1-z Perhaps "The End."
+Choice.6a.5b Perhaps if you could flip the coin again ...
+pg 81
 
-Part.6c
-THE END
+Part.6b  "Tails" it is and south you sail. "Steady as she goes," you shout with glee. Peter and Harry eagerly hoist the sails and Sarah takes the helm. With all well on deck, you go below to cook a whopping meal for your friends. It's a snug ship and a fine crew and, somehow, you feel at home on the bounding sea. Before strong winds, the little sailing ship flies, surfing down the backs of waves and cutting through their crests.\nA day passes, and then another. And that night the wind grows stronger. The little boat is pressed to its limit, and you worry that the sails and rigging may not stand the strain. Perhaps you should pull down some of the sails. But before you can call to Peter and Sarah, there is a flash of breaking seas and a tremendous grinding sound. You have run aground! The four of you quickly inflate your life jackets. The small boat is breaking up in the pounding surf. A wave, larger than any you have ever seen, sweeps you off the deck and into the foaming surf. Over and over you tumble, swallowing salt water. Is this how your adventure will end?\nAnd then you feel sand beneath your feet. You wade through the surf and join your exhausted friends. Together, the four of you lie down in the shelter of a palm tree and sleep. At dawn, stiff and bruised, ...
+TO PART 3c
+p6b image vol3_files/vol3_picture6b.jpg
+pg 82/83
 
-Part.6d
-THE END
+Part.6c  Slowly, your balloon is reeled in. At last, the basket is just a few feet above the deck and you jump down. Peter and Sarah hand Harry down and then you assist them to the heaving deck. Without warning, the wild-looking man casts off your balloon's line. Your retreat is cut off!\n"My name is Wright, Professor Hardly Wright, Expert on Ancient Africa. And who might you be? his voice thunders. You explain your misadventures and his scowling face softens. "Well," he finally grins, "I guess I can't complain. I was bound for the African shore at any rate. And maybe you can be assistants in my search for treasure. If you join me, I'll give you a share of the wealth. But if you don't want to join me, I'll inflate a rubber raft and set you adrift near Black Isle, a small island that we'll soon be passing. What's your choice, my young friends?"
+Choice.6c.7a Professor Wright doesn't look like any professor you ever saw. He is dirty and rough-looking. But you like his grin, and a treasure hunt sounds tempting, so you decide to join him.
+Choice.6c.7b Black Isle doesn't sound very inviting, but after all, it's land and safety. So you decline to join the Professor and instead row ashore.
+p6c  image vol3_files/vol3_picture6c.jpg
+pg 41
 
-Part.6e
+Part.6d All three of you shout together and you wave your shirt. The sub continues onward and you think that they have not seen you. At last, a man points to you and the sub alters its course toward you. Minutes later you are standing, dripping wet and cold, on the deck. A man in a white wool sweater and dark jacket climbs down from the conning tower and approaches. He is deeply tanned and his face, although heavily scarred, has a look of intelligence.\n"Good luck for all of you, I'll wager," he growls. "But we can't be spotted on the surface. We're submerging in ten minutes. If you swear to keep our secret, I'll let you stay. Otherwise, we can only give you some food, water and a small rubber raft. There's an island to the west and it's an easy row. Quickly now, what's your decision, my hearties?"
+Choice.6d.7c Swear secrecy and stay aboard the sub.
+Choice.6d.7d They are pirates, and you want to row to the shelter of the island
+pg 23
+
+Part.6e  The submarine passes from sight. All morning and through the afternoon, you take turns standing watch, looking for the fishermen or a passing ship. As evening falls, you see a freighter on the horizon and you shout for help, but the ship does not alter course toward you. Fog settles over the water and to stay alive through the night, you hug each other for warmth. The next day is foggy. You hear the sounds of small fishing boats searching for you, blowing their horns. But no one finds you Another day passes. And another. Your food and water are gone.\nThe fifth day dawns, hot and clear. The sun beats down but no fishing boats come. You understand that you will end your journey here. Sharks swim in restless circles around the waterlogged wicker basket.
 THE END
 p6e  image vol3_files/vol3_picture6e.jpg
+pg 26
 
-Part.6f
-Choice.6f.7c .
-Choice.6f.7d .
-Choice.6f.7e .
+Part.6f  The chieftain smiles. "It is as Allah wishes." He sweeps his hand and the guards leave. "You are my guests. Follow me." You walk with him through crowded streets. Men smile at you and women giggle from behind their veils, but all are friendly . At last, the chieftain points to a pond. "You think that we water our crops from those ponds, but you are wrong. Those ponds contain salt water which we pump from wells. The sun evaporates the water, leaving us great quantities of salt. Then we trade the salt for goods which we need with the merchants who come by caravan. But now invaders have come to my kingdom and they are trying to take our only treasure... our salt. Will you take your balloon and act as our eyes, for you can see far distances from aloft, while my men can see only a few miles from the backs of their horses? However, if this is not your wish, you may depart in peace and may Allah be with you."\nIt is a difficult choice. The flight may be dangerous, but you are committed to help these brave people.
+Choice.6f.7e You take the mission to help the chieftain. You inflate your balloon and get ready to act as the Air Force of the desert tribesmen.
+Choice.6f.7f You wish only to continue on your journey.
+pg 51
 
-Part.6g
-TO PART 7f
-
-Part.6h
+Part.6g  You tell the chieftain that his fight is not your fight, and that you wish to return to the shore to find assistance from fishermen.\nHe slowly shakes his head. "I wish you had chosen otherwise, for I cannot allow you to carry away the secrets of our fortifications." He motions to a guard who approaches you with a strange smile on his face and his sword raised. You realize now that you have made a terrible mistake, and that you will never leave the desert alive.
 THE END
+pg 52
 
-Part.6i
-Choice.6f.7g .
-Choice.6f.7h .
+Part.6h  You drift down the river. The roof of the tunnel is covered with stalactites which glow in a rainbow of colors. Bats whir overhead, squealing eerily.\nThe river slows and spreads out into a large underground lagoon. The different-colored lights from the glowing walls of the grotto are amazing and all of you arch your necks, gawking at the fantastic display.\n"Listen," Sarah whispers. You all listen and from far off, you hear a muffled roar. Somewhere up ahead, the river must tumble over a cliff. Near the far end of the underground lagoon, you fnd that the river branches left and right. Which one to take? A wrong decision might be dangerous.\nIt's too difficult a decision to make. You had better leave it up to fate and flip a coin.
+Choice.6h.7g It's "Heads," so you steer your rowing boat into the right-hand passageway and hope for the best.
+Choice.6h.7h "Tails" it is. Well, let's hope that the coin was really lucky. That rumbling of falling water sounds awfully close. You guide the boat into the left-hand passage and float downstream.
+pg 36
 
-Part.6j
+Part.6i  You carefully make your way upstream. The roof of the tunnel becomes lower, and sometimes you have to stoop to get through. The rocks and dirt on the sides of the tunnel are very loose, and you are often showered with small stones when your head brushes against the wall.\n"I think we had better go back," Sarah says. "This tunnel is very dangerous."\nI think so too," Peter says. "There's so much dust in the air, I keep wanting to sneeze." And then without warning, he does. It's a tremendous sneeze. For a second, you listen to the sound echo down the tunnel. Then there is a rumbling. Peter's sneeze has triggered a rockslide. "Quick!" you shout. "Let's get out of here."\nBut which way? Loose stones and rocks are pelting down on you and the rumbling is getting louder.
+Choice.6i.7i Move quickly, and run further up the tunnel.
+Choice.6i.7j Maybe you should go back the way you came. You Turn and run back down the tunnel.
+pg 89
+
+Part.6j  Gulp. All of you take turns in drinking the liquid. At first you feel fine and then slightly dizzy. Peter gives a shout of surprise and points to Sarah. "She's disappearing!" Sure enough, all of you are becoming invisible. Professor Whachit claps his hands in glee.\n"Oh, goodie," he exclaims. "We had forgotten what that experimental liquid was supposed to do."\nAll of you are delighted with being invisible. You easily walk past the guards and away from the evil laboratory. Two days later. you return to your homeland. You find that it is very easy to get into movie theaters and sporting events for free, because no one can see you. But that is not very satisfying. People keep bumping into you and stepping on your feet. Eventually, you become police detectives. Because you can't be seen, you can discover what is going on without being detected.
 THE END
-p6j  image vol3_files/vol3_picture6j.jpg
+pg 66
 
-Part.6k
+Part.6k  Quickly you leave the laboratory. Guards are yelling and start to chase you. It looks as though all the doors to the building are blocked off. Up to the roof! You climb the stairs, two at a time, huffing and puffing. Finally, you open a door and find that you are standing in the sunlight. A helicopter is parked there. You all jump in and Sarah takes the controls. "Which way?" she says.
+Choice.6k.7k You choose to fly west. Sarah starts the engine and zooms in that direction.
+Choice.6k.7l Maybe going east would be better. The guards are already on the roog and they have their pistols aimed at you. You tell Sarah to go East as you buckle up your safety harness.
+pg 39
+
+Part.6l  "Zoot Gleeb," he exclaims with pleasure. "I knew that I could count on you. Inflate your space-traveling machine... a balloon, I think you call it... and travel north toward the desert men's stronghold. Some of my men will make a noise outside their walls and when the desert men ride out to investigate, you will use a laser pistol to cut a deep trench around their forces. They will be helpless." He rubs his hands together in glee.\n"And then what?" Sarah says. "You won't hurt them?"\n"Oh, no," he laughs. "We'll take their white crystals and leave ten thousand space credits in exchange. They might not be able to buy anything with the space credits right away, but who knows?... If they ever come to Gork, which is our planet, they can purchase all kinds of delightful things. Off with you now," he commands. "And take this laser pistol."\nIn less than an hour, your friends are drifting over the desert toward the enemy stronghold. Then Peter points to the north. There you see a balloon, almost exactly like your own. It must belong to the enemy! Should you allow it to drift closer and then possibly talk to them of peace? Or would it be better to just blast them with the laser.
+Choice.6l.7m Try peaceful negotiations.
+Choice.6l.7n Can you trust them? You don't think so, and attack by squeezing the trigger.
+pg 76
+
+Part.6m  The Maximum Leader sighs and then claps his hands loudly three times. Two spacemen enter the rome with laser guns.\n"Blat these earthlings," he says in a bored voice. The men start to raise their lasers.\n"But... but..." you cry, "you said that we could go in peace. You are going back on your word!"\nThe Maximum Leader yawns. "What a bore," he says, and sits down on a chair. "I have so much trouble with your language, getting the words right. What I meant to say is that if you did not wish to help us, you would leave here in pieces."\nHe flicks his hand. "Blat then, men," he says. But please be careful not to make a big mess on the carpet.
 THE END
+p6m  image vol3_files/vol3_picture5i.jpg
+pg 77
 
-Part.6l
+Part.6n  For hours you walk along the tunnel, guided by Peter's flashlight. At times, the smell of decay and damp are almost sickening. As you turn a corner, you come to a large mound of rocks. The tunnel has been sealed off by a rockfall. And Peter's light is now just a dim orange glow. Should you try to dig through, or should you return along the way you came and try the other direction? The three of you hold a quick conference. Sarah thinks that since you have come this far, you should try to break through. But Peter argues that you must go back and try the other direction. Soon his light will be dead, and stumbling through a dark tunnel is not his idea of adventure.
+Choice.6n.7o You decide to get your hands dirty and try to break through. Start digging.
+Choice.6n.6o You think Peter is right and you should retrace your steps. You run back the way you've come.
+pg 53
+
+Part.6o  Down the dark tunnel you run, slime making the floor beneath you slippery, and water drippings from the tunnel's roof spattering your head. Just as you think you have made your getaway, you hear shouting behind you. "GLEEB FOGO... GO... GO..." echoes down the tunnel, followed by a crashing sound. A ball of light and then another zings by your head. The spacemen are firing laser bullets at you and your friends! With you in the lead, you crash into a wall. Dead end? Then your searching hands find that there is a fork... a branch to the right and one to the left. Pounding footsteps thunder down the tunnel. The spacemen are closing in. Should you go left or right? Your choice, and it must be a quick one.
+Choice.6o.7p You get down on your knees to keep out of the laser bullets' path and crawl to the right-hand fork.
+Choice.6o.7q Run like blazes to the fork on the left.
+p6o image---
+pg 54/55
+
+Part.7a  Good show!" he laughs. Tm glad to have such fine assistants with me on this treasure hunt." He shows you a weathered map, brown with age. "This," he says, snatching it away so you can't see many details, "is a map that the great Venetian explorer, Marco Polo, made. It shows the route of a caravan which was lost in a sand storm over six hundred years ago. That caravan was supposed to be worth millions. And I know where they tried to shelter from the storm."\nYou sail on with Professor Wright for two more days, dreaming of treasure. But somehow, you don't trust him.\nToward the evening of the third day, you sight the shores of Africa. And after anchoring the boat in a safe cove, you start inland over the sand. Without warning, a group of desert men in striped robes comes charging over a sand dune, firing their ancient muskets in the air.\nQuick: Should you run and hide, or should you trust Professor Wright, who thinks these are friendly tribesmen?
+Choice.7a.8a Follow Harry to run for the shelter of some nearby foothills.
+Choice.7a.8b Throw up your hands, wait, and hope that the men are friendly.
+pg 45
+
+Part.7b  Professor Wright shrugs his shoulders. "Well, you're missing the fortune of a lifetime, but that's up to you." He inflates a black rubber raft and all of you crowd into it. The Professor points to a small island. "Row for that and you'll be safe," he says, and casts you off. Without looking back, he sails on.\nEach of you takes a turn at the oars. It is further than it seemed and the sea is rough. As the island grows closer, Peter shouts a warning. There is a reef all the way around the island, and huge waves are breaking on the reef. If the raft is flipped over, you will all be ground to death on the coral! Sarah says she has often sailed with her uncle and knows a lot about the sea. She claims that you must face the breaking seas and paddle in backward, staying in the troughs between the seas. But Peter has tried surfing many times and insists that you paddle strongly toward the shore and let the breaking seas lift you over the jagged coral.\nHarry looks at you with trust, wags his tail and then covers his eyes with his paws, hoping for the best.
+Choice.7b.8c Use Sarah's plan and paddle in backward.
+Choice.7b.8d Follow Peter's plan and try to surf in.
+pg 43
+
+Part.7c "Good," the sailor says. "We're glad to have you with us. Come this way and I'll have you meet Captain Zud." You climb down through a hatch and are guided along dimly lighted corridors. A metal panel slides back noiselessly and the sailor guides you into the Captain's cabin. Captain Zud looks up from his desk. He is very old, his face weatherbeaten but kind.\n"Welcome aboard my ship," he says. "What ye see and hear must be kept secret. My crew and I are tracking the whaling ships of the world, trying to preserve the great whales from extinction. When we find a whaling ship attacking whales, we attack the whaling ship!" He thumps his fist down on his desk. We try to save the crews, but it's more important that we save our friends of the deep from this wicked slaughter." He points to pictures of whaling ships. Many of them have "X"s crossed over the photograph.\n"Will ye take an oath and help me save the whales, or must I keep ye prisoner until we can find a place to put ye ashore?"
+Choice.7c.8e Sinking ships sounds wrong, but save the whales is important. You and your friends join Captain Zud.
+Choice.7c.8f You had better not get involved with Captain Zud. Think of those poor sailors on the whaling ships! You want to be held prisoner until you can be released.
+pg 33
+
+Part.7d  It looks like a long row. Sometimes, the island is lost behind the heaving waves. Peter directs you as he remembers that the island is just a little to the left of the rising sun. Soon, all of you can see palm trees and low hills. In a rumble of surf, your boat lands on the beach.\nThere must be a fishing village nearby, but you decide to shelter in caves which speckle the cliffs at least until you are warmer. You make your way to a cave. It is good to be out of the wind and the coolness of the dawn air. Slowly your eyes adjust to the dim light of the cave. There are three ancient doors, their paint flaking off and hinges rusty. One is blue, one is red and one is white. Perhaps food or warm clothes are stockpiled in the rooms beyond. Or even treasure! You all decide to try your luck.
+Choice.7d.5f Pick the Blue Door.
+Choice.7d.5g Choose to open the Red Door.
+Choice.7d.5h Decide to open the White Door.
+pg 32
+
+Part.7e  Willing hands help you inflate your silk balloon. Men, women and children gather around the basket holding it from rising as you and your friends make final preparations. The chieftain steps up to hug you before you leave. "Take care, my fiends. See what you can see. Drift on the afternoon wind toward the interior of the desert. There, you will see many men and machines. We must know if they are advancing on our stronghold."\n"But how can we warn you?" Peter asks.\nThe chieftain smiles and hands you a large mirror. "With this," he replies. "Flash it so that the sun it catches will shine on my amy of men. Two flashes and all is well; three flashes will mean that the enemy advances toward us. We will be waiting for them." And with that, he signals for the balloon to be released.\nSoon, the desert stronghold is a tiny speck in the distance. You drift over low mountains and across trackless sand. And in the late afternoon, you see a strange sight... another balloon exactly like your own! It must be from the enemy camp. Should you drift closer and try to talk them into making peace? Or should you get close enough to attack them; perhaps to use your mirror to blind them?
+Choice.7e.8g You decide to make peace and drift closer.
+Choice.7e.8h But Peter tells you excitedly that warriors of ancient Greece used their shields as mirrors and burned attacking ships with the concentrated rays of sunlight. You decide to attack, turning your mirror to the sun and focusing the rays.
+pg 70
+
+Part.7f  With a great deal of ceremony, you inflate your balloon. Just before you lift off, children come forward, shyly bringing flowers and bundles of food. The chieftain gives the signal and your restraining ropes are released. For a long time, you wave to your friends on the ground.\nFor hours, you drift south. Your eyes ache with the brightness ot the sun, and your face suffers from the burning, dry wind. Harry lies panting on the floor of the basket, probably thinking of a cool stream to swim in. All that you see for miles are the bleak dunes of sand, rolling southward across the Sahra like frozen waves of gold.\nIn the afternoon, the wind rises, blowing the desert sand into a storm. On and on you travel, grit choking your throat. Toward evening, the storm dies and you see a mud-walled village. Should you descend and find out where you are? Or should you drift on through the night to see what tomorrow will bring?
+Choice.7f.8i Pull the cord which releases gas and settle down to descend.
+Choice.7f.8j Yawn! You could use a good night's rest. You curl up on the wicker basket's floor and travel on.
+pg 71
+
+Part.7g  The roaring becomes louder and louder. You clutch each other in horror. Suddenly, the whole tunnel lights up in a flash, and to your right you see a steel cage with a gorilla roaring and shaking the bars! Another flash of light, and on your left a tiger growls at you from behind a bamboo fence. Darkness again. Cold, squirming things hang down from the top of the tunnel, brushing your heads. Ugh! Snakes! you think.\nAs you turn a bend in the tunnel, you find yourself in a lighted room. A very fat man rushes to the edge of the river and pulls you in with a long boat hook. He asks you for your ticket and then is very angry when you don't have any. He explains that this is an underground tunnel of thrills which is part of an amusement park owned by a wealthy Arabian oil sheik. You are escorted out of the park by the police and sent back to France. Too bad, because you and your friends thought it was more fun than Disneyworld!\n
 THE END
-p6l  image vol3_files/vol3_picture6l.jpg
+pg 61
 
-Part.6m
-THE END
-
-Part.6n
-THE END
-p6n  image vol3_files/vol3_picture6n.jpg
-
-Part.6o
-Choice.6o.7i .
-Choice.6o.7j .
-
-Part.6p
-THE END
-p6p  image vol3_files/vol3_picture6n.jpg
-
-Part.6q
-THE END
-
-Part.6r
-Choice.6r.7k .
-Choice.6r.7l .
-p6r  image vol3_files/vol3_picture6p.jpg
-
-Part.6s
-THE END
-p6s  image vol3_files/vol3_picture6s.jpg
-
-Part.6t
-THE END
-
-Part.6u
-THE END
-
-Part.6v  Much as you would like to see the inside of the alien ship, you have no desire to be whisked off into space. You step back to what you hope is a safe distance and watch what happens. In a moment the portal closes, and almost instantly the ship rises, silently, straight up. Within a few minutes it is lost from view. You walk over to look more closely at the primitive looking people sleeping on the pallet. They begin to stir and stretch and rub their eyes as if waking from a long sleep.
-Choice.6v.7m Stay and try to make friends with the primitive people.
-Choice.6v.7n Return to the hill and try to find your way back to the Cave of Time.
-
-Part.7a  Slowly you unsheath your knife and then run for the entrance. The wolf is after you like a shot. It leaps and tears your bearskin coat. While the wolf is regaining its balance, you run into the cave and toward the left tunnel. The wolf runs after you. You look over your shoulder and lose your footing. Instead of falling on the ground, you feel yourself sliding down a long, steep chute. Far above, the wolf howls with frustration. You land in a heap at the bottom of a pit--shaken but unharmed. There is a dark passageway to the left. You toss in a stone and, after what seems like a long time, you hear a splash far below. Fortunately, there is another passageway to the right, which is dimly lit by phosphorescent light.
-TO PART 4i
-p7a  image vol3_files/vol3_picture7a.jpg
-
-Part.7b  Holding your knife with its long ivory blade pointing upward, you advance very slowly, step by step, toward the wolf, which stands growling softly, apparently confused by your boldness.\nThen it springs. You lunge with your knife, twisting your body to avoid its awesome fangs. Your knife cuts through nothing but air, but the wolf succeeds only in tearing off your bearskin coat. It stops for an instant to sniff at the coat, and you tum and plunge your knife into its neck. The wolf twists, looks at you with hate in its eyes, and falls limp, its spinal cord severed.\nNow you are a true Stone Age hunter. You skin the wolf and walk into the cave. You follow the right-hand tunnel, thinking you may find your way back to your own time, but suddenly you feel yourself falling--faster and faster into what seems a bottomless pit.
-TO PART 8a
-
-Part.7c  You climb up the steps between the last car and the caboose just as the train begins to start up again. When you open the door to the car, you are surprised to see soldiers in blue uniforms holding old-fashioned rifles. They advance upon you. One of them strides past you to see if anyone else followed you.\n"How did you know this was the President's car?" the first soldier asks you.\n"What President?" you reply.\nThen, to your amazement, you get the answer to your question, for the very tall bearded man walking down the aisle could be no one else but Abraham Lincoln.\n"That's all right," the President tells the soldiers, "l could use some company right now. You may stay until we reach Gettysburg," he says to you. "But maybe you should get off at Parkersville. I know of some good people there who will help you out."
-Choice.7c.8b Stay on until Gettysburg.
-Choice.7c.8c Get off at Parkersville.
-p7c  image vol3_files/vol3_picture7c.jpg
-
-Part.7d  If you take the train, it may ruin your chance to return to the Cave of Time. It seems best to stay close to the tunnel. At any rate, you decide you will be able to think better after getting something to eat, so you walk over to the farmhouse.\nThe farmer's wife gives you a bowl of soup, but she won't believe the story you make up to explain your presence there. You soon get the idea you are not welcome, so you trudge on into town, where the innkeeper lets you have a room for the night.\nThe next morning you get a ride on a coach to Philadelphia. A Quaker family takes you in and helps you get work as a carpenter's apprentice. You don't like the job, and soon you leave Philadelphia to go to New York, where you are able to find a job working for a newspaper. Eventually you travel all over the world. You live a long and wonderful life, dying just a few years before you are born.
-THE END
-p7d  image vol3_files/vol3_picture7d.jpg
-
-Part.7e  With considerable trepidation you slide down the tunnel. You mean to turn off at one of the side passageways that might take you back to your own time, but you are too exhausted to search for the entrance. You half slide, half climb down the tunnel--further back into time--then you lose your balance. You fall a great distance, land in deep water, and sink a long ways.\nYou are barely able to surface and, when you do, you find that the air is filled with dense fog. The water is warm, but the fog is so thick you can hardly breathe. The air smells slightly of sulphur. Gasping for breath, you realize you must be several billion years in the past and that oxygen has not yet been released into the atmosphere.
-THE END
-
-Part.7f  Through computer instruction you are able to learn The language, which you find is similar to English, so you are soon able to communicate with your hosts.\nThey are not at all surprised to hear that you arrived through the Cave of Time.\n"You are not the first," the head of the house-hold tells you. "but we have visitors from other times only once in a great while. When someone comes, we are always glad to learn about life in another era, because here we have achieved a sort of paradise--we do not work, and the world is at peace. It is a perfect society. That is why primitive epochs, such as yours, interest us so much.
-Choice.7f.8d Stay in "the perfect society".
-Choice.7f.8e Try to return to the Cave of Time.
-
-Part.7g  You take a deep breath, dive down, and swim through the tunnel. There is light ahead. In a moment you surface in a beautiful lagoon. Thatched cottages are nestled among the palm trees that rim the white sand beach. A warm, soft breeze brings the scent of jasmine and the sound of strange melodies from sonorous drums. Looking out to the inlet from the sea, you can see a fleet of outrigger skiffs with multi-colored sails running into the lagoons before the wind, their owners leaning against the booms to hold the sails out.\nYou walk toward the village. Several handsome, brown-skinned people see you. Some of them run away, but others walk toward you with hands held up in salute. Two children, holding garlands of flowers, run up to you. Someone calls--"Aloha!"\nSoon you are sitting in front of a huge beach fire, cooking crabs and eating buana cake. Having never had a visitor before, your hosts are happy to see you. They welcome you into their society. Gradually you learn their language. The boys tell you they are your brothers; the girls that they are your sisters.\nYou enjoy life in this new paradise, but you still wonder whether there might be a way to get back to the Cave of Time. Your new friends are unable to help. Perhaps if you journeyed inland you could find some who could. Your friends warn you against trying, however. They tell you that you will find only terrible jungles and rivers filled with crocodiles.
-Choice.7f.8f Remain with your new friends.
-Choice.7f.8g Journey inland.
-p7g  image vol3_files/vol3_picture7g.jpg
-
-Part.7h  Swimming through the underwater tunnel may be the only way to get out of the grotto, but the risk of drowning seems too great. You explore the rocks in the grotto and think about how you might possibly get up through the roof.\nSuddenly a voice calls, "Hello." You whirl around and notice for the first time, huddled in the corner, a woman with sparkling blue eyes and a mysterious smile. She is sitting crosslegged, propped against a rock which is shaped in a way that gives her a comfortable seat. In her hands she is holding a flute, and as you stare in amazement she plays an unfamiliar melody with a sweetness and purity of tone such as you have never heard.\n"Hello," you reply. "Tell me--who are you and how can we get out of here?"\n"Sit down," she says, "and relax. You have all the time in the world."\n"What do you mean?" you reply. "I am trapped. I slid down from the Cave of Time and I want to get out."\n"Believe me," the woman says, "there's no way to get out; but do not be concerned. It is a beautiful place and you can be very happy here."\n"But we'll starve. How long have you been here?" you exclaim.\n"Forever and not at all," she replies, "for this is the part of the cave which leads neither to the past nor to the future. Here, time does not exist, so, of course, you will never be hungry or bored, and, although you can never get out, you will be here for no time at all."
+Part.7h  The rumbling you and becomes louder. Desperately, you and your friends try to cling to the side of the banks of the underground river, but the rocks are slippery and covered with moss. Faster and faster the river flows, and the rowboat whirls around and around in the roaring current. Just when the rumbling is so loud that you cannot even hear the screams of your friends, the rowboat shoots off into space. Over and over you tumble. You land upright with a tremendous ker-splash. You are all soaking wet and scared, but thankfully still alive. The boat runs aground on a muddy bank and, knees shaking, you all get out. The mysteriously glowing rocks show steps cut out of the rocks leading upward. Should you follow them upward and abandon the rowboat, or take your chances on the underground river?
+Choice.7h.8k You are afraid of the dangers of the river, so you climb the rocky steps.
+Choice.7h.8l The roaring sound of the river is behind you. Perhaps it is safe to travel on by boat. You push out into the current and drift downstream.
+p7h image vol3_files/vol3_picture7h.jpg
+pg 78/79
 TO PART 8h
 
-Part.7i  You walk on and on, hoping the passageway will lead you to your own time. You soon come to a tunnel that leads into a dark, musty room resembling the cellar of a large house. There are a great many people huddled in groups, sitting on blankets in complete darkness save for the light of a few flickering candles. You hear the dismal wail of a siren. Near the center of the room an old-fashioned radio sits on the table playing a mixture of classical music and static. Then the sirens stop, the ground shakes, and you hear a tremendous explosion nearby, then another further away, then another so close that a wall and half the ceiling c.ome crashing down in a pile of rubble, blocking the tunnel. You and the others scramble to the opposite side of the room, coughing and gasping in the dust-filled air.\nYou are about to begin a new life. The year is l94O; the place, London.
+Part.7i  It sounds as if the whole world is coming to an end. Huge rocks are falling and the tunnel is collapsing. Suddenly, the roof of the tunnel gives way and a flood of water pours in from above. You are all going to drown. At the very last second, you all take a deep breath and start to swim upward into the black water. The pressure of the water is very great, and you feel like you are being crushed. Your lungs are bursting and you desperately need more air. But high above you, the water is lighter. Hold on, you keep telling yourself. The surface grows nearer and nearer. You might make it and then, suddenly, you are trapped in some kind of a giant net. We're finished, you think. And then the net lifts from the sea and swings onto the deck of a fishing boat, where startled fishermen separate you from dozens of tuna fish which they were netting. Your friends are exhausted but well. Harry shakes off the water from his coat and trots over to lick you in the face. That was a scary adventure, you think. And for all of us, it was almost...
 THE END
 p7i  image vol3_files/vol3_picture7i.jpg
+pg 90/91
 
-Part.7j  You walk back through the cavern, wondering if the entrance will still be blocked by ice. This time, though, you are greeted by a warm breeze. Sunlight is shining on the ground near the entrance, and you walk outside.\nSquinting your eyes in the bright light, you see a world totally different from the one you know. You are on a hillside. For miles and miles you can see grassy plains speckled with lakes. Nearby is a forest of towering ferns, swaying in the wind. The world before you seems strangely quiet, except for the faint rumbling of distant thunder. Suddenly, the thunder seems much closer--and louder. The thundering sound is moving through the ferns. You run up the hill looking for a place to hide. A huge shadow passes on the ground. Above you, soaring through the air, is a creature larger than any bird you have seen.\nNow it is clear what has been happening. The cave is a crack in the universe--a place outside space-time. Once inside its tunnels you could find yourself at any place, at any time. If you enter again you might be sent to a place from which you could never escape. Yet that is your only hope of returning to your own place and time.
-Choice.7h.8i Go back into the cave.
-Choice.7h.8j Remain outside.
-
-Part.7k  You jump far out and fall faster and faster. You enter the water feet first and hit bottom, but the soft mud receives you gently. In a few seconds you reach the surface. You swim to the outer banks of the moat shaken but unharmed. You scramble up the bank and run for the cover of the forest.\nYou walk along the edge of the forest until well out of sight of the castle, then head across the open countryside. You stop a peasant to ask him where you might stay for the night.\n"Walk up that hill and you'll see before you the waters of Loch Ness," he says. "You'll find a place there."\nYou follow his directions and, seeing some little houses near the lake, proceed toward them. Darkness is setting in, and you are glad when you meet a fisherman who says he will give you shelter for the night. He and his wife are kindly people; they invite you to stay and earn your keep by helping them fish.
-Choice.7i.8k Accept their offer.
-Choice.7i.8l Decide to travel on.
-
-Part.7l  You decide to wait, but soon regret it. A guard visits you twice a day and brings you only black bread and water. In a few days you feel almost too weak to escape even if you have the chance.\nBut just as you are beginning to despair of ever regaining your freedom, the guard walks in, smiling.\n"The King has ordered you out of here," he says. "We have a much more important prisoner--a man who insulted the King's horse." He laughs in your face. You don't know whether he is telling the truth or not, but he holds the door and waves you out. You walk down the long flight of stone steps to the main courtyard, free again--at least for the moment. The drawbridge is down and there seems to be nothing in the way of your leaving the castle.\nThere is a splendid black horse tied up near you, probably owned by one of the knights. It occurs to you that you could cover a lot of ground on that horse before anyone realizes what happened.
-Choice.7i.8m Mount the horse and ride off.
-Choice.7i.8n Ask the King for refuge.
-
-Part.7m  The people look around curiously. They hardly seem to notice your presence. One by one they get up and walk around. One of them drinks from the stream. They make grunting and clicking noises, but do not seem to be actually talking among themselves. The largest of the group picks up a stick from the ground and begins prying up the roots of plants along the edge of the stream. He bites at each one..Finally he smiles and passes the root around to the others. One woman claps her hands. The others begin to find sticks. One of the men hands you a piece of root. You bite at it. It tastes like a dirty carrot. The women smile at you. You are accepted in the group.\nThe next morning you wake up in the soft mossy bank in Snake Cavern, a few dozen yards from the entrance to the cave, wondering how much of what has been happening to you has been a dream and how much has been reality. But you have no desire to go into the Cave of Time again.
+Part.7j  The rumbling becomes louder. Great rocks are falling from the tunnel's roof. You realize that this is...
 THE END
+pg 112
 
-Part.7n  You run up the hill and out of sight before any of the primitive people awaken. You must find an entrance to the Cave of Time. You search in the high rocky ground for some opening. Hours go by; dusk is fast approaching. Just as you are about to give up hope, you spy the entrance to a cave under a rock ledge. You eagerly step inside and have only a moment's awareness that it is the den of a saber-toothed tiger.
+Part.7k  Up and away you fly. The government laboratory slowly disappears in the distance. Sarah sets a course to the west, following the afternoon sun. Soon, the desert rises into foothills and then into a low mountain range. "Mountains here?" you ask. Peter looks smug. "Of course," he answers. "The Atlas Mountains. My father told me all about them."\nIh the late afternoon, Sarah sets the helicopter down gently on a snowfield. Dazzling peaks tower above you.\nYou drink water from an icy stream and eat berries from a bush. But the sun is nearly down. Perhaps you should camp for the night in a lower valley and explore more in the morning. But Sarah can't start the engine.\nYour friends look to you. Should you stay overnight in the cold helicopter or should you try to walk down?
+Choice.7k.8m Stay, get back in the helicopter, and shiver through the night until the sun rises.
+Choice.7k.8n Try to walk down the mountain's side, and tie a rope to each of your friends in case they slip.
+pg 42
+
+Part.7l  Sarah can't get the engine going. And suddenly, without any warning, the guards fire at you. Long sticky streams of red tape shoot from the muzzles of their pistols. You and your friends are completely wrapped up in the tape, until only your fingernails and eyebrows are showing. Captured! And what horrible punishment awaits you?\nProfessor Whachit sentences you to ten years of filling in government forms. You would have preferred breaking rocks or working in the salt mines. Eventually, you die of boredom.
 THE END
-p7n  image vol3_files/vol3_picture7n.jpg
+pg 80
 
-Part.8a  You feel yourself slowly regaining consciousness. You are in your bed at Red Creek Ranch, looking up at Uncle Howard. Standing nearby is a friend of his who is a doctor.\n"You took quite a bad fall climbing on those rocks up in the canyon," Uncle Howard says. "Doc Parsons tells me he doesn't know why you didn't break any bones. We were real worried about you--thought you got lost in one of those caves up there."\nYou feel a bit dizzy and weak, so you just smile and say nothing. Probably no one would believe you anyway. Years later, though, you write a book about your adventures in the Cave of Time.
+Part.7m  The other balloon draws nearer and nearer. You are amazed to see that the balloon is exactly like your own. As you get very close, it is almost like looking in a mirror. You are staring at another You and another Peter and Sarah. Somehow, you have warped through time and come back and met yourselves.\nYou have an interesting conversation with The Other You. It seems that the desert men need water--something the spacemen have discovered accidentally by blasting holes in the desert. And the spacemen need salt, something the desert men make in great quantities by evaporating sea water. So you arrange a trade--water for salt.\nYou return to the spacemen and tell them. They seem a bit disappointed that there won't be a war but, after all, a bargain's a bargain.\nAs a reward, the Maximum Leader invites you for a quick tour of the Solar System. You find it very interesting, but your seats are in economy class and the food is terrible. Everything they serve has too much salt in it.
 THE END
+pg 109
 
-Part.8b  "l'd like to stay on till Gettysburg," you say.\n"Well, that's fine," the President replies. "Why don't you sit across from me? I have to write out a little talk I'm giving there, and, while I'm doing that, you think about what you're going to make of your life, because you can't spend all your time riding on trains, after all."\nYou nod in agreement and sit quietly watching the President scribbling some lines on an envelope. After awhile he looks up from his writing and you look each other in the eyes.\n"You have a great future," he says abruptly.\n"How can you tell," you ask.\n"By looking at your face."\n"Just by that?"\n"Just so."\nAs you are talking, you notice two elaborately dressed men approaching from the end of the car. They whisper a few words to the President. He excuses himself, shakes hands with you, and tells one of his soldiers to see that you are provided for in Gettysburg.\nWhen you arrive at Gettysburg, one of the soldiers takes you to a family who welcomes you warmly and agrees to put you up for awhile, if you will help them out with their farm.\nYou find it amazing to be living in a time with no cars, radios, television, record players, or even telephones. It's peaceful--at least when there is not a war going on--but you feel homesick. You feel the great future the President predicted for you lies in your own time, and you resolve to find your way back to the Cave of Time.
+Part.7n  The other balloon fires at you! A gust of wind lifts you out of the laser's path. You aim your beam at the enemy and pull the trigger. BLATT! The other balloon collapses in flames, hurtling toward the desert floor, a glowing orange shape in the distance. You realize that you are free again to go on great adventures, but for your enemy it is...
 THE END
+pg 73
 
-Part.8c  It's less than a mile to Parkersville, and the President shakes your hand and wishes you luck. One of the soldiers arranges with the station agent for a carriage to take you to a farm owned by an old friend of his.\nYou soon become a member of the family. They are good people and make you feel very much at home. You are surprised to learn, however, that they plan to sell their farm and move to California. The new life in the West they describe is so appealing that you decide to go with them.\nYou never regret it, except, sometimes, you wish you could see your own time again.
+Part.7o  All four of you set to digging, Peter's small light held in your mouth. Loose earth and stones shower down on you. But unexpectedly, a blast of cool air strikes you in the face. You have broken through! Quickly, you clear away the few remaining rocks and scramble through. The four of you press on, climbing up the tunnel's slope toward the surface. As you round a bend, you see a pinpoint of light framing the tunnel's entrance. Minutes later, you look out onto the burning waves of sand of the Sahara. Peter thinks that it cannot be far to the coast and help. But just as you are about to leave the tunnel, Sarah cries in amazement. She has found another branch to the tunnel and this has small railroad tracks, as if the tunnel were really a mine. The set of tracks leads downward, but this branch of the tunnel is better built and well-shored up with wooden pilings. Should vou try to lead your friends north to the coast, or should you explore the other tunnel?
+Choice.7o.8o You choose to cross the desert, and wrap your heads with kerchiefs to protect them from the sun as you trudge north.
+Choice.7o.8p  Sarah's tunnel excites your curiosity. Just don't forget that curiosity killed the cat. What about you and your friends?
+pg 60
+
+Part.7p  On and on you crawl in the darkness, Peter is just ahead of you and Sarah keeps nudging you from behind to go faster, but the sounds of the pursuing spacemen are fading. They have chosen the other fork. And just when you think that you are safe, the ground rumbles beneath you and the dirt crumbles away to leave you falling in space.\nKer-splash! You hit water and sink far beneath before coming up. As you break surface, blue lights flash on. You tread water and gaze around you. You and your friends are in a deep well with perfectly smooth sides of glass. Rope ladders drop down from the top of the well and, thankfully, you climb up. The spacemen have captured you after all!\nPushing you ahead of them, they guide you to a large dome. And although they leave you alone, you know that if you try to escape again, they will deal with you very harshly. You sleep for awhile, for when you wake, you will meet the spacemen's leader.
+TO PART 5i
+pg 101
+
+Part.7q  Faster and faster you run. You stumble over stones and clods of dirt, which make a loose rumbling beneath you, and you realize that you are running down a steep incline. The tunnel becomes steeper and steeper. Peter Screams and you hear Sarah cry in pain. Now you can't slow down. You tumble out into infinite space and, as you fall, you see the stars wheel in circles and feel the cool rush of time across your mind.
 THE END
+pg 106
 
-Part.8d  Your hosts give you a fine bedroom with large windows overlooking the park on one side. On another wall is a beautiful painting of the California seacoast. When you push a button, the painting folds up to the ceiling, revealing a large screen. Your room contains a computer terminal that enables you to select any movie or other program you desire from over 10,000 possibilities. There are even films where you are the main character and you can make choices as to what will happen next in the story. Then, if you don't like the way the plot is working out, you can go back to an earlier point and make different choices from then on.\nOn your terminal you can also play games and flash pages of books or magazines on the screen. You can live quite well without even getting out of bed.\nEventually you go exploring. You meet other people, but you find none of them very interesting, so you spend most of your time watching the greatest movies of all time. Gradually you settle into your new life. One thing disturbs you. No one has made any new movies in the last 300 years.
+Part.8a  Harry leads the way with you, Sarah and Peter all close behind. The shouting and sound of muskets fades in the distance. "I don't think he was a professor, anyway," Peter says, catching his breath. "Yes," Sarah says. "I think he was just some kind of a cheap crook." You all agree but that doesn't tell you where you are or ease the hunger in your stomachs.\nFor hours, you climb through low foothills, and then as the afternoon shadows lengthen, you look down into a valley and see a small village. Would it be better to go to the village leader and tell him of your misadventures, or rather, should you all hide for the night in some deserted building?
+Choice.8a.9a You think you should find the village chief.
+Choice.8a.9b Keep your presence secret, sneak of, and hide.
+pg 50
+
+Part.8b  The men surround you, laughing. The Professor shake their hands and then explains to you that it is the custom of these nomadic tribesmen to fire their rifles in greeting. What a relief! You whistle for Harry who comes back to you, looking very sheepish. All of you camp for the night and the next morning, you mount horses and head into the desert.\nFor days, you head south across the burning sands. Professor Wright does not stand up to the heat very well. He turns feverish and much of what he says is gibberish. Sadly, on the morning of the fourth day, he dies of brain fever. The tribesmen look to you for a decision.
+Choice.8b.9c You think you should go on, find the map in Professor Wright's knapsack, and take charge of the expedition. Perhaps fortune awaits you.
+Choice.8b.9d This is a dangerous adventure, you reason. It may be better to return to the coast and try to find a way back to France, where you started your journey. Follow the tribesmen north.
+pg 49
+
+Part.8c  Paddling backward sounds crazy, but Sarah is very confident. You turn the rubber dinghy to face the advancing seas. You find that you have much better control over the little boat. Nearer and nearer the reef you drift. The breaking seas sound like a continuous roll of thunder. "Now!" Sarah shouts. "Spin the boat around and row for the shore before the next wave breaks!" In a slick of green foam, you pass over the reef, jagged spears of coral just inches below the thin fabric of your dinghy's bottom. Looking back, you see a monster sea advancing, its top curling with foaming white water. It curls far above your heads, blotting out the sun. Now you are pulling on the oars as if you were being chased by a screaming demon. The sea breaks, and a wall of foaming water rushes at you. But you are safe inside the lagoon, and the foam's fury has been broken by the reef You all sigh and rest on the oars, glad to be alive. Finally, with weary arms, you resume rowing toward the shore. Those waving palm trees still seem miles away.
+TO PART 7d
+pg 30
+
+Part.8d "This way" Peter shouts. He takes one of the oars and you take the other. Sitting side by side, you use your oars as paddles, scooting down the backs of waves and then climbing up the crests. You are almost to the reef. Peter takes a quick look backward. "Now!" he shouts. "Paddle fast!" But you have gotten your oar in the wrong position, without effect. And suddenly, the raft is going in circles. Sarah screams, and you look up for a split second as the sun is blotted out by the curling crest of a giant wave. Too late! The wave breaks, dumping tons of foaming water. You whirl in a wet blackness, the water sucking air from your lungs. Your last through is that you hope your friends will forgive you for your mistake in handling the paddle. Your journey is finished.
 THE END
+p8d  image vol3_files/vol3_picture8d.jpg
+pg 31
 
-Part.8e  There is something deadening about the perfect future society that makes you want to return to your own time as quickly as possible. With a brief word of farewell, you hurry back to the tunnel, climb down, and find a fork to the right that you hope will take you toward the right time. Soon you are climbing up toward the surface, excited about the discovery you are about to make.\nWhen you reach the surface, it is completely dark. A chill wind is blowing. You sit resolutely waiting for dawn so that you can see what kind of a world you are in. Meanwhile, there is no way of telling what time it is, either by your watch or by the stars.\nYou hear loud, clicking sounds all around you, mostly in the distance, but some quite close. As the orange-pink glow of oncoming dawn lightens the eastern sky, you see nearby the shape of a creature that is the size of a sheep but has a very different appearance.
+Part.8e  Peter and Sarah want to join. So do you and Harry, who is barking with excitement. You all take an oath to serve you and Captain Zud. For months, you track the black whaling ships. Finally, off the Antarctic ice cap, you watch the whaling ships begin their attack on a helpless pod of whales. There will be a slaughter. Captain Zud puts you before a television screen. You can see the whaling ship as it moves toward the crosshairs etched on the screen.\n"When the cross hairs are on the bow of the ship," he says, "push this button. That fires a special torpedo which bores a hole and lets the water in. Them whaling fellers will be so 'busy saving themselves from sinking that the whales will get away."
+Choice.8e.9e In the name of saving whales, push the button.
+Choice.8e.9f Fire the torpedo to sink the ship.
+Choice.8e.9g You think, "But remember, that's a real. ship. It must be worth a great deal of money, and destroying it would be a crime." Perhaps you should refuse and suffer Captatn Zud's anger.
+pg 44
+
+Part.8f  Captain Zud tells you that it will be a long time before he can put you safely ashore. "In the meanwhile," he instructs his First Mate, "teach them to operate the electronic listening device that helps us to follow the whales."\nEvery day, you listen to the whales as they move south in great pods. And after months of listening, you begin to recognize a pattern in their squeaks and grunts. "It is a language, just like ours," you excitedly tell your friends.\nWith the help of Peter and Sarah, you construct a computer and use this to try to understand the speech of the whales. After months of study, you finally learn their language! With Captain Zud's enthusiastic approval, you build an underwater loudspeaker and begin talking back to the whales. Soon they are telling you secrets of the oceans and the history of the Seven Seas.\nProudly, the submarine enters port followed by a pod of fifty whales. You call a press conference and astound the world with your ability to communicate with whales. Man's knowledge of the oceans, and his new friendship with whales, forever stops the senseless slaughter of your friends of the deep. And although you are now known as a great scientist, you mostly enjoy cruising on the back of a whale through tropic oceans, singing together the great whale songs of the sea.
 THE END
-p8e  image vol3_files/vol3_picture8e.jpg
+pg 67
 
-Part.8f  Your friends are understanding about your wish to find the way back to your own time, but they tell you they can show you something you never dreamed of. Since their society is very primitive, you wonder what they could have in mind.\nNext day they lead you to another cove where the waves roll in, rise up against the cliff and then roll out again. Sometimes the waves clap against each other and send a foamy spray of water high in the air. You see some young people on tiny rafts--nothing more than surfboards--riding in on the crests of the waves and then riding them out on the rebound. In a few hours you have learned a sport that brings excitement and fascination for hour after hour.\nWith such delights as this, it is not long before you lose interest in returning to your own time. Sometimes you wonder, but you never learn, whether this paradise lies in the future or the past.
+Part.8g  As you drift more closely together, you are able to see that the other balloon is the same color and shape. You toss a line and the two balloons, like giant puffer fish in a crystal sea, drift together. The other balloon's passengers are just like you and your friends--exactly! Even an identical Harry.\nSomehow, you have met yourselves through a time warp. The Other You explains that the "enemy" in the desert is a stranded band of space travelers. The fuel for their spaceship is ordinary salt that you buy in the store, but very rare on the planet from which they come. However, by blasting deep into the desert with lasers in their quest for salt, they have found great pools of fresh water.\nThe answer is obvious--trade salt for water! The desert men will be able to grow bountiful harvests, and the space travelers will have fuel. It is all arranged, and each balloon returns to its camp to tell the good news of peace and trade. The chieftain rewards you with honorary citizenship in the desert kingdom, and the U.N. honors you with a great prize. Kings, presidents and generals come to you for advice. And though you are happy, you sometimes wonder about The Other You. But when you look to the night sky, your eyes fall upon a certain star and you know.
 THE END
+pg 108
 
-Part.8g  You hug your friends good-bye and climb the ridge bordering the jungle. You soon find an animal trail leading through the dense undergrowth into a tropical rain forest. The green canopy of treetops is far overhead and only an occasional dapple of sunlight reaches the spongy, dark ground. You walk on and on, hoping to reach the mountains, where you might find another entrance to the Cave of Time.\nNight falls and you make yourself a crude bed. Your mattress is the mossy floor of the forest. You spread out fern leaves for a sheet. Early the next morning, as the birds are beginning their morning songs, you are awakened by the boa constrictor wrapped around your neck.
+Part.8h  The sun is low in the west. Carefully, you use the mirror so that the sun's light falls on the other balloon. Almost immediately, the other balloon shines a great white light on you and your friends. You feel the scorching rays of heat, and in seconds your balloon is on fire and falling. Down, down you go. The desert floor rushes up to meet you.
 THE END
-p8g  image vol3_files/vol3_picture8g.jpg
+p8h  image vol3_files/vol3_picture8h.jpg
+pg 72
 
-Part.8h  You sit down and rest your chin in your hands, unable to believe the fate that has befallen you. To live forever in a timeless world seems worse than death.\n"Well, to tell the truth, there is a way to get back to your own time," the woman finally says, "but if you follow it, you will not be able to live forever."\n"l don't care," you say. "Show me the way."\n"Very well," she says, shaking her head in disbelief. "Dive under the rock ledge beneath me and swim through the tunnel you will find there. You will come up in your own time. Don't worry, it's only a few yards. You can make it."\nYou take a last look around, wave good-bye and dive. A few seconds later you surface in a pond just inside the entrance of the Cave of Time. You swim to shore and run out through the cave entrance into the open air, almost crashing into your Uncle Howard, who has come looking for you.\n"You're late for dinner," he says. "We wondered what happened to you. You ought to keep better track of the time."
-THE END
+Part.8i  You yank on the cord and soon the balloon is descending. As the balloon touches down, you are surrounded by black natives waving spears and chanting in a strange language. Should you try to let more gas into the balloon and lift off? Those spears are sharp, and no one looks very friendly. But maybe it is just that you arrived in such a strange way. A friendly smile might help, and wouldn't you be upset if someone landed a weird machine in your own backyard?
+Choice.8i.9h You lift off, open the valve on gas bottle and leave this desert village.
+Choice.8i.9i But Harry is wagging his tail. He usually knows when strangers are friends. You smile a lot and follow the advice of his wagging tail.
+pg 74
 
-Part.8i  Inside the cave again, you feel depressed and confused. Your eyes do not seem to be getting used to the dim light. You cannot find any passageways leading to other times. You feel increasingly drowsy. Soon you fall asleep on the cold clay floor of the cave.\nSometime later you awaken. The cave is pitch dark, but the bright light at the opening tells you the sun is shining brightly outside. You walk out into the daylight and, to your surprise and delight, you see Snake Canyon, the trail, the grove of pine trees nearby--everything just as it was when you entered the cave. Even the sun is in the same place, just about to pass behind the rim of the canyon. Somehow you have returned to your own time--or more precisely, the time it was before you fell asleep in the cave.\nYou rub your eyes and start down the path back to the Red Creek Ranch with a story to tell that no one will believe, but that you will never forget.
-THE END
-
-Part.8j  Reasoning that you can always find your way back into the cave when you want to, you decide to explore the world in which you have found yourself.\nYou make your way along a rock ledge overlooking the plains and lakes, taking care to keep your bearings so you can find your way back to the cave.\nBy now you are getting very hungry. You know that you are in the age of reptiles--at least 100 million years ago--and that mammals may not yet have appeared on earth. There will be no rabbits or deer to hunt, though the lakes may contain fish. You wonder how dinosaur eggs taste.\nYou follow a wide path through the fern trees. When you round the first bend, you find yourself face to face with the horrible Triceratops, a great gray monster almost hidden behind its shields and horns. It looks at you curiously with dull brown eyes. You turn, run, and crash into a tree trunk--one that wasn't there before! The bark feels like leather. You look up to see how high it is--into the jaws of Tyrannosaurus Rex.
+Part.8j  The night passes and a red-golden dawn spreads across the eastern horizon. And as the sun lights the land beneath, you find that you have drifted so far south that you are over the grasslands of Africa. Below, you can see herds of elephants and gazelles, running with the wind, and hippos snorting in the waters of a mighty river.\nBy noon, you are over foothills, facing a tall range of snow-capped mountains, in the south. Africa, you marvel! And Peter explains that there are many mountains in Africa. And great jungles, and thousands upon thousands of miles of grassy plains.\nIn the dying rays of sunlight, you set your balloon down gently in the foothills of the great mountains. There, men in white robes greet you and take you to a marble temple. A boy, sitting on a simple chair, greets you each by name. "I have been expecting you," he says. And he reveals to all of you the wonders of the universe. And you realize that this is s not really the end but just... the beginning.
 THE END
 p8j  image vol3_files/vol3_picture8j.jpg
+pg 75
 
-Part.8k  You accept the offer, for you can hardly expect a better life at this point, and soon you begin to enjoy rowing out in the early morning mists and spreading your nets with the neighboring fishermen.\nOne afternoon, as the people are pulling up their boats for the night, you friend, Angus McPhee, raises a cry and points at the water. You look out and see the great head and neck of a sea monster--a huge dragon of the lake. Nearby, splinters of wood are floating in the water.\n"That was Sutherland's boat," Angus cries out. "It's been a hundred years since the monster has been seen, but now it has returned!"\nThe monster swims away and soon is lost from view in the mists.\n"How could the monster be gone for a hundred years and then return?" you ask Angus.\n"Somewhere near Beatty's Point," he replies, "there is an underwater cave where the monster stays as long as it pleases--because it is a Cave of Time."\nIf only you could find your way back to the Cave of Time! But chances seem slim, and the risks seem great.
-Choice.8k.9a Try to find the Cave of Time.
-Choice.8k.9b Do not try.
+Part.8k  Carefully, the four of you climb the rocky steps. At the top, you find that the tunnel is level and paved with flat rocks. Onward you move, the cool green light from the walls of tunnel illuminating your path. Suddenly, from behind you, you hear a rusty creaking and then a crash. You turn to find that an iron grill has dropped down from its hidden recess in the roof of the tunnel, blocking your escape back to the river. And as you test the grill to see whether it will open, you hear the identical sound from further down the tunnel.\n"It's the same kind of grill," Peter shouts. "We are trapped!" Frantically, all of you search for some hidden device to lift the bars, but you have no luck. Imprisoned deep below the earth's surface, you know that this is probably...
+Choice.13a.1-z The End.
+Choice.13a.9j But then you notice that Harry is squeezing under the bars. He makes it, turns around wagging his tail, and then goes galloping up the tunnel in search of help. Wait patiently for your friend to find assistance, and see whether you starve before he returns with help.
 p8k  image vol3_files/vol3_picture8k.jpg
+pg 102/103
 
-Part.8l  You'd rather spend the rest of your life searching for an entrance to the Cave of Time than settle for the placid life of a fishing village. So you bid your new friends farewell and set out over the countryside, headed south for London. Your goal is to find a ship to take you to America, though you know America hasn't been discovered yet, for somehow you must find your way back to Red Creek Canyon and the Cave of Time.\nA few hours later, as you are walking on a road along the edge of the forest, some burly men ride out from behind a clump of trees.\n"We've got you," one shouts. "You're the one who escaped from the tower, aren't you?" They force you upon a horse and ride at top speed toward the castle.\n"The penalty for escaping from the tower is hanging," one of them tells you.\nYou find out he is right.
+Part.8l  On and on you drift, the river carrying you deeper into the depths of the earth. The glowing rocks cast an eerie green light, and you observe that the river is moving slowly and growing broader. At last, it seems that your boat is barely moving, but the river has become a vast underground lake.\n"This must be it," Peter says. You ask him what he means. He tells you that many scientists believe there are great underground rivers of fresh water beneath the Sahara. "Just think," he says, "if the people of the desert had this water, they could grow enough food for all of Africa."\nSlowly and carefully, you row along the edge of the lake, looking for some way upward. Sarah spots a passageway. Weak with hunger, you climb upward. Strange pictures of men and animals decorate the walls. Sarah says that these are hieroglyphics, the writings of ancient Egypt. It must be, she explains, that this source of water was known to the ancient peoples of the desert, and somehow the knowledge was lost in some sort of great disaster.\nWith barely any energy left, you come to the end of the passageway. Shrubs block the entrance and you bend them aside and look out. Nearby is a small, dusty village of desert tribesmen. What news you have to tell the world!
 THE END
+pg 107
 
-Part.8m  In a moment you are across the bridge and galloping over the countryside, feeling a good deal smarter than the King and his knights. When you pass some shepherds and wave, they wave back.\nYou stop to rest at the cottage of a friendly goatherd, who feeds you a good dinner. "Do not fear the King," he says. "He is a fool who sits and drinks grog all day. His only concern is deciding who to put in the tower. His own knights laugh at him, and he is more likely to fall from his throne than you from your horse. Be off now and on to Merrie England, for great things await you there. God speed and good fortune!"\nYour energies are renewed by good food and drink, and your horse too is ready to ride. You thank your host warmly and ride off to new adventures and a new life--almost a thousand years before you are born.
+Part.8m  Dawn finally comes and the sun rises over four freezing friends. You get out of the helicopter and run around to get your bodies warmed up. The sun feels good. It shines with a warm, golden light on the slopes of snow above you.\n"I can try starting the helicopter again," Sarah says. And before you can stop her, she presses the starter and the noisy engine coughs to life. There is a loud rumbling far above you and you look, horrified, as an avalanche breaks loose and roars down toward you.\nYou never had time to tell her that a loud noise can trigger off a snowslide. You start to run down the mountain, but the wall of snow overtakes you, burying you under tons of cold, white death.
 THE END
 p8m  image vol3_files/vol3_picture8m.jpg
+pg 68/69
 
-Part.8n  You gain entrance to the King and thank him for letting you out of the tower.\n"Think nothing of it," the King replies. "We would do as much for any villain. We like your spirit and, though your story makes as much sense as a dancing mule, it brought laughter to our eyes. You have, without meaning it we are sure, performed a service for your King. We thank you.\n"We'll see that you have a horse and some pieces of gold," the King continues. "Go and make your fortune. We command you though--come once a year and tell us a story no less amusing than what we have heard from your lips."\n"My lord," you say.\n"My excellent vassal," he replies.\nYou ride off, somewhat apprehensive, but intent upon making as much of your life as is possible in the year 982.
-THE END
+Part.8n  The four of you carefully move down the mountainside. The cold night wind whistles through your thin clothing. And you always thought that North Africa was hot!\nBy midnight, you have reached the valley floor. A stream flows along the valley. Peter thinks that there will be a village upstream, but Sarah says that you should follow the stream because it always leads to the sea, and there will be large cities near the coast. They argue a lot about this, and finally look to you to make a decision. Harry really doesn't care. He is ready for any adventure.
+Choice.8n.9k You decide to go upstream.
+Choice.8n.9l Sarah is usually right. Maybe you should follow the stream down toward coast. You whistle for Harry, who is presently chasing a squirrel.
+pg 114
 
-Part.9a  One day when the sun is bright and the water as warm as it's likely to get, you take an old skiff and row to Beatty's Point. You pull your boat up on the rocky shoal that marks the cave. You dive again and again along the rock wall that drops into the depths until you find the entrance. You swim a few feet inside and find you can get up to the surface inside an enormous cavern, most of it filled by an underground lake.\nYou reach the shore and walk along the lakeside, deeper and deeper into the cavern, which is lit by a mysterious blue light. Then, ahead, you see what you had hoped to find--a tunnel that surely must lead to the Cave of Time. Nearby in the sand are three eggs as large as footballs. You pick one up and carry it into the tunnel. After walking awhile, the air becomes hard to breathe. You begin to feel dizzy and fall unconscious to the ground, still clutching the enormous egg.\nYou are awakened by a fresh breeze blowing toward you. You dizzily get to your feet, pick up the egg, and hurry toward the fresh air--outdoors again in Snake Canyon! Everything is as you remember it and in a few hours you are walking up to the ranch, where your uncle says he is surprised you got back so quickly!\nWhen you tell what has happened to you, no one at the ranch believes it, though they are fascinated by your enormous egg.\n"Maybe we'll believe that egg is real--and believe your story--if it will hatch a monster," your uncle says, "or if you break it open to show us what's inside."
-Choice.9a.10a Break the egg open.
-Choice.9a.10b Keep it in your closet until you have a chance to get scientific advice.
+Part.8o  All day long the four of you stumble through the sand dunes. Calling a halt at noon, you take shelter through the hottest part of the day in the shade of a sand dune. At dusk, you rest again and all of you fall into an exhausted sleep. You awake with the stars glowing and the cold of night eating through your thin clothing.\n"We must go north," Sarah says. "We won't be able to stand another day in the desert without water." But which way is north? Peter, confident of his success, says that the wind always blows from the north in the Sahara. You must face the wind and walk slowly. By dawn, he claims, you will all be safe on the shores of the Mediterranean.\nSarah says that he's wrong. She points to a bunch of stars which are formed ike a dipper. "Use the two stars in the lip of the dipper and point to the North Star. If we follow that star, we will be heading north."
+Choice.8o.9m Trust Sarah's advice, look at the night sky and follow the star that she points out.
+Choice.8o.9n You think Peter's right, face the wind, and start walking.
+pg 88
 
-Part.9b  The idea that the Loch Ness monster goes into the Cave of Time for a hundred years or so before returning seems preposterous. And, even if it does, it seems very doubtful you could dive down deep enough to find the underwater entrance. So you resign yourself to making a living fishing the waters of Loch Ness.\nYou find it a tolerable, though not very interesting, life. You particularly like rowing out in your skiff in the early morning mists and watching the pale, red sun struggling io shine through the haze. That's what you are doing one day when you feel a tremendous thump under your boat, the stern is heaved high into the air, and you are hurled over the bow and into the jaws of the monster.\nSome of your friends find the wreckage of your boat later in the day and, throughout the village, people say to each other--"The monster has returned again."
-THE END
+Part.8p  Downward you go, following the tracks. The air is cool and has the faint smell of spice or perfume. Just as Peter's light gives out, you notice the gleam of brass on the tunnel's wall. It is an oil lamp. With fumbling fingers, you strike a match and light the wick. Now you have light!\nHarry runs excitedly ahead and soon returns with something in his mouth. You examine it and find that it is a massive diamond, nearly the size of a baseball. Onward you rush, eager to find what must be the treasure of an ancient king. At last you come to a door. Should vou open it? Perhaps danger lies on the other side of the strong oak planks. But surely, treasure is within your grasp.
+Choice.8p.9o You choose to open the door, but remember what happened to the cat that was curious!
+Choice.8p.9p "But we already have a diamond," Sarah exclaims. "This is valuable enough to make us rich. Let's not go inside." Maybe she's right. You can always find your way back to the surface. You turn around and follow the tracks back to the tunnel's entrance.
+p8p  image vol3_files/vol3_picture8p.jpg
+pg 62
+
+Part.9a  After watching the vacant streets for a sign of life, you finally enter the village. Smoke curls from many of the cottages' chimneys, but no one is to be seen, not even a dog or a cat\nYou knock at the door of a small, neat cottage. The door opens inward. The room is warm and inviting. Fresh flowers are set on the table and a fire burns in the hearth. But no one is there. On the stove, you find a pot of rich, thick soup. Harry nuzzles your leg, beggin for food. You all know that when the owners return, they may be very angry, but your hunger is overpowering. All of you eat and then fall asleep on the rug before the fire.
+To Part 10 a
+95
+
+Part.9b  After night falls, the four of you tiptoe to the outer edge of the village and enter a building that Peter has spotted in the afternoon. Carefully, you push the door open. An oil lamp illuminates the interior. Stacked on the floor are piles of swords, bows, arrows and spears. You have walked into the village arms warehouse! Before you can retreat, a huge man fills the doorway behind you. He is wearing clothing of sheepskin and he wears a patch over one eye. In his hands he holds a sword and as you watch, he raises it. "Are you from Gor or from Mir?" he shouts. "Answer me now!"\nYou must think fast. One of the words must mean that you are friends; the other word that you are enemies.
+Choice.9b.10b Swallow hard and answer Gor.
+Choice.9b.10c "Tell him Mir," Sarah pleads. You follow her advice and cross your fingers.
 p9b  image vol3_files/vol3_picture9b.jpg
+pg 58
 
-Part.10a With your aunt and uncle and some ranch hands standing by, you very gently tap the egg with an axe, hoping it will split open without fragmenting.\n"Wait a minute!" Uncle Howard cries out. "I'm ready to believe you, but I think we better get a naturalist down from the University to see this first."\nYou are relieved that your uncle feels this way, because it seems like a terrible responsibility--cracking open an egg like that and possibly killing a rare monster before it is born.\nUncle Howard calls the naturalist, a famous professor of paleontology, who agrees to come down the following Saturday. You place the egg in a large bowl in the middle of the dining room table.\nThe next day is Friday, and that evening the whole family goes out to the movies. When you return, you find the house has been broken into and the egg is missing.\nNeither you, your aunt and uncle, nor any of the ranch hands, nor the police are ever able to find the egg. Most people you tell your story to just smile and say, "Sure." But Uncle Howard, even though he is a skeptical man, tells you he knows you were telling the truth.
+Part.9c  For two more days, you and the tribesmen trek over the vast wasteland. Using Professor Wright's compass and the ancient map, you come to a rocky range of low mountains. Following a canyon, you arrive at a dead end with tall cliffs towering above you. The map reads, "Dig by the silver-colored rock." And, indeed, there is a large rock with flecks of silver reflecting brightly in the sunlight. Abdal cautions you to be very careful. The face of the cliff is very steep and any digging might cause a landslide. But this is what you've come for, isn't it? If you work carefully, there should be no danger.
+Choice.9c.10d Abdal warns his men to back away. It looks too dangerous. But this must be the place. Treasure is just a few shovelfuls away. Cover your head with a protective hat and dig.
+Choice.9c.10e So close and yet so far! perhaps you should call an end to the adventure and turn back.
+pg 57
+
+Part.9d  All that day you follow the tribesmen, who are strangely silent. Finally, the leader, Abdal, explains that his men feel that you have brought a curse with you, and that Professor Wright was just the first of many men to die.\nThat night you camp around a fire. In the morning, you discover that the men and horses are gone! They have left you to your fate. You have almost no water and no compass. Which way is north to the coast?\nIt seems to you that if you keep the sun on your back, you will be walking north. Harry, whom you know is a very wise dog, seems to want to go this way. But Peter claims that he is an expert in navigation. He says that if you keep the sun on your right until noon, and then keep the sun on your left in the afternoon, you will be heading north.
+Choice.9d.10f You trust your own judgment and follow Harry.
+Choice.9d.10g Peter always brags a little, but maybe this time he is right. You think he is and swallow your pride.
+pg 56
+
+Part.9e  You fire! In a flash of foam, the torpedo streaks for the bow of the whaling ship. It strikes, drilling a hole in the steel. You can see confusion on the deck of the whaling ship as men run for the lifeboats. You have saved the whales!\nAnd over the years, as the list of ships that you sink grows longer, fewer and fewer whaling ships put to sea. Now they are as extinct as the whales might have been. You and your friends live out your lives aboard Captain Zud's submarine feared by all, but happy that the whales have been saved forever.
 THE END
-p10a image vol3_files/vol3_picture10a.jpg
+p9e  image vol3_files/vol3_picture9e.jpg
+pg 46
 
-Part.10b  The next day you call the Department of Zoology at a nearby university, where you are referred to Dr. Henry Karn, a specialist in large reptiles. Dr. Karn is skeptical about the egg but agrees to drive to Red Creek Ranch immediately to see it.\nBy the time he arrives, you are feeling very nervous. Suppose the egg is just made of plastic? Your concern is heightened by his stern appearance. He shakes hands brusquely with you and your uncle and immediately asks to see the egg.\nWhen you hand it to him, he says nothing while he stares intently at it, holds it up to the light, taps it and scratches it with a pen knife. Then he holds it to his ear.\nFinally he smiles at you and gently puts the egg down. "It's quite possible this is the egg of a Plesiosaurus, an aquatic dinosaur of the late Jurassic period. It is highly unlikely it will ever hatch. Even so, I would want to keep it in an incubator at the University for at least a year before breaking it open. I'll let you know, of course, if anything develops."\nA few weeks have passed since then and whenever the phone rings you wonder if Dr. Karn is calling.
+Part.9f  You fire! The torpedo strikes home. Men from the ship launch their lifeboats in panic. You realize that you have committed a great crime. Even if the whales are saved, you may have caused injury to the whalers. You plead with Captain Zud to put you ashore, which he does with great reluctance. After giving yourself up to the international police, you are sentenced to jail. But during your imprisonment, you write a great book about your adventures. People from all over the world praise it and the governments of the world finally outlaw whaling. You are finally given a pardon and live for the rest of your life beside the sea with Harry, your dog, so that you can be close to the great creatures of the deep.
+THE END
+pg 47
+
+Part.9g  You hesitate. The ship grows larger in the cross hairs. Captain Zub shouts at you to fire before it is too late. You turn and argue with him. "Wait," you say. "No cause can be so important that we risk the lives of men." And all the while, the whaling ship sails closer. Finally, it is too late. The submarine and the ship collide. The screen goes blank and seconds later, water rushes into the compartment. You and your friends sink with the submarine.
+THE END
+p9g  image vol3_files/vol3_picture9g.jpg
+pg 48
+
+Part.9h
+Quickly, you lift off. The natives, startled and
+then angry, throw spears at your basket. Zit... Zit!
+A few jab through the bottom oft he basket, but no
+harm is done. You have escaped.\n
+Soon, you are thousands of feet above the village,
+drifting on the wind to the south.\n
+ to "We're high enough," Sarah says, and you try turn off the valve which lets the gas into the balloon, but without warning it breaks off in your hand. Higher and higher you go. The balloon's fabric is bulging outward. It is too late to try to pull the release cord, or slit the fabric with Peter's knite. Upward you soar, where the wind is cold and bloirodkss never fly. The moon, cold and unfriendiy. flowersd. owThn e on you, and ice begins to form on the And Harmy petals break off as you touch them. thin tha
+
+pg 84
+
+Part.9i
+pg 85
+
+Part.9j
+pg 111
+
+Part.9k
+pg 117
+
+Part.9l
+pg 116
+
+Part.9m
+pg 93
+
+Part.9n
+pg 92
+
+Part.9o
+pg 63
+
+Part.9p
+pg 104
+
+Part.10a You awake at first light. The fire has more wood banked over the embers and the smell of eggs and coffee awakens your appetite. You eat again, aware that someone must be caring tor you. But no one appears. Then Peter shouts with amazement. On the mantelpiece is a large stack of gold coins. They weren't there last night and must be a gift from your invisible hosts. As you are trying to decide whether to take them, Sarah comes rushing into the house and says, "There is a schoolhouse in the center of the village, and it has a stairway which leads down to a tunnel. I can hear a loud humming."
+Choice.10a.11a Take the gift of gold coins and flee this strange and mysterious village.
+Choice.10a.11b Perhaps you should investigate. Let Harry lead the way to the tunnel.
+pg 98
+
+Part.10b "Aha!" he exclaims. "It is as I thought." With the point of his sword, he forces you out into the dirt street where other villagers surround you. You are shoved and pushed down a narrow alleyway. In front of a stone building, they force you to enter through a low doorway. The door slams behind you and you hear a bolt locking the entranceway. The smell inside is horrible, and only a trickle of light filters down from an iron grill set high in the ceiling. Harry growls and the hairs raise on the back of your neck. From the far corner of the room you hear a movement. As you watch, you see red eyes glowing in the dark. They are moving toward you.
+THE END
+p10b image vol3_files/vol3_picture10b.jpg
+pg64
+Part.10c Mir!" Sarah says, before you can answer. The man smiles and lowers his sword. "Ah," he says. "It is as our wise men predicted. You knew that Gor is the God of Darkness and Mir is the God of Light. And where, honored guests, is your light?"\nPeter smiles and with a great show of ceremony, produces his flashlight. "Clatoo!" he exclaims and turns the flashlight on, the beam aimed directly into the man's face.\nHe cries out and falls down on his knees. Other villagers come and they too worship you. You are installed with great honor in a house overlooking the village, but you notice that the surrounding gardens are permanently guarded. You cannot escape. And each day, a different wise man comes and you shine Peter's flashlight in his face. Your flashlight is magic to them, but you wonder what will happen when the batteries fail.
+THE END
+pg65
+Part.10d Cautioning your friends to stand well back, you carefully start to dig. Because the earth is so dry, you make rapid progress. Just as your spade breaks through into a chamber, there is a deafening roar. The cliff is avalanching down on you. You will be buried in a tremendous rockslide unless you get out of the way. But which way? You can seek shelter in the cavern you have just broken into, but you may be sealed in forever. Still, you may have enough time to run back from the face of the cliff to the place where your friends stand in safety.
+Choice.10d.11c The first stones are pelting down on you. You leap and take shelter in the treasure cavern.
+Choice.10d.10e Your friends are screaming at you to run for safety. You decide to return to them.
+p10d image vol3_files/vol3_picture10d.jpg
+pg94
+Part.10e  You hastily join the safety of your friends. Without warning, a landslide starts and then is followed by a tremendous rumbling. The whole cliff falls outward, almost burying your little group. And as you look up to where the cliff had been, you see the remains of a beautiful city which had been covered by the sand and earth of centuries. Abdal bows down, as do his friends. He tells you in hushed words that this is the fabled City of Zimkaka. The buildings are splendid white marble. And statues of black men, fifty feet tall, look proudly to the sun. You have discovered one of the sources of the great black civilizations of Africa.\nYou return to the coast with the tribesmen leading. Soon, the whole world knows of your discovery. Scientists question you, and many nations in Africa invite you to honor them with a visit. In the end, you realize that the treasure you found was not just for you but for all men.
+THE END
+pg96
+Part.10f All through the day, you lead your friends, the sun burning fiercely on your back. Sarah shows you how to chew on small desert plants to obtain moisture for your swollen tongues. By late afternoon, just as it is growing cooler, you find a set of footprints in the sand. All you need to do now is follow them and find the desert tribesmen who made them. But just before dark, you realize that the footprints have lead you in a circle. They are your own footprints! If you don't want to die, you had better follow Peter's suggestion. Through the bitter cold of night, you huddle together for warmth, and in the morning, ...
+TO PART 10g
+p10f image vol3_files/vol3_picture10f.jpg
+pg 86
+
+
+Part.11a You put the heavy coins in Peter's knapsack and leave the village. For another day, you travel toward the coast and finally, in the late afternoon, stumble into a fishing village. The police there notify your friends in France and arrange passage by the weekly steamer which calls at the little port. But every time you try to tell of the strange village, you find that no words will come. The coins which you had placed in the knapsack have tuned to small gray pebbles.
+THE END
+pg 99
+Part.11b Down the schoolhouse stairs you tread, each footstep echoing down the long tunnel. Harry is leading the way and you watch him in the dim light as he wags his tail and trots eagerly on. Soon, you come to a large cavern which is lit in a purple light. In the center is a space vehicle, silver-bright with dimly glowing portholes. A doorway in the space vehicle opens, and you feel no hesitation. You boldly enter. Within, the space vehicle's walls glow. An odd, mechanical voice says, "I am Ord Three of the Planet Anson. Those of you who stand here have chosen honesty instead of wealth. It is you to whom we give our trust. I and my fellow travelers have died in your year of 1781. But we were able to save three of our children who rest in suspended life, awaiting your care. Push the button in the center of the table and they will be revitalized. Let them live with you, and when you are older they shall repay your kindness with a journey into space and a visit to the Planet Anson.\nTwo days later, you and your new friends reach the coast of Africa. You explain that you found your three new companions wandering in the desert, suffering from loss of memory. But nothing can explain why their eyes are yellow and how they know a name for every star.
+THE END
+pg 100
+Part.11c Just as a mass of rocks bury the entrance, you scramble into the chamber. The opening is sealed, perhaps forever. You strike a match to see what the cavern contains. Nearby, you find a faggot of wood which catches fire readily. At least there will be some light. Near the entrance to the cavern, you find a vast heap of bones. And neatly stacked against the far wall of the chamber, you find hundreds of boxes and bales. Opening a few, you find only dusty leaves and shreds of cloth. Only then do you realize that the great treasures that the caravans carried out of Asia in Marco Polo's time were spices and silk. These have rotted away to nothing. So your adventure was all in vain.\nThe air is growing stale and the flame of the faggot is smoldering from lack of air. Your bones will join those of the caravan!
+THE END
+p11c image vol3_files/vol3_picture11c.jpg
+pg 97
+Part.11d Through the night, the four of you trudge across the sand, following the North Star. And then at dawn, as you top the rise of a small hill, you see in the distance the refreshing waters of the Mediterranean Sea. Within an hour, you are all bathing in cool surf. Unexpectedly, a helicopter flies over you and then circles back as you frantically wave. Moments later, a handsome Arab officer helps you into the cabin, and you are flown directly to the government palace. TV crews record your arrival, and in days the whole world knows of your adventures. A film is made of your journey and all of you become famous and wealthy. But on hot summer evenings, when the wind is dry and the sun hangs like a ripe orange on the horizon, you remember the vast space and mystery of the Sahara, and secretly wish to return.
+THE END
+pg 93
+Part.11e All night on you walk with the wind blowing softly on your face. You grow more and more tired, stumbling along through the darkness of the desert. Toward dawn, the wind stops blowing, and then starts to blow from the opposite direction in strong, hot gusts. Soon, sand is being whipped up by the wind, stinging your eyes. Peter was wrong but it no longer matters. You have lost your contest with the cruel desert. You huddle together in a howling storm, as the sun rises in a fiery ball of flame.
+THE END
+pg 92
+
+
+Part.14a It seems as if years pass. You dream of fresh, cool salads, roast beef, ice cream and hot bread.\nOn the third day, you hear the sounds of running footsteps. Soon flashlights appear, led by a very thin and dirty Harry. Men, using saws, remove a few of the bars so that you can slip through. They are oil-well workers. Harry has run over 100 miles through the desert to their camp and then guided them back. "He just kept barking like crazy and then running off in this direction," one of the men grins. "We finally got the idea that his master was in trouble."\nThe men drive you back to the drilling site, and a day later a helicopter evacuates you to a city near the coast. All of you have fascinating stories to tell, but it is Harry who gets his picture on the cover of a national magazine. Soon he is a motion-picture star, but he doesn't forget his old friends. You are allowed to stay at his house and sleep on a nice rug. But you discover that you really don't like to chew on bones.
+THE END
+p14a image vol3_files/vol3_picture14a.jpg
+pg 111
+Part.14b All through the long night, the four of you trudge upward along the valley floor, following the stream. Near dawn, you come to a small village. The people of the village have strange marks on their faces. Their skin is very dark but they have blue eyes and blond hair. Peter excitedly tells you that these are the famous Blue Mountain Men.\nIn sign language, the Blue Mountain Men tell you that they have no wish to be a part of the modern world. They will not allow you to to go back to civilization for fear that you will tell a curious world about their existence. But they will allow you to join the tribe and live with them in peace. You are assigned the job of being goat-herder. A young boy of the tribe becomes your friend and teaches you to play the flute. Every day, you wander the hills around the village with your herd, playing sweet tunes and letting the sun warm your body. You and your friends are quite content never to leave this peaceful place and, somehow, you don't even miss the taste of ice cream.
+THE END
+pg 117
+Part.14c For two days, you follow the stream down the valley floor. The stream is joined by other streams to become a river. You camp at night under trees, and eat nuts and fruits which grow wild along the river. At last you see a modern city in the distance. Ragged and weary, you enter the city and tell the authorities about your many adventures. Television and newspapers make you famous overnight. One morning, as you are packing to take a plane back to your homeland, there is a knock at your hotel room door.\nYou open it and find a pleasant man with fuzzy white hair standing there. "I am a professor from the United Nations Ocean Exploring Committee," he says. He explains that the United Nations has built a submarine called the Seeker to explore the ocean depths. He and his committee feel that you have proved that you are adventurous and can handle dangerous situations intelligently. Would you care to join him on his journey under the sea? Of course you would! That sounds really exciting.
+THE END
+pg 116
+Part.12z                Start a new adventure?
 THE END

@@ -327,7 +327,7 @@ class BookScrollingActivity : AppCompatActivity() {
                 option4Btn.visibility = View.GONE
 
                 // Set right button image to "2"
-                option3Btn.setImageResource(R.drawable.ic_twotone_looks_two_24)
+                option2Btn.setImageResource(R.drawable.ic_twotone_looks_two_24)
 
                 // Left button proceeds to first choice.
                 option1Btn.setOnClickListener {
