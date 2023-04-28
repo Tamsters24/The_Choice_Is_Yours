@@ -373,7 +373,7 @@ p8n  image vol3_files/vol3_picture8p.jpg
 pg 62
 
 Part.9a  After watching the vacant streets for a sign of life, you finally enter the village. Smoke curls from many of the cottages' chimneys, but no one is to be seen, not even a dog or a cat\nYou knock at the door of a small, neat cottage. The door opens inward. The room is warm and inviting. Fresh flowers are set on the table and a fire burns in the hearth. But no one is there. On the stove, you find a pot of rich, thick soup. Harry nuzzles your leg, beggin for food. You all know that when the owners return, they may be very angry, but your hunger is overpowering. All of you eat and then fall asleep on the rug before the fire.
-To Part 10 a
+To Part 10a
 95
 
 Part.9b  After night falls, the four of you tiptoe to the outer edge of the village and enter a building that Peter has spotted in the afternoon. Carefully, you push the door open. An oil lamp illuminates the interior. Stacked on the floor are piles of swords, bows, arrows and spears. You have walked into the village arms warehouse! Before you can retreat, a huge man fills the doorway behind you. He is wearing clothing of sheepskin and he wears a patch over one eye. In his hands he holds a sword and as you watch, he raises it. "Are you from Gor or from Mir?" he shouts. "Answer me now!"\nYou must think fast. One of the words must mean that you are friends; the other word that you are enemies.
@@ -389,7 +389,7 @@ pg 57
 
 Part.9d  All that day you follow the tribesmen, who are strangely silent. Finally, the leader, Abdal, explains that his men feel that you have brought a curse with you, and that Professor Wright was just the first of many men to die.\nThat night you camp around a fire. In the morning, you discover that the men and horses are gone! They have left you to your fate. You have almost no water and no compass. Which way is north to the coast?\nIt seems to you that if you keep the sun on your back, you will be walking north. Harry, whom you know is a very wise dog, seems to want to go this way. But Peter claims that he is an expert in navigation. He says that if you keep the sun on your right until noon, and then keep the sun on your left in the afternoon, you will be heading north.
 Choice.9d.10f You trust your own judgment and follow Harry.
-Choice.9d.8o Peter always brags a little, but maybe this time he is right. You think he is and swallow your pride.
+Choice.9d.8m Peter always brags a little, but maybe this time he is right. You think he is and swallow your pride.
 pg 56
 
 Part.9e  You fire! In a flash of foam, the torpedo streaks for the bow of the whaling ship. It strikes, drilling a hole in the steel. You can see confusion on the deck of the whaling ship as men run for the lifeboats. You have saved the whales!\nAnd over the years, as the list of ships that you sink grows longer, fewer and fewer whaling ships put to sea. Now they are as extinct as the whales might have been. You and your friends live out your lives aboard Captain Zud's submarine feared by all, but happy that the whales have been saved forever.
@@ -408,7 +408,7 @@ pg 48
 
 Part.9h  It seems as if years pass. You dream of fresh, cool salads, roast beef, ice cream and hot bread.\nOn the third day, you hear the sounds of running footsteps. Soon flashlights appear, led by a very thin and dirty Harry. Men, using saws, remove a few of the bars so that you can slip through. They are oil-well workers. Harry has run over 100 miles through the desert to their camp and then guided them back. "He just kept barking like crazy and then running off in this direction," one of the men grins. "We finally got the idea that his master was in trouble."\nThe men drive you back to the drilling site, and a day later a helicopter evacuates you to a city near the coast. All of you have fascinating stories to tell, but it is Harry who gets his picture on the cover of a national magazine. Soon he is a motion-picture star, but he doesn't forget his old friends. You are allowed to stay at his house and sleep on a nice rug. But you discover that you really don't like to chew on bones.
 THE END
-p9j  image vol3_files/vol3_picture9j.jpg
+p9h  image vol3_files/vol3_picture9h.jpg
 pg 110/111
 
 Part.9i  All through the long night, the four of you trudge upward along the valley floor, following the stream. Near dawn, you come to a small village. The people of the village have strange marks on their faces. Their skin is very dark but they have blue eyes and blond hair. Peter excitedly tells you that these are the famous Blue Mountain Men.\nIn sign language, the Blue Mountain Men tell you that they have no wish to be a part of the modern world. They will not allow you to to go back to civilization for fear that you will tell a curious world about their existence. But they will allow you to join the tribe and live with them in peace. You are assigned the job of being goat-herder. A young boy of the tribe becomes your friend and teaches you to play the flute. Every day, you wander the hills around the village with your herd, playing sweet tunes and letting the sun warm your body. You and your friends are quite content never to leave this peaceful place and, somehow, you don't even miss the taste of ice cream.
@@ -432,9 +432,9 @@ THE END
 pg 63
 
 Part.9n  Upward the four of you climb, retracing your route to the mine's entrance. All of you are very tired, and at last you see the tunnel's opening. Stepping out into the desert light, you are nearly blinded by the sun. Without warning, strong hands pin your arms to your side and ropes bind you. Your eyes adjust to the brightness and you find that you are surrounded by soldiers in blue uniforms and white kepi hats. It is the Famed Foreign Legionnaires. But are you saved or are you now prisoners? A soldier with captain's bars and a patch over one eye steps in front of you, arms crossed and face set in a scowl. "Are you on the side of Prince Fudderdull, or are you against him?" he shouts.\nYou and your friends look at each other in confusion. Who is Prince Fudderdull? The officer draws a wicked-looking revolver from his holster. It seems obvious that you had better give him an answer--and soon!
-Choice.9p.10g You gulp hard and then say you think you're for Prince Fudderdull. You wait anxiously to find out whether you made the right choice.
-Choice.9p.10h Prince Fudderdull sounds like a bad joke, and you and your fiends say so. You will soon find out the wisdom of your choice.
-p9p  image vol3_files/vol3_picture9p.jpg
+Choice.9n.10g You gulp hard and then say you think you're for Prince Fudderdull. You wait anxiously to find out whether you made the right choice.
+Choice.9n.10h Prince Fudderdull sounds like a bad joke, and you and your fiends say so. You will soon find out the wisdom of your choice.
+p9n  image vol3_files/vol3_picture9n.jpg
 pg 104/105
 
 Part.10a You awake at first light. The fire has more wood banked over the embers and the smell of eggs and coffee awakens your appetite. You eat again, aware that someone must be caring tor you. But no one appears. Then Peter shouts with amazement. On the mantelpiece is a large stack of gold coins. They weren't there last night and must be a gift from your invisible hosts. As you are trying to decide whether to take them, Sarah comes rushing into the house and says, "There is a schoolhouse in the center of the village, and it has a stairway which leads down to a tunnel. I can hear a loud humming."
