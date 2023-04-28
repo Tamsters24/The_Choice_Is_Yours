@@ -25,22 +25,22 @@
 5j 6l 6m
 5k 6n 6o
 5l END
-
-6a 1-z 5b
+6a 12z 5b
 6b 3c
 6c 7a 7b
 6d 7c 7d
 6e END
 6f 7e 7f
-6g END
-6h 7g 7h
-6i 7i 7j
+6g 7g 7h
+6h 7i 7j
+6i 7k 7l
 6j END
-6k 7k 7l
-6l 7m 7n
+6k 7m 7n
+6l 7o 7p
 6m END
-6n 7o 6o
-6o 7p 7q
+6n 7q 6o
+6o 7r 7s
+
 7a 8a 8b
 7b 8c 8d
 7c 8e 8f
