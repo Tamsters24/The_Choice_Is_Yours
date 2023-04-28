@@ -462,7 +462,7 @@ THE END
 pg 96
 
 Part.10f All through the day, you lead your friends, the sun burning fiercely on your back. Sarah shows you how to chew on small desert plants to obtain moisture for your swollen tongues. By late afternoon, just as it is growing cooler, you find a set of footprints in the sand. All you need to do now is follow them and find the desert tribesmen who made them. But just before dark, you realize that the footprints have lead you in a circle. They are your own footprints! If you don't want to die, you had better follow Peter's suggestion. Through the bitter cold of night, you huddle together for warmth, and in the morning, ...
-TO PART 8o
+TO PART 8m
 p10f image vol3_files/vol3_picture10f.jpg
 pg 86/87
 
