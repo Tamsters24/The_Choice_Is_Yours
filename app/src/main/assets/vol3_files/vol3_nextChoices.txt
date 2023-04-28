@@ -13,19 +13,18 @@
 4f 5g 5h 5i
 4g 5j
 4h 5k 5l
-
 5a 5b
 5b 6a 6b
 5c 6c 2b
 5d 6d 6e
 5e 6f 6g
-5f 6h 6i
-5g 6j 6k
-5h 5c 6h
-5i 6l 6m
-5j 6n 6o
-5k END
-5l
+5f END
+5g 6h 6i
+5h 6j 6k
+5i 5c 6h
+5j 6l 6m
+5k 6n 6o
+5l END
 
 6a 1-z 5b
 6b 3c
