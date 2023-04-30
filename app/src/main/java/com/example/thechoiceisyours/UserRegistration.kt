@@ -64,6 +64,7 @@ class UserRegistration : AppCompatActivity() {
                     // See Class ResetChaptersVisited, function resetNodesVisited()
                     ResetChaptersVisited.resetNodesVisited(this, "vol1")
                     ResetChaptersVisited.resetNodesVisited(this, "vol2")
+                    ResetChaptersVisited.resetNodesVisited(this, "vol3")
 
                     // Return to Main Activity
                     val backToMainIntent = Intent(this, MainActivity::class.java)
