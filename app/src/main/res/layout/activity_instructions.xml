@@ -9,6 +9,7 @@
         android:fitsSystemWindows="true"
         tools:context=".Instructions">
 
+    <!-- Refer to instructions_scrolling.xml -->
     <include
             android:id="@+id/instructionsLayout"
             layout="@layout/instructions_scrolling"
@@ -16,6 +17,7 @@
             android:layout_width="match_parent"
             android:layout_marginBottom="60dp"/>
 
+    <!-- Instructions Navigation buttons -->
     <ImageButton
             android:id="@+id/back_Btn"
             app:srcCompat="@drawable/ic_twotone_arrow_circle_left_24"
@@ -40,4 +42,5 @@
             android:layout_height="70dp"
             android:tint="@color/dark_blue1"
             android:background="@null"/>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

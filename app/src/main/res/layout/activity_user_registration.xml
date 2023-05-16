@@ -7,6 +7,7 @@
         android:layout_height="match_parent"
         android:background="@color/registration_background"
         tools:context=".UserRegistration">
+
     <!-- Back button to Previous (Main Activity) -->
     <ImageButton
             android:id="@+id/registrationToMainBtn"
@@ -20,6 +21,8 @@
             app:layout_constraintHorizontal_bias="0.131"
             app:layout_constraintVertical_bias="0.09"
             android:background="@null"/>
+
+    <!-- Screen Title -->
     <TextView
             android:id="@+id/registrationTitle"
             android:text="@string/new_acct"
@@ -38,6 +41,7 @@
             android:typeface="serif"
             android:textStyle="bold"
             android:textColor="@color/white"/>
+
     <!-- EditTexts: email, password, and confirm password -->
     <EditText
             android:id="@+id/newAcctEmail"
@@ -93,6 +97,7 @@
             android:typeface="serif"
             android:textColorHint="@color/white"
             android:autofillHints=""/>
+
     <!-- Complete Registration Button -->
     <Button
             android:id="@+id/completeRegBtn"
@@ -108,4 +113,5 @@
             android:textSize="11sp"
             android:typeface="serif"
             android:textColor="@color/white"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

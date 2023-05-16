@@ -7,6 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".UserLogin"
         android:background="@color/login_background">
+
     <!-- Back button to Previous (Main Activity) -->
     <ImageButton
             android:id="@+id/loginToMainBtn"
@@ -20,6 +21,8 @@
             app:layout_constraintHorizontal_bias="0.131"
             app:layout_constraintVertical_bias="0.09"
             android:background="@null"/>
+
+    <!-- Screen Title -->
     <TextView
             android:id="@+id/loginTitle"
             android:layout_width="wrap_content"
@@ -38,6 +41,7 @@
             android:typeface="serif"
             android:textStyle="bold"
             android:textColor="@color/white"/>
+
     <!-- EditTexts: email & password -->
     <EditText
             android:id="@+id/loginEmail"
@@ -75,6 +79,7 @@
             android:typeface="serif"
             android:textColorHint="@color/white"
             android:autofillHints=""/>
+
     <!-- Buttons: registration & reset password -->
     <Button
             android:id="@+id/loginToRegistrationBtn"
@@ -105,6 +110,7 @@
             android:textSize="11sp"
             android:typeface="serif"
             android:textColor="@color/white"/>
+
     <!-- Complete Login Button -->
     <Button
             android:id="@+id/acctLoginBtn"
@@ -120,4 +126,5 @@
             android:textSize="11sp"
             android:typeface="serif"
             android:textColor="@color/white"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
