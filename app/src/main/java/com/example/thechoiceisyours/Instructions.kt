@@ -3,7 +3,7 @@ package com.example.thechoiceisyours
 import android.content.Intent
 import android.os.Bundle
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
@@ -13,80 +13,120 @@ import androidx.core.widget.NestedScrollView
 @Suppress("DEPRECATION")
 class Instructions : AppCompatActivity() {
     private var instructionsPage = 1
+
+    // Variables for Text Views
+    private lateinit var instructionText1: TextView
+    private lateinit var instructionText2: TextView
+    private lateinit var instructionText3: TextView
+
+    // Variables for Image Views
+    private lateinit var instructionImage1: ImageView
+    private lateinit var instructionImage2: ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_instructions)
 
-        // Variables for Text and Image Views to be adjusted for each page
-        val instructionText1 = findViewById<TextView>(R.id.instructionA)
-        val instructionText2 = findViewById<TextView>(R.id.instructionB)
-        val instructionText3 = findViewById<TextView>(R.id.instructionC)
-        val instructionImage1 = findViewById<ImageView>(R.id.instructionsImage1)
-        val instructionImage2 = findViewById<ImageView>(R.id.instructionsImage2)
+        // onCreate displays page 1 of the instructions.
+        instructionText1 = findViewById(R.id.instructionA)
+        instructionText2 = findViewById(R.id.instructionB)
+        instructionText3 = findViewById(R.id.instructionC)
+        instructionImage1 = findViewById(R.id.instructionsImage1)
+        instructionImage2 = findViewById(R.id.instructionsImage2)
 
-        // Button
-        // Move to the next page of instructions.
-        findViewById<Button>(R.id.instrToNext_btn).setOnClickListener {
-            when (instructionsPage) {
-                1 -> {
-                    // Upon click, from page 1, update instructions to page 2
-                    instructionText1.setText(R.string.instructions4)
-                    instructionText2.setText(R.string.instructions5)
-                    instructionText3.setText(R.string.instructions6)
+        // 3 Buttons are available on the screen.
 
-                    // Update images and resize to content, and adjust layout
-                    val image1 = resources.getDrawable(R.drawable.book_cover_ex)
-                    instructionImage1.setImageDrawable(image1)
-                    instructionImage1.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
-                    val image1params = instructionImage1.layoutParams as RelativeLayout.LayoutParams
-                    image1params.addRule(RelativeLayout.CENTER_HORIZONTAL)
-                    instructionImage1.layoutParams = image1params
+        // Back Button
+        findViewById<ImageButton>(R.id.back_Btn).setOnClickListener {
+            if (instructionsPage > 1) {
+                instructionsPage--
+                buttonPress(instructionsPage)
+            } else { /* Do nothing */}
+        }
 
-                    val image2 = resources.getDrawable(R.drawable.story_map_ex)
-                    instructionImage2.setImageDrawable(image2)
-                    instructionImage2.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
-                    val image2params = instructionImage2.layoutParams as RelativeLayout.LayoutParams
-                    image2params.addRule(RelativeLayout.CENTER_HORIZONTAL)
-                    instructionImage2.layoutParams = image2params
-
-                    // Scroll to top of view
-                    val instructionsView = findViewById<NestedScrollView>(R.id.instructionsLayout)
-                    instructionsView.smoothScrollTo(0,5,1500)
-
-                    // Increment page value
-                    instructionsPage++
-                }
-                2 -> {
-                    // Upon click, from page 2, update instructions to page 3
-                    instructionText1.setText(R.string.instructions7)
-                    instructionText2.setText(R.string.instructions8)
-                    instructionText3.setText(R.string.instructions9)
-
-                    val image1 = resources.getDrawable(R.drawable.registration_ex)
-                    instructionImage1.setImageDrawable(image1)
-                    instructionImage1.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
-                    val image1params = instructionImage1.layoutParams as RelativeLayout.LayoutParams
-                    image1params.addRule(RelativeLayout.CENTER_HORIZONTAL)
-                    instructionImage1.layoutParams = image1params
-
-                    val image2 = resources.getDrawable(R.drawable.password_ex)
-                    instructionImage2.setImageDrawable(image2)
-                    instructionImage2.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
-                    val image2params = instructionImage2.layoutParams as RelativeLayout.LayoutParams
-                    image2params.addRule(RelativeLayout.CENTER_HORIZONTAL)
-                    instructionImage2.layoutParams = image2params
-
-                    val instructionsView = findViewById<NestedScrollView>(R.id.instructionsLayout)
-                    instructionsView.smoothScrollTo(0,5,1500)
-
-                    instructionsPage++
-                }
-                else -> {
-                    // Upon click, from page 3, return to the Main Activity
-                    val instructionsToMainIntent = Intent(this, MainActivity::class.java)
-                    startActivity(instructionsToMainIntent)
-                }
+        // Next Button
+        findViewById<ImageButton>(R.id.next_Btn).setOnClickListener {
+            if (instructionsPage < 5) {
+                instructionsPage++
+                buttonPress(instructionsPage)
+            } else {
+                // Upon click, from page 5, return to the Main Activity
+                val pg5ToMainIntent = Intent(this, MainActivity::class.java)
+                startActivity(pg5ToMainIntent)
             }
         }
+
+        // For the Home button, return to main activity.
+        // Main Page Button
+        findViewById<ImageButton>(R.id.instrToMain_Btn).setOnClickListener {
+            val instructionsToMainIntent = Intent(this, MainActivity::class.java)
+            startActivity(instructionsToMainIntent)
+        }
+    }
+
+    //For the Back and Next buttons, update instructions and images upon button click.
+    private fun buttonPress(page: Int) {
+        when (page) {
+            1 -> {
+                updateInstructions(R.string.instructions1,
+                    R.string.instructions2, R.string.instructions3)
+                updateInstructImage(R.drawable.instruction_pic1, R.drawable.instruction_pic2)
+                scrollToTop()
+            }
+            2 -> {
+                updateInstructions(R.string.instructions4,
+                    R.string.instructions5, R.string.instructions6)
+                updateInstructImage(R.drawable.instruction_pic3, R.drawable.instruction_pic4)
+                scrollToTop()
+            }
+            3 -> {
+                updateInstructions(R.string.instructions7,
+                    R.string.instructions8, R.string.instructions9)
+                updateInstructImage(R.drawable.instruction_pic5, R.drawable.instruction_pic6)
+                scrollToTop()
+            }
+            4 -> {
+                updateInstructions(R.string.instructions10,
+                    R.string.instructions11, R.string.instructions12)
+                updateInstructImage(R.drawable.instruction_pic7, R.drawable.instruction_pic8)
+                scrollToTop()
+            }
+            5 -> {
+                updateInstructions(R.string.instructions13,
+                    R.string.instructions14, R.string.instructions15)
+                updateInstructImage(R.drawable.registration_ex, R.drawable.password_ex)
+                scrollToTop()
+            }
+        }
+    }
+
+    // Upon click, update instructions for next page
+    private fun updateInstructions(text1: Int, text2: Int, text3: Int) {
+        instructionText1.setText(text1)
+        instructionText2.setText(text2)
+        instructionText3.setText(text3)
+    }
+
+    // Upon click for next page update images, resize to content, and adjust layout
+    private fun updateInstructImage(image1: Int, image2: Int) {
+        val instructImage1 = resources.getDrawable(image1)
+        instructionImage1.setImageDrawable(instructImage1)
+        instructionImage1.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
+        val image1params = instructionImage1.layoutParams as RelativeLayout.LayoutParams
+        image1params.addRule(RelativeLayout.CENTER_HORIZONTAL)
+        instructionImage1.layoutParams = image1params
+
+        val instructImage2 = resources.getDrawable(image2)
+        instructionImage2.setImageDrawable(instructImage2)
+        instructionImage2.layoutParams.height = ViewGroup.LayoutParams.WRAP_CONTENT
+        val image2params = instructionImage2.layoutParams as RelativeLayout.LayoutParams
+        image2params.addRule(RelativeLayout.CENTER_HORIZONTAL)
+        instructionImage2.layoutParams = image2params
+    }
+
+    // Scroll to top of view
+    private fun scrollToTop() {
+        val instructionsView = findViewById<NestedScrollView>(R.id.instructionsLayout)
+        instructionsView.smoothScrollTo(0,5,1500)
     }
 }

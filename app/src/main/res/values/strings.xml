@@ -72,6 +72,7 @@
 
 
     <!-- Instructions Strings -->
+    <!-- Page 1 -->
     <string name="instructions1">In "The Choice is Yours" book series, you are the character!
         These stories contain many different adventures you can go on
         as you journey through strange and mysterious places and meet
@@ -90,28 +91,67 @@
         You are responsible because you choose!
         Think carefully before you make a move! One mistake can be your last … or it may lead you to wonders abound!
     </string>
+
+    <!-- Page 2 -->
     <string name="instructions4">
+        To get started, on the main screen click the top button to access your library.
+    </string>
+    <string name="instructions5">
+        The books you have available in your current library will appear here.
+        Simply click on the book title to access your book.
+    </string>
+    <string name="instructions6">
+        From the book cover, select CLICK HERE TO PROCEED,
+        and you will begin on page 1 of the book.
+    </string>
+
+    <!-- Page 3 -->
+    <string name="instructions7">
+        As you read, you can bookmark your current page. To place a bookmark,
+        you can either click on the bookmark icon on the upper right screen
+        or you can enter the menu and click Bookmark Page.
+    </string>
+    <string name="instructions8">
+        Other menu options include:\n
+        1) Main - Return to the Main Screen\n
+        2) Go to Bookmark - Jump from the\ncurrent page to your bookmarked\npage.\n
+        3) Start at Beginning - Jump from\nthe current page to the beginning of\nthe book.\n
+        4) Bookmark Page - Select a page to\nbookmark. You can return to this page\nlater.\n
+        5) Story Progress - See what paths of\nthe story that you have taken (more\non next page).\n
+        6) Return to Library - Navigate to the\nLibrary screen to choose different\nbook to read.\n
+        7) Close App - Exit the application\n
+        8) Delete Progress - This resets\nprevious Story Progress and clears\nthe bookmarked page.\n\n
+        Once the Story Progress is deleted, IT CANNOT BE UNDONE! But you will still have access to your book.
+    </string>
+    <string name="instructions9">
+        And that\'s it. Simple enough! Story Progress is explained in more detail on the next page.
+    </string>
+
+    <!-- Page 4 -->
+    <string name="instructions10">
         Because there are so many different paths that you might take depending on your choices as you
         progress through your story, you can keep track of your progress and which chapters you\'ve read!
     </string>
-    <string name="instructions5">
+    <string name="instructions11">
         On the book cover page, select:\n\n\"CHECK YOUR STORY PROGRESS\"\n\nto
         bring up a map of what paths you have taken.
     </string>
-    <string name="instructions6">
+    <string name="instructions12">
         Chapters that you have not read yet are indicated by gray circles.
         Once you have read them, the circle will change to green.
     </string>
-    <string name="instructions7">
+
+    <!-- Page 5 -->
+    <string name="instructions13">
         To keep track of your progress, you will need to register for an account.
         Just type in your email address and password, and you\'re all set!
         You will have to be logged in to keep track of your progress.
     </string>
-    <string name="instructions8">
+    <string name="instructions14">
         If you are logged out, and cannot remember your password,
         you can request an email to create a new password.
     </string>
-    <string name="instructions9">
+    <string name="instructions15">
         Now that you\'re ready to take the first step of your new adventure,
         what happens next in the story? It all depends on the choices you make.
         How does the story end? Only you can find out!\n\nAnd

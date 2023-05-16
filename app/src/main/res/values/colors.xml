@@ -15,6 +15,7 @@
     <color name="brown_tan">#AE7347</color>
     <color name="dark_brown">#833820</color>
     <color name="black">#FF000000</color>
+    <color name="gray">#A6A6A6A6</color>
     <color name="white">#FFFFFFFF</color>
 
     <color name="login_background">#122214</color>

@@ -23,7 +23,7 @@
                 android:justificationMode="inter_word"/>
         <ImageView
                 android:id="@+id/instructionsImage1"
-                app:srcCompat="@drawable/choice_ex"
+                app:srcCompat="@drawable/instruction_pic1"
                 android:layout_width="412dp"
                 android:layout_height="275dp"
                 android:layout_below="@+id/instructionA"
@@ -40,7 +40,7 @@
                 android:justificationMode="inter_word"/>
         <ImageView
                 android:id="@+id/instructionsImage2"
-                app:srcCompat="@drawable/next_pg_ex"
+                app:srcCompat="@drawable/instruction_pic2"
                 android:layout_width="412dp"
                 android:layout_height="412dp"
                 android:layout_below="@+id/instructionB"
@@ -55,16 +55,5 @@
                 android:textSize="20sp"
                 android:typeface="serif"
                 android:justificationMode="inter_word"/>
-        <Button
-                android:id="@+id/instrToNext_btn"
-                android:layout_width="262dp"
-                android:layout_height="48dp"
-                android:layout_centerInParent="true"
-                android:layout_below="@+id/instructionC"
-                app:backgroundTint="@color/dark_green"
-                android:text="@string/proceed_btn"
-                android:textSize="15sp"
-                android:typeface="serif"
-                android:textColor="@color/white"/>
     </RelativeLayout>
 </androidx.core.widget.NestedScrollView>

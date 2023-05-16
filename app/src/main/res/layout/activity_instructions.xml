@@ -2,6 +2,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:id="@+id/instructionsScrolling"
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -10,6 +11,33 @@
 
     <include
             android:id="@+id/instructionsLayout"
-            layout="@layout/instructions_scrolling"/>
+            layout="@layout/instructions_scrolling"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="60dp"/>
 
+    <ImageButton
+            android:id="@+id/back_Btn"
+            app:srcCompat="@drawable/ic_twotone_arrow_circle_left_24"
+            android:layout_gravity="bottom|start"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tint="@color/dark_red1"
+            android:background="@null"/>
+    <ImageButton
+            android:id="@+id/instrToMain_Btn"
+            app:srcCompat="@drawable/ic_twotone_home_btn"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tint="@color/dark_green"
+            android:background="@null"/>
+    <ImageButton
+            android:id="@+id/next_Btn"
+            app:srcCompat="@drawable/ic_twotone_arrow_circle_right_24"
+            android:layout_gravity="bottom|end"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:tint="@color/dark_blue1"
+            android:background="@null"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
