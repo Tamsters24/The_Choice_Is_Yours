@@ -39,7 +39,7 @@ class BookCover : AppCompatActivity() {
         // Button
         // Navigate to Library Activity: story_vol_choice.xml & StoryVolChoice.kt
         findViewById<Button>(R.id.checkProgress_btn).setOnClickListener {
-            val bookCoverToLibraryIntent = Intent(this, StoryVolChoice::class.java)
+            val bookCoverToLibraryIntent = Intent(this, StoryLibrary::class.java)
             startActivity(bookCoverToLibraryIntent)
         }
     }

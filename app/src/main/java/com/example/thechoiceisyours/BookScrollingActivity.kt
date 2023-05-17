@@ -512,7 +512,7 @@ class BookScrollingActivity : AppCompatActivity() {
                 startActivity(storyToStoryProgressIntent)
             }
             R.id.nav_exit -> {
-                val storyToBookCoverIntent = Intent(this, StoryVolChoice::class.java)
+                val storyToBookCoverIntent = Intent(this, StoryLibrary::class.java)
                 startActivity(storyToBookCoverIntent)
             }
         }

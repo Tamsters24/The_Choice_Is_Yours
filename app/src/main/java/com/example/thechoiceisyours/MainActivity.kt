@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         // Button
         // Navigate to StoryVolChoice Activity: activity_story_vol_choice.xml & StoryVolChoice.kt
         findViewById<Button>(R.id.mainToStoryChoice_btn).setOnClickListener {
-            val mainToStoryChoiceIntent = Intent(this, StoryVolChoice::class.java)
+            val mainToStoryChoiceIntent = Intent(this, StoryLibrary::class.java)
             startActivity(mainToStoryChoiceIntent)
         }
 

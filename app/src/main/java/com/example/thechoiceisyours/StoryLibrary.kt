@@ -6,10 +6,10 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
-class StoryVolChoice  : AppCompatActivity() {
+class StoryLibrary  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_story_vol_choice)
+        setContentView(R.layout.activity_story_library)
 
         // Image Button
         // Navigate to Main Activity: activity_main.xml & MainActivity.kt
