@@ -1,0 +1,29 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+actor User as user
+
+package MainActivity {
+  usecase "Access Library" as library
+  usecase "Login" as login
+  usecase "New User\nRegistration" as register
+  usecase "Read\nInstructions" as instructions
+}
+
+user --> library
+user --> login
+user --> register
+user --> instructions
+
+rectangle Assets {
+}
+
+rectangle Book {
+  usecase "Book\nCover" as cover
+  usecase "Book\nScrolling\nActivity" as scroll
+}
+
+library -> cover
+
+@enduml

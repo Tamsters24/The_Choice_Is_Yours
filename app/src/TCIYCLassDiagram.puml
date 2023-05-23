@@ -1,0 +1,125 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+@startuml
+
+class MainActivity {
+ mainToStoryChoiceIntent
+ mainToLoginIntent
+ mainToRegistrationIntent
+ mainToInstructionsIntent
+}
+
+MainActivity -- StoryLibrary
+MainActivity -- UserLogin
+MainActivity -- UserRegistration
+MainActivity -- Instructions
+
+class StoryLibrary {
+ libraryToMainIntent
+ storyChoiceToCoverIntent
+}
+
+StoryLibrary -- BookCover : > assets dir
+
+class BookCover {
+ volumeImage
+ bookCoverToBookScrollingIntent
+ bookCoverToLibraryIntent
+}
+
+BookCover -- BookScrollingActivity : > assets dir
+
+class BookScrollingActivity {
+ - assetsDirectory
+ - bookAssets
+ - storyLines
+ - choiceMap
+ - currentChapter
+ - userRef
+ - bookmark
+ - nodesVisitedDB
+ - binding
+ - toggle
+ - getStory()
+ - storyDisplay()
+ - displayImage()
+ - displayChapter()
+ - displayButtons()
+ - setChoiceMap()
+ - getNextChoices()
+}
+
+BookScrollingActivity -- ResetChaptersVisited
+BookScrollingActivity -- StoryProgression
+
+class UserLogin {
+ - bookLogin
+ - userEmail
+ - userPassword
+ loginToMainIntent
+ loginToCreateAcctIntent
+ loginForgotPwdIntent
+ - login()
+ - updateUI()
+}
+
+UserLogin -- UserRegistration
+UserLogin -- ForgotPassword
+
+class UserRegistration {
+ - newUserEmail
+ - newUserPassword1
+ - newUserPassword2
+ newAcctToLoginIntent
+ - createAccount()
+ - registerUpdateUI()
+}
+
+UserRegistration -- ResetChaptersVisited
+
+class ForgotPassword {
+ - bookPwdEmail
+ - resetPwdEmail
+ forgotPwdToLoginIntent
+ - pwdEmailReset()
+}
+
+class Instructions {
+ - instructionsPage
+ - instructionText1
+ - instructionText2
+ - instructionText3
+ - instructionImage1
+ - instructionImage2
+ pg5ToMainIntent
+ instructionsToMainIntent
+ - buttonPress()
+ - updateInstructions()
+ - updateInstructImage()
+ - scrollToTop()
+}
+
+class ResetChaptersVisited {
+ resetNodesVisited(()
+}
+
+class StoryProgression {
+ CONTENT_VIEW_ID
+ fragment
+ graph
+ nodeCount
+ loop
+ failedGraphToCoverIntent
+ button
+ + addVertices()
+ + connectVertices()
+ + display()
+ + buttonPushed()
+ + buttonReleased()
+ + mouseOver()
+ + mouseLeft()
+ + viewClosed()
+}
+
+@enduml

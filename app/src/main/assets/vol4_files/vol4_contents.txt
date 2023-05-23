@@ -1,0 +1,482 @@
+Part.1a  You are born on a spaceship traveling between galaxies. The spaceship is on a research mission. The crew of the spaceship includes people from five different galaxies. Your parents are not from the same galaxy, but both have features common to those found on the planet Earth in the Milky Way galaxy.\nBecause you have been born in space you may choose which galaxy and planet you wish to belong to and have citizenship in.\nBecause the spaceship is traveling at a very great speed, you reach the earth-age of 18 years old in just three days and two hours. Now you must choose the planet Phonon in the galaxy of PINEUM or the planet Zermacroyd in the galaxy of OOPHOSS.\nPhonon is three times the size of the planet Earth. The star that provides some of its life-giving force is huge but ancient. There is fear that it is losing its force. Phonon has a history filled with trouble.\nZermacroyd is in the galaxy OOPHOSS far distant from the Milky Way galaxy. This galaxy has black holes and supernova stars. It has always been regarded as an uncertain region by observers and spacecraft crews. It is a difficult area and the black holes are unplotted and dangerous. Reports from previous space probes say that Zermacroyd has had a dim and troubled past. The reports also prophesied a bright and exciting future.
+Choice.1a.2a Choose Phonon as your birth planet.
+Choice.1a.2b On the other hand, Zermacroyd attracts you.
+pg1
+
+Part.2a
+Phonon is visible on the galaxy scanner. Now that you have chosen, your parents announce that Phonon is your father's home. The crew of the spaceship carefully prepares a spacepod for the journey to Phonon. You seat yourself at the controls and position the programmed flight path, disengage from the mother ship and drift off into space. Once in space you are propelled by gravity generators.\nSomething is wrong! You look at the scanner and see a nebula that is not supposed to be on your course. Suddenly the gases and particles of the nebula surround you. Your gravity generators and life-support systems might fail. The radiation counter interrupts the silence of space flight with harsh bleeps and crackles a warning of dangerous radiation levels.
+Choice.2a.3a Try to return to the mother ship.
+Choice.2a.3b Rely your instinct that says to go on.
+p2a  image vol4_files/vol4_picture2a.jpg
+pg2
+
+Part.2b  Zermacroyd! What a name. You can't resist this planet and its unknown past. When the captain mentioned the hope for a bright future, you decided that you must go there. It turns out that it is the home of your mother. She embraces you, wishes you luck, and gives you a small metal object on a chain.\n"Perhaps this will help you some time."\nJust as you are about to go for your final briefing, a young member of the flight crew rushes up and says, "Let me go with you. You will need my help." You don't know him well, but you have always found him warm and helpful. His name is Mermah, and his broad smile makes you feel happy about the adventures that lie ahead. Of course he can come.\nThe head of research warns you about Sun-Thee, a giant star twelve times the size of Earth's sun. Sun-Thee is in your path, and its enormous gravitational pull could be dangerous. He also cautions you about the black holes and supernovas. He tells you that if you want to delay your departure and go through the Space Academy, it may make your chances of success much better.
+Choice.2b.3c Delay departure for further instruction.
+Choice.2b.3d Dash off.
+pg3
+
+Part.3a  Return to the mother ship should be easy. You hit the navigation button and push the reverse command switch. But, just at that moment, the lighting in the pod turns to the flashing green/yellow warning color, and all systems stop. Swirling gas and dust particles bathe the pod. You frantically hit re-start buttons but nothing happens.\nAs suddenly as the gas came, it leaves. The warning lights go off, the control panel blinks with energy, and the navigation control systems say GO. The automatic S.O.S. signal turns off, and you sit exhausted in front of the controls.
+Choice.3a.4a Wait for help from the S.O.S. call, and then return to the mother ship.
+Choice.3a.4b Go on now that the mysterious nebula has vanished.
+p3a  image vol4_files/vol4_picture3a.jpg
+pg 4/5
+
+Part.3b  Heavy meteor showers interfere with your complex navigation system. The interference is so intense that all communications systems go out. You hurtle through space looking out through the portholes, amazed at the sights about you. But, your spacepod begins to tumble and the world spins in a maze of colors and shapes.\nYour speed is so great that you should get through the shower soon, perhaps even soon enough to correct the navigational problems. On the other hand, maybe it is dangerous to assume that you can rely on chance to get you out of this fix. Wouldn't it be better and safer to radio for help? The laser radio will probably get through.
+Choice.3b.4c Wait and hope to get through the shower.
+Choice.3b.4d Radio for help.
+p3b  image vol4_files/vol4_picture3b.jpg
+pg 6
+
+Part.3c  Hesitating, you ask what other types of instruction will be given to you. So far you have learned flight procedures, navigation, languages, weapons, and planning. It is a good idea to get as much information as possible, but you ask the head of research how you will know when you have learned enough.\n"Knowledge is within all of us. You have but to realize it. Spend some time now. Then go."\n"All right, I'll do as you suggest. But how long will it take?"\n"You may either go to the Space Academy courses on board, or you may study with me and explore the knowledge within you." He does not smile, but he folds his arms to await your decision.
+Choice.3c.4e Attend the Space Academy.
+Choice.3c.4f Choose to explore the knowledge within yourself.
+pg 7
+
+Part.3d  You want to be on your way. Even though it might be a rash decision, you and your new companion Mermah climb aboard the spacepod. You enter the proper numbers on the flight panel and you launch into space.\n"Mermah, check the stabilizers. We seem to be spinning a bit."\n"OK. Will do."\nJust then you realize from the computer screen that your flight path is close to a black hole. The danger is that once near the gravitational field of the black hole, you will never escape. Mermah helps you check the data input to the navigation system. To your dismay, you realize that instead of punching in the figures 4800, you actually put in 4008, and your path is now locked into the black hole.\nMermah stares at you in horror as the pod continues to move toward the massive black hole. People who have been trapped by black holes have never returned.
+Choice.3d.4g Put on full power in hopes of breaking through the gravity field and landing on the black hole.
+Choice.3d.4h Put up the energy repulsion shields to try and escape the black hole.
+p3d  image vol4_files/vol4_picture3d.jpg
+pg 8/9
+
+Part.4a  An S.O.S. sent in space is a risky thing. There is no telling who is out there. You wait with hope and a good measure of fear. Then you see it. First a speck on the screen moving in a sideways fashion. Then it jumps into focus. It resembles an amoeba, but it has lights, portholes, and markings of an unknown sort. Abruptly, the spacecraft – or whatever it is – halts close to you.\nIn space, alien beings are not uncommon. You are alien to the beings in this craft jiggling outside your spacepod. But, what should you assume? Are they hostile, or are they life forms knowing neither hostility nor friendship?\nThere isn't much time. You must decide whether to fight and hope you can drive them off, or whether you should just go quietly and peacefully with them. Here they come. It is hard to tell whether it is one or many. They seem to be all mixed together.
+Choice.4a.5a Decide to go willingly.
+Choice.4a.5b Decide to fight.
+pg 10
+
+Part.4b  Your energy indicator has faded from full energy red light to one-quarter level blue-green light. Computer analysis warns you that all life support systems will stop in three hours, sixteen minutes. But, there has been no response to your S.O.S. Through your radar scan you realize that even if help does come, it will probably not reach you before all life support systems fail. You desperately wish that there were someone in the pod to share this with, but you are alone.\nYou have decided to use what remaining energy there is to follow a light/island message beaming from a black hole. Black holes in space are there because the mass of the star is so great that nothing can escape its gravity field – no light, no heat, no radio waves. Yet, mysteriously a light/island – a phenomenon talked about and recorded by a rare group of intergalactic pilots – is clearly indicated coming from the region of a black hole.\nYou must go. At least, you feel that the choice is either go toward the black hole and the light/island or drift in helplessness waiting for a chance rescue ship.
+Choice.4b.5c Choose the light/island.
+Choice.4b.5d Choose to drift.
+pg 11
+
+Part.4c  Why wait? You just feel that you will make it through. You push the advance button, strap your seatbelts and shoulder harnesses even tighter, and push on. The bouncing and rocking is severe.\nThere is a popping sound. The spacepod is flung out of the meteor shower and into a transit zone.\nThe transit zone is a space highway designed for commercial use by transports. An amazing variety of spaceships are following different laser beam highways.\nA transit zone patrol craft hovers near you and signals you to follow it. Stopping at a patrol station, you are informed that there is a space caravan that might stop at Phonon. Perhaps you could join it. It is uncertain just when it will reach Phonon though, if ever. The alternative is a band of space entertainers, an interesting group who travel wherever they wish. You could join them. They too might stop at Phonon, but you never know.
+Choice.4d.5e Go on the caravan.
+Choice.4d.5f Become part of the show.
+p4c  image vol4_files/vol4_picture4c.jpg
+pg 12/13
+
+Part.4d  Trusting feelings works sometimes, but this situation is too dangerous. It's probably going to be embarrassing to ask for help so soon after starting out. You notice the palms of your hands and see the drops of sweat on them and their unusual whiteness. No question about it, you are scared – with good reason. Who wouldn't be?\n"Spacepod, trans-galactic mission to planet Phonon, interrupted by meteor shower. System now three quarters inoperative. Repeat, Coordinate Z2380, F9212, X2922. Time reference Outer Zone 2L. Request immediate aid. Repeat request immediate aid."\nYour voice feels small and hollow as it echoes in the pilot's compartment of the pod. You are so alone.
+Choice.4d.5g Try the emergency booster engine to give you power to move forward in the direction of a faint radio signal.
+Choice.4d.5h Use the remaining power to increase your radio transmission.
+pg 14
+
+Part.4e
+School can be boring, but then it might be just the thing for the flight. This space research vessel is so huge and so advanced that you didn't actually realize that there was a division of the Space Academy aboard. During your interview with the head of the Academy, he says, "Well, you choose. Either join Command School and become a captain of a ship, or go ahead and concentrate on research. We have done a personality, intelligence and health inventory on you, and you have scored very high. We believe you can make it to the top in either category. Well, what do you think?"
+Choice.4e.5i Choose Command School.
+Choice.4e.5j join the research program.
+pg 15
+
+Part.4f  The name of the head of research is Pherantz. He tells you that there is an infinity of knowledge stored within all living things from countless past experiences. It sounds crazy, but then you just can't tell. You wonder if you really can call on experiences from past lives. Are there flashes of memory locked in your cells? Are the dreams you have of places you have never been, things you have never done, people you do not know, actually experiences from a past life bubbling up within you looking for a way out? Maybe dreams are a real thing. You sense a feeling of calm in the philosopher.\n"Remember my friend, all travel in space accomplishes little. We end where we begin. Parallel lines cross! Time is not real. Try to make the past the present."\nYou feel uncomfortable with these heavy thoughts, especially when he talks about parallel lines crossing in space. What does infinity mean, anyway?\n"We can experiment with the past." It is the philosopher talking again. "The past is not lost. It is just changed into a different form."\nYou spend days calling on past experiences. It is like a big dream machine.\n"You are doing well. Would you like to give it a try?"\n"What do you mean?" you ask.\n"You can either travel now into past time – 125 million Earth years ago, the age of dinosaurs, and wander around there – or you can just give it a chance and wander into an unknown past.\n"Well, what is it?"
+Choice.4f.5k Choose to go back in time 125 million years to the age of the dinosaurs.
+Choice.4f.5l You are willing to chance it and go back to an unknown past.
+pg 16/17
+
+Part.4g  You are never heard from again.
+THE END
+p4g  image vol4_files/vol4_picture4g.jpg
+pg 18
+
+Part.4h  "Don't give up! Try everything we can. Quick! Put up the energy repulsion shields."\nIt is Mermah talking. He is two years older and has traveled widely in space.\n"What do you think will happen to us, Mermah?"\n"One never knows," he replies.\nWith a shudder, the pod is suddenly grasped by the gravitational field, and you find yourself hurtling into a tunnel-like void. A black hole might seem black to the observer from outside because no light can possibly escape its gravitational field, but all the light and the energy is contained within this space. The tunnel is brilliantly lit but, strangely, the intense light does not hurt your eyes.\nThen you are in a giant room. No, it is not a room, it is actually the interior of the black hole. It is a gigantic prism, thousands of miles across. It is a world unto itself. You are no longer frightened, and you and Mermah leave your spacepod to begin a life in a new world.\nThe new world is peaceful, and the people are friendly and eager to welcome you and Mermah. No one is in a hurry, and work is pleasant. There is food and housing for all. It's a good world.
+THE END
+pg 19
+
+Part.5a  You don't know what these creatures are, and you realize your weapons might not work. It seems reasonable to meet them in an open and unarmed manner. They – or it – suddenly appear inside your own craft. You have heard of pure energy passing through solid matter and then reforming into its original shape. They call it dematerialization. But this catches you by surprise.\nPart of the ship's equipment is a language thought translation device designed to make contact between different life forms as easy as possible. This alien is certainly as different from you as anyone could possibly be. There seem to be hundreds of strange creatures around you one moment, then only one. The button on the device is close at hand, and you punch it immediately, announcing, "Welcome to my spacepod. I am on a mission to my own planet. I am peaceful."\nThe aliens do not respond. They make no noise, and suddenly they melt together into a large jumbled, jelly-like mass that surrounds you. You are caught in what feels like a slimy ooze. You try to kick free, but it is no use.\nA sound emerges from the ooze. It is a combination of electronic beeps and lifelike bird calls. It does not reassure you. Then you feel a lightness that you have never before experienced, and in seconds you have been dematerialized and transported to the jiggling, free-form spacecraft that carries your captors.\nTesting the substance their craft is made out of, you believe you could break through and escape. Their craft is wrapped around yours like Silly Putty on a tennis ball. All you need to do is figure out where your entrance hatch is, break through and get to the weapons you had stored on board. It is a slim chance, but a real one.
+Choice.5a.6a Try to escape.
+Choice.5a.6b Go along without resistance.
+p5a  image vol4_files/vol4_picture5a.jpg
+pg 20/21
+
+Part.5b  The creatures move toward your craft. Suddenly, there are more of them than you can count, in all different shapes and sizes. They invade your craft, where they seem to melt over the control board. The communications and navigation systems do not seem to be working. There is no other choice. You must fight for your life.\nYou reach for the emergency energy switch Just as you do that, the creatures surrounding you melt together into a large jiggling form. With great difficulty you escape the sticky mass that holds you. A laser pistol is in your hand. You press the release button and aim at the center of the jiggling mass. You watch it shrivel, turn bright colors, smoulder, shudder, and then regenerate. You keep firing.\nSounds never before heard by humans fill the air. It is not music, and yet it has tone and a certain beauty to it. The more you fire the louder it gets. Unnoticed by you, the laser beams are hitting the instrument console, destroying major portions of it. You keep on firing. The mass shrivels, and vanishes. Silence. You have won.\nBut what a bitter victory. You now realize that the spacepod is destroyed. You float in space hoping for some chance rescue.
+Choice.5b.99z The end.
+Choice.5b.2b Get another chance, forget Phonon. Try Zermacroyd.
+pg 22
+
+Part.5c  With all remaining energy resources, you propel the craft toward the black hole. The closer you get the more strange things happen to you. First, all the dials on the command console reverse and spin back to zero readings. Then your hair stands straight up as rigid as a wire brush. All light from your systems flows away in a stream and heads toward the black hole. You feel all your blood rush to your hands and feet, and a frightening dizziness overcomes you.\nFrom one of the portholes, you see a pulsating, velvet-like mass larger than the sky – or so it seems.\nA sharp, piercing cry wails, "Go back, before it is too late. Go back now."\nYou have absolutely no idea where this warning is coming from. Perhaps you can still turn back. Maybe it is not too late. Maybe there is enough energy reserve to escape the intense gravitational field of the black hole.\nThe warning is not repeated, and you hesitate about what to do next.
+Choice.5c.6c You go on.
+Choice.5c.6d You try to reverse direction.
+p5c  image vol4_files/vol4_picture5c.jpg
+pg 23
+
+Part.5d  You did not expect to find black holes on your trip to Phonon. No preparation was given for this type of problem. True, you are bright and creative, but this problem facing you is too much. You can’t risk the dangers of approaching the black hole\nYou drift in space locked in an orbit just beyond the reach of the black hole. Watching your instruments, totally alone and desperate, you realize that time has stopped. All other equipment works, but no time is recorded. You check it all out, the clock seems fine. Then it hits you with full force.\nTime doesn't exist out here in this void. Nor does space. Nor do you.
+THE END
+pg 26
+
+Part.5e  A space caravan! What could be more exciting than wandering through the universe, going wherever chance takes you? A meeting is arranged with the leader of the space caravan. She is a beautiful Noomanian – beautiful at least by Noomanian standards. You communicate with her by using the language translation device.\nHer name is Eus, and she explains to you that her group gathers exotic delicacies and objects. They never know where they are going. They go one stop at a time. For example, Eus informs you that they are on their way to the planet Earth with a consignment of black hole dust. The earthlings believe it is a magic potion giving them eternal youth. Eus laughs at that, saying, "Foolish earthlings, they always want what they can't have and what is really unimportant anyway." Then she says, "Come along, we can't wait."\nSo off you go. When you arrive on Earth, you are fascinated by this strange civilization with its tall ugly buildings, its people who look like you but are rushing, rushing, rushing and buying, buying, buying. It amuses you. What a peculiar place!
+Choice.5e.6e Decide to stay on Earth.
+Choice.5e.6f Decide to leave.
+pg 27
+
+Part.5f  You decide quickly. A space circus sounds crazy, but then the whole idea of wandering around galaxies looking for your home planet is crazy, too. You meet the leader, Ooxog, who can only be described as a totally normal looking earth-type with a red beard, a huge grin, the body of a giant, and a laugh and warmth that makes you feel at home.\n"Welcome! We need a new thing. Welcome to the greatest show in the universe.\n"But what can I do?"\n"Don't worry, my friend. We will find you work. There is no problem there!"\nSo, you join this group of creatures, some earth-types, others like nothing you have ever seen. The array of odd spaceships hurtles through space, stopping at the odd planet or convenient space station, or just drifting in the void.\nYour special job is to be the trainer of high energy particles and quarks, making them do tricks. You like quarks. And they seem to like you, too.\nYou never get to Phonon, but you no longer care.
+THE END
+p5f  image vol4_files/vol4_picture5f.jpg
+pg 24/25
+
+Part.5g  What luck. You are suddenly drawn by a tractor beam into the receiving bay of a giant mobile research station RS-3, UGB. It is under command of the Universe Governing Body and you are warmly welcomed by all aboard. They inform you that they are on their way to the planet Axle. It is a mercy mission, because this planet has been infected by a strange disease for which the Axlians know no cure. The research station could become infected, but that is the risk the scientists and doctors aboard are willing to take. What a dilemma! Out of the radar oven, and into the laser beam.
+Choice.5g.6g Decide to go on to Axle with them.
+Choice.5g.6h Choose to continue your journey to Phonon.
+p5g  image vol4_files/vol4_picture5g.jpg
+pg 28
+
+Part.5h  Your broadcasts for help interfere with a hostile forcefield, which amplifies your signal and returns it. Your entire spacepod is hit by a shock wave of your own amplified energy, and it explodes.
+THE END
+pg 29
+
+Part.5i  Being a pilot-in-command of a space mission sounds impressive to you. You enroll in the Academy. Mermah decides to join you. All thought of going to either Phonon or Zermacrod leaves you, as the courses of study interest you more and more each day. The time passes and you achieve advanced standing in the Academy. Your parents are proud of you, and upon graduation, you and Mermah are assigned to a new and radically different spacecraft designed to carry out deep probes into the remote and unexplored regions of intergalactic space.\nBidding all friends and family a farewell, you and Mermah enter the new craft for a twelve-year probe into uncharted regions.
+THE END
+p5i  image vol4_files/vol4_picture5i.jpg
+pg 30/31
+
+Part.5j  What is research about? You have heard nothing but "research, research, and more research" from everyone on the space station. It seems to you that research is just another name for messing around with whatever interests you. You'll give it a try.\n"The subject of our research happens to be the cause of the violent trouble – specifically revolts – that occurs on all planets. Revolutions and wars have caused pain, but they have caused good things, too. What we want to find out is if the benefits can be gotten without the pain and horror of the uprisings." It is the research coordinator talking to a select group of six people. You have been chosen because of your aptitude for finding solutions to difficult puzzles.\nThis is beginning to really interest you. Your intention to journey to Phonon and Zermacroyd seems to fade into some distant place in your mind. Mermah has chosen to remain with you. He is a good companion.\nAfter intensive work, the research team decides to split into two teams. Team A will head to the planet Cynthia to view a current revolt. Team B will join a mission exploring a revolt on Mars that happened 62 million years ago – a time transporter device will be used for that.
+Choice.5j.6i You choose A.
+Choice.5j.6j You choose B.
+pg 32
+
+Part.5k  You remember studying the mind tapes of the evolution of living things on twelve planets. Earth was one of the planets, and the time period of the dinosaurs always fascinated you. The Cretaceous period when Tyrannosaurus Rex lived was a difficult but fascinating time. Suddenly, you are there, in a world without any human creatures. You are shocked to see that you have become a Velociraptor, very small in comparison to the Tyrannosaurus Rex and a prey to his voracious appetite.\nHiding behind some lush vegetation, you are frightened and hungry, but you don't dare move. Any movement in this world could end in a sudden and violent death. You hear a scuttling sound, and a small Protoceratops rushes by, saying, "It's all clear, now. Tyrannosaurus and that awful Tarbosaurus have gone off to quarrel by themselves. Maybe it will give us a break.'\nYou cautiously peer out from the bushes and plants, then step gingerly away from your protective shelter. You gain a vantage point to watch Tyrannosaurus and Tarbosaurus locked in a bloody fight. You are horrified as their sharp teeth and powerful arms and legs tear at each other. There is a terrible howling roar of pain, then a crunching sound as Rex succeeds in biting off the head of his enemy.\nThen he turns his attention to the surrounding area and spots you. Crazed with blood lust, he races after you.\nYou had better get out while you can. You wildly hit some buttons on the time travel meter you carry in your claw.
+Choice.5k.6k Hit the "Erase button."
+Choice.5k.6l Hit the "Time Return button."
+pg 33/34
+
+Part.5l  A chance to go to the unknown is probably really risky, but there is that desire in most people to take big risks. You race back in time toward the edge of eternity, the beginning of the entire universe. You achieve an elastic weightlessness, and a sense of complete peace and calm. There is no sound, no light. But no darkness either. You race back to the very beginning, to the pulsating, exciting start. You return to the big bang that started the whole thing. You are and you have been a part of everything, always. The beginning is the end.
+THE END
+pg 35
+
+Part.6a  Quick! There is no time to lose. Switch on the mind-scan computer and key into their thought patterns. The computer makes sounds almost like groans – it is too complicated a task to read the minds of these strange creatures.\nThen it works. The mind-scan blinks, "Read Out," ready for communication.\n"Main energy source located in lower trident, sequential grid, negative factor 3, eliminate E34, B13, optimize radical parameter input and proceed with viable alternatives." It sounds like crazy Earth talk to you, but you follow it, and you realize that you can render these creatures helpless, and even destroy them if you wish.\n"Listen to me. You have one chance. Either disengage from this assault or I will deactivate you. This is just a sample." You momentarily release the sequence programmed for deactivation. Within a microsecond the creatures begin to tremble. But they are tough.
+Choice.6a.7a You think they will ignore your threat.
+Choice.6a.7b They negotiate.
+pg 38
+
+Part.6b  You act as natural as you can to help them understand that you are not a hostile person. These creatures of unknown origin seem to understand the body language of friendship. They reform again into a solid mass, and then they question you in a high, metallic voice. It reminds you of early tapes that had been found in the space museum of an old civilization on an unnamed planet. There is the same tinkly sound. This is what they said:\n"We are half object, half life form. The line between living and non-living things is not clear where we come from, but then what is ever really clear?\n"We need a creature like you to aid us in our trans-galactic search for a new planet. Our planet is in grave danger of atomic reorganization. We fear it will soon disintegrate. Our inability to remain in one way of being – object or life form – makes it necessary to join with a totally living creature. You have a choice. Help us in our search, or be cast adrift in this galaxy.
+Choice.6b.7c Join them in their search for help.
+Choice.6b.7d Refuse to go with them.
+p6b  image vol4_files/vol4_picture6b.jpg
+pg 36/37
+
+Part.6c  The light/island appears as a haven for you, and your spacepod comes to rest gently in the warm radiance. You leave the spacepod and are greeted by a group of six creatures who before your eyes change age and features, transforming from babies to old people. It is more than you can understand. It is frightening. It is watching the past become the present and the present turn into the future. It is a kaleidoscope of life, endlessly repeating the cycle of birth and death.\nYou realize that it is beginning to happen to you, as well. You look down at your hands and they are small and pink – baby's hands. Before your very eyes they grow and change color and texture. A rush of time and experience engulfs you. It is not unpleasant, but you have no control over it. Then, you are horrified to see the wrinkled skin and dark liver spots of old age appear on your hands.\n"Don't be too frightened," one of the creatures in front of you says. "All of us are shocked at the beginning, but it passes with time."\n"What do you mean, it passes with time?" you shout.\nThey laugh, but not unkindly, and you calm down.\n"Look, here. You must accept the fact that you now belong either to the past or the future. The present doesn't really exist. Why not choose where you would like to spend time? Oh, dear, as we said, there is no time, really. But don't worry. Past or future, it's up to you."
+Choice.6c.7e Risk going into the future.
+Choice.6c.7f You want the comfort of the past.
+pg 39/40
+
+Part.6d  Hitting reverse engine and power output buttons frantically, you feel the spacepod tumble wildly as if out of control. Then there is a period of calm, quickly followed by more tumbling.\nThen you are awake, wide awake. You glance at the control console, check the graph, navigational computer, and realize that you are on the route to Phonon, that all is well, that you had simply passed into a programmed sleep period which had produced the dreams of nebulae showers, light/islands, and black holes.\nOn you go toward Phonon.
+THE END
+pg 41
+
+Part.6e  Earth fascinates you. You have heard many stories about its history – a history of violence, of wars, of great destruction and hatreds that smouldered for years and even generations. It is described as one of the more hostile worlds, and only real adventurers risk spending much time there. Then there are those earth people who, in spite of all the violence, designed great societies benefiting all earthlings. It certainly is a mixed picture. Maybe you should stay.\nSo, you transfer to earth life systems by programming your bio-computer to accommodate for earth atmosphere, language and food intake.\nYou find earth types open and friendly, but you recognize an air of suspicion among them.
+Choice.6e.7g Stay.
+Choice.6e.7h Leave.
+p6e  image vol4_files/vol4_picture6e.jpg
+pg 42
+
+Part.6f  When you land on the planet Earth, the pilot of the second largest spacecraft picks a fight with you. He says, "Listen, you don't belong with us. We don't want you around. You stay here or I'll vaporize you.”\nHe waves a laser pistol around. You have no idea why he is so angry, but there is no sense in taking risks. You'll stay on Earth for some time, and let them leave. But eventually you will have to set out again. Maybe a different route this time. Perhaps your new route will take you closer to Zermacroyd.
+TO PART 2b
+pg 43
+
+Part.6g  RS-3, UGB enters the atmosphere of Axle. The scientists anxiously scan the operating equipment that monitors atmospheric conditions, existence of microorganisms, and energy relations. All seems natural. The ship hovers above the major city, Ntial. A landing party is formed. You are not asked to join, but you are fascinated by what is happening below. The TV monitors reveal a city in silence. Few living beings are seen, and those that are found look weak and listless.\nThe landing party radios back that a strange fever has gripped Axle, affecting virtually all its inhabitants. They are too weak to help themselves.\nThe research landing party now reports that three of its members are exhibiting symptoms similar to the Axlians'. They are retreating to formulate new plans. They also report that obviously certain beings from other planets are immune while others are not. They feel that only the immune should work on the planet to help fight the disease.
+Choice.6g.7i You think you are immune.
+Choice.6g.7j You don't think you're immune.
+pg 44
+
+Part.6h  You assess the dangers of traveling to a planet infected with a strange disease. You decide that you are not equipped to handle the problems. After a long, honest talk with the ship's commander, he says, "I understand your reluctance to join us, and I commend you for your courage in admitting your fear and concern. We will do what we can to help you on your way. Good luck. Gleeb Fogo (the Universal Salute of Friendship)."\nYour spacepod is now repaired and outfitted for the journey. You are catapulted away from the research station, returning to the black void, spinning, spinning into the comfort of energy, timelessness, and endless space.
+TO PART 7k
+pg 45
+
+Part.6i  Swirling clouds, dense with a moisture much heavier than water, cover the planet of Cynthia. Your spacecraft penetrates these clouds and bursts out onto a landscape of rich vegetation. No towns or cities are visible as the craft flies over the empty landscape. Where are the people? Where is the revolt?\nYou land with the advance party, and find the atmosphere almost acceptable to your bio-system. You need only the smallest assistance from the life support pack. Mermah accompanies you.\n"Did you see that?"\n"What? What did you see?"\n"Only a shadow. A shadow moving quickly, as though it were following us."\nThen a short blast of a hornlike device stops you in your tracks. You are surrounded by flickering shapes, living creatures who blend and twist like shadows. You can't tell what they are.\n"Peace or war? You! Are you the leader or just the follower?" It's the shadow people speaking.\n"Peace, of course. In our world we don't believe in war. "\n“They all say that, but the wars rage throughout the entire universe."\n"What are you people doing? Why did you ask for help?"\n"We are fighting the forces of light, who are our enemies. We are the shadows.”\nYou don't know whether to believe them or not, but there is no choice. You must go with them. They take you to headquarters. There they explain how the forces of light have attempted to wipe out the shadow people by creating a world with no shadows where light comes from all directions. The light people will not allow the mix of light and dark that colors life.
+Choice.6j.7l You and Mermah join the forces that will fight on land.
+Choice.6j.7m You sign up with the rocket ship crew.
+p6i  image vol4_files/vol4_picture6i.jpg
+pg 46/47
+
+Part.6j  Time travel is frightening. When you rush back in time, it is like riding a roller coaster backward, only faster. You can watch the universe through your private porthole. You see stars born and see them die, you see planets spin off into space, comets come and go, supernovas exploding, and all the time, you are not even there. You are but pure energy counting down in time until you stop at Mars, a planet of a small sun in the Milky Way galaxy – an almost unheard of planet in an insignificant galaxy.\nWhen you arrive on Mars, you are invisible and can travel through space, through solid matter, and even into the thoughts of people.\nWhat is the cause of revolt on Mars? Who knows. Greed? Famine? Envy? Jealousy? Maybe just an instinctive need to battle, a basic drive to test and fight for the sheer sense of fighting. It's too complex. Everyone has a different answer. They all point to the other guy. All you know is that creatures get killed, cities get destroyed. What a way to live. That's why there is a new way — if only it will work. You are part of the new way, a way of sharing.
+THE END
+pg 49
+
+Part.6k  You flee just in time to escape the brute. However the erase button you hit doesn't really lead to anywhere or anytime. You radio for help and direction.\nSuddenly you are back in a spacepod, headed for Phonon. Oh, no, it's beginning all over again. You can't stand it.
+TO PART 2a
+p6j  image vol4_files/vol4_picture6j.jpg
+pg 48
+
+Part.6l  The buttons on your time travel meter catapult you through space time to the Eastern part of Africa now called the Olduvai Gorge, in the Great Rift Valley. Only when you get there, it is not a gorge, nor is it a rift valley. It is an upland plain. It is four million years ago in Earth time. It is the dawn of mankind, and the earliest human types are just developing their life patterns. They live as hunters and gatherers. They have discovered tools, and they have begun to use objects like sticks and animal bones as weapons. It is the beginning of civilization. Why not hang around and see what happens? Maybe you can change it all.
+THE END
+pg 50
+
+Part.7a  Ignoring you is their biggest mistake. They thought you were bluffing, but of course you weren't. Not with your life at stake!\nYou program the proper codes and watch these hostile, doubting creatures begin to vanish in just microseconds. You feel a sublime satisfaction, a supreme power; and then you begin to realize that something is happening to you. Something that is unbelievable!
+Choice.7a.8a Continue to destroy the hostile creatures.
+Choice.7a.8b You just want to disable them and take command.
+pg 51
+
+Part.7b  They are impressed with the demonstration you have just put on. Drawing together in a loose, jumbled mass, they murmur and burble for several moments. Then a part of the mass seems to separate, draws itself into a close approximation of a human form and announces in a high-pitched singsong voice, "We recognize that you may have the power to destroy us. But we have decided to trust you. If you were hostile, you would have destroyed us without thinking twice. We believe that you are good." There is a burble of assent from the jumbled mass. The speech continues.\n"We are on a mission from our home planet. We desperately need a special plasma that provides the energy for our thought generators. Without this plasma, which is no longer available on our planet, we are finished. We will become just big, messy blobs without direction. We need the guidance of thought. It is known that the plasma is available on two planets. One of them has the name Phonon."\nYou almost jump out of your skin.\n"Wow! Right on!" you quip. "Let's go."\nThen, everything seems to stop. A strange sound permeates the void. It is neither loud nor soft, but it is obvious that it is completely outside all of you.
+Choice.7b.8c You think the sound is friendly.
+Choice.7b.8d The sound makes you feel cautious.
+pg 52
+
+Part.7c  Part of their team is in search of the vital energy plasma needed to help them think. But the main group is on a mission to collect samples of other life forms from a wide variety of planets. They hope to gain enough information from the many different types of life to aid them in the development of their change from object to life form. They mention that this "research" would be of great help to all beings in the trans-galactic universe.\nYou realize that you are one of their specimens and that frightens you. They propose that you join them in this mission. Since their form is so repulsive, they need someone like you to lead the advance scouting parties for life form collection. You will be their lure! You don't like the idea, but they promise that no harm will come to any of the collected life forms. After study and evaluation, they will be returned to their original homes. What have you got to lose? You might as well go along. It could be interesting.\nThey present you with two missions. The first is to travel to a planet with earth-type creatures, the second is to penetrate a small, diminishing star searching for object-life.
+Choice.7c.8e Choose the mission to an earth-type planet.
+Choice.7c.8f You are attracted to the risks of investigating a small star.
+pg 53
+
+Part.7d  No, you don't want any part of these weirdos. Go ahead, cast adrift. You would prefer to be on your own. But, when they cast you adrift, they warn you that your lack of care can only provide trouble for you in the future. In a way, they have put a curse on you for your lack of caring But, they started it all.
+Choice.7d.8g You seek revenge.
+Choice.7d.8h You pay no attention to their words.
+p7d  image vol4_files/vol4_picture7d.jpg
+pg 54
+
+Part.7e  Future! Throughout all time (if there is any such thing as time) creatures have wanted to be able to predict the future. Sometimes they consult gods or goddesses. Sometimes they even cut open animals, to search for the truth. Sometimes they go into trances, but most often they just hope that luck will help them tell what the future will bring. Nothing ever seems to really work. But now, you can travel into the future.\n"Step this way, you must be prepared for this futuristic trip." They lead you up a long ramp surrounded on all sides by constantly changing light and images.\n"Now, be quiet, remain calm, and enjoy!"\nSuddenly, you leap into the future.
+Choice.7e.8i You believe in the future.
+Choice.7e.8j You doubt what's going on.
+pg 55
+
+Part.7f  Returning to the past you believe is the safest and probably the most interesting thing to do. But what does the past mean? Five minutes ago, a year, three hundred years, two million? It's too general. You have to choose a specific time in the past, or if not a time, then a period.
+Choice.7e.8k See the universe two billion years ago.
+Choice.7e.8l You want to see the past one hundred years.
+pg 56
+
+Part.7g  What an interesting planet. There are many different people, languages and customs. You could travel and learn so much on this small planet. True, there are grave problems, like pollution, wars, and the energy crisis. But you believe that progress is being made. The large political group called the United Nations is trying to solve some of the problems. People are tired of the wars. Yes, you decide that Earth is a worthwhile place to stay. Maybe you can help make it a better place to live.
+THE END
+p7g  image vol4_files/vol4_picture7g.jpg
+pg 57
+
+Part.7h  The video discs on the spaceship had shown pictures of the problems on Earth. There were problems of too many people, too little food, too much crime, pollution. Now that you are actually on Earth, you realize that those problems are real. It frightens you. Where do you start to solve these problems? What can be done? But it is too late, you can't leave the planet. An enormous tremor shakes the ground. Earthquakes and tidal waves destroy cities. The cause is unknown, but people suspect that several nuclear explosions were at fault.
+THE END
+pg 58
+
+Part.7i  You are immune to this strange disease on Axle. The doctors and scientists confirm that your biochemical makeup will not be affected by the fever below. Down you go in a small transporter with three other immune members of the crew.\n"Weird, isn't it?"\n"Yeah. It's like the whole city is dead. Look at that guy over there. Why, he's barely able to walk.”\n"Like I said, it's weird."\n"There has to be a cause for it, though. I mean, it's affecting everyone.”\nYour team interviews several of the sick people they come upon. All tell the same story of a sudden onset of sickness. In a matter of days, the entire population was immobilized. They did not notice any real changes before the start of the disease. The only different event was a visit by delegates from another planet, who were searching for some escaped politicians. Then nothing, only the sickness.\nYou question them about these delegates from another planet, but the answers are vague and uncertain. They can't remember the name of the planet. They can't recall the serial numbers of the spaceship. They are of little help. Perhaps these delegates were hostile and had a plan for Axle.\nOther people you interview talk of the warnings of a small group of scientists that pollution on their planet would soon cause them troubles that they would not be able to handle. They too are vague and uncertain.
+Choice.7i.8m Go in search of the delegates.
+Choice.7i.8n search for the sources of pollution.
+pg 59/60
+
+Part.7j  You are taken ill with the strange fever. One by one, the other crew members become infected with the fever. Even those who were supposed to be immune are not. The spaceship commander is out of his mind with the pain of the fever, and he tries to escape by going to another planet.\n"We've got to escape. We have to go elsewhere," he shouts as the ship screeches away from Axle. But you might be carrying the fever wherever you go. After several weeks of aimless wandering, the Universe Governing Body sends out pursuit ships to capture you.
+Choice.7j.8o Devise a plan before you are captured.
+Choice.7j.8p Conduct a computer search for the cause of the disease.
+p7j  image vol4_files/vol4_picture7j.jpg
+pg 61
+
+Part.7k  Suddenly you are in the midst of laser beam shots. Your optical scanner shows eleven space crafts. Four bear the design of Lodzot, and six have the look of Marly about them. The eleventh ship seems to be a Universe Governing Body police craft.\nWhammo! The laser beam hits the Universe Governing Body police ship. It explodes into a million bright, shining patterns, but one of the Lodzot ships breaks off to investigate you!\n"Come to a complete stop! Deactivate laser cannon. Identify yourself." It is the Lodzot ship commander.\n"OK, OK, keep your hat on. I'm friendly." It's you speaking.\n"Friendship comes in many forms. We have heard those words before. Will you join us against our enemy?”
+Choice.7k.99y Don't join them in their fight.
+Choice.7k.8q Join them.
+p7k  image vol4_files/vol4_picture7k.jpg
+pg 62/63
+
+Part.7l  Mermah convinces you to join up with the land forces in defense against the light people. You and Mermah are put in command of a group of 14 shadow battalions, and you build a system of walls to block the light sources. The tension builds as the light people send messages demanding surrender of the shadow forces.\nA council is held, and you and Mermah are invited to attend.\n"Shall we attack them, or shall we retreat? We can't possibly defend ourselves against them."\nYou and Mermah confer with the shadow forces.
+Choice.7l.8r Decide to attack.
+Choice.7l.8s Retreat.
+pg 65
+
+Part.7m  The rocket ship forces sound the most interesting, and besides, you are trained as a space pilot. Ground forces would be difficult for you. You are promoted to a command rank and put in charge of a large spacecraft with laser rocket weapons. From then on you are in space searching out and destroying alien ships.\nBut you think to yourself, is this any kind of life, forever destroying things? Maybe you will quit.
+THE END
+p7m  image vol4_files/vol4_picture7m.jpg
+pg 66
+
+Part.8a  Whap! Zork! Squarsh! They or it or whatever lies quivering in a sodden and then crispy mass on the cabin floor. But, the energy charge was so great, you too are transformed from your present form into pure energy. Maybe you can start all over. Maybe you can rematerialize. Try it.
+Choice.8a.99z The end.
+Choice.8a.2a Try to rematerialize and go to Phonon.
+pg 67
+
+Part.8b  So, now you are in command. Does that feel good? No? Lonely perhaps? No? Confusing? Well being in command probably feels like all those things. It's in your hands. Get on with it\nFirst you will search their memory banks, check ships’ logs for previous missions, and put all the data together for an answer. It's confusing, but you persist.\nLike a puzzle in three dimensions, the data form an incomplete picture of a planet in the midstage of evolution from objects with the beginning of consciousness to true life forms. Some where things got crossed and these half-object/half-living creatures launched themselves bodily into space, searching for thoughtfulness. They believed this thoughtfulness would solve their problems.
+THE END
+pg 68
+
+Part.8c  The sound increases in intensity. It actually changes in pitch and suddenly the energy in the sound transforms into light. The entire area is bathed in beautiful colors that radiate warmth and positive force. The light seems to unify everything around you. There is a strong pleasant feeling, and then there is a quick pulsation, and you jump into hyper-space with a rush almost unbelievable in its intensity. The light serves as the vehicle carrying you and these other creatures on a journey toward an unknown place.
+Choice.8c.9a Try to break the light vehicle's hold on you and return to your craft.
+Choice.8c.9b You decide to go on.
+pg 69
+
+Part.8d  Where is the sound coming from? Then a huge shadow reaches over you. All systems stop. There is a humming sound and it fills the space. Looking up you see a giant spacecraft, larger than anything you have ever seen or heard about. It glows with a soft greenish light and the humming sound is obviously coming from it.\nA transport beam picks you up, and suddenly you are inside the giant spacecraft. Oddly, no one or nothing with life seems to be aboard this craft.\nYou are placed by means of mechanical arms in a small room. Food, books, music, tapes are on a table. The humming stops. Then a voice says, "We have been searching for you, and we welcome you to life aboard Craabox. We are a small world of ourselves. We need your type to complete our society. Enjoy yourself. No harm will come to you."\nThe humming sounds begin again, and you doze off into deep sleep.\nWhen you awake, you are told by the voice to go either to room 99 or 100. You ask why, but the voice only says choose. Choose what? It's a flip of the coin – there is no real choice. Go ahead, flip.
+Choice.8d.9c Choose room 99.
+Choice.8d.9d Flip and choose 100.
+p8d  image vol4_files/vol4_picture8d.jpg
+pg 70/71
+
+Part.8e  "We approach planet Orgone from a direction which keeps us in the shadow of its moon. We will land in an unpopulated area and proceed with specimen gathering." It is their minimum leader talking. The maximum leader has been ordered to return for very high, very important, very complicated, unknown negotiations back at their base. Maybe a minimum leader is a better thing. At any rate, down you go, and make a landing in a sandy area covered with small bushes.\n"Nobody or nothing here all right," you report as the first one to step out of your craft.\n"Proceed with gathering plan." It is the minimum leader speaking.\nMaking your way into a small town, you are amazed at the life forms. They are like you, but they all talk too fast. They are in a feeding frenzy, putting round discs into their mouths. They are pouring brown liquid after the round discs. There is a strange sound coming from brightly colored boxes. It is all very strange indeed. Everything is done quickly. You feel uncomfortable.\nThen an idea pops into your brain. "Maybe I can escape. I look like them, maybe I'll just join them and run away." You join a line to receive the discs and the brown fluid (some of the fluid is orange, white, brown – yuck).
+Choice.8e.9e Continue your escape.
+Choice.8e.9f Escape is not needed.
+pg 72
+
+Part.8f  Stars are masses of extremely hot gases which emit energy in the form of exploding atomic particles. The violence of their continual nuclear reactions is unbelievable. Why in the world would you want to go on a mission to penetrate such a world? But that is what you have chosen to do.\nThe group you have joined is enthusiastic about this mission. They know that if they are successful in penetrating this particular sun and returning with samples of object-life, that they will become Seoreh (heroes) in their land. Anything for fame.\nThe spacecraft enters into a wide orbit about this sun, and then at the proper moment, with all heat deflection shields, antimatter reflectors, and dematerialization gear operative, it breaks orbit and dashes for the sun. It is sheer madness, and you realize it much too late to do anything about it. You are transformed into basic energy particles.
+THE END
+p8f  image vol4_files/vol4_picture8f.jpg
+pg 73
+
+Part.8g  Space is enormous and thoughts of revenge fade. By sheer luck you intersect a course set by a band of other spacecraft that are renegades from Earth, Acxr, X321, Mowon, and 0000. Communications with them are not difficult. It is not clear whether these renegades are actually space pirates or just adventurous wanderers. After many hours of talk explaining what happened to you, the new friends propose one of two missions.
+Choice.8g.9g Form a battlegroup with them and search for the ship and its creatures that caused you trouble.
+Choice.8g.9h Forget the past, and forge ahead with them as space "adventurers" (read "pirates" if you wish).
+pg 74
+
+Part.8h  Get away as fast as you can. Yuck, what a group! It is so comforting to be in command of your own ship again. In a moment of pure joy at your release from the alien creatures, you over-program the velocity control, and with a swoosh accelerate beyond the VNE (velocity not to exceed) mark.\nYou keep accelerating, and there seems to be no end to your speed. Things begin to blur. The outline of the control console becomes indistinct. The lights seem to brighten, and you recognize that there is no barrier between you and outer space. You merge into starry emptiness.
+THE END
+p8h  image vol4_files/vol4_picture4g.jpg
+pg 75
+
+Part.8i  In an enormous, dimly lit room, a small light rests on a table. You know that you must go to the table. There is a faint smell of sagebrush (a plant found on some deserts on the planet Earth). A voice instructs you to open a book on the table. There is no book, and then it appears. It is a history of your past lives for 6 million years. You are staggered by the great number of lives you have lived – sea captain, space pilot, wife of a slave, king. You have been poor and rich, married to beautiful women, plain women, nice ones, kind ones, and others. You have been a success and a failure, many times over. You have been happy and miserable. Only twice in all that time were you bored.\n"Hey, wait a minute, I thought I was going into the future. That's what I agreed to, you guys. Come on now. An agreement's an agreement."\n"The past is also the future. You have much to learn. Look to what you have learned. Then the future will reveal itself."
+THE END
+p8i  image vol4_files/vol4_picture8i.jpg
+pg 76
+
+Part.8j  It's just a lot of talk. You have heard this tale before. You can't waste your time on them.\nMaybe you can find your way back out of this crazy mess. Past and future the same! Bunk!\nBut there is no way out – at least it appears that way.
+THE END
+pg 77
+
+Part.8k  Two billion years ago. You can't even conceive of two billion as a number. What is it? Then you are there. Clouds of particles fill to void. Stars appear, planets burst forth, blackness is turned aside by the light from millions of stars. You wander in a mist of light and small particles. It is beautiful.
+THE END
+pg 78
+
+Part.8l  OK, if you are going to see only the past 100 years, where do you want to see them? On Earth? That's a funny choice. Why not somewhere else? You just want to see Earth. It's up to you, so let's go.\nEarth over the last hundred years: population explosion, overcrowded cities, progress from horses to spacecraft. Artificial limbs and heart operations. Giant farms run by machines. Oil discovered and then used up. Great wealth, great poverty. Rapid change. Where will it end?
+Choice.8l.9i Choose to watch the future.
+Choice.8l.9j You want to go elsewhere.
+pg 79
+
+Part.8m  It is possible that hostile aliens infected Axle for a purpose. Your team reports back and is assigned a search mission to find the delegates and track down what they were doing.\nOnly one clue exists. It is a radio transmission recorded on your research vessel when Axle made its call for help. The message is unclear, but it gives space coordinates that include the neighboring planet of Fleedes. You travel there, and what you find is appalling. The planet is almost uninhabited. There is the wreckage of cities and towns. It looks like a massive war has taken place, but there is no evidence of a victorious force in command. There is evidence of the fever here too.
+Choice.8m.9k Conduct a cleansing operation.
+Choice.8m.9l Search the past to find cause of the plague or whatever is ruining this civilization.
+p8m  image vol4_files/vol4_picture8m.jpg
+pg 80/81
+
+Part.8n  Pollution of the air, the water, the land happened quickly on Axle. Your research shows that in just three generations the air became almost unbreathable and the water unfit to drink. Little care or attention was given to what was going on, and the toxic levels built up quickly. While the leaders argued about solutions, the people waited for things to get better. Then the fever started taking hold. You find out that the fever was caused by a combination of pollutants and the general decline of health in the population.
+Choice.8n.9m Try to get the remaining Axlians to make changes to stop pollution.
+Choice.8n.9n You feel that this is a problem for the Galactic Court.
+pg 82
+
+Part.8o  The pursuit ships follow a trail of infectious fevers left behind on several planets, marking your mad dash to escape. Soon the word is out, and protective shield devices prevent your crew from entering the atmosphere of any planet. Three of your crew die of the fever, but you seem to be getting no worse, and you might even be getting better. Then you propose a startling idea.\n"Look, let's go back to Axle where the fever started. We can only find the cure at the start."\nReluctantly the remaining crew members agree, and you head back to Axle. They take your advice because you have shown courage and wisdom under stress.
+Choice.8o.9o You really believe that you can find the cure.
+Choice.8o.9p You don't really think that anything can be done.
+p8o  image vol4_files/vol4_picture8o.jpg
+pg 84/85
+
+Part.8p  The histories of all worlds include sad stories of plagues and fevers and diseases and epidemics. But the worst of all these is the sickness brought on by excessive exposure to radiation. And you never checked on Axle to see if their nuclear reactors were emitting dangerous radiation levels. It's so simple, so obvious. People get careless, times get lax, accidents happen. This fever isn't caused by a bacteria. It's radiation sickness of the worst kind. There is no cure.
+THE END
+pg 83
+
+Part.8q  So you join them. But you feel forced into a conflict that apparently has no meaning. They can't tell you why they are fighting. They were ordered to, so they do it. It makes no sense.\nThe other ships have come to a defensive formation and radio for a truce. You offer to be the negotiator. There is a mumbled conversation between spaceship captains, and then they say, "Tell us why we should negotiate."\n"What's the use in fighting? You'll all get killed. No one wins.”\n"We'll talk it over." It's the Lodzot commander.
+Choice.8q.9q Stay on as negotiator.
+Choice.8q.9r Make a run for it.
+pg 64
+
+Part.8r  Planet Cynthia has become a battlefield. Everything is being destroyed. Smoke hangs over the cities. Wreckage clutters the land. Your group attacks with laser weapons, but the enemy forces seem too strong to hold off. Your troops are being killed; everything is in shambles.
+Choice.8r.9s You can hold off the enemy until you escape.
+Choice.8r.9t You give up.
+pg 88
+
+Part.8s  Retreat is not always a bad thing. After all, you should go with what feels right. To fight now would only create further destruction. Enough damage has been done. Level off, give way. Let the other side realize what has been happening, too.\nAs you retreat, the enemy seems to let up in amazement. The smoke clears, the noise stops. They retreat also. There is no more fighting.
+THE END
+pg 89
+
+Part.9a  After all the trouble, both you and they realize that sharing – even though that seems impossible – is probably the only way. Too much is lost in the fighting. The Universe Governing Body has always tried to promote sharing, but it seldom works. Here is the chance. Now is the time. You join sides to promote the sharing of energy throughout the galaxies.
+p9a  image vol4_files/vol4_picture9a.jpg
+THE END
+pg 97
+
+Part.9b  The Universe Governing Body has serious news. There is a major energy drain throughout all galaxies. No one has been able to identify the cause of the loss of energy, but there is a shutting down of systems in all quadrants; transportation, communication, life support, all systems. It is as though a giant battery were drained and growing weaker by the minute. You are all on your own now.
+THE END
+pg 98
+
+Part.9c  Well, well, so your flip landed you here. What a surprise, your luck has just reversed time and space. given You are back at the start. You have been given another chance. Try again! And good luck!
+TO PART 1a
+p9c  image vol4_files/vol4_picture9c.jpg
+pg 99
+
+Part.9d  Not bad. You flipped and you won. Room 100 is the Chamber of Leadership. You will be made commander of this strange artificial world. You will learn all that is to be learned, you will see all there is to see, you will then guide this roving mini-world through the galaxies investigating, learning more, collecting specimens of other life forms.
+THE END
+pg 100
+
+Part.9e  Escape seems easy. You gag when you try to put one of the discs in the hole you have in your head. It feels funny and is covered with a yellow gummy layer and on top of that is red ooze and small round green discs. What strange food.\nYou blend in with the others. They don't take much notice of you, because they are so busy with themselves. The noise from the colored boxes is deafening to your sensing devices. You move off with a crowd of them. Imitating them, you crumple up paper and throw it around. What strange customs.\nOutside you get in a big vehicle painted a dull green. Someone shouts at you. The vehicle starts up, and you are driven off to a large camp outside the town. It says on a big sign, "Welcome to the Army." You are not sure, but you think you have just joined a military group.
+Choice.9e.10a Stay and find out what's going on.
+Choice.9e.10b You have one secret weapon left that you have not used. Use it.
+p9e  image vol4_files/vol4_picture9e.jpg
+pg 90
+
+Part.9f  Escape will just lead to recapture. You might as well just go along with the mission. With a cheap bravery born of the knowledge that nothing can hurt you on Earth, you capture what earthlings call a politician (very dangerous creature), a student (also dangerous) and a government worker (unknown whether dangerous or not). They all look alike. Your mind-scan computer says that they all think alike, basically. At least, they all started out with the same opinions.\nAlong the way, you stop to enjoy the view, but it is quickly covered up with thick gray smoke from millions of small boxes with discs that race along gray ribbons.
+Choice.9f.10c Question the student.
+Choice.9f.10d Question the politician.
+p9f  image vol4_files/vol4_picture9f.jpg
+pg 91
+
+Part.9g  Forming a triangular force group of spacecrafts, you accelerate to maximum speed and search the immediate galactic space for the odd spacecraft and its inhabitants. The scanning devices of all ships are tuned to the wrong frequency. You realize that these creatures will not give off life-type response signals, nor will their craft respond in the normal fashion to radar probes. The craft is a soft, gelatinous mass, capable of absorbing the energy of the radar probe and storing that energy for its own use. Any radar probe will not bounce back to your screens. It will simply be lost.\nThen you see it, just by the luck of your intuition. It lies directly ahead. The triangle battle group forms, slows, and concentrates its multiple power on the odd craft. With a gulping slurch the strange ship erupts and dematerializes.\nWell done? You aren't really sure.
+THE END
+pg 92
+
+Part.9h  "Forget them, brother. They have nothing we need. Revenge is a tiresome process." It is the space commander. She is speaking in a gentle tone.\n"Well, what do we do now?" You always need a plan.\n"We are going on a search mission. You see, my new friend, we tend to find things we need on other planets. We simply take them, whenever we can. We try and hurt no one, but there are risks.”\n"Why, you are pirates! Do you think I would ever join you in this madness? What about the Universe Governing Body?"\nThere is a chuckle from several of the space pilots, but you can't tell whether they are laughing at you, or just at the idea of the Universe Governing Body.\nWhat a mess. What do you do now? You just don't know.\nFlip a coin and see what happens.
+Choice.9h.10e It comes up heads.
+Choice.9h.10f It comes up tails.
+pg 93
+
+Part.9i  The future of life on Earth is almost too much to think about. Anything could happen. You give it a try. Selecting the future in fifty years, you find yourself with a group of about sixty people, all young, all healthy looking. They tell you that you are in a select group that is about to leave on a mission to find another planet to live on. Earth has become overcrowded, badly polluted, worn out, and dangerous. Wars, famine, and disease have made it unlivable. You don't really believe them, but they seem serious.\nThen a large spacecraft arrives. You all get aboard and accelerate into space. It's all too familiar to you. This is the way you started, on a spaceship going between galaxies. It's starting all over again. Will the adventures never end?
+THE END
+pg 109
+
+Part.9j  So, Earth was too much for you. Wanted to escape, didn't you? Where to now? What planet can you go to? What galaxy? What time? The choice is yours. Maybe back to the beginning.
+THE END
+p9j  image vol4_files/vol4_picture9j.jpg
+pg 110
+
+Part.9k  A cleaning operation is exactly that. Once you have found no evidence of living creatures about, several small transporter ships are equipped with laser-spreading devices that will cleanse the area of any and all bacterial life. It is a drastic step, because the laser will eradicate all life forms. But, the operation has been ordered. You have no choice but to carry it out.
+THE END
+pg 111
+
+Part.9l  The past is often rich with knowledge and solutions that the present has chosen to forget. You scan the data banks of the ship's computers for similar incidents. There have been similar plagues, and you discover a supposed cure. It was used on a remote planet, which was mostly desert, but with rivers and high mountains cutting into the wastelands of sand. It requires the sacrifice of ten percent of the population. Supposedly, the sacrifice will appease angry gods. Of course the Axians won't go along with it. Who would?\nThere is no cure. The fever will have to run its course.
+THE END
+pg 112
+
+Part.9m  How do you try to convince people to stop polluting their planet when they have been doing it for so long?\nMaybe it's a hopeless task.
+THE END
+pg 113
+
+Part.9n  You and your team members are transported back to the research ship to report.\n"We are convinced that the Galactic Court under the Universe Governing Body should send a police team in to force reform on Axle."\n"Easier said than done. That's interfering with the rights of an independent planet. How can we tell them how to live? They are only hurting themselves."\nYour report and recommendation is sent to the Galactic Court. The court is sympathetic, but they say that there is nothing they can or will do. Axle will have to deal with its own problems.
+THE END
+pg 114
+
+Part.9o  Amazing! Incredible! The sight that meets your eyes on Axle is a wonder. The people are better. The fever has broken. The civilization is once again on the move. They welcome you with great happiness. Oddly, the cure for the fever is simple – complete rest in the light of the three moons of Axle for three weeks with no solid food and only moderate liquids. Simple, ancient, and effective. You are cured, and the future lies before you.
+THE END
+pg 116/117
+
+Part.9p  Incredible! Unbelievable! The Universe Governing Body has sent police forces in patrol ships to Axle. You and your research station are forced to land and made to join the Axlians in a permanent quarantine. There is no cure!
+THE END
+pg 115
+
+Part.9q  No one really wants to fight. Too many have been killed already. You negotiate a peace between the opposing forces. They are all that is left of a great armada of spaceships who have been fighting for more than three thousand galactic years. They are the last survivors. They have even forgotten the original cause of the war.
+THE END
+p9q  image vol4_files/vol4_picture9q.jpg
+pg 87
+
+Part.9r  Make a run for it! It's foolish to stay in the middle of this fight. Who cares what they are fighting about. You push the maximum acceleration button and leave the area.\nLaser cannon shots follow your path but the computer-directed evasion tactics enable you to escape.\nFinally you are back alone in space.
+THE END
+pg 86
+
+Part.9s  There is a chance to get away. During a quiet moment, your group escapes to some remote hills far away from the battle area. Then something happens. The energy source for the lasers, the spacecrafts, the communications systems, mysteriously vanishes. There is no more energy except your own human energy. Weapons are useless. Radios and transports are just pieces of metal and plastic. They are not working either. To survive now, you will have to hunt for food and support each other.
+THE END
+p9s  image vol4_files/vol4_picture9s.jpg
+pg 94
+
+Part.9t  Surrender! But, if you don't give in, everything will be destroyed. What does surrender mean? You are frightened, but history has often shown that the conquerors don't often remain conquerors. They become a part of a new civilization with qualities from both the vanquished and the victors. But still, giving up is a last resort.\nAfter long talks with your group, you all decide to take the risk of surrendering, and joining up with the conquerors. It is done.
+THE END
+pg 96
+
+Part.10a Wherever you go, people or creatures seem to be fighting. They want more land, or water, or power, or maybe just excitement.\nYou become a natural leader, because the forces you join are leaderless and tired of conflict. After listening to all the complaints, you offer to negotiate for peace. But at your first negotiation with the hostile forces, you are captured and the war goes on.
+p10a image vol4_files/vol4_picture10a.jpg
+THE END
+pg 101
+
+Part.10b You remember a secret weapon given to you before you left the research ship. It is an intergalactic slow-time weapon. When you operate it, all motion and action freezes in time. No one is hurt, and the simple release of the energy field restores motion. You activate the device and disarm all the people on both sides. Then you program a future time leap to a place in time when peace is possible. It is weird wandering around with all these people looking like statues, but then suddenly they are alive again and wonder at the new world. They actually have forgotten the past and they can start again.
+THE END
+pg 106
+
+Part.10c "OK, student, tell me about yourself. What is a student, anyway?"\nThe student is relaxed. At least he is out of school, and he isn't really afraid of you.\n"Well, I don't know. Being a student is like being a prisoner. Everyone is always telling you what to do, where to go, what not to say, and you always get yelled at. It's a bummer."\nYou are shocked by what he says. After all, you enjoyed learning things. You ask, "Isn't there anything good about being a student?"\n"Well, vacations, and you don't usually have to do much. You can get by."\n"Are you dangerous?" you ask.\n"No, they only think so. We aren't."\nSuddenly the student leaps up and grabs you by the arms. You are tied up. Now you are his prisoner. He says, "See how you like it. I'm calling the authorities.”\nHe makes the call, and soon you are carried away by uniformed men. You will be the object of study for years to come. Your freedom is gone forever.
+p10c image vol4_files/vol4_picture10c.jpg
+THE END
+pg 102/103
+
+Part.10d "A politician, what is that?" you ask.\nThe person hems and haws. Then the person begins to speak. "A politician serves the people and helps them make the right choices. We are very, very, very IMPORTANT! Why, without us there would be no problems – I, I mean, without us, problems would not appear to be so large. I – I – mean, well, I mean we create more problems than we solve and that is how we stay in office because someone has to solve them."\nThe politician begins to smile. He acts very friendly and says, "Hey, wait a minute. You're from another planet. We could become famous, you and I. Think of it. The whole world will want to see you and hear all about it. I'll be your manager. We'll make a bundle!"\nYou get out of there as fast as you can. You want no part of this freak show. But as you try to leave, he blocks the way, and you are caught. You remain on Earth as a curiosity from outer space.
+THE END
+p10d image vol4_files/vol4_picture10d.jpg
+pg 104/105
+
+Part.10e Pirates in all ages and places have taken whatever they could grab. It makes no difference whether they are pirating sailing ships, or airplanes, or spacecrafts. Pirates live outside society; they must be banished.\nYou and your group of pirates are surrounded by Universe Governing Body pursuit ships. You are deported to a distant and dim galaxy and guarded by Universe troops. Your pirating days are over.
+THE END
+pg 107
+
+Part.10f What fun to be a pirate! It is a good life, and the treasure box on the spacecraft overflows with Universe Governing Body money.\nBut then, one day, you intercept a radio broadcast. The Universe Governing Body announces that all currency and money are worthless and no longer needed or used. A new system for sharing food, clothing, and shelter that doesn't use money has been set in motion. As pirates you are finished. There is nothing left to steal.
+THE END
+p10f image vol4_files/vol4_picture10f.jpg
+pg 108
+
+Part.99y You are vaporized.
+THE END
+
+Part.99z                Start a new adventure?
+THE END
