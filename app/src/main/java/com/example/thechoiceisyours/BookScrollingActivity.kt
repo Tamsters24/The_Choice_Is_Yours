@@ -34,6 +34,7 @@ class BookScrollingActivity : AppCompatActivity() {
     private var choiceMap = mutableMapOf<String, List<String>>()
     private var currentChapter = "1a"
 
+    private lateinit var firebaseAuth: FirebaseAuth
     private lateinit var userRef: DatabaseReference
     private var bookmark = ""
     private var nodesVisitedDB = ""
@@ -98,6 +99,10 @@ class BookScrollingActivity : AppCompatActivity() {
                         bookMarkChapter.setValue(currentChapter)
                         navigateToDrawerItem(it.itemId)
                     }
+                    R.id.nav_logout -> {
+                        firebaseAuth.signOut()
+                        Toast.makeText(baseContext, "Logout Successful", Toast.LENGTH_SHORT).show()
+                    }
                     R.id.nav_close -> {
                         Toast.makeText(baseContext, "Goodbye", Toast.LENGTH_SHORT).show()
                         finishAffinity()
@@ -122,7 +127,7 @@ class BookScrollingActivity : AppCompatActivity() {
         }
 
         // Access user Database to retrieve their bookmark. Begin story.
-        val firebaseAuth = FirebaseAuth.getInstance()
+        firebaseAuth = FirebaseAuth.getInstance()
         val user = firebaseAuth.currentUser
         val userId = user?.uid.toString()
         val database = FirebaseDatabase.getInstance()
@@ -153,8 +158,8 @@ class BookScrollingActivity : AppCompatActivity() {
         Toast.makeText(baseContext, "Part $currentChapter", Toast.LENGTH_SHORT).show()
 
         // Access the Firebase database for Story Progress graph
-        // Toggled the current Part.Choice "visited" to true when accessed
-        if (currentChapter != "1a") { // First chapter is always considered visited
+        // Toggle the current Part.Choice "visited" to true when accessed
+        if (currentChapter != "1a" && userRef.key != "null") { // First chapter is always considered visited
             val visitedChapter = userRef.child(nodesVisitedDB).child(currentChapter)
             visitedChapter.setValue(true)
         }

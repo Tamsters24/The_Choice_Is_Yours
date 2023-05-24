@@ -63,10 +63,10 @@ class ResetChaptersVisited {
             volNodesVisited.setValue(volBooleanValues).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     // Database write successful
-                    println("Vol 1 Node Database write successful")
+                    println("Node Database write successful")
                 } else {
                     // Handle database write error
-                    println("Vol 1 Node Database write failed")
+                    println("Node Database write failed")
                 }
             }
         }

@@ -62,6 +62,7 @@
     <string name="menu_bookmark">Bookmark Page</string>
     <string name="menu_story_map">Story Progress</string>
     <string name="menu_exit">Return to Library</string>
+    <string name="menu_logout">Logout</string>
     <string name="menu_close">Close App</string>
     <string name="menu_delete">Delete Progress</string>
     <string name="open">Open</string>
@@ -119,8 +120,9 @@
         4) Bookmark Page - Select a page to\nbookmark. You can return to this page\nlater.\n
         5) Story Progress - See what paths of\nthe story that you have taken (more\non next page).\n
         6) Return to Library - Navigate to the\nLibrary screen to choose different\nbook to read.\n
-        7) Close App - Exit the application\n
-        8) Delete Progress - This resets\nprevious Story Progress and clears\nthe bookmarked page.\n\n
+        7) Logout - Log out of the application. The Library and books are still available, but a login is required to save story progress and bookmarks.\n
+        8) Close App - Exit the application.\n
+        9) Delete Progress - This resets\nprevious Story Progress and clears\nthe bookmarked page.\n\n
         Once the Story Progress is deleted, IT CANNOT BE UNDONE! But you will still have access to your book.
     </string>
     <string name="instructions9">
