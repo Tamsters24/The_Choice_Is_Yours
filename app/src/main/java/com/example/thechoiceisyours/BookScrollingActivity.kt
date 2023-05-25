@@ -1,6 +1,7 @@
 package com.example.thechoiceisyours
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.graphics.Typeface
 import android.graphics.drawable.Drawable
 import android.os.Bundle
@@ -44,6 +45,7 @@ class BookScrollingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         // Retrieve Book Contents using the Extra put in BookCover.kt
         bookAssets = intent.getStringExtra("assetsFolder").toString()

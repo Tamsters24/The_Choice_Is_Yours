@@ -1,6 +1,7 @@
 package com.example.thechoiceisyours
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.widget.Button
@@ -12,6 +13,7 @@ class BookCover : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_book_cover)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         // Display Book Cover using the Extra put in StoryVolChoice.kt
         val bookAssets = intent.getStringExtra("assetsFolder").toString()

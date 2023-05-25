@@ -1,6 +1,7 @@
 package com.example.thechoiceisyours
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -9,10 +10,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         // Button
         // Navigate to StoryVolChoice Activity: activity_story_vol_choice.xml & StoryVolChoice.kt
-        findViewById<Button>(R.id.mainToStoryChoice_btn).setOnClickListener {
+        findViewById<Button>(R.id.mainToLibrary_btn).setOnClickListener {
             val mainToStoryChoiceIntent = Intent(this, StoryLibrary::class.java)
             startActivity(mainToStoryChoiceIntent)
         }

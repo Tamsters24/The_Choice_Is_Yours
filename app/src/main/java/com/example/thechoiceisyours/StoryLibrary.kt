@@ -1,6 +1,7 @@
 package com.example.thechoiceisyours
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -10,6 +11,7 @@ class StoryLibrary  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_story_library)
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
 
         // Image Button
         // Navigate to Main Activity: activity_main.xml & MainActivity.kt
