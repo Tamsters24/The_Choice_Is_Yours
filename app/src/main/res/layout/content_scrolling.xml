@@ -17,7 +17,8 @@
         <ImageView
                 android:id="@+id/pageImage"
                 android:layout_width="412dp"
-                android:layout_height="300dp"/>
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"/>
         <!-- Chapter Text -->
         <TextView
                 android:id="@+id/chapterContents"

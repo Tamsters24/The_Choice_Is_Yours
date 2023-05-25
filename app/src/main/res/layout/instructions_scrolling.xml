@@ -26,6 +26,7 @@
                 app:srcCompat="@drawable/instruction_pic1"
                 android:layout_width="412dp"
                 android:layout_height="275dp"
+                android:layout_centerHorizontal="true"
                 android:layout_below="@+id/instructionA"
                 android:background="@drawable/outline"/>
         <TextView
@@ -43,6 +44,7 @@
                 app:srcCompat="@drawable/instruction_pic2"
                 android:layout_width="412dp"
                 android:layout_height="412dp"
+                android:layout_centerHorizontal="true"
                 android:layout_below="@+id/instructionB"
                 android:background="@drawable/outline"/>
         <TextView
