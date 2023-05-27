@@ -125,9 +125,9 @@ public class StoryProgression extends FragmentActivity implements ViewerListener
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent storyProgressionToBookCoverIntent = new Intent(getApplicationContext(), BookCover.class);
-                storyProgressionToBookCoverIntent.putExtra("assetsFolder", bookAssets);
-                startActivity(storyProgressionToBookCoverIntent);
+                Intent storyProgressionToBookScrollingIntent = new Intent(getApplicationContext(), BookScrollingActivity.class);
+                storyProgressionToBookScrollingIntent.putExtra("assetsFolder", bookAssets);
+                startActivity(storyProgressionToBookScrollingIntent);
             }
         });
     }

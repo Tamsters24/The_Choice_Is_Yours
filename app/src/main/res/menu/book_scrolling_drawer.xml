@@ -37,7 +37,6 @@
                 android:icon="@drawable/ic_twotone_close_24"
                 android:title="@string/menu_close"/>
         <item android:title=""/>
-        <item android:title=""/>
         <item
                 android:id="@+id/nav_delete"
                 android:icon="@drawable/ic_twotone_delete_24"

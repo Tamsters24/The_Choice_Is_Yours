@@ -4,26 +4,18 @@
 left to right direction
 actor User as user
 
-package MainActivity {
-  usecase "Access Library" as library
-  usecase "Login" as login
+package Application {
   usecase "New User\nRegistration" as register
+  usecase "Login" as login
   usecase "Read\nInstructions" as instructions
+  usecase "Access Library" as library
+  usecase "Read Book" as book
 }
 
-user --> library
-user --> login
 user --> register
+user --> login
 user --> instructions
-
-rectangle Assets {
-}
-
-rectangle Book {
-  usecase "Book\nCover" as cover
-  usecase "Book\nScrolling\nActivity" as scroll
-}
-
-library -> cover
+user --> library
+user --> book
 
 @enduml

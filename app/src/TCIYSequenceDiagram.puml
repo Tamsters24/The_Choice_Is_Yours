@@ -1,11 +1,35 @@
 @startuml
 'https://plantuml.com/sequence-diagram
 
-autonumber
+actor User
+database "Firebase" as Firebase
+participant "Library" as Library
+participant "Book Cover" as Cover
+participant "Chapters" as Chapter
+participant "Bookmark" as Bookmark
+participant "Story Map" as Map
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+User -> Library: Start Application
+activate Library
+User -> Firebase: Login
+activate Firebase
+Library -> Cover: Choose eBook
+deactivate Library
+activate Cover
+Cover -> Chapter: Text & Image appears
+deactivate Cover
+activate Chapter
+Firebase -> Chapter
+Chapter --> Firebase: Toggle `Chapter Visited` boolean to `true`
+Chapter -> Bookmark
+Bookmark --> Firebase: Access database for Bookmark
+Firebase --> Bookmark: Returns Bookmarked page
+Bookmark -> Chapter: Bookmark becomes Chapter
+Chapter -> Map
+activate Map
+Map -> Chapter
+deactivate Map
+Chapter -> Cover
+
 @enduml
