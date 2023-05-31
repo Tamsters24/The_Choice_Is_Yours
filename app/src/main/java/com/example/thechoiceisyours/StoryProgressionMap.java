@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class StoryProgression extends FragmentActivity implements ViewerListener {
+public class StoryProgressionMap extends FragmentActivity implements ViewerListener {
     private static final int CONTENT_VIEW_ID = 10101010;
     private DefaultFragment fragment;
     private Graph graph;

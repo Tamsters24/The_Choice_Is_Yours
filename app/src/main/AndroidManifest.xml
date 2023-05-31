@@ -27,7 +27,7 @@
                 android:name=".StoryLibrary"
                 android:exported="true"/>
         <activity
-                android:name=".StoryProgression"
+                android:name=".StoryProgressionMap"
                 android:exported="true"/>
         <activity
                 android:name=".BookCover"

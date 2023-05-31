@@ -1,22 +1,31 @@
 @startuml
-'https://plantuml.com/class-diagram
 
-abstract        abstract
-abstract class  "abstract class"
-annotation      annotation
-circle          circle
-()              circle_short_form
-class           class
-class           class_stereo  <<stereotype>>
-diamond         diamond
-<>              diamond_short_form
-entity          entity
-enum            enum
-exception       exception
-interface       interface
-metaclass       metaclass
-protocol        protocol
-stereotype      stereotype
-struct          struct
+usecase email
+usecase password
+agent user
+
+user -- email
+user -- password
+
+hexagon accesses
+
+user -- accesses
+
+agent library
+
+accesses -- library
+
+hexagon contains
+
+library -- contains
+
+agent stories
+
+contains -- stories
+
+agent chapters
+
+usecase email
+usecase password
 
 @enduml

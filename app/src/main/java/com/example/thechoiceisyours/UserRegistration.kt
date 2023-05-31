@@ -42,7 +42,7 @@ class UserRegistration : AppCompatActivity() {
             newUserPassword2 = findViewById<EditText>(R.id.newAcctPW2).text.toString()
             // Check that passwords match
             if (newUserPassword1 != newUserPassword2) {
-                Toast.makeText(baseContext, "passwords do not match, try again",
+                Toast.makeText(baseContext, "Passwords do not match. Try again",
                     Toast.LENGTH_SHORT).show()
             } else if (newUserEmail == "" || newUserPassword1 == "") {
                 Toast.makeText(baseContext, "Missing User Registration Info",

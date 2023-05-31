@@ -66,6 +66,13 @@ class BookScrollingActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(findViewById(R.id.toolbar))
 
+        // Access user Database to retrieve their bookmark. Begin story.
+        firebaseAuth = FirebaseAuth.getInstance()
+        val user = firebaseAuth.currentUser
+        val userId = user?.uid.toString()
+        val database = FirebaseDatabase.getInstance()
+        userRef = database.getReference("users").child(userId)
+
         // Navigation Drawer options
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
@@ -110,30 +117,29 @@ class BookScrollingActivity : AppCompatActivity() {
                         finishAffinity()
                     }
                     R.id.nav_delete -> {
-                        val builder: AlertDialog.Builder =
-                            AlertDialog.Builder(this@BookScrollingActivity)
-                        builder.setMessage("Are you sure?")
-                        builder.setPositiveButton("Yes") {dialog, which ->
-                            ResetChaptersVisited.resetNodesVisited(this@BookScrollingActivity, bookAssets)
-                            dialog.cancel()
+                        if (userId.length < 28) {
+                            Toast.makeText(baseContext, "Login required to reset progress", Toast.LENGTH_SHORT).show()
                         }
-                        builder.setNegativeButton("No") { dialog, which ->
-                            dialog.cancel()
+                        else {
+                            val builder: AlertDialog.Builder =
+                                AlertDialog.Builder(this@BookScrollingActivity)
+                            builder.setMessage("Are you sure?")
+                            builder.setPositiveButton("Yes") {dialog, which ->
+                                ResetChaptersVisited.resetNodesVisited(this@BookScrollingActivity, bookAssets)
+                                Toast.makeText(baseContext, "Chapters visited and bookmark reset", Toast.LENGTH_SHORT).show()
+                                dialog.cancel()
+                            }
+                            builder.setNegativeButton("No") { dialog, which ->
+                                dialog.cancel()
+                            }
+                            val dialog = builder.create()
+                            dialog.show()
                         }
-                        val dialog = builder.create()
-                        dialog.show()
                     }
                 }
                 true
             }
         }
-
-        // Access user Database to retrieve their bookmark. Begin story.
-        firebaseAuth = FirebaseAuth.getInstance()
-        val user = firebaseAuth.currentUser
-        val userId = user?.uid.toString()
-        val database = FirebaseDatabase.getInstance()
-        userRef = database.getReference("users").child(userId)
 
         // Open the book, set the display, and update the visited chapters when accessed
         getStory(bookContents)
@@ -514,7 +520,7 @@ class BookScrollingActivity : AppCompatActivity() {
                 })
             }
             R.id.nav_story_map -> {
-                val storyToStoryProgressIntent = Intent(this, StoryProgression::class.java)
+                val storyToStoryProgressIntent = Intent(this, StoryProgressionMap::class.java)
                 storyToStoryProgressIntent.putExtra("assetsFolder", bookAssets)
                 startActivity(storyToStoryProgressIntent)
             }
