@@ -97,8 +97,14 @@ class BookScrollingActivity : AppCompatActivity() {
                         storyDisplay(userRef, currentChapter)
                     }
                     R.id.nav_bookmark -> {
-                        val bookMarkChapter = userRef.child(bookmark)
-                        bookMarkChapter.setValue(currentChapter)
+                        if (userId.length < 28) {
+                            Toast.makeText(baseContext, "Login required to set bookmark", Toast.LENGTH_SHORT).show()
+                        }
+                        else {
+                            val bookMarkChapter = userRef.child(bookmark)
+                            bookMarkChapter.setValue(currentChapter)
+                            Toast.makeText(baseContext, "Page bookmarked", Toast.LENGTH_SHORT).show()
+                        }
                     }
                     R.id.nav_story_map -> {
                         navigateToDrawerItem(it.itemId)
@@ -163,7 +169,7 @@ class BookScrollingActivity : AppCompatActivity() {
 
     // Set the views for the display, including images, narrative, and choice buttons
     private fun storyDisplay(userRef: DatabaseReference, currentChapter: String) {
-        Toast.makeText(baseContext, "Part $currentChapter", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(baseContext, "Part $currentChapter", Toast.LENGTH_SHORT).show()
 
         // Access the Firebase database for Story Progress graph
         // Toggle the current Part.Choice "visited" to true when accessed
@@ -190,7 +196,7 @@ class BookScrollingActivity : AppCompatActivity() {
         var choiceMsg = "Choices: "
         for (choice in choices)
             choiceMsg += "$choice, "
-        Toast.makeText(baseContext, choiceMsg, Toast.LENGTH_SHORT).show()
+        //Toast.makeText(baseContext, choiceMsg, Toast.LENGTH_SHORT).show()
     }
 
     // Set image for current chapter

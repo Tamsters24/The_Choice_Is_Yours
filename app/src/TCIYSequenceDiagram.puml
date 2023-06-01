@@ -2,34 +2,36 @@
 'https://plantuml.com/sequence-diagram
 
 actor User
-database "Firebase" as Firebase
+database "Firebase" as Firebase #FF3F3F
 participant "Library" as Library
 participant "Book Cover" as Cover
-participant "Chapters" as Chapter
+participant "Book Scrolling" as Chapter
 participant "Bookmark" as Bookmark
 participant "Story Map" as Map
 
 
 User -> Library: Start Application
 activate Library
-User -> Firebase: Login
-activate Firebase
+User -[#FF3F3F]> Firebase: Login
+activate Firebase #FF3F3F
 Library -> Cover: Choose eBook
 deactivate Library
 activate Cover
 Cover -> Chapter: Text & Image appears
 deactivate Cover
 activate Chapter
-Firebase -> Chapter
-Chapter --> Firebase: Toggle `Chapter Visited` boolean to `true`
-Chapter -> Bookmark
-Bookmark --> Firebase: Access database for Bookmark
-Firebase --> Bookmark: Returns Bookmarked page
-Bookmark -> Chapter: Bookmark becomes Chapter
-Chapter -> Map
+Chapter --[#FF3F3F]> Firebase: Toggle `Chapter Visited` boolean to `true`
+Chapter -[#FF3F3F]> Bookmark : Set or retrieve Bookmark
+Bookmark --[#FF3F3F]> Firebase: Access database for Bookmark
+Firebase --[#FF3F3F]> Bookmark: Returns value of Bookmarked page
+Bookmark -[#FF3F3F]> Chapter: Bookmark becomes Chapter
+Chapter -[#FF3F3F]> Map : Access Story Progress Map
 activate Map
-Map -> Chapter
+Map --[#FF3F3F]> Firebase: Access Firebase database for Chapters Visited
+Firebase --[#FF3F3F]> Map: `True` chapters visited nodes set to appear as Green
+Map -[#FF3F3F]> Chapter
 deactivate Map
-Chapter -> Cover
+Chapter -> Cover : Story end
+deactivate Chapter
 
 @enduml
