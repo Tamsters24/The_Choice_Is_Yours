@@ -14,7 +14,7 @@ interesting characters.
 
 From time to time as you read along, you will be asked to make a choice …
 
-![Instructions Pic 1](app\src\main\res\drawable\instruction_pic1.jpg)
+![Instructions Pic 1](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic1.jpg)
 
 At the bottom of the chapter page, there will be icons matching
 the choice that you will make. Tap the icon to proceed to the
