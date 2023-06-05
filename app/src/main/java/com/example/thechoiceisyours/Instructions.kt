@@ -96,7 +96,7 @@ class Instructions : AppCompatActivity() {
             5 -> {
                 updateInstructions(R.string.instructions13,
                     R.string.instructions14, R.string.instructions15)
-                updateInstructImage(R.drawable.registration_ex, R.drawable.password_ex)
+                updateInstructImage(R.drawable.`instruction_pic9.jpg`, R.drawable.`instruction_pic10.jpg`)
                 scrollToTop()
             }
         }

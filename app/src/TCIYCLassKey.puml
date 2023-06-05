@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+@startuml
+
+class Class_Name {
+ variable
+ - private_variable
+ # protected_variable
+ + public_variable
+ function()
+ - private_function()
+ # protected_function()
+ + public_function()
+}
+
+@enduml

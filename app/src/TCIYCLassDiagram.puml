@@ -51,7 +51,7 @@ class BookScrollingActivity {
 }
 
 BookScrollingActivity -- ResetChaptersVisited
-BookScrollingActivity -- StoryProgression
+BookScrollingActivity -- StoryProgression : > assets dir
 
 class UserLogin {
  - bookLogin
