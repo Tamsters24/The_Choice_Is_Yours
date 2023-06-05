@@ -1,8 +1,8 @@
 # The_Choice_Is_Yours
 
-##This is not for profit!!!
+## This is not for profit!!!
 
-####This project is for my Capstone Class with Eastern Oregon University. There's no intent for copyright infringement. This is meant to serve as an interesting example for an app that simulates a Choose Your Own Adventure book. Please do not use and/or distribute for sale or profit.
+#### This project is for my Capstone Class with Eastern Oregon University. There's no intent for copyright infringement. This is meant to serve as an interesting example for an app that simulates a Choose Your Own Adventure book. Please do not use and/or distribute for sale or profit.
 
 
 Capstone Project
@@ -26,7 +26,7 @@ and your choice may lead to success or disaster!
 REMEMBER —
 YOU CANNOT GO BACK!
 
-![Instructions Pic 2](app\src\main\res\drawable\instruction_pic2.jpg)
+![Instructions Pic 2](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic2.jpg)
 
 The adventures you take are a result of your choices. You are
 responsible because you choose! Think carefully before you make
@@ -36,12 +36,12 @@ wonders abound!
 To get started, on the main screen click the top button to
 access your library.
 
-![Instructions Pic 3](app\src\main\res\drawable\instruction_pic3.jpg)
+![Instructions Pic 3](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic3.jpg)
 
 The books you have available in your current library will appear here.
 Simply click on the book title to access your book.
 
-![Instructions Pic 4](app\src\main\res\drawable\instruction_pic4.jpg)
+![Instructions Pic 4](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic4.jpg)
 
 From the book cover, select CLICK HERE TO PROCEED, and you will
 begin on page 1 of the book.
@@ -50,7 +50,7 @@ As you read, you can bookmark your current page. To place a bookmark,
 you can either click on the bookmark icon on the upper right screen
 or you can enter the menu and click Bookmark Page.
 
-![Instructions Pic 5](app\src\main\res\drawable\instruction_pic5.jpg)
+![Instructions Pic 5](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic5.jpg)
 
 Other menu options include:
 1) Main - Return to the Main Screen
@@ -63,16 +63,16 @@ Other menu options include:
 8) Close App - Exit the application.
 9) Delete Progress - This resets previous Story Progress and clears the bookmarked page.
 
-####Once the Story Progress is deleted, IT CANNOT BE UNDONE! But you will still have access to your book.
+#### Once the Story Progress is deleted, IT CANNOT BE UNDONE! But you will still have access to your book.
 
-![Instructions Pic 6](app\src\main\res\drawable\instruction_pic6.jpg)
+![Instructions Pic 6](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic6.jpg)
 
 And that's it. Simple enough!
 
 Because there are so many different paths that you might take depending on your choices as you
 progress through your story, you can keep track of your progress and which chapters you've read!
 
-![Instructions Pic 7](app\src\main\res\drawable\instruction_pic7.jpg)
+![Instructions Pic 7](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic7.jpg)
 
 On the book cover page, select:
 
@@ -80,7 +80,7 @@ On the book cover page, select:
 
 to bring up a map of what paths you have taken.
 
-![Instructions Pic 8](app\src\main\res\drawable\instruction_pic8.jpg)
+![Instructions Pic 8](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic8.jpg)
 
 Chapters that you have not read yet are indicated by gray circles.
 Once you have read them, the circle will change to green.
@@ -89,12 +89,12 @@ To keep track of your progress, you will need to register for an account.
 Just type in your email address and password, and you're all set!
 You will have to be logged in to keep track of your progress.
 
-![Instructions Pic 9](app\src\main\res\drawable\instruction_pic9.jpg)
+![Instructions Pic 9](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic9.jpg)
 
 If you are logged out, and cannot remember your password,
 you can request an email to create a new password.
 
-![Instructions Pic 10](app\src\main\res\drawable\instruction_pic10.jpg)
+![Instructions Pic 10](https://github.com/Tamsters24/The_Choice_Is_Yours/blob/master/app/src/main/res/drawable/instruction_pic10.jpg)
 
 Now that you're ready to take the first step of your new adventure,
 what happens next in the story? It all depends on the choices you make.
